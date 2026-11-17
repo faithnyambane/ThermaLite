@@ -1,0 +1,7 @@
+id,name,type,lat,lon,annual_heat_mwh,supply_temp_c,profile
+K1,SYNTHETIC campus steam plant,university,40.500,-74.450,250000,180,
+K2,SYNTHETIC campus hot-water loop,district_energy,40.510,-74.440,60000,70,
+K3,SYNTHETIC greenhouse cluster,greenhouse,40.540,-74.500,30000,50,
+K4,SYNTHETIC hospital,hospital,40.610,-74.320,40000,80,
+K5,SYNTHETIC aquatic center,pool,40.590,-74.280,5000,35,
+K6,SYNTHETIC apartment complex,multifamily,40.360,-74.640,12000,65,

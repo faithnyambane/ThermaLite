@@ -1,0 +1,5 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction
+S1,SYNTHETIC DC Alpha (liquid),40.520,-74.460,20,liquid,,
+S2,SYNTHETIC DC Bravo (chilled water),40.600,-74.300,40,chilled_water,,
+S3,SYNTHETIC DC Charlie (air),40.350,-74.650,10,air,,
+S4,SYNTHETIC DC Delta (remote),40.900,-75.100,30,liquid,,
