@@ -24,6 +24,32 @@ def _common(p: argparse.ArgumentParser) -> None:
     p.add_argument("--climate", action="store_true",
                    help="use real heating degree days per sink (ERA5-Land via Earth Engine)")
     p.add_argument("--ee-project", default="thermalite", help="Earth Engine Cloud project ID")
+    p.add_argument("--gas-price", type=float, help="commercial gas, $/MWh of fuel")
+    p.add_argument("--elec-price", type=float, help="commercial electricity, $/MWh")
+    p.add_argument("--eia-prices", metavar="STATE",
+                   help="use EIA commercial gas and electricity prices for this state (e.g. WA)")
+
+
+def _assumptions(args):
+    from dataclasses import replace
+    from .assumptions import DEFAULT
+    a = DEFAULT
+    if args.eia_prices:
+        from . import national
+        st = args.eia_prices.upper()
+        elec = national.electricity_prices(Path("data/raw/eia/table_5_06_b.xlsx"))
+        gas, years = national.gas_prices(Path("data/raw/eia/ng_commercial.xls"))
+        a = replace(a, gas_price_per_mwh=gas[st], electricity_price_per_mwh=elec[st])
+        print(f"Prices: EIA {st} commercial, gas ${gas[st]:.1f}/MWh ({years[st]}), "
+              f"electricity ${elec[st]:.1f}/MWh (2026 YTD)")
+    if args.gas_price is not None:
+        a = replace(a, gas_price_per_mwh=args.gas_price)
+    if args.elec_price is not None:
+        a = replace(a, electricity_price_per_mwh=args.elec_price)
+    if not args.eia_prices and args.gas_price is None and args.elec_price is None:
+        print(f"Prices: placeholder defaults, gas ${a.gas_price_per_mwh:.0f}/MWh, "
+              f"electricity ${a.electricity_price_per_mwh:.0f}/MWh")
+    return a
 
 
 def _load(args):
@@ -39,7 +65,7 @@ def _load(args):
 
 def cmd_match(args) -> None:
     sources, sinks = _load(args)
-    matches = match_all(sources, sinks)
+    matches = match_all(sources, sinks, _assumptions(args))
     chosen = assign(matches)
     text = report.summary_text(summarize(sources, chosen))
 
@@ -77,8 +103,9 @@ def cmd_sensitivity(args) -> None:
     sources, sinks = _load(args)
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
-    prices = sensitivity.price_grid(sources, sinks)
-    incentive = sensitivity.incentive_curve(sources, sinks)
+    a = _assumptions(args)
+    prices = sensitivity.price_grid(sources, sinks, a)
+    incentive = sensitivity.incentive_curve(sources, sinks, a)
     sensitivity.write(prices, out / "sensitivity_prices.csv")
     sensitivity.write(incentive, out / "sensitivity_incentive.csv")
     subtitle = f"{len(sources)} data centers and {len(sinks)} heat users from {args.sources} and {args.sinks}."

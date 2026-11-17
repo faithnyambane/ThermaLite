@@ -1,0 +1,128 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC212,Stack Infrastructure site,45.553006,-122.937656,66.94,chilled_water,,,Stack Infrastructure,Washington County,669386.0,campus,yes
+DC297,QTS Data Center - Hillsboro 3,45.571799,-122.918722,17.63,chilled_water,,,Quality Technology Services,Washington County,176342.0,campus,yes
+DC298,QTS Data Center - Hillsboro 3,45.570315,-122.920185,21.59,chilled_water,,,Quality Technology Services,Washington County,215922.0,campus,yes
+DC309,Crane DC - Portland,45.514733,-123.078965,11.93,chilled_water,,,Crane Data Centers Inc.,Washington County,119294.0,campus,yes
+DC311,Percheron DC,45.711318,-119.826235,25.18,chilled_water,,,Rowan Green Data LLC,Morrow County,251778.0,campus,yes
+DC312,Percheron DC,45.711934,-119.824764,25.18,chilled_water,,,Rowan Green Data LLC,Morrow County,251762.0,campus,yes
+DC313,Percheron DC,45.708393,-119.82236,25.18,chilled_water,,,Rowan Green Data LLC,Morrow County,251786.0,campus,yes
+DC314,Percheron DC,45.709321,-119.821212,25.18,chilled_water,,,Rowan Green Data LLC,Morrow County,251782.0,campus,yes
+DC373,OVHcloud - Hillsboro,45.534093,-122.956018,9.2,chilled_water,,,OVHcloud,Washington County,92025.0,building,yes
+DC417,NTT RagingWire DC - Hillsboro,45.549818,-122.937241,26.03,chilled_water,,,NTT,Washington County,260339.0,building,yes
+DC645,Meta,44.295875,-120.887474,26.96,chilled_water,,,Meta,Crook County,269642.0,building,yes
+DC646,Adobe Data Center,45.55012,-122.932028,11.49,chilled_water,,,,Washington County,114853.0,building,yes
+DC647,TGN Hillsboro,45.546527,-122.893792,2.4,chilled_water,,,Tata Communications,Washington County,23967.0,building,yes
+DC648,Stack Infrastructure - POR02,45.547319,-122.897656,21.52,chilled_water,,,Stack Infrastructure,Washington County,215217.0,building,yes
+DC649,Oracle,45.544032,-122.896474,6.65,chilled_water,,,,Washington County,66545.0,building,yes
+DC650,Digital Realty PDX10 Data Center,45.547711,-122.891625,6.88,chilled_water,,,Digital Realty,Washington County,68807.0,building,yes
+DC651,Flexential Portland - Hillsboro 1,45.549807,-122.890924,4.12,chilled_water,,,Flexential,Washington County,41245.0,building,yes
+DC652,Flexential Portland - Hillsboro 1,45.550268,-122.892183,4.41,chilled_water,,,Flexential,Washington County,44088.0,building,yes
+DC655,Verizon Hillsboro (Tanasbourne) Data Center,45.544627,-122.882282,6.13,chilled_water,,,Verizon Business,Washington County,61299.0,building,yes
+DC684,Pittock Block,45.521458,-122.680755,4.16,chilled_water,,,,Multnomah County,41556.0,building,yes
+DC685,Data Center,45.526684,-122.875504,2.53,chilled_water,,,Oregon Health & Science University,Washington County,25297.0,building,yes
+DC688,Meta,44.294726,-120.88399,23.18,chilled_water,,,Meta,Crook County,231830.0,building,yes
+DC720,Apple,44.289416,-120.875077,0.92,chilled_water,,,Apple Inc.,Crook County,9228.0,building,yes
+DC774,Amazon Web Services,45.915836,-119.266324,0.26,chilled_water,,,Amazon Web Services,Umatilla County,2605.0,building,yes
+DC775,Amazon Web Services,45.915836,-119.266527,0.26,chilled_water,,,Amazon Web Services,Umatilla County,2608.0,building,yes
+DC776,Amazon Web Services,45.915836,-119.266726,0.26,chilled_water,,,Amazon Web Services,Umatilla County,2605.0,building,yes
+DC777,Amazon Web Services,45.915836,-119.267112,0.26,chilled_water,,,Amazon Web Services,Umatilla County,2605.0,building,yes
+DC778,Amazon Web Services,45.915843,-119.267316,0.26,chilled_water,,,Amazon Web Services,Umatilla County,2605.0,building,yes
+DC779,Amazon Web Services,45.915832,-119.267512,0.26,chilled_water,,,Amazon Web Services,Umatilla County,2605.0,building,yes
+DC780,Amazon Web Services,45.915836,-119.267717,0.26,chilled_water,,,Amazon Web Services,Umatilla County,2605.0,building,yes
+DC781,Amazon Web Services,45.916265,-119.268357,13.31,chilled_water,,,Amazon Web Services,Umatilla County,133053.0,building,yes
+DC782,Amazon Web Services,45.841003,-119.652769,12.75,chilled_water,,,Amazon Web Services,Morrow County,127483.0,building,yes
+DC783,Amazon Web Services,45.852355,-119.630353,26.75,chilled_water,,,Amazon Web Services,Morrow County,267452.0,building,yes
+DC784,Amazon Web Services,45.850881,-119.630524,10.33,chilled_water,,,Amazon Web Services,Morrow County,103260.0,building,yes
+DC819,Stack Infrastructure - POR01,45.549252,-122.927744,9.0,chilled_water,,,Stack Infrastructure,Washington County,90020.0,building,yes
+DC820,Flexential Portland - Hillsboro 2,45.558245,-122.917104,21.43,chilled_water,,,Flexential,Washington County,214259.0,building,yes
+DC824,Siemens EDA - HDC / Data Center,45.3187,-122.765797,2.49,chilled_water,,,Siemens Digital Industries Software,Clackamas County,24854.0,building,yes
+DC849,Apple,44.288895,-120.870129,37.75,chilled_water,,,Apple Inc.,Crook County,377457.0,building,yes
+DC902,Amazon Web Services,45.840444,-119.654979,15.19,chilled_water,,,Amazon Web Services,Morrow County,151857.0,building,yes
+DC903,Amazon Web Services,45.917448,-119.267734,26.08,chilled_water,,,Amazon Web Services,Umatilla County,260806.0,building,yes
+DC937,Amazon Web Services,45.840858,-119.657974,28.4,chilled_water,,,Amazon Web Services,Morrow County,284033.0,building,yes
+DC938,Amazon Web Services,45.839826,-119.653894,1.99,chilled_water,,,Amazon Web Services,Morrow County,19935.0,building,yes
+DC950,US Signal - OR01 Bend,44.086105,-121.283041,3.01,chilled_water,,,US Signal,Deschutes County,30111.0,building,yes
+DC974,Amazon Web Services,45.913953,-119.266914,27.16,chilled_water,,,Amazon Web Services,Umatilla County,271590.0,building,yes
+DC975,Amazon Web Services,45.841174,-119.655449,12.36,chilled_water,,,Amazon Web Services,Morrow County,123601.0,building,yes
+DC976,Amazon Web Services,45.853692,-119.630049,26.37,chilled_water,,,Amazon Web Services,Morrow County,263671.0,building,yes
+DC977,Amazon Web Services,45.846655,-119.603709,21.2,chilled_water,,,Amazon Web Services,Morrow County,211981.0,building,yes
+DC996,Apple,44.287277,-120.870216,34.47,chilled_water,,,Apple Inc.,Crook County,344665.0,building,yes
+DC997,Meta,44.293639,-120.881549,32.84,chilled_water,,,Meta,Crook County,328376.0,building,yes
+DC998,Amazon Web Services,45.797809,-119.366616,21.57,chilled_water,,,Amazon Web Services,Umatilla County,215703.0,building,yes
+DC1010,QTS Data Center - Hillsboro 1,45.558433,-122.927839,15.79,chilled_water,,,Quality Technology Services,Washington County,157854.0,building,yes
+DC1013,Oregon State Data Center,44.926424,-123.002169,4.65,chilled_water,,,State of Oregon,Marion County,46536.0,building,yes
+DC1014,Digital Realty PDX11 Data Center,45.56805,-122.916418,28.31,chilled_water,,,Digital Realty,Washington County,283056.0,building,yes
+DC1022,Fort Rock DC,44.047406,-121.328497,1.12,chilled_water,,,Fort Rock Data Center,Deschutes County,11249.0,building,yes
+DC1032,Meta,44.299043,-120.879451,63.02,chilled_water,,,Meta,Crook County,630160.0,building,yes
+DC1033,Meta,44.301201,-120.889896,62.3,chilled_water,,,Meta,Crook County,622980.0,building,yes
+DC1125,Flexential Portland - Hillsboro 4,45.555416,-122.939391,9.75,chilled_water,,,Flexential,Washington County,97536.0,building,yes
+DC1146,Stack Infrastructure - POR03,45.55407,-122.937869,9.4,chilled_water,,,Stack Infrastructure,Washington County,94010.0,building,yes
+DC1151,QTS Data Center - Hillsboro 2,45.558378,-122.929964,17.27,chilled_water,,,Quality Technology Services,Washington County,172698.0,building,yes
+DC1152,Amazon Web Services,45.837924,-119.688354,21.1,chilled_water,,,Amazon Web Services,Morrow County,210994.0,building,yes
+DC1153,Amazon Web Services,45.83754,-119.693129,21.1,chilled_water,,,Amazon Web Services,Morrow County,211026.0,building,yes
+DC1154,Amazon Web Services,45.846655,-119.605645,21.19,chilled_water,,,Amazon Web Services,Morrow County,211938.0,building,yes
+DC1157,QTS Data Center - Hillsboro 2,45.558446,-122.931677,17.16,chilled_water,,,Quality Technology Services,Washington County,171585.0,building,yes
+DC1158,QTS Data Center - Hillsboro 2,45.55883,-122.934959,16.89,chilled_water,,,Quality Technology Services,Washington County,168921.0,building,yes
+DC1159,QTS Data Center - Hillsboro 2,45.558832,-122.933204,17.4,chilled_water,,,Quality Technology Services,Washington County,173993.0,building,yes
+DC1160,Flexential Portland - Hillsboro 3,45.559585,-122.937883,33.73,chilled_water,,,Flexential,Washington County,337274.0,building,yes
+DC1184,CenturyLink,44.938059,-123.033704,2.45,chilled_water,,,CenturyLink,Marion County,24529.0,building,yes
+DC1186,Date Center West - Eugene,42.332451,-122.880421,0.2,chilled_water,,,"Data Center West, Inc.",Jackson County,1969.0,building,yes
+DC1240,EdgeConneX - Portland POR03,45.556407,-122.912616,8.45,chilled_water,,,EdgeConneX,Washington County,84472.0,building,yes
+DC1252,Amazon Web Services,45.846668,-119.607038,21.19,chilled_water,,,Amazon Web Services,Morrow County,211938.0,building,yes
+DC1253,Amazon Web Services,45.846753,-119.609062,22.16,chilled_water,,,Amazon Web Services,Morrow County,221562.0,building,yes
+DC1262,Amazon Web Services,45.836655,-119.689901,21.38,chilled_water,,,Amazon Web Services,Morrow County,213828.0,building,yes
+DC1316,Flexential Portland - Hillsboro 4 Expansion,45.555391,-122.941087,2.0,chilled_water,,,Flexential,Washington County,20041.0,building,yes
+DC1317,Flexential Portland - Hillsboro 5,45.556243,-122.939461,18.06,chilled_water,,,Flexential,Washington County,180624.0,building,yes
+DC1336,Aligned DC - PDX-01,45.554029,-122.948775,15.54,chilled_water,,,Aligned Data Centers,Washington County,155420.0,building,yes
+DC1343,Amazon Web Services,45.90145,-119.320521,22.74,chilled_water,,,Amazon Web Services,Umatilla County,227376.0,building,yes
+DC1344,Amazon Web Services,45.902763,-119.32049,21.74,chilled_water,,,Amazon Web Services,Umatilla County,217425.0,building,yes
+DC1345,Amazon Web Services,45.903851,-119.320479,21.99,chilled_water,,,Amazon Web Services,Umatilla County,219900.0,building,yes
+DC1346,Amazon Web Services,45.905094,-119.320154,21.97,chilled_water,,,Amazon Web Services,Umatilla County,219735.0,building,yes
+DC1347,Amazon Web Services,45.847608,-119.602775,1.75,chilled_water,,,Amazon Web Services,Morrow County,17522.0,building,yes
+DC1348,Amazon Web Services,45.915697,-119.26994,1.53,chilled_water,,,Amazon Web Services,Umatilla County,15313.0,building,yes
+DC1362,Meta,44.301675,-120.894622,45.54,chilled_water,,,Meta,Crook County,455401.0,building,yes
+DC1363,Meta,44.299186,-120.894618,24.12,chilled_water,,,Meta,Crook County,241183.0,building,yes
+DC1364,Digital Realty PDX11 Data Center,45.568716,-122.919998,28.78,chilled_water,,,Digital Realty,Washington County,287848.0,building,yes
+DC1425,Amazon Web Services,45.836308,-119.694207,21.38,chilled_water,,,Amazon Web Services,Morrow County,213839.0,building,yes
+DC1450,Stack Infrastructure - POR03,45.554198,-122.939723,9.11,chilled_water,,,Stack Infrastructure,Washington County,91092.0,building,yes
+DC1451,Stack Infrastructure - POR03,45.554241,-122.94123,9.33,chilled_water,,,Stack Infrastructure,Washington County,93274.0,building,yes
+DC1452,Stack Infrastructure - POR03,45.552837,-122.937777,9.79,chilled_water,,,Stack Infrastructure,Washington County,97942.0,building,yes
+DC1472,Amazon Web Services,45.858733,-119.605091,21.06,chilled_water,,,Amazon Web Services,Morrow County,210570.0,building,yes
+DC1473,Amazon Web Services,45.860095,-119.605117,21.19,chilled_water,,,Amazon Web Services,Morrow County,211904.0,building,yes
+DC1474,Amazon Web Services,45.860978,-119.605146,21.65,chilled_water,,,Amazon Web Services,Morrow County,216528.0,building,yes
+DC1475,Amazon Web Services,45.841496,-119.651825,1.38,chilled_water,,,Amazon Web Services,Morrow County,13765.0,building,yes
+DC1476,Amazon Web Services,45.9206,-119.23186,21.24,chilled_water,,,Amazon Web Services,Umatilla County,212449.0,building,yes
+DC1477,Amazon Web Services,45.920588,-119.229976,21.35,chilled_water,,,Amazon Web Services,Umatilla County,213546.0,building,yes
+DC1478,Amazon Web Services,45.797758,-119.361971,21.68,chilled_water,,,Amazon Web Services,Umatilla County,216777.0,building,yes
+DC1479,Amazon Web Services,45.79918,-119.366658,21.69,chilled_water,,,Amazon Web Services,Umatilla County,216903.0,building,yes
+DC1495,Apple,44.285754,-120.869918,27.52,chilled_water,,,Apple Inc.,Crook County,275217.0,building,yes
+DC1507,Amazon Web Services,45.920593,-119.228676,21.52,chilled_water,,,Amazon Web Services,Umatilla County,215175.0,building,yes
+DC1508,Amazon Web Services,45.920572,-119.227026,21.47,chilled_water,,,Amazon Web Services,Umatilla County,214739.0,building,yes
+DC1509,Amazon Web Services,45.919565,-119.226165,1.35,chilled_water,,,Amazon Web Services,Umatilla County,13480.0,building,yes
+DC1510,Amazon Web Services,45.882524,-119.341682,21.61,chilled_water,,,Amazon Web Services,Umatilla County,216137.0,building,yes
+DC1511,Amazon Web Services,45.862244,-119.605117,21.19,chilled_water,,,Amazon Web Services,Morrow County,211930.0,building,yes
+DC1512,Amazon Web Services,45.85806,-119.604798,1.28,chilled_water,,,Amazon Web Services,Morrow County,12811.0,building,yes
+DC1513,Amazon Web Services,45.840724,-119.651336,1.39,chilled_water,,,Amazon Web Services,Morrow County,13923.0,building,yes
+DC1514,Amazon Web Services,45.819937,-119.632077,21.28,chilled_water,,,Amazon Web Services,Morrow County,212775.0,building,yes
+DC1582,PTC,44.775271,-122.615915,0.25,chilled_water,,,Stayton Cooperative Telephone Company,Linn County,2521.0,building,yes
+DC1587,Amazon Web Services,45.879535,-119.341654,21.87,chilled_water,,,Amazon Web Services,Umatilla County,218723.0,building,yes
+DC1588,Amazon Web Services,45.882531,-119.339676,22.23,chilled_water,,,Amazon Web Services,Umatilla County,222329.0,building,yes
+DC1620,Amazon Web Services,45.851718,-119.619675,21.4,chilled_water,,,Amazon Web Services,Morrow County,214042.0,building,yes
+DC1621,Amazon Web Services,45.853091,-119.619658,21.03,chilled_water,,,Amazon Web Services,Morrow County,210337.0,building,yes
+DC1622,Amazon Web Services,45.818714,-119.632,21.07,chilled_water,,,Amazon Web Services,Morrow County,210662.0,building,yes
+DC1623,Amazon Web Services,45.818706,-119.636279,21.56,chilled_water,,,Amazon Web Services,Morrow County,215555.0,building,yes
+DC1624,Amazon Web Services,45.819948,-119.636277,20.9,chilled_water,,,Amazon Web Services,Morrow County,209033.0,building,yes
+DC1625,Amazon Web Services,45.809629,-119.2686,21.15,chilled_water,,,Amazon Web Services,Umatilla County,211502.0,building,yes
+DC1626,Amazon Web Services,45.808259,-119.268617,21.28,chilled_water,,,Amazon Web Services,Umatilla County,212806.0,building,yes
+DC1627,Amazon Web Services,45.799017,-119.361724,21.54,chilled_water,,,Amazon Web Services,Umatilla County,215405.0,building,yes
+DC1628,Amazon Web Services,45.799665,-119.358355,1.38,chilled_water,,,Amazon Web Services,Umatilla County,13837.0,building,yes
+DC1629,Amazon Web Services,45.797789,-119.358954,1.39,chilled_water,,,Amazon Web Services,Umatilla County,13867.0,building,yes
+DC1688,Google,45.623209,-121.207126,28.78,chilled_water,,,Google,Wasco County,287830.0,building,yes
+DC1701,NTT RagingWire DC - Hillsboro,45.548173,-122.937718,20.51,chilled_water,,,NTT,Washington County,205077.0,building,yes
+DC1778,Amazon Web Services,45.853854,-119.619731,22.0,chilled_water,,,Amazon Web Services,Morrow County,219998.0,building,yes
+DC1779,Amazon Web Services,45.855253,-119.619736,21.38,chilled_water,,,Amazon Web Services,Morrow County,213784.0,building,yes
+DC1780,Amazon Web Services,45.81174,-119.268654,21.15,chilled_water,,,Amazon Web Services,Umatilla County,211494.0,building,yes
+DC1781,Amazon Web Services,45.810363,-119.26867,21.28,chilled_water,,,Amazon Web Services,Umatilla County,212761.0,building,yes
+DC1782,Amazon Web Services,45.811222,-119.278233,21.5,chilled_water,,,Amazon Web Services,Umatilla County,214983.0,building,yes
+DC1788,amazon web services site,45.809815,-119.858907,21.38,chilled_water,,,amazon web services,Morrow County,213829.0,building,yes
+DC1789,Google,45.624818,-121.208893,28.77,chilled_water,,,Google,Wasco County,287697.0,building,yes

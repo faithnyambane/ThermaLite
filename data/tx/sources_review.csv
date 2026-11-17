@@ -1,0 +1,23 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC126,Core Scientific Pecos TX Data Center,31.533899,-103.802399,253.66,chilled_water,,,,Reeves County,2536636.0,campus,yes
+DC127,IONIC Digital Cedarvale,31.512377,-103.44846,210.61,chilled_water,,,IONIC Digital,Ward County,2106079.0,campus,yes
+DC145,CyrusOne Allen Campus,33.139645,-96.660101,132.22,chilled_water,,,CyrusOne,Collin County,1322199.0,campus,yes
+DC148,Microsoft Texas Research Park Campus,29.416765,-98.80352,724.13,chilled_water,,,Microsoft,Medina County,7241285.0,campus,yes
+DC149,Microsoft Texas Research Park Campus,29.416765,-98.80352,724.13,chilled_water,,,Microsoft,Bexar County,7241285.0,campus,yes
+DC248,Microsoft SAT14,29.475301,-98.680802,156.99,chilled_water,,,,Bexar County,1569865.0,campus,yes
+DC261,MARA Data Center,32.342318,-97.731239,176.89,chilled_water,,,Marathon Digital Holdings,Hood County,1768886.0,campus,yes
+DC273,QTS San Antonio,29.449355,-98.652268,104.26,chilled_water,,,,Bexar County,1042640.0,campus,yes
+DC274,Vantage San Antonio I,29.415454,-98.789329,164.52,chilled_water,,,Vantage Data Centers,Bexar County,1645243.0,campus,yes
+DC285,Meta Temple Data Center,31.12823,-97.369446,1382.04,chilled_water,,,Meta,Bell County,13820351.0,campus,yes
+DC290,Riot Rockdale,30.573795,-97.080001,435.8,chilled_water,,,,Milam County,4357993.0,campus,yes
+DC291,Riot Corsicana,31.972504,-96.514635,1171.78,chilled_water,,,,Navarro County,11717820.0,campus,yes
+DC302,Argo Data Center,33.777877,-100.868121,634.36,chilled_water,,,,Dickens County,6343584.0,campus,yes
+DC308,Fermi Matador,35.296426,-101.581282,25817.03,chilled_water,,,,Carson County,258170325.0,campus,yes
+DC316,Vantage San Antonio II,29.476957,-98.696804,121.49,chilled_water,,,,Bexar County,1214934.0,campus,yes
+DC317,Core Scientific COT2 Data Center,31.537571,-103.816773,217.19,chilled_water,,,,Reeves County,2171934.0,campus,yes
+DC330,Unnamed site (Bexar County),29.450744,-98.638508,126.19,chilled_water,,,,Bexar County,1261891.0,campus,yes
+DC332,Unnamed site (Bell County),31.057613,-97.299534,213.08,chilled_water,,,,Bell County,2130823.0,campus,yes
+DC338,Meta El Paso Data Center,31.994038,-106.363162,3533.46,chilled_water,,,,El Paso County,35334642.0,campus,yes
+DC339,Lonestar Dream -Tarbush Site,31.10474,-103.237601,258.47,chilled_water,,,,Pecos County,2584677.0,campus,yes
+DC347,Unnamed site (Dallas County),32.578972,-96.732702,420.53,chilled_water,,,,Dallas County,4205308.0,campus,yes
+DC348,DFW2-DC1 Project,32.583902,-96.695295,848.92,chilled_water,,,,Dallas County,8489194.0,campus,yes

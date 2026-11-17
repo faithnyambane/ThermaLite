@@ -1,0 +1,71 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC197,Actapio,47.407568,-120.214352,36.25,chilled_water,,,Actapio,Douglas County,362519.0,campus,yes
+DC220,Wave Broadband Tahoma Terra Facility,46.941431,-122.625043,0.91,chilled_water,,,,Thurston County,9139.0,campus,yes
+DC507,Intergate Seattle East Building 2,47.495031,-122.29057,10.73,chilled_water,,,,King County,107319.0,building,yes
+DC508,Intergate Seattle East Building 1,47.49486,-122.288194,9.79,chilled_water,,,Sabey Data Centers,King County,97862.0,building,yes
+DC537,Comcast site,47.6933,-122.317288,0.8,chilled_water,,,Comcast,King County,8025.0,building,yes
+DC540,CTI Biopharma,47.617789,-122.356643,2.06,chilled_water,,,,King County,20600.0,building,yes
+DC541,Westin Building,47.61439,-122.338929,1.31,chilled_water,,,Digital Realty,King County,13117.0,building,yes
+DC548,The Seattle Times,47.618876,-122.336546,4.86,chilled_water,,,H5 Data Centers,King County,48589.0,building,yes
+DC591,Unnamed site (Grant County),47.246212,-119.813227,15.2,chilled_water,,,,Grant County,151976.0,building,yes
+DC592,Unnamed site (Grant County),47.247736,-119.81309,20.49,chilled_water,,,,Grant County,204900.0,building,yes
+DC593,Unnamed site (Grant County),47.246168,-119.815756,13.53,chilled_water,,,,Grant County,135310.0,building,yes
+DC594,Unnamed site (Grant County),47.252574,-119.819665,24.68,chilled_water,,,,Grant County,246778.0,building,yes
+DC595,Unnamed site (Grant County),47.246617,-119.8288,15.12,chilled_water,,,,Grant County,151213.0,building,yes
+DC596,Unnamed site (Grant County),47.245991,-119.829791,3.58,chilled_water,,,,Grant County,35848.0,building,yes
+DC597,Unnamed site (Grant County),47.245989,-119.82917,3.59,chilled_water,,,,Grant County,35925.0,building,yes
+DC598,Unnamed site (Grant County),47.245989,-119.828159,3.38,chilled_water,,,,Grant County,33824.0,building,yes
+DC599,Unnamed site (Grant County),47.246003,-119.827542,3.37,chilled_water,,,,Grant County,33688.0,building,yes
+DC600,Unnamed site (Grant County),47.246066,-119.828662,1.91,chilled_water,,,,Grant County,19067.0,building,yes
+DC610,Intergate Seattle East Building 5,47.492017,-122.289573,20.01,chilled_water,,,Sabey Data Centers,King County,200124.0,building,yes
+DC611,Intergate Seattle East Building 3,47.493664,-122.290213,20.34,chilled_water,,,Sabey Data Centers,King County,203387.0,building,yes
+DC612,Intergate Seattle East Building 4,47.493217,-122.288915,11.68,chilled_water,,,Digital Realty,King County,116828.0,building,yes
+DC657,TierPoint,47.671892,-117.0959,1.44,chilled_water,,,,Spokane County,14435.0,building,yes
+DC659,Intergate Seattle West Building C,47.493949,-122.294276,1.98,chilled_water,,,Sabey Data Centers,King County,19791.0,building,yes
+DC660,Intergate Seattle West Building B,47.493146,-122.293685,1.91,chilled_water,,,Sabey Data Centers,King County,19140.0,building,yes
+DC661,Intergate Seattle West Building A,47.492156,-122.293445,3.85,chilled_water,,,Sabey Data Centers,King County,38547.0,building,yes
+DC662,Vantage WA11,47.250165,-119.81449,14.74,chilled_water,,,,Grant County,147430.0,building,yes
+DC663,NTT Data Quincy,47.243516,-119.865812,9.98,chilled_water,,,NTT,Grant County,99760.0,building,yes
+DC664,Unnamed site (Grant County),47.238819,-119.859359,4.44,chilled_water,,,,Grant County,44365.0,building,yes
+DC665,Unnamed site (Grant County),47.238262,-119.859366,3.21,chilled_water,,,,Grant County,32106.0,building,yes
+DC675,Equinix SE3 Data Center,47.614422,-122.339745,1.26,chilled_water,,,Equinix,King County,12575.0,building,yes
+DC689,CSSNW Bellingham,48.757285,-122.480499,0.43,chilled_water,,,CSS Communications,Whatcom County,4312.0,building,yes
+DC719,Centersquare Lynnwood SE1,47.841854,-122.301408,10.45,chilled_water,,,Centersquare,Snohomish County,104460.0,building,yes
+DC727,Unnamed site (Grant County),47.237655,-119.863849,3.69,chilled_water,,,,Grant County,36918.0,building,yes
+DC728,Microsoft,47.239481,-119.883021,15.12,chilled_water,,,Microsoft,Grant County,151246.0,building,yes
+DC729,Microsoft,47.238574,-119.883019,14.79,chilled_water,,,Microsoft,Grant County,147922.0,building,yes
+DC730,Unnamed site (Grant County),47.239488,-119.859406,4.68,chilled_water,,,,Grant County,46835.0,building,yes
+DC733,KOMO Plaza East,47.619254,-122.348358,4.57,chilled_water,,,,King County,45743.0,building,yes
+DC734,KOMO Plaza West,47.618882,-122.348528,2.02,chilled_water,,,,King County,20239.0,building,yes
+DC754,Lumen,47.654261,-117.419942,2.54,chilled_water,,,Lumen Technologies,Spokane County,25399.0,building,yes
+DC792,Intergate Columbia B,47.407228,-120.187729,19.29,chilled_water,,,Sabey Data Centers,Douglas County,192887.0,building,yes
+DC793,Intergate Columbia A,47.408482,-120.189461,26.24,chilled_water,,,Sabey Data Centers,Douglas County,262378.0,building,yes
+DC833,Microsoft,47.239483,-119.887418,14.34,chilled_water,,,Microsoft,Grant County,143439.0,building,yes
+DC834,Unnamed site (Grant County),47.238617,-119.864181,4.44,chilled_water,,,,Grant County,44446.0,building,yes
+DC835,Unnamed site (Grant County),47.247628,-119.825513,13.85,chilled_water,,,,Grant County,138534.0,building,yes
+DC899,Digital Fortress Lynnwood,47.822326,-122.289556,2.49,chilled_water,,,,Snohomish County,24944.0,building,yes
+DC939,Centeris SH2 Build-to-Suit,47.15884,-122.279878,9.35,chilled_water,,,,Pierce County,93539.0,building,yes
+DC940,Centeris SH1 Colocation,47.160832,-122.279215,11.58,chilled_water,,,,Pierce County,115786.0,building,yes
+DC965,Microsoft,47.237644,-119.887065,11.2,chilled_water,,,Microsoft,Grant County,112036.0,building,yes
+DC966,Microsoft,47.237694,-119.883536,11.6,chilled_water,,,Microsoft,Grant County,116001.0,building,yes
+DC967,Microsoft,47.236726,-119.884313,15.72,chilled_water,,,Microsoft,Grant County,157191.0,building,yes
+DC968,Microsoft,47.236733,-119.886685,16.26,chilled_water,,,Microsoft,Grant County,162608.0,building,yes
+DC969,Vantage WA12,47.254019,-119.813778,12.47,chilled_water,,,,Grant County,124695.0,building,yes
+DC1061,Unnamed site (Grant County),47.237097,-119.895156,21.68,chilled_water,,,,Grant County,216848.0,building,yes
+DC1066,Unnamed site (Douglas County),47.407635,-120.21458,10.2,chilled_water,,,,Douglas County,102013.0,building,yes
+DC1067,Unnamed site (Douglas County),47.392149,-120.217462,1.39,chilled_water,,,,Douglas County,13946.0,building,yes
+DC1068,Unnamed site (Douglas County),47.391794,-120.217877,0.4,chilled_water,,,,Douglas County,4004.0,building,yes
+DC1069,Unnamed site (Douglas County),47.391757,-120.217514,0.4,chilled_water,,,,Douglas County,4003.0,building,yes
+DC1070,Unnamed site (Douglas County),47.391759,-120.216901,0.77,chilled_water,,,,Douglas County,7706.0,building,yes
+DC1104,Norma Beach Cable Landing Station,47.864679,-122.284157,0.24,chilled_water,,,Unity Cable System,Snohomish County,2369.0,building,yes
+DC1134,Iron Mountain,47.594616,-117.537148,1.41,chilled_water,,,,Spokane County,14085.0,building,yes
+DC1278,Microsoft EAT02,47.416868,-120.207688,24.61,chilled_water,,,Microsoft,Douglas County,246129.0,building,yes
+DC1279,Intergate Columbia D,47.407584,-120.191458,13.5,chilled_water,,,Sabey Data Centers,Douglas County,135020.0,building,yes
+DC1376,Microsoft EAT03,47.418324,-120.20771,23.54,chilled_water,,,Microsoft,Douglas County,235418.0,building,yes
+DC1377,Microsoft EAT04,47.419637,-120.213817,23.48,chilled_water,,,Microsoft,Douglas County,234834.0,building,yes
+DC1405,Unnamed site (Grant County),47.244841,-119.81818,28.02,chilled_water,,,,Grant County,280235.0,building,yes
+DC1406,Unnamed site (Grant County),47.244442,-119.814829,14.73,chilled_water,,,,Grant County,147278.0,building,yes
+DC1569,Vantage WA13,47.252288,-119.813441,25.2,chilled_water,,,,Grant County,252025.0,building,yes
+DC1570,Unnamed site (Grant County),47.243645,-119.869051,11.91,chilled_water,,,,Grant County,119147.0,building,yes
+DC1676,Microsoft,47.238589,-119.887423,14.34,chilled_water,,,Microsoft,Grant County,143441.0,building,yes
+DC1724,Unnamed site (Grant County),47.23994,-119.862926,50.44,chilled_water,,,,Grant County,504350.0,building,yes

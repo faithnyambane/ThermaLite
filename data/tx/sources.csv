@@ -1,0 +1,217 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC175,Unnamed site (Travis County),30.206963,-97.701171,48.12,chilled_water,,,,Travis County,481194.0,campus,yes
+DC176,Unnamed site (Travis County),30.206164,-97.697607,24.16,chilled_water,,,,Travis County,241570.0,campus,yes
+DC177,DataBank Plano Data Center,33.087268,-96.815012,66.53,chilled_water,,,DataBank,Collin County,665313.0,campus,yes
+DC183,Skybox Houston One,29.802795,-95.754952,34.45,chilled_water,,,Skybox,Harris County,344540.0,campus,yes
+DC218,Unnamed site (Collin County),33.009214,-96.6758,60.5,chilled_water,,,,Collin County,605006.0,campus,yes
+DC272,CyrusOne SAT10 & SAT11,29.418461,-98.787848,93.55,chilled_water,,,CyrusOne,Bexar County,935467.0,campus,yes
+DC289,Unnamed site (Bexar County),29.445007,-98.643886,41.28,chilled_water,,,,Bexar County,412829.0,campus,yes
+DC321,Unnamed site (Bexar County),29.466686,-98.688291,37.36,chilled_water,,,,Bexar County,373558.0,campus,yes
+DC342,TierPoint site,33.137636,-96.657405,25.72,chilled_water,,,TierPoint,Collin County,257162.0,campus,yes
+DC343,Unnamed site (Collin County),33.1376,-96.656096,22.52,chilled_water,,,,Collin County,225152.0,campus,yes
+DC351,Texas Cryptologic Center,29.447279,-98.640578,46.52,chilled_water,,,National Security Agency,Bexar County,465165.0,campus,yes
+DC382,Cyxtera Dallas-Fort Worth Data Center,32.832702,-97.040941,30.82,chilled_water,,,Cyxtera,Tarrant County,308244.0,building,yes
+DC383,Equinix Infomart,32.80084,-96.81948,23.98,chilled_water,,,Equinix,Dallas County,239835.0,building,yes
+DC386,DataBank,32.778285,-96.79831,4.36,chilled_water,,,,Dallas County,43564.0,building,yes
+DC449,H5 Data Centers San Antonio,29.429371,-98.486907,2.09,chilled_water,,,H5 Data Centers,Bexar County,20898.0,building,yes
+DC566,Unnamed site (Bexar County),29.446565,-98.640519,12.76,chilled_water,,,,Bexar County,127563.0,building,yes
+DC567,Unnamed site (Bexar County),29.447863,-98.641158,14.27,chilled_water,,,,Bexar County,142712.0,building,yes
+DC568,Unnamed site (Bexar County),29.447182,-98.64129,3.6,chilled_water,,,,Bexar County,36014.0,building,yes
+DC569,Unnamed site (Collin County),33.096156,-96.68147,12.17,chilled_water,,,,Collin County,121665.0,building,yes
+DC570,Evoque Allen DA1,33.095073,-96.683757,11.45,chilled_water,,,Centersquare,Collin County,114534.0,building,yes
+DC607,CoreSpace Dallas,32.817753,-96.872932,3.16,chilled_water,,,CoreSpace,Dallas County,31626.0,building,yes
+DC644,Lumen San Antonio 2,29.438279,-98.506522,1.27,chilled_water,,,Lumen Technologies,Bexar County,12722.0,building,yes
+DC678,Microsoft,29.478019,-98.690691,25.82,chilled_water,,,Microsoft,Bexar County,258191.0,building,yes
+DC679,Microsoft San Antonio,29.479813,-98.693006,47.86,chilled_water,,,Microsoft,Bexar County,478642.0,building,yes
+DC680,Microsoft,29.480976,-98.696275,19.49,chilled_water,,,Microsoft,Bexar County,194916.0,building,yes
+DC687,Cisco Allen,33.135864,-96.661306,16.2,chilled_water,,,,Collin County,162023.0,building,yes
+DC697,Lumen Austin 3,30.261373,-97.723578,0.51,chilled_water,,,Lumen Technologies,Travis County,5068.0,building,yes
+DC698,Alpheus DataCenter,30.261157,-97.722,3.61,chilled_water,,,Alpheus,Travis County,36089.0,building,yes
+DC699,Digital Realty Austin AUS11,30.212106,-97.695647,8.0,chilled_water,,,,Travis County,79985.0,building,yes
+DC700,LightEdge Austin II,30.200543,-97.706928,8.64,chilled_water,,,,Travis County,86445.0,building,yes
+DC701,CyrusOne site,30.205959,-97.697914,7.69,chilled_water,,,CyrusOne,Travis County,76860.0,building,yes
+DC702,Data Foundry Austin 1 Data Center,30.215509,-97.695945,5.05,chilled_water,,,,Travis County,50461.0,building,yes
+DC704,LightEdge Austin I,30.21435,-97.712705,3.09,chilled_water,,,,Travis County,30876.0,building,yes
+DC707,Lumen Austin 1,30.196401,-97.712114,7.47,chilled_water,,,,Travis County,74722.0,building,yes
+DC708,Data Foundry - Texas 1,30.198883,-97.713344,13.71,chilled_water,,,,Travis County,137095.0,building,yes
+DC711,Element Critical,30.34283,-97.696318,6.2,chilled_water,,,,Travis County,61978.0,building,yes
+DC762,CyrusOne site,30.206982,-97.701032,18.06,chilled_water,,,CyrusOne,Travis County,180630.0,building,yes
+DC808,Lumen Dallas - 3180 Irving Blvd.,32.806955,-96.868589,8.09,chilled_water,,,Lumen Technologies,Dallas County,80859.0,building,yes
+DC809,Prime DFW01-01,32.837954,-96.878549,8.89,chilled_water,,,Prime,Dallas County,88881.0,building,yes
+DC810,Lumen Dallas 6,32.827994,-96.88426,1.3,chilled_water,,,Lumen Technologies,Dallas County,12977.0,building,yes
+DC811,DataBank Dallas Empire Central Data Center,32.821896,-96.873756,6.77,chilled_water,,,DataBank,Dallas County,67717.0,building,yes
+DC812,TierPoint Dallas Data Center,32.80796,-96.857352,7.14,chilled_water,,,TierPoint,Dallas County,71358.0,building,yes
+DC818,Live Oak Data Center,32.783637,-96.794462,4.99,chilled_water,,,,Dallas County,49853.0,building,yes
+DC825,Aligned  DFW-01,33.009327,-96.676699,10.84,chilled_water,,,Aligned,Collin County,108401.0,building,yes
+DC826,TierPoint site,33.138092,-96.657333,3.17,chilled_water,,,TierPoint,Collin County,31692.0,building,yes
+DC827,DXC Technology site,30.018297,-95.863734,35.22,chilled_water,,,DXC Technology,Harris County,352246.0,building,yes
+DC836,Facebook Fort Worth Datacenter,32.983772,-97.259348,63.44,chilled_water,,,Meta,Tarrant County,634395.0,building,yes
+DC838,CITIGROUP TECHNOLOGY INC,33.006381,-97.24529,24.25,chilled_water,,,,Denton County,242536.0,building,yes
+DC839,QTS Data Center,32.988773,-97.259366,27.8,chilled_water,,,Quality Technology Services,Tarrant County,277996.0,building,yes
+DC840,Lowe's Data Center,29.472957,-98.689635,9.43,chilled_water,,,Lowe's,Bexar County,94266.0,building,yes
+DC841,CHRISTUS Health site,29.470356,-98.686291,4.88,chilled_water,,,CHRISTUS Health,Bexar County,48815.0,building,yes
+DC842,Frost Bank site,29.470296,-98.687784,6.86,chilled_water,,,Frost Bank,Bexar County,68591.0,building,yes
+DC843,CyrusOne San Antonio I,29.466329,-98.688259,10.23,chilled_water,,,CyrusOne,Bexar County,102322.0,building,yes
+DC844,Valero Wiserman,29.47414,-98.679907,5.83,chilled_water,,,Valero,Bexar County,58304.0,building,yes
+DC845,Stream San Antonio II,29.47208,-98.671804,7.13,chilled_water,,,,Bexar County,71324.0,building,yes
+DC846,CyrusOne San Antonio II,29.470937,-98.673015,10.86,chilled_water,,,CyrusOne,Bexar County,108554.0,building,yes
+DC847,CyrusOne San Antonio III,29.469903,-98.672225,10.05,chilled_water,,,CyrusOne,Bexar County,100537.0,building,yes
+DC852,QTS Irving - Dallas Data Center Campus,32.897325,-96.982313,30.62,chilled_water,,,Quality Technology Services,Dallas County,306213.0,building,yes
+DC864,DXC Technology site,29.995096,-95.563766,26.42,chilled_water,,,DXC Technology,Harris County,264173.0,building,yes
+DC865,DXC Technology site,29.997188,-95.564107,11.4,chilled_water,,,DXC Technology,Harris County,113970.0,building,yes
+DC875,Flexential Dallas - Richardson,32.994671,-96.752515,6.85,chilled_water,,,Flexential,Collin County,68520.0,building,yes
+DC876,Experian McKinney Data Center,33.171796,-96.725505,7.66,chilled_water,,,,Collin County,76624.0,building,yes
+DC886,Amazon Web Services,32.850425,-97.070212,5.12,chilled_water,,,Amazon Web Services,Tarrant County,51249.0,building,yes
+DC890,Thin-nology,30.421141,-97.591603,0.92,chilled_water,,,,Travis County,9209.0,building,yes
+DC892,Data Foundry - Texas 2,30.199747,-97.713084,10.49,chilled_water,,,,Travis County,104857.0,building,yes
+DC897,Unnamed site (Harris County),29.821719,-95.57077,9.82,chilled_water,,,,Harris County,98195.0,building,yes
+DC900,ScaleMatrix site,33.137739,-96.655989,3.12,chilled_water,,,ScaleMatrix,Collin County,31187.0,building,yes
+DC901,CyrusOne site,33.138655,-96.660372,34.07,chilled_water,,,CyrusOne,Collin County,340724.0,building,yes
+DC907,Stream DFW IV,33.000144,-96.661646,1.97,chilled_water,,,Stream,Collin County,19684.0,building,yes
+DC908,Rackspace Richardson DFW3,32.964857,-96.715429,11.29,chilled_water,,,Rackspace,Dallas County,112950.0,building,yes
+DC909,Digital Realty Dallas DFW17,32.966365,-96.713442,8.36,chilled_water,,,Digital Realty,Dallas County,83615.0,building,yes
+DC910,Digital Realty Dallas DFW29,32.967236,-96.710929,12.24,chilled_water,,,Digital Realty,Dallas County,122436.0,building,yes
+DC911,Unnamed site (Dallas County),32.966208,-96.711215,6.27,chilled_water,,,,Dallas County,62663.0,building,yes
+DC912,Digital Realty Dallas DFW28,32.967242,-96.712762,12.2,chilled_water,,,Digital Realty,Dallas County,122015.0,building,yes
+DC913,Digital Realty Dallas DFW35,32.965244,-96.710189,11.65,chilled_water,,,Digital Realty,Dallas County,116539.0,building,yes
+DC914,Digital Realty Dallas DFW18,32.965489,-96.713005,22.23,chilled_water,,,Digital Realty,Dallas County,222334.0,building,yes
+DC915,Digital Realty Dallas DFW16,32.965959,-96.715559,10.95,chilled_water,,,Digital Realty,Dallas County,109470.0,building,yes
+DC941,Microsoft TRP2,29.412234,-98.804051,16.98,chilled_water,,,Microsoft,Bexar County,169781.0,building,yes
+DC942,Microsoft TRP1,29.412012,-98.80273,17.75,chilled_water,,,Microsoft,Bexar County,177468.0,building,yes
+DC948,Flexential Dallas - Plano,33.006898,-96.666306,21.79,chilled_water,,,Flexential,Collin County,217850.0,building,yes
+DC955,NTT,32.980544,-96.656337,20.45,chilled_water,,,NTT,Dallas County,204506.0,building,yes
+DC956,Rice Data Center,29.658183,-95.44342,2.55,chilled_water,,,,Harris County,25487.0,building,yes
+DC957,Facebook Fort Worth Datacenter,32.9852,-97.255163,43.52,chilled_water,,,Meta,Tarrant County,435206.0,building,yes
+DC1016,Unnamed site (Montgomery County),30.177839,-95.486449,12.61,chilled_water,,,,Montgomery County,126121.0,building,yes
+DC1021,Unnamed site (Wichita County),33.953448,-98.524907,3.91,chilled_water,,,,Wichita County,39127.0,building,yes
+DC1071,Facebook Fort Worth Datacenter,32.988592,-97.255741,75.32,chilled_water,,,Meta,Tarrant County,753193.0,building,yes
+DC1072,Charles Schwab Data Center,33.004561,-97.245942,7.97,chilled_water,,,,Denton County,79688.0,building,yes
+DC1114,Google,32.441924,-97.062272,14.46,chilled_water,,,Google,Ellis County,144574.0,building,yes
+DC1115,Google,32.443453,-97.063149,13.82,chilled_water,,,Google,Ellis County,138230.0,building,yes
+DC1123,Compass Data Center,32.538829,-96.80452,4.17,chilled_water,,,,Ellis County,41692.0,building,yes
+DC1206,Verizon Wireless Mew Building,32.972189,-97.156601,17.64,chilled_water,,,,Tarrant County,176383.0,building,yes
+DC1227,Unnamed site (Bexar County),29.418855,-98.787304,10.95,chilled_water,,,,Bexar County,109489.0,building,yes
+DC1228,Microsoft TRP3 (SAT46),29.412977,-98.806374,22.89,chilled_water,,,Microsoft,Medina County,228897.0,building,yes
+DC1229,Microsoft,29.415797,-98.803316,22.89,chilled_water,,,Microsoft,Bexar County,228882.0,building,yes
+DC1230,Microsoft,29.415796,-98.804515,22.89,chilled_water,,,Microsoft,Bexar County,228885.0,building,yes
+DC1318,QTS San Antonio II,29.449121,-98.653354,14.03,chilled_water,,,Quality Technology Services,Bexar County,140321.0,building,yes
+DC1340,CyrusOne San Antonio IV,29.470792,-98.670617,9.25,chilled_water,,,,Bexar County,92543.0,building,yes
+DC1380,Unnamed site (Dallas County),32.894882,-96.981739,14.18,chilled_water,,,,Dallas County,141788.0,building,yes
+DC1420,Cortex supercomputer,30.215619,-97.619182,40.73,chilled_water,,,,Travis County,407305.0,building,yes
+DC1426,Novartis,32.651135,-97.319725,4.27,chilled_water,,,,Tarrant County,42691.0,building,yes
+DC1532,GVTC,29.686403,-98.462648,0.04,chilled_water,,,GVTC,Bexar County,445.0,building,yes
+DC1533,Stream Data Centers DFWA,32.983631,-96.654503,28.06,chilled_water,,,Stream Data Centers,Dallas County,280634.0,building,yes
+DC1542,HEB site,29.580267,-98.54121,3.62,chilled_water,,,HEB,Bexar County,36241.0,building,yes
+DC1554,NTT,32.981183,-96.659571,16.95,chilled_water,,,NTT,Dallas County,169492.0,building,yes
+DC1555,NTT,32.98093,-96.65794,20.11,chilled_water,,,NTT,Dallas County,201117.0,building,yes
+DC1574,Amazon,29.450563,-98.638722,10.49,chilled_water,,,,Bexar County,104910.0,building,yes
+DC1575,Unnamed site (Bexar County),29.418452,-98.788756,6.42,chilled_water,,,,Bexar County,64212.0,building,yes
+DC1659,Google,32.538709,-96.793371,28.88,chilled_water,,,Google,Ellis County,288830.0,building,yes
+DC1660,Compass Data Center,32.545512,-96.801077,24.9,chilled_water,,,,Ellis County,248978.0,building,yes
+DC1661,Compass Data Center,32.544199,-96.801059,24.9,chilled_water,,,,Ellis County,248985.0,building,yes
+DC1662,Compass Data Center,32.542906,-96.801064,24.9,chilled_water,,,,Ellis County,248988.0,building,yes
+DC1663,Compass Data Center,32.541596,-96.801078,24.9,chilled_water,,,,Ellis County,248989.0,building,yes
+DC1664,Compass Data Center,32.540284,-96.801092,24.8,chilled_water,,,,Ellis County,247998.0,building,yes
+DC1665,Compass Data Center,32.542675,-96.792601,25.19,chilled_water,,,,Ellis County,251939.0,building,yes
+DC1666,Compass Data Center,32.543993,-96.792602,25.19,chilled_water,,,,Ellis County,251912.0,building,yes
+DC1667,Compass Data Center,32.545298,-96.792638,25.19,chilled_water,,,,Ellis County,251911.0,building,yes
+DC1668,Compass Data Center,32.543963,-96.789516,25.19,chilled_water,,,,Ellis County,251923.0,building,yes
+DC1669,Compass Data Center,32.545295,-96.7895,25.19,chilled_water,,,,Ellis County,251941.0,building,yes
+DC1682,Unnamed site (Bexar County),29.449722,-98.715004,15.44,chilled_water,,,,Bexar County,154443.0,building,yes
+DC1683,Unnamed site (Bexar County),29.450973,-98.714509,15.44,chilled_water,,,,Bexar County,154441.0,building,yes
+DC1684,Unnamed site (Bexar County),29.452273,-98.714664,15.44,chilled_water,,,,Bexar County,154439.0,building,yes
+DC1689,Alinged Data Center DFW-03,32.549823,-97.074855,18.83,chilled_water,,,"Aligned Data Centers, LLC",Tarrant County,188257.0,building,yes
+DC1710,Unnamed site (Angelina County),31.194177,-94.796766,1.3,chilled_water,,,,Angelina County,12987.0,building,yes
+DC1711,Google,32.439784,-97.060942,28.23,chilled_water,,,Google,Ellis County,282284.0,building,yes
+DC1717,Amazon AWS SAT - 12807 Donop,29.292904,-98.391461,11.04,chilled_water,,,Amazon Web Services,Bexar County,110391.0,building,yes
+DC1718,Prime DFW01-01,32.837814,-96.879846,4.97,chilled_water,,,Prime,Dallas County,49683.0,building,yes
+DC1722,Unnamed site (Bell County),31.131314,-97.372373,35.68,chilled_water,,,,Bell County,356829.0,building,yes
+DC1723,Unnamed site (Bell County),31.130305,-97.369238,30.77,chilled_water,,,,Bell County,307716.0,building,yes
+DC1733,Unnamed site (Taylor County),32.5043,-99.777783,10.44,chilled_water,,,,Taylor County,104387.0,building,yes
+DC1734,Unnamed site (Taylor County),32.504287,-99.778764,10.51,chilled_water,,,,Taylor County,105099.0,building,yes
+DC1735,Unnamed site (Taylor County),32.505121,-99.778258,6.54,chilled_water,,,,Taylor County,65372.0,building,yes
+DC1736,Unnamed site (Taylor County),32.505944,-99.777811,10.45,chilled_water,,,,Taylor County,104461.0,building,yes
+DC1737,Unnamed site (Taylor County),32.505932,-99.778799,10.48,chilled_water,,,,Taylor County,104840.0,building,yes
+DC1738,Unnamed site (Taylor County),32.505082,-99.781063,6.5,chilled_water,,,,Taylor County,65014.0,building,yes
+DC1739,Unnamed site (Taylor County),32.504261,-99.781514,10.45,chilled_water,,,,Taylor County,104544.0,building,yes
+DC1740,Unnamed site (Taylor County),32.505906,-99.781537,10.43,chilled_water,,,,Taylor County,104323.0,building,yes
+DC1741,Unnamed site (Taylor County),32.505915,-99.780555,10.5,chilled_water,,,,Taylor County,105010.0,building,yes
+DC1742,Unnamed site (Taylor County),32.504269,-99.780529,10.5,chilled_water,,,,Taylor County,104959.0,building,yes
+DC1751,CyrusOne site,33.140726,-96.659902,11.61,chilled_water,,,CyrusOne,Collin County,116076.0,building,yes
+DC1757,Aligned Data Centers DFW-04,33.006006,-96.657092,21.55,chilled_water,,,Aligned Data Centers,Collin County,215534.0,building,yes
+DC1759,Switch: The Rock,30.488209,-97.67258,17.42,chilled_water,,,Switch,Williamson County,174202.0,building,yes
+DC1776,Unnamed site (Bell County),31.057485,-97.298413,14.48,chilled_water,,,,Bell County,144816.0,building,yes
+DC1783,Vantage Data Centers TX22,29.478871,-98.697406,11.33,chilled_water,,,Vantage Data Centers,Bexar County,113262.0,building,yes
+DC1784,Microsoft,29.47022,-98.698835,24.63,chilled_water,,,Microsoft,Bexar County,246279.0,building,yes
+DC1785,MDC,31.750014,-106.309973,0.93,chilled_water,,,,El Paso County,9342.0,building,yes
+DC1802,Unnamed site (Reeves County),31.532749,-103.806272,5.74,chilled_water,,,,Reeves County,57397.0,building,yes
+DC1803,Unnamed site (Reeves County),31.532749,-103.805229,5.74,chilled_water,,,,Reeves County,57397.0,building,yes
+DC1804,Unnamed site (Reeves County),31.532761,-103.804192,5.74,chilled_water,,,,Reeves County,57395.0,building,yes
+DC1805,Unnamed site (Reeves County),31.533345,-103.800415,1.17,chilled_water,,,,Reeves County,11727.0,building,yes
+DC1813,Digital Realty,32.974373,-96.649898,25.62,chilled_water,,,Digital Realty,Dallas County,256153.0,building,yes
+DC1816,Digital Realty,32.976438,-96.650123,20.24,chilled_water,,,Digital Realty,Dallas County,202370.0,building,yes
+DC1817,NTT,32.979672,-96.658123,12.32,chilled_water,,,NTT,Dallas County,123206.0,building,yes
+DC1818,Aligned  DFW-02,33.009002,-96.675255,8.78,chilled_water,,,Aligned,Collin County,87752.0,building,yes
+DC1819,Unnamed site (Taylor County),32.499879,-99.776298,10.45,chilled_water,,,,Taylor County,104477.0,building,yes
+DC1820,Unnamed site (Taylor County),32.499867,-99.777286,10.49,chilled_water,,,,Taylor County,104857.0,building,yes
+DC1821,Unnamed site (Taylor County),32.499056,-99.776745,6.54,chilled_water,,,,Taylor County,65382.0,building,yes
+DC1822,Unnamed site (Taylor County),32.498234,-99.77627,10.44,chilled_water,,,,Taylor County,104394.0,building,yes
+DC1823,Unnamed site (Taylor County),32.498221,-99.777251,10.51,chilled_water,,,,Taylor County,105106.0,building,yes
+DC1824,Unnamed site (Taylor County),32.498204,-99.779374,10.5,chilled_water,,,,Taylor County,104966.0,building,yes
+DC1825,Unnamed site (Taylor County),32.498196,-99.780359,10.46,chilled_water,,,,Taylor County,104551.0,building,yes
+DC1826,Unnamed site (Taylor County),32.499017,-99.779909,6.5,chilled_water,,,,Taylor County,65024.0,building,yes
+DC1827,Unnamed site (Taylor County),32.49984,-99.780382,10.43,chilled_water,,,,Taylor County,104339.0,building,yes
+DC1828,Unnamed site (Taylor County),32.49985,-99.779401,10.5,chilled_water,,,,Taylor County,105027.0,building,yes
+DC1829,Unnamed site (Taylor County),32.499846,-99.782517,10.45,chilled_water,,,,Taylor County,104477.0,building,yes
+DC1830,Unnamed site (Taylor County),32.499834,-99.783505,10.49,chilled_water,,,,Taylor County,104857.0,building,yes
+DC1831,Unnamed site (Taylor County),32.499023,-99.782963,6.54,chilled_water,,,,Taylor County,65389.0,building,yes
+DC1832,Unnamed site (Taylor County),32.498201,-99.782488,10.44,chilled_water,,,,Taylor County,104394.0,building,yes
+DC1833,Unnamed site (Taylor County),32.498188,-99.78347,10.51,chilled_water,,,,Taylor County,105106.0,building,yes
+DC1834,Unnamed site (Taylor County),32.498158,-99.785571,10.5,chilled_water,,,,Taylor County,104976.0,building,yes
+DC1835,Unnamed site (Taylor County),32.49815,-99.786555,10.46,chilled_water,,,,Taylor County,104561.0,building,yes
+DC1836,Unnamed site (Taylor County),32.498971,-99.786105,6.5,chilled_water,,,,Taylor County,65031.0,building,yes
+DC1837,Unnamed site (Taylor County),32.499795,-99.786579,10.43,chilled_water,,,,Taylor County,104330.0,building,yes
+DC1838,Unnamed site (Taylor County),32.499804,-99.785597,10.5,chilled_water,,,,Taylor County,105017.0,building,yes
+DC1839,Unnamed site (Taylor County),32.498354,-99.79122,10.45,chilled_water,,,,Taylor County,104469.0,building,yes
+DC1840,Unnamed site (Taylor County),32.498342,-99.792208,10.48,chilled_water,,,,Taylor County,104849.0,building,yes
+DC1841,Unnamed site (Taylor County),32.497531,-99.791667,6.54,chilled_water,,,,Taylor County,65383.0,building,yes
+DC1842,Unnamed site (Taylor County),32.496709,-99.791191,10.44,chilled_water,,,,Taylor County,104406.0,building,yes
+DC1843,Unnamed site (Taylor County),32.496696,-99.792173,10.51,chilled_water,,,,Taylor County,105117.0,building,yes
+DC1844,Unnamed site (Taylor County),32.496672,-99.794521,10.5,chilled_water,,,,Taylor County,104978.0,building,yes
+DC1845,Unnamed site (Taylor County),32.496665,-99.795505,10.46,chilled_water,,,,Taylor County,104562.0,building,yes
+DC1846,Unnamed site (Taylor County),32.497485,-99.795055,6.5,chilled_water,,,,Taylor County,65020.0,building,yes
+DC1847,Unnamed site (Taylor County),32.498309,-99.795529,10.43,chilled_water,,,,Taylor County,104341.0,building,yes
+DC1848,Unnamed site (Taylor County),32.498318,-99.794547,10.5,chilled_water,,,,Taylor County,105029.0,building,yes
+DC1852,Vantage TX11,29.416857,-98.790188,12.29,chilled_water,,,Vantage Data Centers,Bexar County,122894.0,building,yes
+DC1853,Unnamed site (Bexar County),29.415733,-98.786604,13.54,chilled_water,,,,Bexar County,135442.0,building,yes
+DC1854,Vantage TX12,29.415598,-98.788866,12.29,chilled_water,,,Vantage Data Centers,Bexar County,122895.0,building,yes
+DC1855,Vantage TX12,29.415167,-98.789751,12.29,chilled_water,,,Vantage Data Centers,Bexar County,122896.0,building,yes
+DC1856,Microsoft,29.418959,-98.802905,15.15,chilled_water,,,Microsoft,Bexar County,151530.0,building,yes
+DC1857,Microsoft SAT 80,29.429192,-98.876655,24.39,chilled_water,,,Microsoft,Medina County,243934.0,building,yes
+DC1858,Microsoft SAT 81,29.427999,-98.876653,24.39,chilled_water,,,Microsoft,Medina County,243939.0,building,yes
+DC1859,Microsoft SAT 82,29.426655,-98.876638,24.39,chilled_water,,,Microsoft,Medina County,243937.0,building,yes
+DC1864,Data Foundry,29.945039,-95.42416,10.5,chilled_water,,,,Harris County,105028.0,building,yes
+DC1865,Vantage Data Centers TX21,29.477326,-98.697471,11.33,chilled_water,,,Vantage Data Centers,Bexar County,113272.0,building,yes
+DC1866,Unnamed site (Ward County),31.513432,-103.449124,5.67,chilled_water,,,,Ward County,56663.0,building,yes
+DC1867,Unnamed site (Ward County),31.513879,-103.448667,5.67,chilled_water,,,,Ward County,56668.0,building,yes
+DC1869,Unnamed site (Bexar County),29.445246,-98.644087,0.43,chilled_water,,,,Bexar County,4292.0,building,yes
+DC1870,Unnamed site (Bexar County),29.445041,-98.644251,0.43,chilled_water,,,,Bexar County,4292.0,building,yes
+DC1871,Unnamed site (Bexar County),29.444851,-98.644404,0.43,chilled_water,,,,Bexar County,4293.0,building,yes
+DC1872,Unnamed site (Bexar County),29.444662,-98.644556,0.43,chilled_water,,,,Bexar County,4292.0,building,yes
+DC1873,Unnamed site (Bexar County),29.444475,-98.64471,0.43,chilled_water,,,,Bexar County,4292.0,building,yes
+DC1874,Unnamed site (Bexar County),29.444286,-98.644861,0.43,chilled_water,,,,Bexar County,4291.0,building,yes
+DC1875,Unnamed site (Bexar County),29.444908,-98.643546,0.43,chilled_water,,,,Bexar County,4292.0,building,yes
+DC1876,Unnamed site (Bexar County),29.4447,-98.64371,0.43,chilled_water,,,,Bexar County,4293.0,building,yes
+DC1877,Unnamed site (Bexar County),29.444513,-98.643863,0.43,chilled_water,,,,Bexar County,4293.0,building,yes
+DC1878,Unnamed site (Bexar County),29.444327,-98.644015,0.43,chilled_water,,,,Bexar County,4293.0,building,yes
+DC1879,Unnamed site (Bexar County),29.444138,-98.644168,0.43,chilled_water,,,,Bexar County,4291.0,building,yes
+DC1880,Unnamed site (Bexar County),29.44395,-98.644318,0.43,chilled_water,,,,Bexar County,4292.0,building,yes
+DC1881,Unnamed site (Bexar County),29.44507,-98.643813,0.93,chilled_water,,,,Bexar County,9290.0,building,yes
+DC1882,Unnamed site (Bexar County),29.444864,-98.643979,0.93,chilled_water,,,,Bexar County,9290.0,building,yes
+DC1883,Unnamed site (Bexar County),29.44468,-98.644131,0.93,chilled_water,,,,Bexar County,9293.0,building,yes
+DC1884,Unnamed site (Bexar County),29.444488,-98.644282,0.93,chilled_water,,,,Bexar County,9292.0,building,yes
+DC1885,Unnamed site (Bexar County),29.444302,-98.644434,0.93,chilled_water,,,,Bexar County,9293.0,building,yes
+DC1886,Unnamed site (Bexar County),29.444115,-98.644585,0.93,chilled_water,,,,Bexar County,9290.0,building,yes
+DC1935,Unnamed site (Pecos County),31.103474,-103.238549,1.75,chilled_water,,,,Pecos County,17454.0,building,yes
+DC1936,Unnamed site (Pecos County),31.103759,-103.238485,2.19,chilled_water,,,,Pecos County,21862.0,building,yes
+DC1942,CyrusOne site,32.899117,-97.38895,16.94,chilled_water,,,CyrusOne,Tarrant County,169420.0,building,yes

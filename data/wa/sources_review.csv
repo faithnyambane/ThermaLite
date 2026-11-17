@@ -1,0 +1,11 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC131,Intergate Quincy Data Center,47.245139,-119.815226,431.85,chilled_water,,,Sabey Data Centers,Grant County,4318512.0,campus,yes
+DC132,Vantage Quincy Campus,47.2518,-119.814098,286.59,chilled_water,,,Vantage,Grant County,2865895.0,campus,yes
+DC133,H5 Data Center,47.252959,-119.818911,271.78,chilled_water,,,Intuit,Grant County,2717818.0,campus,yes
+DC134,Yahoo Data Center,47.246687,-119.825784,217.13,chilled_water,,,Yahoo,Grant County,2171290.0,campus,yes
+DC135,NTTData Data Center,47.246375,-119.865038,306.86,chilled_water,,,,Grant County,3068566.0,campus,yes
+DC136,Microsoft Columbia Data Center,47.239308,-119.862627,309.8,chilled_water,,,,Grant County,3098039.0,campus,yes
+DC144,Intergate Columbia,47.408282,-120.190618,277.11,chilled_water,,,,Douglas County,2771098.0,campus,yes
+DC157,CyrusOne Quincy,47.245011,-119.869514,177.96,chilled_water,,,CyrusOne,Grant County,1779563.0,campus,yes
+DC165,Microsoft MWH Data Center,47.239794,-119.888891,894.0,chilled_water,,,Microsoft,Grant County,8939962.0,campus,yes
+DC352,Centeris,47.159494,-122.279997,206.55,chilled_water,,,,Pierce County,2065506.0,campus,yes

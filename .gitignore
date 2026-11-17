@@ -5,3 +5,5 @@ data/cache/
 .DS_Store
 .venv/
 data/raw/
+research_notes/
+reports/

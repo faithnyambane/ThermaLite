@@ -1,0 +1,8 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC124,Meta Prineville Data Center,44.299284,-120.887918,1737.91,chilled_water,,,"Meta Platforms, Inc",Crook County,17379079.0,campus,yes
+DC125,Apple Prineville Datacenter,44.283563,-120.864619,1563.74,chilled_water,,,Apple Inc,Crook County,15637431.0,campus,yes
+DC130,Google Data Center The Dalles Oregon,45.632425,-121.20133,148.74,chilled_water,,,Google,Wasco County,1487396.0,campus,yes
+DC166,Google Taylor Lake Data Center,45.638494,-121.202078,110.09,chilled_water,,,Google,Wasco County,1100932.0,campus,yes
+DC286,Google The Dalles Data Center,45.62461,-121.206632,329.68,chilled_water,,,Google,Wasco County,3296820.0,campus,yes
+DC288,AWS Umatilla Data Center,45.903115,-119.31799,504.88,chilled_water,,,Amazon Web Services,Umatilla County,5048778.0,campus,yes
+DC310,Unnamed site (Morrow County),45.71121,-119.820425,857.96,chilled_water,,,,Morrow County,8579619.0,campus,yes
