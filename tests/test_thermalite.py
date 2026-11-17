@@ -93,5 +93,38 @@ class Matching(unittest.TestCase):
         self.assertEqual(len(chosen), 1)
 
 
+class Ingest(unittest.TestCase):
+    def test_atlas_centroid_polygon_and_point(self):
+        from thermalite.atlas import centroid
+        sq = {"type": "Polygon", "coordinates": [[[0, 0], [2, 0], [2, 2], [0, 2], [0, 0]]]}
+        self.assertEqual(centroid(sq), (1.0, 1.0))
+        self.assertEqual(centroid({"type": "Point", "coordinates": [-74, 40]}), (40, -74))
+
+    def test_osm_area_100m_square(self):
+        from thermalite.osm import polygon_area_m2
+        d_lat = 100 / 111_320
+        d_lon = 100 / (111_320 * math.cos(math.radians(40)))
+        sq = [{"lat": 40, "lon": -74}, {"lat": 40, "lon": -74 + d_lon},
+              {"lat": 40 + d_lat, "lon": -74 + d_lon}, {"lat": 40 + d_lat, "lon": -74}]
+        self.assertAlmostEqual(polygon_area_m2(sq), 10_000, delta=50)
+
+    def test_osm_classify(self):
+        from thermalite.osm import classify
+        self.assertEqual(classify({"building": "greenhouse"}), "greenhouse")
+        self.assertEqual(classify({"amenity": "hospital"}), "hospital")
+        self.assertIsNone(classify({"building": "house"}))
+
+
+class Sensitivity(unittest.TestCase):
+    def test_incentive_never_reduces_viable_heat(self):
+        from thermalite.sensitivity import incentive_curve
+        sources = [src(id="S1"), src(id="S2", temp=30, lat=40.6)]
+        sinks = [snk(id="K1"), snk(id="K2", temp=50, type="greenhouse", lat=40.55),
+                 snk(id="K3", lat=40.62, type="hospital", temp=80)]
+        curve = incentive_curve(sources, sinks)
+        pairs = [r["viable_pairs"] for r in curve]
+        self.assertEqual(pairs, sorted(pairs))
+
+
 if __name__ == "__main__":
     unittest.main()

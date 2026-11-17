@@ -1,0 +1,58 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC178,Equinix,40.775049,-74.068514,53.51,chilled_water,,,Equinix,Hudson County,535110.0,campus,yes
+DC354,CoreSite Secaucus Campus,40.784257,-74.065471,43.81,chilled_water,,,CoreSite,Hudson County,438062.0,campus,yes
+DC359,Unnamed site (Somerset County),40.524031,-74.548139,28.43,chilled_water,,,,Somerset County,284322.0,campus,yes
+DC360,Unnamed site (Somerset County),40.543406,-74.538231,25.92,chilled_water,,,,Somerset County,259234.0,campus,yes
+DC364,GlobeNet Tuckerton Cable Landing Station,39.609874,-74.326141,1.53,chilled_water,,,GlobeNet,Ocean County,15261.0,campus,yes
+DC372,Chirisa Technology Parks - Piscataway,40.544255,-74.496521,10.58,chilled_water,,,Chirisa Technology Parks,Middlesex County,105786.0,building,yes
+DC378,Barclays Datacenter,40.643638,-74.285665,9.44,chilled_water,,,Barclays,Union County,94373.0,building,yes
+DC446,Equinix NY7 Data Center,40.796864,-74.031141,6.87,chilled_water,,,Equinix,Hudson County,68650.0,building,yes
+DC484,Equinix New York Secaucus NY5,40.778678,-74.071874,21.15,chilled_water,,,Equinix,Hudson County,211455.0,building,yes
+DC485,Equinix New York Secaucus NY4,40.776428,-74.069776,31.73,chilled_water,,,Equinix,Hudson County,317271.0,building,yes
+DC486,Equinix NY3,40.775062,-74.068645,27.43,chilled_water,,,Equinix,Hudson County,274326.0,building,yes
+DC487,Equinix New York Secaucus NY2,40.776983,-74.07559,40.3,chilled_water,,,Equinix,Hudson County,402960.0,building,yes
+DC488,Centersquare NYC3 Data Center,40.786167,-74.068823,14.32,chilled_water,,,Centersquare,Hudson County,143163.0,building,yes
+DC500,IO Datacenter,40.521071,-74.347762,82.99,chilled_water,,,,Middlesex County,829908.0,building,yes
+DC501,DataBank Piscataway EWR2,40.549213,-74.45821,5.06,chilled_water,,,,Middlesex County,50646.0,building,yes
+DC502,Optimum,40.546851,-74.491699,6.41,chilled_water,,,,Middlesex County,64120.0,building,yes
+DC503,Equinix,40.544659,-74.495459,6.27,chilled_water,,,Equinix,Middlesex County,62661.0,building,yes
+DC504,Barclays Datacenter,40.547135,-74.459323,35.23,chilled_water,,,Barclays,Middlesex County,352286.0,building,yes
+DC505,Digital Realty New York EWR12,40.552778,-74.459372,30.28,chilled_water,,,Digital Realty,Middlesex County,302795.0,building,yes
+DC506,Digital Realty New York EWR11,40.553785,-74.457178,9.61,chilled_water,,,Digital Realty,Middlesex County,96114.0,building,yes
+DC589,Cyxtera (Digital Realty Trust) Citibank Data Center,40.760618,-74.025598,5.84,chilled_water,,,Cyxtera,Hudson County,58356.0,building,yes
+DC590,Digital Realty New Jersey EWR10,40.76192,-74.025076,12.7,chilled_water,,,Digital Realty,Hudson County,126960.0,building,yes
+DC669,Unnamed site (Middlesex County),40.553003,-74.456606,6.13,chilled_water,,,,Middlesex County,61263.0,building,yes
+DC671,Unnamed site (Hudson County),40.784642,-74.064408,3.45,chilled_water,,,,Hudson County,34462.0,building,yes
+DC676,QTS Piscataway Data Center,40.556687,-74.483988,34.34,chilled_water,,,Quality Technology Services,Middlesex County,343444.0,building,yes
+DC686,AT&T Tuckerton Cable Landing Station (TAT-14),39.615067,-74.328807,1.59,chilled_water,,,AT&T,Ocean County,15902.0,building,yes
+DC713,165 Halsey / Equinix NY1 / Databank EWR1,40.736893,-74.173636,8.94,chilled_water,,,Tishman,Essex County,89363.0,building,yes
+DC757,Unnamed site (Hudson County),40.784202,-74.065768,15.1,chilled_water,,,,Hudson County,150951.0,building,yes
+DC758,Evocative Secaucus,40.787552,-74.068047,10.13,chilled_water,,,Evocative,Hudson County,101304.0,building,yes
+DC759,BT Radianz: 492 River Road,40.821445,-74.134177,10.79,chilled_water,,,bt,Essex County,107857.0,building,yes
+DC763,Manasquan Cable Landing Station (Apollo),40.157044,-74.101582,2.59,chilled_water,,,Vodafone,Monmouth County,25904.0,building,yes
+DC797,Digital Realty New Jersey EWR20,40.829947,-74.1268,2.96,chilled_water,,,Digital Realty,Passaic County,29614.0,building,yes
+DC798,CyrusOne site,40.538077,-74.545818,30.72,chilled_water,,,CyrusOne,Somerset County,307174.0,building,yes
+DC799,Unnamed site (Somerset County),40.539968,-74.541895,20.45,chilled_water,,,,Somerset County,204476.0,building,yes
+DC800,BNY Mellon Somerset,40.535538,-74.553304,12.1,chilled_water,,,,Somerset County,121002.0,building,yes
+DC801,Digital Realty site,40.537494,-74.555449,12.57,chilled_water,,,Digital Realty,Somerset County,125668.0,building,yes
+DC802,Digital Realty New Jersey EWR21,40.830586,-74.124514,7.16,chilled_water,,,Digital Realty,Passaic County,71645.0,building,yes
+DC821,NYSE Data Center,41.078625,-74.152766,20.08,chilled_water,,,nyse,Bergen County,200804.0,building,yes
+DC922,Unnamed site (Gloucester County),39.83093,-75.195323,4.11,chilled_water,,,,Gloucester County,41058.0,building,yes
+DC929,Goldman Sachs,40.570372,-74.67033,27.67,chilled_water,,,,Somerset County,276729.0,building,yes
+DC934,365 Bridgewater NJ,40.581371,-74.573875,2.85,chilled_water,,,,Somerset County,28468.0,building,yes
+DC1006,Equinix Secaucus NY6,40.777638,-74.072688,7.09,chilled_water,,,Equinix,Hudson County,70938.0,building,yes
+DC1007,PSE&G Delivery Emergency Response Center,40.579983,-74.519487,8.5,chilled_water,,,PSE&G,Somerset County,85030.0,building,yes
+DC1011,Unnamed site (Middlesex County),40.584188,-74.243569,15.92,chilled_water,,,,Middlesex County,159160.0,building,yes
+DC1024,Verizon Branchburg NEC Datacenter,40.599526,-74.709984,5.69,chilled_water,,,Verizon,Somerset County,56943.0,building,yes
+DC1028,Vital Records,40.528072,-74.682816,0.79,chilled_water,,,,Somerset County,7942.0,building,yes
+DC1062,Wall Township Cable Landing Station,40.160898,-74.053106,5.66,chilled_water,,,Tata,Monmouth County,56603.0,building,yes
+DC1076,Credit Suisse: Clifton Data Center,40.833433,-74.140459,14.03,chilled_water,,,,Passaic County,140278.0,building,yes
+DC1185,JPMorgan Chase site,40.905556,-74.230226,19.12,chilled_water,,,JPMorgan Chase,Passaic County,191186.0,building,yes
+DC1222,Rackspace Somerset NYC1,40.544576,-74.537742,1.84,chilled_water,,,,Somerset County,18407.0,building,yes
+DC1223,Rackspace Belmont NYC2,40.541083,-74.537458,5.75,chilled_water,,,,Somerset County,57471.0,building,yes
+DC1401,Unnamed site (Monmouth County),40.208462,-74.119242,5.93,chilled_water,,,,Monmouth County,59307.0,building,yes
+DC1402,Manasquan Cable Landing Station (TAT-14),40.129586,-74.042789,0.89,chilled_water,,,Sprint,Monmouth County,8856.0,building,yes
+DC1403,Verizon Freehold Data Center,40.239283,-74.319428,9.72,chilled_water,,,Verizon,Monmouth County,97199.0,building,yes
+DC1601,CoreSite NY3,40.784904,-74.065357,3.97,chilled_water,,,CoreSite,Hudson County,39679.0,building,yes
+DC1939,DataOne Vineland,39.427559,-75.016886,11.56,chilled_water,,,Nebius,Cumberland County,115607.0,building,yes
+DC1945,CyrusOne site,40.907408,-74.242264,11.79,chilled_water,,,CyrusOne,Passaic County,117851.0,building,yes

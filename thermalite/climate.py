@@ -82,13 +82,27 @@ def fetch_hdd(points: list[tuple[float, float]], project: str = DEFAULT_PROJECT,
         ])
         img = _monthly_hdd_image(ee, start_year, end_year, base_c)
         result = img.reduceRegions(collection=fc, reducer=ee.Reducer.mean(), scale=11132).getInfo()
+        coastal = []
         for feat in result["features"]:
             props = feat["properties"]
             values = [props.get(b) for b in MONTH_BANDS]
             if any(v is None for v in values):
-                lat, lon = missing[props["i"]]
-                raise ValueError(f"No ERA5-Land data at ({lat}, {lon}); is the point over open ocean?")
+                coastal.append(props["i"])  # ERA5-Land is land-only; coastal cells can be empty
+                continue
             cache[_key(*missing[props["i"]], start_year, end_year, base_c)] = values
+        if coastal:
+            # Fall back to the mean of land cells within 15 km.
+            fc2 = ee.FeatureCollection([
+                ee.Feature(ee.Geometry.Point([missing[i][1], missing[i][0]]).buffer(15000), {"i": i}) for i in coastal
+            ])
+            for feat in img.reduceRegions(collection=fc2, reducer=ee.Reducer.mean(), scale=11132).getInfo()["features"]:
+                props = feat["properties"]
+                values = [props.get(b) for b in MONTH_BANDS]
+                lat, lon = missing[props["i"]]
+                if any(v is None for v in values):
+                    raise ValueError(f"No ERA5-Land data within 15 km of ({lat}, {lon})")
+                print(f"  note: ({lat:.3f}, {lon:.3f}) is coastal; used land cells within 15 km")
+                cache[_key(lat, lon, start_year, end_year, base_c)] = values
         cache_path.parent.mkdir(parents=True, exist_ok=True)
         cache_path.write_text(json.dumps(cache, indent=1))
 

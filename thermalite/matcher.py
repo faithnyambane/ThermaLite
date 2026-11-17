@@ -60,7 +60,8 @@ def score(source: Source, sink: Sink, a: Assumptions = DEFAULT) -> Match:
     electricity = physics.electricity_for(used, cop)
     gas = used / a.boiler_efficiency
     co2 = gas * a.gas_co2_t_per_mwh - electricity * a.grid_co2_t_per_mwh
-    value = gas * a.gas_price_per_mwh - electricity * a.electricity_price_per_mwh
+    value = (gas * a.gas_price_per_mwh - electricity * a.electricity_price_per_mwh
+             + used * a.heat_incentive_per_mwh)
 
     crf = _crf(a.discount_rate, a.lifetime_years)
     hp_annual = a.hp_capex_per_mw * peak_mw * crf if needs_hp else 0.0

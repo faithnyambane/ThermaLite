@@ -3,3 +3,5 @@ __pycache__/
 out/
 data/cache/
 .DS_Store
+.venv/
+data/raw/

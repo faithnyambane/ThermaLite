@@ -1,0 +1,3 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC369,Unnamed site (Ocean County),40.04262,-74.27962,293.8,chilled_water,,,,Ocean County,2938014.0,campus,yes
+DC370,Unnamed site (Ocean County),40.045629,-74.280763,856.56,chilled_water,,,,Ocean County,8565565.0,campus,yes

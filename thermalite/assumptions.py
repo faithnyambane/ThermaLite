@@ -43,6 +43,9 @@ class Assumptions:
     gas_price_per_mwh: float = 35.0  # ~ $10/MMBtu commercial  [PLACEHOLDER: use EIA state price]
     electricity_price_per_mwh: float = 120.0  # [PLACEHOLDER: use EIA state price]
     boiler_efficiency: float = 0.85  # gas boiler being displaced  [ENGINEERING]
+    # Policy lever: payment or tax credit per MWh of recovered heat delivered.
+    # 0 = today's US baseline. Used by the sensitivity analysis.
+    heat_incentive_per_mwh: float = 0.0
 
     # --- Emissions -----------------------------------------------------------
     # EPA: 53.06 kg CO2 per MMBtu natural gas = 0.181 t/MWh fuel.  [SOURCED]
@@ -58,6 +61,15 @@ class Assumptions:
 
 
 DEFAULT = Assumptions()
+
+# --- Turning public footprints into energy numbers ---------------------------
+# The IM3 atlas gives building/campus footprint area, not power. IT load is
+# estimated as footprint x power density. Real facilities range widely (older
+# enterprise rooms << modern hyperscale halls); treat results as order-of-magnitude.  [PLACEHOLDER]
+DC_WATTS_PER_SQFT = 100.0
+# Cooling type is unknown for atlas sites; assume the conservative case
+# (low-grade ~30 C heat) unless a site is known to be liquid-cooled.  [ENGINEERING]
+DC_DEFAULT_COOLING = "chilled_water"
 
 # Default supply temperature (C) and recoverable fraction of IT load by cooling type.
 # Newer liquid-cooled facilities return ~140 F / 60 C water (Resource Innovation
