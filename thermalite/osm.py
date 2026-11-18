@@ -7,6 +7,9 @@ US state, and estimates annual heat demand from footprint area:
 
 OSM coverage is incomplete (which is exactly why the greenhouse detector exists),
 and the intensities below are placeholders. Data (c) OpenStreetMap contributors, ODbL.
+
+Pipeline stage 1 (ingest). `thermalite sinks --state VA` -> data/va/sinks.csv
+(heat buyers), plus the substation list the siting grid uses for grid access.
 """
 from __future__ import annotations
 

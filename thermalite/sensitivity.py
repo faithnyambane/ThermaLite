@@ -4,6 +4,8 @@ count how many source-sink pairings become viable.
 Denmark's heat reuse took off partly after a 2022 tax change (Ramboll), so the
 policy question is: which US price ratio, or what incentive per MWh, flips
 pairings from uneconomic to viable?
+
+Original matching tool (`thermalite sensitivity`); it led to the national screen.
 """
 from __future__ import annotations
 

@@ -12,6 +12,9 @@ data/cache/hdd.json keyed by rounded lat/lon, so repeat runs cost no quota.
 
 Setup (once): `earthengine authenticate`, and a Cloud project registered for
 noncommercial Earth Engine use.
+
+Pipeline stage 2 (climate). Used by `thermalite match --climate` and by
+siting.build(), which adjusts every heat buyer to its local climate first.
 """
 from __future__ import annotations
 
@@ -120,6 +123,9 @@ def apply_climate(sinks: list[Sink], **kwargs) -> list[Sink]:
     for s in sinks:
         shape = hdd[(s.lat, s.lon)]
         w = SPACE_WEIGHT[s.profile or TYPE_PROFILE.get(s.type, "space_and_water")]
+        # Only the weather-driven share (w) scales with climate: a site with twice
+        # the reference heating degree days needs twice the space heating, while
+        # hot water and pools stay the same.
         factor = (1 - w) + w * sum(shape) / REF_HDD
         out.append(replace(s, hdd_shape=tuple(shape), annual_heat_mwh=s.annual_heat_mwh * factor))
     return out

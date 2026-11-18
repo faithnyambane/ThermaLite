@@ -7,6 +7,9 @@ Each value is tagged:
 
 Change values by constructing Assumptions(...) with overrides, or with
 dataclasses.replace(DEFAULT, field=value).
+
+Pipeline stage 3. If a result looks surprising, start here: the pipe cost
+(PLACEHOLDER) decides most pairings.
 """
 from __future__ import annotations
 

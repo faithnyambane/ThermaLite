@@ -11,6 +11,9 @@ neighbouring pixels of the same greenhouse.
 
 Quota: training samples only small areas around labels; classification runs over
 an AOI you choose. Keep AOIs to roughly a few hundred km^2 for interactive runs.
+
+Status: built and validated, but it found only 3 of 26 known greenhouses on a
+real test area, so its output is NOT used in any result.
 """
 from __future__ import annotations
 

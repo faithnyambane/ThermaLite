@@ -203,6 +203,18 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
 </style>
 </head>
 <body>
+<!--
+  ThermaLite Siting website: one file, no build step, no server code.
+  Page structure (top to bottom):
+    header.site         wordmark, page links (Map / Guide / About), theme switch
+    main#view-map       toolbar (state, priority preset, weight sliders)
+                        + workspace: canvas#map with legend | aside#side (summary + top 10, or a site report)
+    main#view-guide     how to read the map, the presets and the five factors
+    main#view-about     method, data sources, limits
+  Only one <main> is visible at a time; the URL hash (#map, #guide, #about) picks it.
+  Data: data-va.json, data-tx.json, data-nc.json (made by thermalite/siting_ui.py),
+  loaded on demand by load() in the script at the bottom.
+-->
 <div class="app">
   <header class="site">
     <div class="wrap headrow">
@@ -378,8 +390,24 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
 </div>
 
 <script>
+/*
+  How the script works
+  1. load(state) fetches data-<st>.json: one list per field ("cols"), row i = one 2 km square.
+  2. rescore() turns each square's raw values into five 0-1 factor scores (factors())
+     and a weighted average using the current weights S.w. This runs on every slider
+     move, so nothing is precomputed on a server.
+  3. renderTop() picks the 10 best eligible squares, at least 6 km apart.
+  4. draw() paints the canvas: squares coloured by score, existing data centers,
+     city labels, the top 10 numbers, and amber lines to heat buyers of the selected square.
+  5. renderSummary() / renderReport() fill the sidebar.
+  All app state lives in one object, S (see below). Sections are marked "// ---------- name".
+  The same formulas are re-run by tests/check_ui_data.js, and tests/ui_e2e.js drives this
+  page in a simulated browser through window.ThermaLite.
+*/
 (() => {
+  // States offered: code, name, data file size (shown while loading).
   const STATES = [['VA', 'Virginia', '1.2 MB'], ['TX', 'Texas', '7 MB'], ['NC', 'North Carolina', '1.5 MB']];
+  // Priority presets = weights for heat, carbon, water, cooling, grid (0-5 each).
   const PRESETS = {
     balanced: { heat: 2, carbon: 2, water: 2, cooling: 2, grid: 2 },
     heat: { heat: 5, carbon: 1, water: 1, cooling: 1, grid: 2 },
@@ -395,12 +423,18 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
   };
   const KEYS = ['heat', 'carbon', 'water', 'cooling', 'grid'];
   const LABELS = { heat: 'Heat reuse', carbon: 'Clean power', water: 'Low water stress', cooling: 'Cool climate', grid: 'Grid access' };
+  // HOME_MWH: one home's heat per year (Odense ratio). HEAT_FULL: heat sales that earn a full heat score.
   const HOME_MWH = 17.9, HEAT_FULL = 60000;
+
+  // localStorage wrapper: remembers state, weights and theme; never breaks the page if storage is blocked.
 
   const store = {
     get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
   };
+  // S = all app state. st: current state; w: weights; excl/showDC/sellOnly: legend toggles;
+  // data: loaded files by state; sel: selected square (-1 = none); score/ex: per-square score
+  // and excluded flag; view: map pan/zoom; top: indexes of the top 10; col/ramp: theme colours.
   const saved = store.get('tl-state', '');
   const S = { st: STATES.some(([s]) => s === saved) ? saved : 'VA', w: store.get('tl-w', { ...PRESETS.balanced }),
     excl: true, showDC: true, sellOnly: false, data: {}, sel: -1, score: null, ex: null, view: null, top: [], col: {}, ramp: [] };
@@ -413,6 +447,8 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
   const sat = (lat, lon) => `https://www.google.com/maps/@${lat.toFixed(5)},${lon.toFixed(5)},1200m/data=!3m1!1e3`;
 
   // ---------- theme ----------
+  // Auto follows the device (prefers-color-scheme); Light/Dark set data-theme on <html>.
+  // Canvas colours are read back from the CSS variables in readTheme(), so the map matches.
   const root = document.documentElement, hostTheme = root.getAttribute('data-theme');
   function applyTheme(t) {
     if (t === 'light' || t === 'dark') root.setAttribute('data-theme', t);
@@ -429,6 +465,8 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
   $('themes').addEventListener('click', e => { const b = e.target.closest('button'); if (b) applyTheme(b.dataset.t); });
 
   // ---------- scoring ----------
+  // Each factor is 0 (worst) to 1 (best). sqrt() on heat gives credit to small sellers too.
+  // Missing water or climate data (coast, edges) scores a neutral 0.5.
   function factors(d, i) {
     const c = d.cols, b = c.bws[i], cd = c.cdd[i];
     return {
@@ -454,9 +492,12 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
     $('lg-lo').textContent = lo.toFixed(2); $('lg-hi').textContent = S.hi.toFixed(2);
     renderTop(); renderReport(); draw();
   }
+  // A square can make the top 10 if it isn't ruled out (and sells heat, when that filter is on).
   const eligible = i => !S.ex[i] && (!S.sellOnly || S.data[S.st].cols.heat[i] > 0);
 
   // ---------- map ----------
+  // Simple flat projection: x = lon * cos(mid-latitude), y = -lat. S.view holds the
+  // centre (cx, cy) and scale s; toScreen/toWorld convert between degrees and pixels.
   const proj = (lat, lon) => [lon * S.kx, -lat];
   function fit() {
     const d = S.data[S.st]; if (!d) return;
@@ -476,6 +517,7 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     if (!S.view) fit(); else draw();
   }
+  // Paint order: squares, existing data centers, city labels, selected square + heat lines, top 10 badges.
   function draw() {
     const d = S.data[S.st]; if (!d || !S.view || !S.score) return;
     const W = cv.clientWidth, H = cv.clientHeight, c = d.cols, C = S.col;
@@ -514,6 +556,7 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
       ctx.fillText(String(r + 1), x, y + 3.5); ctx.textAlign = 'start';
     });
   }
+  // Which square is under the mouse? (closest centre within 3/4 of a square; -1 if none)
   function cellAt(px, py) {
     const d = S.data[S.st]; if (!d || !S.view) return -1;
     const [lat, lon] = toWorld(px, py), c = d.cols, tl = d.dlat * 0.75, tn = d.dlon * 0.75;
@@ -526,6 +569,7 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
   }
 
   // ---------- sidebar ----------
+  // Overview (state summary + top 10) when nothing is selected; site report when a square is.
   function nearest(d, lat, lon) {
     let best = '', bd = Infinity;
     d.cities.forEach(([n, la, lo]) => { const km = Math.hypot((la - lat) * 111.32, (lo - lon) * 111.32 * Math.cos(lat * Math.PI / 180)); if (km < bd) { bd = km; best = n; } });
@@ -628,6 +672,7 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
   });
 
   // ---------- controls ----------
+  // Toolbar, legend checkboxes, zoom buttons, keyboard, drag-to-pan, wheel zoom and hover tooltip.
   function syncWeights() {
     KEYS.forEach(k => { $('w-' + k).value = S.w[k]; $('o-' + k).textContent = S.w[k]; });
     document.querySelectorAll('#presets button').forEach(b => b.setAttribute('aria-pressed', String(KEYS.every(k => PRESETS[b.dataset.p][k] === S.w[k]))));
@@ -688,6 +733,7 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
     tip.style.left = `${Math.min(px, W - tw - 24)}px`; tip.style.top = `${py}px`;
   }
 
+  // Fetch a state's data once and keep it in S.data (switching back is instant).
   async function load(st) {
     if (S.data[st]) return S.data[st];
     const r = await fetch(`data-${st.toLowerCase()}.json`);
@@ -708,6 +754,7 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
   }
 
   // ---------- pages ----------
+  // Hash routing: #map, #guide, #about show one <main> each; anything else falls back to the map.
   const VIEWS = ['map', 'guide', 'about'];
   function route() {
     const v = VIEWS.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'map';
@@ -717,6 +764,7 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
   window.addEventListener('hashchange', route);
 
   // ---------- guided tour ----------
+  // Six steps; each highlights an element by id with a ring and a card placed beside it.
   const TOUR = [
     { el: 'f-state', t: 'Choose a state', p: 'Virginia, Texas and North Carolina scored highest of the six states we screened.' },
     { el: 'f-priority', t: 'Set your priority', p: 'Each option weights the five factors differently. Heat reuse looks for sites beside buildings that would buy the heat.' },
@@ -759,6 +807,7 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
   $('guideTour').addEventListener('click', () => { location.hash = 'map'; setTimeout(startTour, 60); });
 
   // ---------- boot ----------
+  // Redraw on theme changes and resizes, expose a test handle, then load the saved (or first) state.
   const retheme = () => { readTheme(); draw(); };
   matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', retheme);
   new MutationObserver(retheme).observe(root, { attributes: true, attributeFilter: ['data-theme'] });

@@ -19,7 +19,10 @@ python3 -m http.server 8000
 
 ## Host it
 
-Any static host works. For GitHub Pages: push the repo, then in the repository settings set Pages to deploy from the `site/` folder.
+Any static host works.
+
+- **GitHub Pages (set up):** `.github/workflows/pages.yml` publishes this folder on every push to `main`. Once, on GitHub: Settings → Pages → Source: **GitHub Actions**. The site is then at `https://<username>.github.io/ThermaLite/`.
+- **Netlify Drop:** drag this `site` folder onto https://app.netlify.com/drop for an instant link.
 
 ## Light and dark mode
 

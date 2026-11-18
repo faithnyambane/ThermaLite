@@ -12,6 +12,9 @@ a fat margin is necessary (not sufficient) for viable pairings.
 Prices (EIA, downloaded to data/raw/eia/):
   electricity: Electric Power Monthly Table 5.6.B, commercial, Jan-Aug 2026 YTD
   natural gas: Natural Gas Prices, commercial, annual 2025 ($/Mcf)
+
+Pipeline stage 1 (prices) and stage 6 (the 50-state screen that chose the six
+states we ran in full; Virginia, Texas and North Carolina came out on top).
 """
 from __future__ import annotations
 

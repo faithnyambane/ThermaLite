@@ -1,4 +1,12 @@
-"""Pack siting results into compact, columnar JSON files for the web UI."""
+"""Pack siting results into compact, columnar JSON files for the web UI.
+
+Pipeline stage 7 (website). Input: out/siting/<st>.json from siting.build().
+Output: site/data-<st>.json, which site/index.html fetches and scores in the browser.
+
+Why columnar: instead of 100,000 objects like {"lat":..,"lon":..}, each field is one
+list (cols.lat[i], cols.heat[i], ...). Same data, far smaller file, faster to load.
+Row i in every column is the same grid square.
+"""
 from __future__ import annotations
 
 import csv
@@ -41,8 +49,10 @@ def pack(state: str, siting_json: Path, sources_csv: Path, out: Path) -> dict:
     d = json.loads(siting_json.read_text())
     cells = d["cells"]
     sink_ids = list(d["sinks"])
-    sink_pos = {sid: i for i, sid in enumerate(sink_ids)}
+    sink_pos = {sid: i for i, sid in enumerate(sink_ids)}  # buyer id -> index in "sinks"
     cols = {k: [] for k in ("lat", "lon", "heat", "co2t", "bws", "cdd", "sub", "flood", "prot", "water")}
+    # alloc[cell index] = [[buyer index, MWh/yr, pipe km, t CO2], ...], only for
+    # squares that sell heat (most squares have no buyer nearby).
     alloc = {}
     for i, c in enumerate(cells):
         for k in cols:

@@ -1,4 +1,9 @@
-"""Heat sources, heat sinks, and CSV loading."""
+"""Heat sources, heat sinks, and CSV loading.
+
+Shared by every stage. Vocabulary used throughout the code:
+  Source = a data center (gives off heat)
+  Sink   = a heat user / buyer (hospital, greenhouse, pool, apartment block)
+"""
 from __future__ import annotations
 
 import csv

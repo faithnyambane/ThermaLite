@@ -1,4 +1,7 @@
-"""Standalone HTML page for the sensitivity analysis (inline SVG, no libraries)."""
+"""Standalone HTML page for the sensitivity analysis (inline SVG, no libraries).
+
+Output of `thermalite sensitivity` (original matching tool).
+"""
 from __future__ import annotations
 
 import json

@@ -1,4 +1,9 @@
-"""Score every source-sink pair on distance, temperature lift and seasonality."""
+"""Score every source-sink pair on distance, temperature lift and seasonality.
+
+Pipeline stage 3 (economics). score() is the heart of the model: the original
+matching tool calls it for existing data centers, and siting.allocate() calls it
+for an imagined new data center in every grid square.
+"""
 from __future__ import annotations
 
 import math
@@ -37,6 +42,10 @@ def _crf(r: float, n: int) -> float:
 
 
 def score(source: Source, sink: Sink, a: Assumptions = DEFAULT) -> Match:
+    """Is piping heat from `source` to `sink` worth it? Steps: route length ->
+    temperature lift -> heat pump COP -> seasonal heat used -> $ value vs
+    annualized pipe + heat pump cost. Infeasible pairs keep a plain reason."""
+    # Pipes can't run in straight lines; route_factor (1.3) pads for streets.
     route_km = haversine_km(source.lat, source.lon, sink.lat, sink.lon) * a.route_factor
     needs_hp = physics.needs_heat_pump(source.temp_c, sink.supply_temp_c, a)
     lift = physics.temperature_lift_k(source.temp_c, sink.supply_temp_c, a) if needs_hp else 0.0
@@ -45,6 +54,7 @@ def score(source: Source, sink: Sink, a: Assumptions = DEFAULT) -> Match:
         return Match(source, sink, route_km, lift, math.nan, 0, 0, 0, 0, 0, 0, 0,
                      0, 0, 0, 0, False, reason)
 
+    # Check 1: temperature. Steam systems need more than heat pumps can make.
     if needs_hp and sink.supply_temp_c + a.approach_k > a.max_hp_output_c:
         return infeasible(f"sink needs {sink.supply_temp_c:.0f} C; heat pumps top out near "
                           f"{a.max_hp_output_c:.0f} C (steam system?)")
@@ -52,22 +62,27 @@ def score(source: Source, sink: Sink, a: Assumptions = DEFAULT) -> Match:
     if cop <= 1.0:
         return infeasible(f"lift of {lift:.0f} K too large (COP {cop:.2f})")
 
+    # Check 2: season. Constant supply meets winter-heavy demand; summer surplus is wasted.
     available = physics.delivered_from_source(source.annual_heat_mwh, cop)
     available *= max(0.0, 1 - a.heat_loss_per_km * route_km)
     profile = seasonal.profile_for(sink.type, sink.profile, sink.hdd_shape)
     used, peak_mw = seasonal.utilized(available, sink.annual_heat_mwh, profile)
 
+    # Check 3: money. Value = gas the buyer no longer burns - heat pump electricity
+    # (+ any incentive per MWh, for policy scenarios).
     electricity = physics.electricity_for(used, cop)
     gas = used / a.boiler_efficiency
     co2 = gas * a.gas_co2_t_per_mwh - electricity * a.grid_co2_t_per_mwh
     value = (gas * a.gas_price_per_mwh - electricity * a.electricity_price_per_mwh
              + used * a.heat_incentive_per_mwh)
 
+    # Cost = heat pump + pipe capital, spread into equal yearly payments (6%, 25 yrs).
     crf = _crf(a.discount_rate, a.lifetime_years)
     hp_annual = a.hp_capex_per_mw * peak_mw * crf if needs_hp else 0.0
     pipe_annual_per_km = (a.pipe_cost_base_per_m + a.pipe_cost_per_m_per_mw * peak_mw) * 1000 * crf
     cost = hp_annual + pipe_annual_per_km * route_km
     net = value - cost
+    # Longest pipe this pair could afford: used in the "why not" reason.
     breakeven = max(0.0, (value - hp_annual) / pipe_annual_per_km)
 
     if used <= 0:

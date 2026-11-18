@@ -1,4 +1,9 @@
-"""Heat pump and heat-flow physics."""
+"""Heat pump and heat-flow physics.
+
+Pipeline stage 3 (physics). Pure functions, no I/O; matcher.score() calls them.
+Data center heat is ~30 C but buildings want 40-80 C, so a heat pump "lifts" it.
+The bigger the lift, the more electricity each MWh of heat costs (lower COP).
+"""
 from __future__ import annotations
 
 import math

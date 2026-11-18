@@ -1,4 +1,7 @@
-"""Write results: ranked CSV, summary text, and a standalone Leaflet map."""
+"""Write results: ranked CSV, summary text, and a standalone Leaflet map.
+
+Output of the original matching tool (`thermalite match`), not the siting website.
+"""
 from __future__ import annotations
 
 import csv

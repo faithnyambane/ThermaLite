@@ -3,18 +3,24 @@
 Neighbouring grid cells often sell heat to the same building, so counting
 viable cells double-counts. Instead, greedily pick up to `k` sites with the
 most heat that share no heat buyer with an already-picked site, and sum them.
+
+Pipeline stage 6 (rank states). Input: out/siting/<st>.json from siting.build().
+This is how Virginia > Texas > North Carolina > Oregon > Washington > Pennsylvania
+was decided.
 """
 from __future__ import annotations
 
 import json
 from pathlib import Path
 
+# One "home's worth" of heat, MWh/yr: Odense delivers 215,000 MWh to ~12,000 homes.
 HOME_MWH = 215_000 / 12_000  # Odense ratio, as elsewhere
 
 
 def summarize(siting_json: Path, k: int = 10) -> dict:
     d = json.loads(siting_json.read_text())
     viable = sorted((c for c in d["cells"] if c["heat"] > 0), key=lambda c: -c["heat"])
+    # Biggest heat sellers first; skip a site if any of its buyers is taken.
     used, picked = set(), []
     for c in viable:
         buyers = {a["sink"] for a in c["alloc"]}

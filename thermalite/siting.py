@@ -18,6 +18,12 @@ Factors (raw values per cell):
 
 Earth Engine computes the raster layers on the grid in one sampleRectangle
 call per state; Python does substations and heat allocation.
+
+Pipeline stages 4 and 5. Reading order:
+  ee_layers()   stage 4: grid + Earth Engine layers for a state
+  substations() / _Buckets   distance to grid, fast nearby lookups
+  allocate()    stage 5: who buys one data center's heat
+  build()       runs it all, one row per grid square -> out/siting/<st>.json
 """
 from __future__ import annotations
 
@@ -30,6 +36,9 @@ from .assumptions import COOLING_DEFAULTS, DEFAULT, Assumptions
 from .data import Sink, Source, haversine_km, load_sinks
 from .matcher import score
 
+# The imagined data center placed in every square: 50 MW of IT load (a typical
+# new hyperscale building), on a 2 km grid (fine enough to tell sites apart,
+# coarse enough to run a whole state in one Earth Engine request).
 CELL_KM = 2.0
 REF_IT_MW = 50.0
 SEARCH_KM = 3.0  # straight-line radius for heat users
@@ -46,18 +55,28 @@ def ee_layers(state: str, project: str = "thermalite") -> dict:
     """Grid + raster factors for a state, as row-major lists."""
     from .climate import init
     ee = init(project)
+    # 1) State outline and its bounding box (west, south, east, north).
     st = ee.FeatureCollection("TIGER/2018/States").filter(ee.Filter.eq("STUSPS", state))
     geom = st.geometry()
     (w, s), _, (e, n), _ = geom.bounds().coordinates().get(0).getInfo()[:4]
+    # 2) A grid of ~2 km squares. A degree of longitude shrinks with latitude, so
+    #    the longitude step is widened by 1/cos(latitude) to keep squares square.
     lat_mid = (s + n) / 2
     dlat = CELL_KM / 111.32
     dlon = CELL_KM / (111.32 * math.cos(math.radians(lat_mid)))
     proj = ee.Projection("EPSG:4326", [dlon, 0, w, 0, -dlat, n])
 
+    # Share (0-1) of each grid square covered by a yes/no layer: sample it at its
+    # native resolution, then average those pixels up to the 2 km grid.
     def frac(img, native_m):
         return (img.unmask(0).reproject(crs="EPSG:4326", scale=native_m)
                 .reduceResolution(ee.Reducer.mean(), maxPixels=4096).reproject(proj))
 
+    # 3) One image band per factor, all on the same grid:
+    #    inside   1 if the square is in the state
+    #    bws      water stress 0-5 (WRI Aqueduct)
+    #    cdd      cooling degree days/yr: sum of max(0, T - 18 C) over 10 years / 10
+    #    excl_*   share of the square that is flood zone / protected / water
     inside = ee.Image(1).clip(geom).unmask(0).reproject(proj).rename("inside")
     aq = (ee.FeatureCollection("WRI/Aqueduct_Water_Risk/V4/baseline_annual")
           .filterBounds(geom).filter(ee.Filter.gte("bws_score", 0)))
@@ -72,6 +91,7 @@ def ee_layers(state: str, project: str = "thermalite") -> dict:
     lc = ee.ImageCollection("MODIS/061/MCD12Q1").filterDate("2023-01-01", "2024-01-01").first().select("LC_Type1")
     water = frac(lc.eq(11).Or(lc.eq(17)).selfMask(), 500).rename("excl_water")
 
+    # 4) Stack the bands and download them as plain lists of rows.
     stack = ee.Image.cat([inside, bws, cdd, flood, prot, water]).toFloat().reproject(proj)
     rows = int(math.ceil((n - s) / dlat))
     cols = int(math.ceil((e - w) / dlon))
@@ -159,13 +179,21 @@ class _Buckets:
 def allocate(src: Source, sinks: list[Sink], a: Assumptions) -> list[dict]:
     """Greedy multi-building allocation: best net value per MWh first, each
     building getting what it can use until the data center's heat runs out.
-    Each building gets its own pipe from the data center."""
-    remaining = src.annual_heat_mwh
+    Each building gets its own pipe from the data center.
+
+    Returns the "heat delivery plan" shown in each site report on the website:
+    one dict per buyer with MWh/yr delivered, pipe km, net $/yr and t CO2 avoided."""
+    remaining = src.annual_heat_mwh  # data center heat not yet promised to anyone
+    # Pass 1: price every nearby buyer as if it had the data center to itself,
+    # and keep the ones that make money, ranked by profit per MWh.
     candidates = []
     for k in sinks:
         m = score(src, k, a)
         if m.feasible and m.heat_used_mwh > 0:
             candidates.append((m.net_annual_usd / m.heat_used_mwh, k))
+    # Pass 2: best buyer first. Re-price each buyer with only the heat that is
+    # LEFT (shrink the recoverable fraction), so later buyers can't be promised
+    # heat that was already given away.
     out = []
     for _, k in sorted(candidates, key=lambda t: -t[0]):
         if remaining <= 0:
@@ -174,6 +202,8 @@ def allocate(src: Source, sinks: list[Sink], a: Assumptions) -> list[dict]:
         m = score(replace(src, recoverable_fraction=src.recoverable_fraction * frac), k, a)
         if not m.feasible or m.heat_used_mwh <= 0:
             continue
+        # Delivered heat = data center heat + heat pump electricity, so only the
+        # data center's part comes out of what remains.
         source_heat_used = m.heat_used_mwh - m.electricity_mwh
         remaining -= source_heat_used
         out.append({"sink": k.id, "mwh": round(m.heat_used_mwh), "km": round(m.route_km, 2),
@@ -185,16 +215,21 @@ def allocate(src: Source, sinks: list[Sink], a: Assumptions) -> list[dict]:
 
 def build(state: str, sinks_csv: Path, substations_json: Path, a: Assumptions,
           project: str = "thermalite", cooling: str = "chilled_water") -> dict:
+    """Run stages 4 and 5 for one state: every grid square gets its raw factor
+    values and its heat delivery plan. The website turns these into scores."""
     from .climate import apply_climate
 
     st = state.upper()
     lay = ee_layers(st, project)
     b = lay["bands"]
+    # Heat buyers, with demand adjusted to each one's local climate (stage 2).
     sinks = apply_climate(load_sinks(sinks_csv), project=project)
+    # Spatial indexes so "who is within 3 km?" doesn't scan every buyer in the state.
     sink_idx = _Buckets(sinks, key=lambda k: (k.lat, k.lon), size_deg=0.03)
     subs = _Buckets(substations(substations_json), key=lambda p: p, size_deg=0.05)
     temp, frac = COOLING_DEFAULTS[cooling]
 
+    # Walk every square of the grid (row i = north to south, column j = west to east).
     cells, used_sinks = [], {}
     nrows, ncols = len(b["inside"]), len(b["inside"][0])
     for i in range(nrows):
@@ -203,12 +238,16 @@ def build(state: str, sinks_csv: Path, substations_json: Path, a: Assumptions,
                 continue
             lat = lay["north"] - (i + 0.5) * lay["dlat"]
             lon = lay["west"] + (j + 0.5) * lay["dlon"]
+            # Imagine a new 50 MW data center at the centre of this square ...
             src = Source(f"cell{i}_{j}", "candidate", lat, lon, REF_IT_MW, cooling, temp, frac)
             near = [k for k in sink_idx.near(lat, lon, 2) if haversine_km(lat, lon, k.lat, k.lon) <= SEARCH_KM]
+            # ... and plan who would buy its heat (empty list = no buyer nearby).
             alloc = allocate(src, near, a) if near else []
             for al in alloc:
                 used_sinks[al["sink"]] = True
             bws, cdd = b["bws"][i][j], b["cdd"][i][j]
+            # One output row per square. Missing water/climate data stays None; the
+            # website then gives that factor a neutral 0.5.
             cells.append({
                 "lat": round(lat, 4), "lon": round(lon, 4),
                 "heat": sum(al["mwh"] for al in alloc),
@@ -221,6 +260,7 @@ def build(state: str, sinks_csv: Path, substations_json: Path, a: Assumptions,
                 "water": round(max(b["excl_water"][i][j], 0), 2),
                 "alloc": alloc,
             })
+    # Keep details only for buyers that appear in some plan (keeps the file small).
     sink_info = {k.id: {"name": k.name, "type": k.type, "lat": k.lat, "lon": k.lon,
                         "demand": round(k.annual_heat_mwh)} for k in sinks if k.id in used_sinks}
     return {

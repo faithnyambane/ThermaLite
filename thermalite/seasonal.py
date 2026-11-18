@@ -6,6 +6,9 @@ Each profile is 12 monthly fractions of annual demand (normalized to sum to 1).
 The built-in space-heating shape is ILLUSTRATIVE for a US Northeast climate.
 Run with --climate to replace it with real heating degree days per sink
 (ERA5-Land via Earth Engine; see thermalite/climate.py).
+
+Pipeline stage 3 (physics): turns annual demand into the heat a buyer can
+actually take each month from a constant data center supply.
 """
 from __future__ import annotations
 
@@ -67,6 +70,8 @@ def utilized(supply_annual: float, demand_annual: float, profile: list[float]) -
     """Heat actually used when a flat supply meets a seasonal demand.
 
     Returns (annual heat used, peak monthly-average power in MW), with energy in MWh."""
+    # Month by month: the buyer takes the smaller of what the data center makes
+    # that month and what the buyer needs that month.
     used = 0.0
     peak_mw = 0.0
     for days, frac in zip(DAYS_IN_MONTH, profile):

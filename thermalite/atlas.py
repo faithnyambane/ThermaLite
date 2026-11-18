@@ -6,6 +6,9 @@ here is the footprint layer published with PNNL's web map
 (github.com/IMMM-SFA/datacenter-atlas). It carries name, operator, state and
 footprint square footage, but NOT power or cooling type, so IT load is an
 estimate (see DC_WATTS_PER_SQFT in assumptions.py).
+
+Pipeline stage 1 (ingest). `thermalite sources --state VA` -> data/va/sources.csv.
+The siting tool uses these only to draw existing data centers on the map.
 """
 from __future__ import annotations
 
