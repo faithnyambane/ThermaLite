@@ -11,6 +11,8 @@ much pipe.
 
 It covers the three states that benefit most: **Virginia, Texas and North Carolina**.
 
+**Team:** Faith Nyambane, Jude Shorbaji, Deena Kojimen, Jesse Osei-Asante · Rutgers University, Electrical and Computer Engineering · AI-Impact-Athon, NSBE Region 1 Fall Regional
+
 The model follows the Odense precedent: Meta's Tietgenbyen data center supplies the
 city's district heating through heat pumps, about 215,000 MWh a year for more than
 12,000 homes (Ramboll).
