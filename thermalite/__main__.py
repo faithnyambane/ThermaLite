@@ -133,6 +133,24 @@ def cmd_greenhouses(args) -> None:
         print(f"  {k}: {v}")
 
 
+def cmd_site(args) -> None:
+    import json
+    from . import siting
+    args.eia_prices = args.eia_prices or args.state
+    args.gas_price = args.elec_price = None
+    a = _assumptions(args)
+    st = args.state.lower()
+    res = siting.build(args.state, Path(f"data/{st}/sinks.csv"), Path(f"data/raw/osm_{st}_substations.json"),
+                       a, project=args.ee_project, cooling=args.cooling)
+    out = Path(args.out or f"out/siting/{st}.json")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(res, separators=(",", ":")))
+    cells = res["cells"]
+    with_heat = [c for c in cells if c["heat"] > 0]
+    print(f"{len(cells)} cells, {len(with_heat)} with viable heat reuse; "
+          f"max {max((c['heat'] for c in cells), default=0):,} MWh/yr -> {out}")
+
+
 def main(argv=None) -> None:
     argv = list(sys.argv[1:] if argv is None else argv)
     if not argv or argv[0].startswith("-"):
@@ -154,6 +172,13 @@ def main(argv=None) -> None:
     sp.add_argument("--out", default=None)
     sp.add_argument("--ee-project", default="thermalite")
     sp.set_defaults(fn=cmd_greenhouses)
+    sp = sub.add_parser("site", help="score candidate data center sites on a grid (Earth Engine)")
+    sp.add_argument("--state", required=True)
+    sp.add_argument("--cooling", default="chilled_water", choices=["chilled_water", "liquid", "air"])
+    sp.add_argument("--out", default=None)
+    sp.add_argument("--ee-project", default="thermalite")
+    sp.add_argument("--eia-prices", default=None)
+    sp.set_defaults(fn=cmd_site)
     args = p.parse_args(argv)
     args.fn(args)
 

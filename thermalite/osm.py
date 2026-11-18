@@ -91,6 +91,14 @@ def fetch(state: str, cache: Path, parts=PARTS) -> list[dict]:
 # Share of a hospital campus polygon that is building footprint, used only when
 # OSM has no hospital buildings mapped inside it.  [PLACEHOLDER]
 HOSPITAL_SITE_COVERAGE = 0.25
+# Indoor pools use ~200-800 MWh/yr (research notes: direct_low_temperature_uses.md);
+# cap to stop a large footprint from implying an implausible demand.
+POOL_MAX_MWH = 1500
+# Upper bound for one hospital: a ~2M sq ft academic medical centre at ~250 kWh/m2
+# is roughly 45,000 MWh/yr. Rural campuses with no mapped buildings otherwise
+# come out at 100,000-300,000 MWh/yr.  [PLACEHOLDER: replace with CBECS-based sizing]
+HOSPITAL_MAX_MWH = 60000
+CAPS = {"pool": POOL_MAX_MWH, "hospital": HOSPITAL_MAX_MWH}
 
 
 def classify(tags: dict) -> str | None:
@@ -100,8 +108,11 @@ def classify(tags: dict) -> str | None:
         return "greenhouse"
     if tags.get("sport") == "swimming" or tags.get("leisure") == "swimming_pool":
         # Private (residential/hotel) and outdoor (summer-only) pools are not
-        # year-round community heat users.
+        # year-round community heat users. Most OSM swim "sports centres" are
+        # outdoor swim clubs, so require evidence of a building or indoor pool.
         if tags.get("access") in ("private", "customers") or tags.get("indoor") == "no" or tags.get("covered") == "no":
+            return None
+        if tags.get("indoor") != "yes" and not tags.get("building"):
             return None
         return "pool"
     if tags.get("building") == "apartments":
@@ -147,6 +158,8 @@ def cluster(feats: list[dict], radius_m: float) -> list[list[dict]]:
     """Greedy single-link clustering: nearby greenhouse houses form one operation."""
     from .data import haversine_km
 
+    if radius_m <= 0:  # no grouping: avoid the O(n^2) scan (21k+ apartment buildings in WA)
+        return [[f] for f in feats]
     clusters: list[list[dict]] = []
     for f in sorted(feats, key=lambda f: -f["area_m2"]):
         for c in clusters:
@@ -196,7 +209,7 @@ def to_sinks_csv(state: str, out: Path, cache: Path | None = None) -> dict:
                 "id": f"{t[:2].upper()}{lead['osm_id']}",
                 "name": name or f"Unnamed {t} (OSM {lead['osm_id']})",
                 "type": t, "lat": round(lead["lat"], 6), "lon": round(lead["lon"], 6),
-                "annual_heat_mwh": round(footprint * floors * kwh_m2 / 1000),
+                "annual_heat_mwh": round(min(footprint * floors * kwh_m2 / 1000, CAPS.get(t, float("inf")))),
                 "supply_temp_c": temp, "profile": "",
                 "footprint_m2": round(footprint), "floors": floors,
                 "osm_features": len(g), "demand_estimated": "yes",
