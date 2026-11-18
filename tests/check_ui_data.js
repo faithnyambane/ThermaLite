@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const dir = process.argv[2] || 'out/siting/ui';
 const html = fs.readFileSync(path.join(dir, 'index.html'), 'utf8');
-const states = [...html.matchAll(/\['([A-Z]{2})', '[^']+'\]/g)].map(m => m[1]);
+const states = [...html.matchAll(/\['([A-Z]{2})', '[^']+'(?:, '[^']+')?\]/g)].map(m => m[1]);
 let failures = 0;
 const check = (ok, msg) => { if (!ok) { failures++; console.log('  FAIL', msg); } };
 

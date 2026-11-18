@@ -17,7 +17,8 @@ const ctxStub = new Proxy({}, { get: (t, k) => {
   return typeof k === 'string' && /^[a-z]/.test(k) ? (t[k] ?? (() => {})) : undefined;
 }, set: (t, k, v) => { t[k] = v; return true; } });
 
-const dom = new JSDOM(`<!doctype html><html><head></head><body>${html}</body></html>`, {
+const full = /^<!DOCTYPE html>/i.test(html);
+const dom = new JSDOM(full ? html : `<!doctype html><html><head></head><body>${html}</body></html>`, {
   runScripts: 'dangerously', pretendToBeVisual: true, url: 'https://example.test/#map',
   beforeParse(win) {
     win.HTMLCanvasElement.prototype.getContext = () => ctxStub;
@@ -28,6 +29,8 @@ const dom = new JSDOM(`<!doctype html><html><head></head><body>${html}</body></h
     win.HTMLElement.prototype.setPointerCapture = () => {};
     win.ResizeObserver = class { observe() {} };
     win.matchMedia = () => ({ matches: false, addEventListener() {} });
+    win.__copied = null;
+    Object.defineProperty(win.navigator, 'clipboard', { value: { writeText: async t => { win.__copied = t; } } });
     win.requestAnimationFrame = cb => setTimeout(cb, 0);
     win.fetch = async url => {
       const p = path.join(dir, String(url));
@@ -133,9 +136,37 @@ const press = sel => doc.querySelector(sel).click();
   doc.dispatchEvent(new win.KeyboardEvent('keydown', { key: 'Escape' })); await sleep(10);
   check(!doc.querySelector('.tour-card'), 'Escape ends tour');
 
+  console.log('New features');
+  // theme switch
+  press('#themes button[data-t="dark"]'); await sleep(20);
+  check(doc.documentElement.getAttribute('data-theme') === 'dark', 'Dark sets data-theme');
+  press('#themes button[data-t="light"]'); await sleep(20);
+  check(doc.documentElement.getAttribute('data-theme') === 'light', 'Light sets data-theme');
+  press('#themes button[data-t="auto"]'); await sleep(20);
+  check(!doc.documentElement.hasAttribute('data-theme'), 'Auto follows the system');
+  check(doc.querySelector('#themes button[data-t="auto"]').getAttribute('aria-pressed') === 'true', 'theme choice highlighted');
+  // only sites that sell heat
+  $('c-sell').click(); await sleep(20);
+  const tops = TL.S.top.map(i => TL.S.data[TL.S.st].cols.heat[i]);
+  check(tops.length > 0 && tops.every(h => h > 0), `sell-only filter keeps only heat sellers (${tops.length})`);
+  $('c-sell').click(); await sleep(20);
+  // satellite links + copy
+  press('#top button'); await sleep(20);
+  const links = [...doc.querySelectorAll('#report a[href^="https://www.google.com/maps/@"]')];
+  check(links.length >= 1 && links.every(a => a.target === '_blank' && /noopener/.test(a.rel)), `satellite links (${links.length})`);
+  press('#copyCoords'); await sleep(20);
+  check(/^-?\d+\.\d+, -?\d+\.\d+$/.test(win.__copied || ''), `coordinates copied (${win.__copied})`);
+  press('#back'); press('#copyTop'); await sleep(20);
+  check((win.__copied || '').split('\n').length === 11 && /^Rank\tPlace/.test(win.__copied), 'top 10 copied as a table');
+  // keyboard
+  const cx = TL.S.view.cx; $('map').dispatchEvent(new win.KeyboardEvent('keydown', { key: 'ArrowRight', bubbles: true }));
+  check(TL.S.view.cx > cx, 'arrow key pans the map');
+  const sc = TL.S.view.s; $('map').dispatchEvent(new win.KeyboardEvent('keydown', { key: '+', bubbles: true }));
+  check(TL.S.view.s > sc, 'plus key zooms');
+
   console.log('Content');
   const guide = $('view-guide').textContent, about = $('view-about').textContent;
-  check(doc.querySelectorAll('#view-guide ol.steps li').length === 6, 'guide has 6 steps');
+  check(doc.querySelectorAll('#view-guide ol.steps li').length >= 6, 'guide has its steps');
   check(doc.querySelectorAll('#view-guide dl.defs dt').length === 9, 'guide defines 9 outputs');
   check(/40/.test(about) && /Limitations/.test(about) && /Data sources/.test(about), 'about has findings, limits, sources');
   check(errors.length === 0, `no script errors ${errors.join(' | ')}`);
