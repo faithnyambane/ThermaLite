@@ -17,8 +17,7 @@ The model follows the Odense precedent: Meta's Tietgenbyen data center supplies 
 city's district heating through heat pumps, about 215,000 MWh a year for more than
 12,000 homes (Ramboll).
 
-**Live site:** https://faithnyambane.github.io/ThermaLite/ (once GitHub Pages is on;
-see [site/README.md](site/README.md)).
+**Live site:** https://faithnyambane.github.io/ThermaLite/ 
 
 ## Results
 
