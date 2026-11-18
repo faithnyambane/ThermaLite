@@ -1,317 +1,316 @@
 <title>ThermaLite Siting</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: mission-control console. Top nav (Map / Tutorial / About); map view = flight controls | satellite map | site report.
-   Deliberately one visual world (night sky), so a single dark theme. */
+/* Layout: header (wordmark + nav) / toolbar (state, priority, weights) / workspace = map | sidebar (summary + top 10, or site report).
+   One accent family (forest green) plus amber reserved for heat flows. */
 :root {
-  color-scheme: dark;
-  --space: #070B1F; --space-2: #0C1330; --panel: #111A3D; --panel-2: #172252; --line: #26336B;
-  --ink: #EEF2FF; --ink-2: #B6C2EA; --ink-3: #8592C4;
-  --rocket: #FF8A4C; --rocket-soft: #3A2240; --aurora: #5EEAD4; --aurora-soft: #12343F; --star: #FFE08A;
-  --excl: #2A2F4F; --good: #6EE7A0; --warn: #FFC56B;
-  --t1: #1E2156; --t2: #3A2A7A; --t3: #6D2F8E; --t4: #A83C7E; --t5: #E0555E; --t6: #FF8C42; --t7: #FFD166;
-  --head: 'Fredoka', 'Nunito', 'Trebuchet MS', sans-serif;
-  --body: 'Nunito', 'Trebuchet MS', 'Helvetica Neue', sans-serif;
-  --mono: 'Space Mono', 'Courier New', monospace;
+  --bg: #F6F7F4; --surface: #FFFFFF; --surface-2: #F1F3EF; --line: #E2E6DF; --line-2: #D3D9D0;
+  --ink: #0F1A13; --ink-2: #4B574E; --ink-3: #7A857D;
+  --green: #15803D; --green-strong: #14532D; --green-soft: #EAF5EC;
+  --heat: #B45309; --heat-soft: #FDF1E3; --excl: #E6E8E4; --warn: #A15C07;
+  --r1: #EEF6EE; --r2: #D3EBD5; --r3: #ADD9B3; --r4: #7FC38A; --r5: #4FA463; --r6: #2C8045; --r7: #15582D;
+  --shadow: 0 1px 2px rgba(15, 26, 19, 0.06), 0 4px 16px rgba(15, 26, 19, 0.06);
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0C120E; --surface: #121A15; --surface-2: #18221C; --line: #223029; --line-2: #2C3B33;
+  --ink: #E6EEE8; --ink-2: #A9B7AD; --ink-3: #7C8B80;
+  --green: #4ADE80; --green-strong: #86EFAC; --green-soft: #14281C;
+  --heat: #F59E0B; --heat-soft: #2A1E0C; --excl: #1C2520; --warn: #F2B44C;
+  --r1: #15211A; --r2: #193424; --r3: #1E4A30; --r4: #24663D; --r5: #2F8A4F; --r6: #4CB86B; --r7: #8EE3A5;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 16px rgba(0,0,0,.3); color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0C120E; --surface: #121A15; --surface-2: #18221C; --line: #223029; --line-2: #2C3B33;
+  --ink: #E6EEE8; --ink-2: #A9B7AD; --ink-3: #7C8B80;
+  --green: #4ADE80; --green-strong: #86EFAC; --green-soft: #14281C;
+  --heat: #F59E0B; --heat-soft: #2A1E0C; --excl: #1C2520; --warn: #F2B44C;
+  --r1: #15211A; --r2: #193424; --r3: #1E4A30; --r4: #24663D; --r5: #2F8A4F; --r6: #4CB86B; --r7: #8EE3A5;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 16px rgba(0,0,0,.3); color-scheme: dark }
+
 html, body { height: 100%; }
-body {
-  background: var(--space); color: var(--ink); font: 15px/1.5 var(--body);
-  background-image:
-    radial-gradient(1px 1px at 12% 18%, #ffffff55 50%, transparent 51%),
-    radial-gradient(1px 1px at 63% 7%, #ffffff44 50%, transparent 51%),
-    radial-gradient(1.5px 1.5px at 82% 34%, #ffffff66 50%, transparent 51%),
-    radial-gradient(1px 1px at 33% 72%, #ffffff40 50%, transparent 51%),
-    radial-gradient(1px 1px at 91% 81%, #ffffff50 50%, transparent 51%),
-    radial-gradient(1.5px 1.5px at 7% 91%, #ffffff40 50%, transparent 51%),
-    radial-gradient(1200px 600px at 85% -10%, #1B2A6B55, transparent 60%),
-    radial-gradient(900px 500px at -10% 110%, #3A1F5C55, transparent 60%);
-  background-attachment: fixed;
-}
-body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--space); }
-a { color: var(--aurora); }
-button { font-family: var(--body); }
-button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid var(--star); outline-offset: 2px; }
+body { background: var(--bg); color: var(--ink); font: 14px/1.5 var(--font); -webkit-font-smoothing: antialiased; font-feature-settings: 'cv11', 'ss01'; }
+button, input { font: inherit; color: inherit; }
+a { color: var(--green); text-underline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.num { font-variant-numeric: tabular-nums; }
 
-.app { display: grid; grid-template-rows: auto 1fr; height: 100%; box-sizing: border-box;
-  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 12px; gap: 12px; }
+.app { display: grid; grid-template-rows: auto 1fr; height: 100%; }
+header.site { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--surface); border-bottom: 1px solid var(--line); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 21; background: var(--surface); }
+.wrap { padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.headrow { display: flex; align-items: center; gap: 24px; height: 56px; }
+.wordmark { font-weight: 700; font-size: 17px; letter-spacing: -0.02em; text-decoration: none; color: var(--ink); }
+.wordmark span { color: var(--green); }
+.wordmark small { font-weight: 500; font-size: 13px; color: var(--ink-3); letter-spacing: 0; margin-left: 8px; }
+nav.pages { display: flex; gap: 4px; margin-left: auto; }
+nav.pages a { color: var(--ink-2); text-decoration: none; font-weight: 500; padding: 6px 12px; border-radius: 6px; }
+nav.pages a:hover { color: var(--ink); background: var(--surface-2); }
+nav.pages a[aria-current="page"] { color: var(--ink); background: var(--surface-2); }
 
-/* ---------- nav ---------- */
-nav.top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; }
-.brand { display: flex; align-items: center; gap: 10px; margin-right: auto; }
-.brand svg { flex: none; }
-.brand b { font: 700 22px/1 var(--head); letter-spacing: 0.01em; }
-.brand b span { color: var(--rocket); }
-.brand small { display: block; font: 400 11px var(--mono); color: var(--ink-3); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 3px; }
-.tabs { display: flex; gap: 4px; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 4px; }
-.tabs a { font: 600 14px var(--head); color: var(--ink-2); text-decoration: none; padding: 7px 16px; border-radius: 999px; }
-.tabs a[aria-current="page"] { background: var(--rocket); color: #1A0E08; }
-.tabs a:hover:not([aria-current="page"]) { color: var(--ink); background: var(--panel-2); }
-
-.view { min-height: 0; }
 .view[hidden] { display: none !important; }
+#view-map { display: grid; grid-template-rows: auto auto 1fr; min-height: 0; }
 
-/* ---------- map view ---------- */
-.console { display: grid; grid-template-columns: 300px minmax(0, 1fr) 360px; gap: 12px; height: 100%; min-height: 0; }
-.panel { background: linear-gradient(180deg, var(--panel), var(--space-2)); border: 1px solid var(--line); border-radius: 18px; padding: 16px; overflow: auto; min-height: 0; display: flex; flex-direction: column; gap: 18px; }
-.panel h2 { font: 600 13px var(--head); letter-spacing: 0.1em; text-transform: uppercase; color: var(--aurora); margin: 0 0 4px; display: flex; align-items: center; gap: 8px; }
-.panel h2::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--aurora); box-shadow: 0 0 8px var(--aurora); }
-.explain { font-size: 13px; color: var(--ink-3); margin: 0 0 10px; }
-.targets { display: flex; flex-wrap: wrap; gap: 6px; }
-.targets button { border: 1px solid var(--line); background: var(--space-2); color: var(--ink-2); border-radius: 12px; padding: 7px 12px; font: 600 14px var(--head); cursor: pointer; }
-.targets button[aria-pressed="true"] { border-color: var(--rocket); color: var(--ink); background: var(--rocket-soft); }
-.verdict { border-radius: 14px; padding: 14px; background: var(--rocket-soft); border: 1px solid #5A2E44; }
-.verdict .big { font: 700 30px/1 var(--head); color: var(--rocket); }
-.verdict p { margin: 6px 0 0; font-size: 13px; color: var(--ink-2); }
-.plist { display: flex; flex-direction: column; gap: 6px; }
-.plist button { text-align: left; display: flex; flex-direction: column; gap: 2px; font-size: 13px; color: var(--ink); background: var(--space-2); border: 1px solid var(--line); border-radius: 12px; padding: 9px 12px; cursor: pointer; }
-.plist button b { font: 600 15px var(--head); }
-.plist button span { color: var(--ink-3); }
-.plist button:hover { border-color: var(--ink-3); }
-.plist button[aria-pressed="true"] { border-color: var(--rocket); background: var(--rocket-soft); }
-.plist button[aria-pressed="true"] b { color: var(--rocket); }
-.slider { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; margin-bottom: 12px; }
-.slider label { font-weight: 700; font-size: 14px; }
-.slider output { font: 700 13px var(--mono); color: var(--star); }
-.slider small { grid-column: 1 / -1; color: var(--ink-3); font-size: 12px; }
-.slider input { grid-column: 1 / -1; width: 100%; accent-color: var(--rocket); }
-.check { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; color: var(--ink-2); margin-bottom: 6px; }
-.check input { accent-color: var(--rocket); margin-top: 3px; }
+/* toolbar */
+.toolbar { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px 28px; padding-block: 14px; border-bottom: 1px solid var(--line); background: var(--surface); }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field > span { font-size: 12px; font-weight: 600; color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.04em; }
+.seg { display: inline-flex; background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 2px; flex-wrap: wrap; }
+.seg button { border: 0; background: none; padding: 6px 12px; border-radius: 6px; font-weight: 500; color: var(--ink-2); cursor: pointer; white-space: nowrap; }
+.seg button:hover { color: var(--ink); }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); font-weight: 600; }
+.btn { border: 1px solid var(--line-2); background: var(--surface); border-radius: 8px; padding: 7px 12px; font-weight: 500; cursor: pointer; }
+.btn:hover { border-color: var(--ink-3); }
+.btn[aria-expanded="true"] { background: var(--green-soft); border-color: var(--green); color: var(--green-strong); }
+.btn.primary { background: var(--green); border-color: var(--green); color: #fff; }
+:root[data-theme="dark"] .btn.primary { color: #0C120E; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn.primary { color: #0C120E; } }
+.btn.link { border: 0; background: none; color: var(--green); padding: 7px 4px; }
+.toolbar .spacer { margin-left: auto; }
+.caption { padding-block: 8px; color: var(--ink-2); font-size: 13px; border-bottom: 1px solid var(--line); background: var(--surface); display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; }
+.caption b { color: var(--ink); font-weight: 600; }
+.weights { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px 24px; padding-block: 14px; border-bottom: 1px solid var(--line); background: var(--surface); }
+.weights[hidden] { display: none; }
+.w { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; }
+.w label { font-weight: 600; font-size: 13px; }
+.w output { font-weight: 600; font-size: 13px; color: var(--green); font-variant-numeric: tabular-nums; }
+.w input { grid-column: 1 / -1; width: 100%; accent-color: var(--green); }
+.w small { grid-column: 1 / -1; color: var(--ink-3); font-size: 12px; line-height: 1.35; }
 
-.mapwrap { position: relative; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; min-height: 360px; touch-action: none; background: radial-gradient(800px 500px at 50% 40%, #0F1A45, var(--space) 70%); }
-.mapwrap::after { content: ""; position: absolute; inset: 10px; pointer-events: none; border-radius: 12px;
-  background: linear-gradient(var(--aurora), var(--aurora)) top left / 22px 2px no-repeat, linear-gradient(var(--aurora), var(--aurora)) top left / 2px 22px no-repeat,
-    linear-gradient(var(--aurora), var(--aurora)) top right / 22px 2px no-repeat, linear-gradient(var(--aurora), var(--aurora)) top right / 2px 22px no-repeat,
-    linear-gradient(var(--aurora), var(--aurora)) bottom left / 22px 2px no-repeat, linear-gradient(var(--aurora), var(--aurora)) bottom left / 2px 22px no-repeat,
-    linear-gradient(var(--aurora), var(--aurora)) bottom right / 22px 2px no-repeat, linear-gradient(var(--aurora), var(--aurora)) bottom right / 2px 22px no-repeat; opacity: 0.6; }
+/* workspace */
+.workspace { display: grid; grid-template-columns: minmax(0, 1fr) 380px; min-height: 0; }
+.mapwrap { position: relative; min-height: 420px; background: var(--bg); touch-action: none; overflow: hidden; }
 canvas { display: block; width: 100%; height: 100%; cursor: crosshair; }
 canvas.dragging { cursor: grabbing; }
-.hud { position: absolute; left: 14px; top: 12px; font: 400 12px var(--mono); color: var(--aurora); background: #070B1FCC; border: 1px solid var(--line); border-radius: 10px; padding: 6px 10px; pointer-events: none; max-width: calc(100% - 80px); }
-.hud b { color: var(--ink); font-weight: 700; }
-.zoom { position: absolute; top: 12px; right: 12px; display: flex; flex-direction: column; gap: 6px; z-index: 2; }
-.zoom button { width: 36px; height: 36px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); font: 700 17px var(--head); cursor: pointer; }
-.zoom button:hover { border-color: var(--aurora); }
-.legend { position: absolute; left: 12px; bottom: 12px; background: #070B1FE6; border: 1px solid var(--line); border-radius: 12px; padding: 9px 12px; font-size: 12px; display: flex; flex-direction: column; gap: 6px; max-width: calc(100% - 24px); color: var(--ink-2); z-index: 2; }
-.legend .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-.ramp { display: flex; height: 10px; border-radius: 5px; overflow: hidden; width: 160px; max-width: 100%; }
+.mapctl { position: absolute; top: 14px; right: 14px; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); overflow: hidden; }
+.mapctl button { width: 34px; height: 34px; border: 0; background: none; cursor: pointer; font-size: 16px; color: var(--ink-2); }
+.mapctl button + button { border-top: 1px solid var(--line); }
+.mapctl button:hover { background: var(--surface-2); color: var(--ink); }
+.legend { position: absolute; left: 14px; bottom: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); padding: 10px 12px; font-size: 12px; color: var(--ink-2); display: flex; flex-direction: column; gap: 8px; max-width: calc(100% - 28px); }
+.legend .lrow { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.ramp { display: flex; width: 150px; height: 8px; border-radius: 4px; overflow: hidden; }
 .ramp i { flex: 1; }
-.key { display: inline-flex; gap: 5px; align-items: center; }
-.sw { width: 10px; height: 10px; display: inline-block; border-radius: 2px; }
-.loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--ink-2); font: 600 16px var(--head); }
+.key { display: inline-flex; align-items: center; gap: 5px; }
+.sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.legend label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+.legend input { accent-color: var(--green); margin: 0; }
+.tip { position: absolute; pointer-events: none; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); padding: 8px 10px; font-size: 12px; color: var(--ink-2); white-space: nowrap; transform: translate(12px, 12px); }
+.tip b { color: var(--ink); }
+.loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--ink-3); font-weight: 500; }
 
-ol.top { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
-ol.top button { width: 100%; display: grid; grid-template-columns: 30px 1fr auto; gap: 8px; align-items: center; text-align: left; background: none; border: 1px solid transparent; border-radius: 12px; padding: 7px 8px; color: var(--ink); font-size: 13px; cursor: pointer; }
-ol.top button:hover, ol.top button[aria-current="true"] { border-color: var(--line); background: var(--panel-2); }
-.rank { font: 700 13px var(--mono); color: #1A0E08; background: var(--star); border-radius: 50%; width: 24px; height: 24px; display: grid; place-items: center; }
-.score { font: 700 14px var(--mono); color: var(--star); }
-.chip { display: inline-block; font-size: 11px; font-weight: 800; padding: 1px 8px; border-radius: 999px; background: var(--aurora-soft); color: var(--aurora); margin-left: 4px; }
-.place small { color: var(--ink-3); display: block; font: 400 11px var(--mono); }
-.reportcard { display: flex; flex-direction: column; gap: 14px; }
-.reporthead { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.reporthead b { font: 700 18px var(--head); }
-.reporthead .big { font: 700 34px/1 var(--mono); color: var(--star); }
-.coords { font: 400 12px var(--mono); color: var(--ink-3); }
-.bars { display: flex; flex-direction: column; gap: 10px; }
-.bar { display: grid; grid-template-columns: 96px 1fr 40px; gap: 8px; align-items: center; font-size: 13px; }
-.bar .track { height: 9px; background: var(--space); border-radius: 5px; overflow: hidden; border: 1px solid var(--line); }
-.bar .fill { display: block; height: 100%; background: linear-gradient(90deg, var(--t4), var(--t7)); }
-.bar .v { text-align: right; font: 700 12px var(--mono); color: var(--ink-2); }
-.raw { font-size: 12px; color: var(--ink-3); margin: 2px 0 0 104px; }
-.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-.stats div { background: var(--space-2); border: 1px solid var(--line); border-radius: 12px; padding: 9px; }
-.stats b { font: 700 17px var(--mono); color: var(--aurora); display: block; }
-.stats span { font-size: 11px; color: var(--ink-3); }
-table { width: 100%; border-collapse: collapse; font-size: 12px; }
-th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); vertical-align: top; }
-th { color: var(--ink-3); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
-td.n, th.n { text-align: right; font-family: var(--mono); }
+.side { border-left: 1px solid var(--line); background: var(--surface); overflow: auto; min-height: 0; }
+.side section { padding: 20px; border-bottom: 1px solid var(--line); }
+.side h2 { font-size: 15px; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.01em; }
+.side .sub { color: var(--ink-3); font-size: 13px; margin: 0 0 14px; }
+.kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.kpi .v { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.kpi .l { font-size: 12px; color: var(--ink-3); line-height: 1.35; }
+.kpi.accent .v { color: var(--green); }
+ol.top { list-style: none; margin: 0; padding: 0; }
+ol.top button { width: 100%; display: grid; grid-template-columns: 24px 1fr auto; gap: 10px; align-items: center; text-align: left; background: none; border: 0; border-top: 1px solid var(--line); padding: 10px 4px; cursor: pointer; }
+ol.top li:first-child button { border-top: 0; }
+ol.top button:hover { background: var(--surface-2); }
+.rank { width: 22px; height: 22px; border-radius: 50%; background: var(--ink); color: var(--surface); font-size: 11px; font-weight: 600; display: grid; place-items: center; }
+.pl { min-width: 0; }
+.pl b { display: block; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pl small { color: var(--ink-3); font-size: 12px; }
+.pl .heattag { color: var(--heat); font-weight: 600; }
+.sc { font-weight: 600; font-variant-numeric: tabular-nums; }
+.back { border: 0; background: none; color: var(--green); font-weight: 500; padding: 0; cursor: pointer; margin-bottom: 14px; }
+.rhead { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.rhead h2 { font-size: 18px; }
+.rhead .coords { font-size: 12px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.bigscore { text-align: right; }
+.bigscore .v { font-size: 30px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; font-variant-numeric: tabular-nums; }
+.bigscore .l { font-size: 12px; color: var(--ink-3); }
+.status { display: inline-block; margin-top: 10px; font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: var(--green-soft); color: var(--green-strong); }
+.status.heat { background: var(--heat-soft); color: var(--heat); }
+.status.out { background: var(--excl); color: var(--ink-2); }
+.factor { padding: 10px 0; border-top: 1px solid var(--line); }
+.factor:first-child { border-top: 0; padding-top: 0; }
+.factor .top { display: flex; justify-content: space-between; font-size: 13px; }
+.factor .top b { font-weight: 600; }
+.factor .top span { font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.track { height: 6px; background: var(--surface-2); border-radius: 3px; overflow: hidden; margin: 6px 0 4px; }
+.fill { display: block; height: 100%; background: var(--green); border-radius: 3px; }
+.factor small { color: var(--ink-3); font-size: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 8px 4px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; font-weight: 600; color: var(--ink-3); }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+.note { font-size: 12px; color: var(--ink-3); margin: 10px 0 0; }
+.muted { color: var(--ink-3); }
+
+/* pages */
+.page { overflow: auto; }
+.article { max-width: 760px; margin: 0 auto; padding-block: 48px 72px; }
+.eyebrow { font-size: 12px; font-weight: 600; color: var(--green); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 10px; }
+.article h1 { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; letter-spacing: -0.03em; margin: 0 0 14px; font-weight: 700; text-wrap: balance; }
+.article .lede { font-size: 17px; color: var(--ink-2); margin: 0 0 28px; max-width: 64ch; }
+.article h2 { font-size: 20px; letter-spacing: -0.02em; margin: 40px 0 10px; font-weight: 600; }
+.article p, .article li { color: var(--ink-2); max-width: 68ch; }
+.article p { margin: 0 0 12px; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 8px; }
+ol.steps { list-style: none; counter-reset: s; margin: 0; padding: 0; }
+ol.steps li { counter-increment: s; display: grid; grid-template-columns: 32px 1fr; gap: 14px; padding: 16px 0; border-top: 1px solid var(--line); }
+ol.steps li::before { content: counter(s); font-weight: 600; color: var(--green); font-variant-numeric: tabular-nums; }
+ol.steps b { color: var(--ink); font-weight: 600; display: block; margin-bottom: 2px; }
+dl.defs { display: grid; grid-template-columns: 180px 1fr; gap: 0; margin: 0; }
+dl.defs dt, dl.defs dd { padding: 12px 0; border-top: 1px solid var(--line); margin: 0; }
+dl.defs dt { font-weight: 600; color: var(--ink); padding-right: 16px; }
+dl.defs dd { color: var(--ink-2); }
+.facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin: 8px 0 8px; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.facts .v { font-size: 28px; font-weight: 600; letter-spacing: -0.02em; color: var(--green); font-variant-numeric: tabular-nums; }
+.facts .l { font-size: 13px; color: var(--ink-2); }
 .tablewrap { overflow-x: auto; }
-.note { font-size: 12px; color: var(--ink-3); margin: 0; }
-.warn { color: var(--warn); font-weight: 800; }
-.empty { color: var(--ink-3); font-size: 13px; }
-.banner { display: flex; gap: 10px; align-items: center; justify-content: space-between; background: var(--aurora-soft); border: 1px solid #1F5A63; border-radius: 14px; padding: 10px 12px; font-size: 13px; }
-.banner button { border: 0; border-radius: 999px; padding: 7px 14px; font: 600 13px var(--head); cursor: pointer; }
-.btn-go { background: var(--aurora); color: #062126; }
-.btn-x { background: transparent; color: var(--ink-3); }
+ul.clean { padding-left: 18px; margin: 0; }
+ul.clean li { margin: 6px 0; }
 
-/* ---------- pages ---------- */
-.page { max-width: 920px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; padding-bottom: 40px; overflow: auto; height: 100%; box-sizing: border-box; }
-.hero { padding: 26px 0 6px; }
-.hero h1 { font: 700 clamp(30px, 5vw, 46px)/1.1 var(--head); margin: 0 0 10px; text-wrap: balance; }
-.hero h1 span { color: var(--rocket); }
-.hero p { font-size: 17px; color: var(--ink-2); margin: 0; max-width: 68ch; }
-.kicker { font: 400 12px var(--mono); color: var(--aurora); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px; }
-.card { background: linear-gradient(180deg, var(--panel), var(--space-2)); border: 1px solid var(--line); border-radius: 18px; padding: 20px; }
-.card h2 { font: 600 22px var(--head); margin: 0 0 8px; }
-.card p, .card li { color: var(--ink-2); max-width: 70ch; }
-.card p { margin: 0 0 10px; }
-.steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; counter-reset: s; }
-.steps li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; background: var(--space-2); border: 1px solid var(--line); border-radius: 16px; padding: 14px; counter-increment: s; }
-.steps li::before { content: counter(s); font: 700 20px var(--head); color: #1A0E08; background: var(--rocket); border-radius: 50%; width: 40px; height: 40px; display: grid; place-items: center; }
-.steps b { font: 600 17px var(--head); display: block; margin-bottom: 2px; color: var(--ink); }
-.steps p { margin: 0; color: var(--ink-2); }
-.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
-.mini { background: var(--space-2); border: 1px solid var(--line); border-radius: 14px; padding: 14px; }
-.mini b { font: 600 16px var(--head); display: block; margin-bottom: 4px; }
-.mini p { margin: 0; font-size: 14px; color: var(--ink-2); }
-.cta { display: inline-block; background: var(--rocket); color: #1A0E08; font: 600 15px var(--head); padding: 10px 18px; border-radius: 999px; text-decoration: none; border: 0; cursor: pointer; }
-.cta.alt { background: var(--panel-2); color: var(--ink); border: 1px solid var(--line); }
-.row-actions { display: flex; flex-wrap: wrap; gap: 10px; }
-ul.plain { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
-ul.plain li::marker { color: var(--rocket); }
+/* tour */
+.tour-ring { position: fixed; z-index: 50; border: 2px solid var(--green); border-radius: 10px; box-shadow: 0 0 0 9999px rgba(12, 18, 14, 0.45); pointer-events: none; transition: all 0.2s ease; }
+.tour-card { position: fixed; z-index: 51; width: min(320px, calc(100vw - 32px)); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,.18); padding: 16px; }
+.tour-card .eyebrow { margin-bottom: 4px; }
+.tour-card b { display: block; font-size: 15px; margin-bottom: 4px; }
+.tour-card p { margin: 0 0 14px; color: var(--ink-2); font-size: 13px; }
+.tour-card .actions { justify-content: flex-end; margin: 0; }
 
-/* ---------- guided tour ---------- */
-.tour-ring { position: fixed; z-index: 40; border: 3px solid var(--star); border-radius: 16px; box-shadow: 0 0 0 9999px #050816B3, 0 0 24px var(--star); pointer-events: none; transition: all 0.25s ease; }
-.tour-tip { position: fixed; z-index: 41; width: min(340px, calc(100vw - 32px)); background: var(--panel); border: 1px solid var(--star); border-radius: 16px; padding: 16px; box-shadow: 0 12px 40px #0009; }
-.tour-tip .kicker { margin-bottom: 4px; }
-.tour-tip b { font: 600 18px var(--head); display: block; margin-bottom: 4px; }
-.tour-tip p { margin: 0 0 12px; color: var(--ink-2); font-size: 14px; }
-.tour-tip .row-actions button { border: 0; border-radius: 999px; padding: 7px 14px; font: 600 13px var(--head); cursor: pointer; }
-
-@media (max-width: 1150px) { .console { grid-template-columns: 280px minmax(0, 1fr); } .report { grid-column: 1 / -1; } }
-@media (max-width: 760px) {
-  .app { height: auto; } .console { grid-template-columns: minmax(0, 1fr); height: auto; }
-  .mapwrap { height: 62vh; } .page { height: auto; }
+@media (max-width: 1100px) { .weights { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 900px) {
+  .app { height: auto; } .workspace { grid-template-columns: minmax(0, 1fr); }
+  .mapwrap { height: 60vh; } .side { border-left: 0; border-top: 1px solid var(--line); }
+  .weights { grid-template-columns: repeat(2, minmax(0, 1fr)); } .wordmark small { display: none; }
+  .facts { grid-template-columns: 1fr; } dl.defs { grid-template-columns: 1fr; } dl.defs dd { border-top: 0; padding-top: 0; }
 }
-@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
 <div class="app">
-  <nav class="top" aria-label="Main">
-    <div class="brand">
-      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
-        <circle cx="20" cy="20" r="9" fill="#FF8A4C"/>
-        <circle cx="20" cy="20" r="9" fill="none" stroke="#FFD166" stroke-width="2" opacity=".6"/>
-        <ellipse cx="20" cy="20" rx="18" ry="7" fill="none" stroke="#5EEAD4" stroke-width="1.6" transform="rotate(-24 20 20)"/>
-        <circle cx="34.5" cy="13" r="2.4" fill="#EEF2FF"/>
-      </svg>
-      <div><b>Therma<span>Lite</span></b><small>Mission control for data center heat</small></div>
+  <header class="site">
+    <div class="wrap headrow">
+      <a class="wordmark" href="#map">Therma<span>Lite</span><small>Data center siting</small></a>
+      <nav class="pages" aria-label="Pages">
+        <a href="#map" id="nav-map">Map</a>
+        <a href="#guide" id="nav-guide">Guide</a>
+        <a href="#about" id="nav-about">About</a>
+      </nav>
     </div>
-    <div class="tabs" role="navigation" aria-label="Pages">
-      <a href="#map" id="nav-map">Map</a>
-      <a href="#tutorial" id="nav-tutorial">Tutorial</a>
-      <a href="#about" id="nav-about">About</a>
-    </div>
-  </nav>
+  </header>
 
-  <!-- ===================== MAP VIEW ===================== -->
+  <!-- ========== MAP ========== -->
   <main class="view" id="view-map">
-    <div class="console">
-      <aside class="panel" aria-label="Flight controls">
-        <div class="banner" id="tourBanner" hidden>
-          <span>New here? Take the 60-second guided tour.</span>
-          <span><button class="btn-go" id="bannerGo">Start tour</button><button class="btn-x" id="bannerX" aria-label="Dismiss">✕</button></span>
+    <div class="wrap toolbar" id="toolbar">
+      <div class="field" id="f-state"><span>State</span><div class="seg" id="states" role="group" aria-label="State"></div></div>
+      <div class="field" id="f-priority"><span>Priority</span>
+        <div class="seg" id="presets" role="group" aria-label="Priority">
+          <button data-p="balanced">Balanced</button>
+          <button data-p="heat">Heat reuse</button>
+          <button data-p="water">Protect water</button>
+          <button data-p="clean">Clean and cool</button>
         </div>
-        <section id="targetsSec">
-          <h2>Mission target</h2>
-          <p class="explain">Pick a state. These three came out on top when we screened six US states.</p>
-          <div class="targets" id="targets" role="group" aria-label="State"></div>
-        </section>
-        <div class="verdict" id="verdict"><div class="big">…</div><p>Loading</p></div>
-        <section id="presetSec">
-          <h2>Mission profile</h2>
-          <p class="explain">A preset sets all five weights at once. The map re-ranks instantly.</p>
-          <div class="plist">
-            <button data-p="balanced"><b>Balanced</b><span>All five factors count the same. A neutral starting point.</span></button>
-            <button data-p="heat"><b>Heat reuse first</b><span>Puts the data center next to buildings that would buy its heat. Best for finding Odense-style sites.</span></button>
-            <button data-p="water"><b>Protect water</b><span>Avoids places where rivers and aquifers are already stretched, since cooling can use a lot of water.</span></button>
-            <button data-p="clean"><b>Clean and cool</b><span>Favors clean power and cool weather, which cut the data center’s own emissions and cooling energy.</span></button>
-          </div>
-        </section>
-        <section id="sliderSec">
-          <h2>Fine-tune weights</h2>
-          <p class="explain">0 means ignore this factor; 5 means it matters most.</p>
-          <div class="slider"><label for="w-heat">Heat reuse</label><output id="o-heat"></output><input type="range" id="w-heat" min="0" max="5" step="1"><small>How much heat a 50 MW site could sell to buildings within 3 km</small></div>
-          <div class="slider"><label for="w-carbon">Clean power</label><output id="o-carbon"></output><input type="range" id="w-carbon" min="0" max="5" step="1"><small>The state grid’s CO₂ per MWh (EPA eGRID 2023)</small></div>
-          <div class="slider"><label for="w-water">Low water stress</label><output id="o-water"></output><input type="range" id="w-water" min="0" max="5" step="1"><small>How stretched local water already is (WRI Aqueduct)</small></div>
-          <div class="slider"><label for="w-cooling">Cool climate</label><output id="o-cooling"></output><input type="range" id="w-cooling" min="0" max="5" step="1"><small>Fewer hot days means more free cooling (ERA5-Land)</small></div>
-          <div class="slider"><label for="w-grid">Grid access</label><output id="o-grid"></output><input type="range" id="w-grid" min="0" max="5" step="1"><small>How close the nearest substation is (OpenStreetMap)</small></div>
-        </section>
-        <section>
-          <h2>Map layers</h2>
-          <label class="check"><input type="checkbox" id="c-excl" checked> <span>Rule out flood zones, protected land and water (over half the square)</span></label>
-          <label class="check"><input type="checkbox" id="c-dc" checked> <span>Show data centers that exist today</span></label>
-        </section>
-      </aside>
+      </div>
+      <button class="btn" id="weightsBtn" aria-expanded="false" aria-controls="weights">Adjust weights</button>
+      <span class="spacer"></span>
+      <button class="btn link" id="tourBtn">Take the tour</button>
+    </div>
+    <div class="wrap weights" id="weights" hidden>
+      <div class="w"><label for="w-heat">Heat reuse</label><output id="o-heat"></output><input type="range" id="w-heat" min="0" max="5" step="1"><small>Heat a 50 MW data center could sell to buildings within 3 km</small></div>
+      <div class="w"><label for="w-carbon">Clean power</label><output id="o-carbon"></output><input type="range" id="w-carbon" min="0" max="5" step="1"><small>State grid CO₂ per MWh</small></div>
+      <div class="w"><label for="w-water">Low water stress</label><output id="o-water"></output><input type="range" id="w-water" min="0" max="5" step="1"><small>How stretched local water already is</small></div>
+      <div class="w"><label for="w-cooling">Cool climate</label><output id="o-cooling"></output><input type="range" id="w-cooling" min="0" max="5" step="1"><small>Fewer hot days, more free cooling</small></div>
+      <div class="w"><label for="w-grid">Grid access</label><output id="o-grid"></output><input type="range" id="w-grid" min="0" max="5" step="1"><small>Distance to the nearest substation</small></div>
+    </div>
+    <div class="wrap caption" id="caption"></div>
 
+    <div class="workspace">
       <div class="mapwrap" id="mapwrap">
-        <canvas id="map" aria-label="Satellite-style map of candidate sites, colored by score"></canvas>
-        <div class="hud" id="hud">Move over the map to read a square</div>
-        <div class="loading" id="loading">Acquiring signal…</div>
-        <div class="zoom">
+        <canvas id="map" aria-label="Map of candidate sites, colored by site score"></canvas>
+        <div class="loading" id="loading">Loading…</div>
+        <div class="tip" id="tip" hidden></div>
+        <div class="mapctl">
           <button id="z-in" aria-label="Zoom in">+</button>
           <button id="z-out" aria-label="Zoom out">−</button>
-          <button id="z-fit" aria-label="Fit the whole state">⤢</button>
+          <button id="z-fit" aria-label="Show whole state">⤢</button>
         </div>
         <div class="legend" id="legend">
-          <div class="row"><span>Site score</span><span>worse <b id="lg-lo"></b></span><div class="ramp" id="ramp"></div><span><b id="lg-hi"></b> better</span></div>
-          <div class="row">
-            <span class="key"><i class="sw" style="background:var(--excl)"></i>Ruled out</span>
-            <span class="key"><i class="sw" style="background:var(--ink)"></i>Existing data center</span>
-            <span class="key"><i class="sw" style="background:var(--aurora);border-radius:50%"></i>Heat buyer</span>
-            <span class="key"><i class="sw" style="background:var(--star);border-radius:50%"></i>Top 10</span>
+          <div class="lrow"><span>Site score</span><span class="num" id="lg-lo"></span><div class="ramp" id="ramp"></div><span class="num" id="lg-hi"></span></div>
+          <div class="lrow">
+            <span class="key"><i class="sw" style="background:var(--excl);border:1px solid var(--line-2)"></i>Ruled out</span>
+            <span class="key"><i class="sw" style="background:var(--heat);border-radius:50%"></i>Heat buyer</span>
+          </div>
+          <div class="lrow">
+            <label><input type="checkbox" id="c-dc" checked> Existing data centers</label>
+            <label><input type="checkbox" id="c-excl" checked> Rule out flood, protected, water</label>
           </div>
         </div>
       </div>
 
-      <aside class="panel report" aria-label="Site report">
-        <section id="topSec">
-          <h2>Top 10 places to build</h2>
-          <p class="explain">Candidate spots for a <b>new</b> data center, not existing ones. Each is a 2 km area worth investigating; land ownership and zoning aren’t checked. A teal tag means its heat would sell at today’s prices.</p>
-          <ol class="top" id="top"></ol>
-        </section>
-        <section id="reportSec"><h2>Site report</h2><p class="empty">Click a square on the map, or a place above, to open its report.</p></section>
+      <aside class="side" id="side" aria-label="Results">
+        <div id="overview">
+          <section id="summary">
+            <h2 id="sumTitle">Summary</h2>
+            <p class="sub" id="sumSub"></p>
+            <div class="kpis" id="kpis"></div>
+          </section>
+          <section id="topSec">
+            <h2>Top 10 places to build</h2>
+            <p class="sub">Candidate locations for a new data center, ranked by your priority. Each is a 2 km area, at least 6 km from the next. Click one for its report.</p>
+            <ol class="top" id="top"></ol>
+          </section>
+        </div>
+        <div id="report" hidden></div>
       </aside>
     </div>
   </main>
 
-  <!-- ===================== TUTORIAL ===================== -->
-  <main class="view page" id="view-tutorial" hidden>
-    <div class="hero">
-      <div class="kicker">Tutorial · 5 minutes</div>
-      <h1>How to find a site where a data center’s <span>heat gets used</span></h1>
-      <p>ThermaLite treats every 2 km square of a state as a possible home for a new 50 MW data center, scores it, and shows which nearby buildings would buy its waste heat.</p>
-    </div>
-    <div class="row-actions">
-      <button class="cta" id="tourFromTutorial">Start the guided tour</button>
-      <a class="cta alt" href="#map">Go straight to the map</a>
-    </div>
-    <ol class="steps">
-      <li><div><b>Choose a mission target</b><p>Pick Virginia, Texas or North Carolina at the top left. The map shows the whole state as small squares; the box above the presets tells you how many squares could sell their heat at today’s energy prices.</p></div></li>
-      <li><div><b>Pick a mission profile</b><p>Presets set what matters. <b>Heat reuse first</b> hunts for sites beside greenhouses, hospitals and apartments. <b>Protect water</b> steers away from stressed rivers. <b>Clean and cool</b> favors clean grids and cool weather. <b>Balanced</b> weighs everything equally.</p></div></li>
-      <li><div><b>Read the map</b><p>Colors run from deep purple (weaker) to bright yellow (better), relative to this state; the legend shows the score range. Dark grey squares are ruled out (flood zone, protected land or water). White dots are data centers that already exist. Gold numbered rings are the top 10 places to build.</p></div></li>
-      <li><div><b>Hover and zoom</b><p>Move over the map to read any square’s coordinates and score in the top-left readout. Scroll or use + and − to zoom, drag to pan, and ⤢ to fit the state again.</p></div></li>
-      <li><div><b>Open a site report</b><p>Click a ringed site or any square. The report shows its score on each factor with the real number behind it, and, if its heat would sell, a <b>heat delivery plan</b>: teal lines on the map to each buyer, with MWh per year and pipe length.</p></div></li>
-      <li><div><b>Fine-tune and compare</b><p>Drag the sliders to change any weight from 0 (ignore) to 5 (matters most). Watch the top 10 move: that is the trade-off between heat reuse, water and carbon, made visible.</p></div></li>
-    </ol>
-    <div class="card">
-      <h2>What every output means</h2>
-      <div class="grid2">
-        <div class="mini"><b>Site score (0–1)</b><p>The weighted average of the five factor scores. Higher is better under your current weights.</p></div>
-        <div class="mini"><b>Heat reuse</b><p>Heat a 50 MW data center here could sell each year, after heat pump physics, seasons and pipe cost. Scores 1.0 at 60,000 MWh/yr.</p></div>
-        <div class="mini"><b>Clean power</b><p>Based on the state grid’s CO₂ per MWh. Lower emissions score higher. Same value across a state.</p></div>
-        <div class="mini"><b>Water stress</b><p>WRI Aqueduct’s baseline water stress, 0 (low) to 5 (extreme). Less stress scores higher.</p></div>
-        <div class="mini"><b>Cool climate</b><p>Cooling degree days a year. Fewer hot days means more free cooling and a higher score.</p></div>
-        <div class="mini"><b>Grid access</b><p>Distance to the nearest substation. Scores 1.0 next to one and 0 at 15 km or more.</p></div>
-        <div class="mini"><b>Heat delivery plan</b><p>Each buyer that would take this site’s heat, how many MWh a year, and the pipe length. The engine fills the best-paying buyers first until the heat runs out.</p></div>
-        <div class="mini"><b>Homes’ worth</b><p>Heat reused ÷ 17.9 MWh, the heat per home in Odense, Denmark. A sense of scale, not houses connected.</p></div>
-      </div>
-    </div>
+  <!-- ========== GUIDE ========== -->
+  <main class="view page" id="view-guide" hidden>
+    <div class="wrap"><article class="article">
+      <p class="eyebrow">Guide</p>
+      <h1>How to find a site where a data center’s heat gets used</h1>
+      <p class="lede">ThermaLite treats every 2 km square of a state as a possible home for a new 50 MW data center. It scores each square and shows which nearby buildings would buy the waste heat.</p>
+      <div class="actions"><button class="btn primary" id="guideTour">Start the guided tour</button><a class="btn" href="#map" style="text-decoration:none">Open the map</a></div>
+
+      <h2>Step by step</h2>
+      <ol class="steps">
+        <li><div><b>Choose a state</b>Virginia, Texas or North Carolina. The summary on the right shows how many squares could sell their heat at today’s energy prices.</div></li>
+        <li><div><b>Set your priority</b><b style="display:inline;font-weight:500">Heat reuse</b> looks for sites beside greenhouses, hospitals and apartments. <b style="display:inline;font-weight:500">Protect water</b> avoids stressed rivers and aquifers. <b style="display:inline;font-weight:500">Clean and cool</b> favors clean grids and cool weather. <b style="display:inline;font-weight:500">Balanced</b> weighs everything equally.</div></li>
+        <li><div><b>Read the map</b>Darker green squares score higher; paler squares score lower. Grey squares are ruled out. Small dark squares are data centers that already exist. Numbered markers are the top 10 places to build.</div></li>
+        <li><div><b>Explore</b>Hover over any square to see its score. Scroll or use + and − to zoom, drag to move, and ⤢ to see the whole state.</div></li>
+        <li><div><b>Open a site report</b>Click a numbered marker, a square, or a row in the top 10. The report breaks the score into its five factors and, where the heat would sell, lists each buyer with the heat it would take and the pipe length. Amber lines on the map lead to each buyer.</div></li>
+        <li><div><b>Fine-tune</b>Choose Adjust weights to set each factor from 0 (ignore) to 5 (matters most). The ranking updates as you move the sliders.</div></li>
+      </ol>
+
+      <h2>What each output means</h2>
+      <dl class="defs">
+        <dt>Site score</dt><dd>A 0–1 weighted average of the five factor scores under your current weights. Higher is better.</dd>
+        <dt>Heat reuse</dt><dd>The heat a 50 MW data center here could sell each year to buildings within 3 km, after heat pump physics, seasonal demand and pipe cost. Scores 1.0 at 60,000 MWh a year.</dd>
+        <dt>Clean power</dt><dd>The state grid’s CO₂ per MWh (EPA eGRID 2023). One value for the whole state.</dd>
+        <dt>Water stress</dt><dd>WRI Aqueduct baseline water stress, from 0 (low) to 5 (extremely high). Lower stress scores higher.</dd>
+        <dt>Cool climate</dt><dd>Cooling degree days a year (ERA5-Land, 2015–2024). Fewer hot days means more free cooling.</dd>
+        <dt>Grid access</dt><dd>Distance to the nearest substation. Scores 1.0 next to one and 0 at 15 km or more.</dd>
+        <dt>Ruled out</dt><dd>More than half the square is a 100-year flood zone, protected land, or water and wetland.</dd>
+        <dt>Heat delivery plan</dt><dd>Each building that would buy this site’s heat, the MWh a year it would take, and the pipe length. The best-paying buyers are filled first until the heat runs out.</dd>
+        <dt>Homes’ worth</dt><dd>Heat reused divided by 17.9 MWh, the heat per home in Odense, Denmark. A sense of scale, not homes connected.</dd>
+      </dl>
+    </article></div>
   </main>
 
-  <!-- ===================== ABOUT ===================== -->
+  <!-- ========== ABOUT ========== -->
   <main class="view page" id="view-about" hidden>
-    <div class="hero">
-      <div class="kicker">About the mission</div>
-      <h1>Build the next data center where its <span>heat gets used</span></h1>
-      <p>Every watt a server uses comes out as heat, and today almost all of it is vented. In Denmark, Sweden and Finland that heat warms tens of thousands of homes. ThermaLite asks where the same thing could work in the US.</p>
-    </div>
-    <div class="card">
+    <div class="wrap"><article class="article">
+      <p class="eyebrow">About</p>
+      <h1>Build the next data center where its heat gets used</h1>
+      <p class="lede">Almost all the electricity a data center uses becomes heat, and today it is vented. In Denmark, Sweden and Finland that heat warms tens of thousands of homes. ThermaLite shows where the same idea can work in the United States.</p>
+      <div class="facts">
+        <div><div class="v">40</div><div class="l">independent sites in three states where a new data center’s heat would have a buyer</div></div>
+        <div><div class="v">≈ 2 GW</div><div class="l">of data center capacity those sites could host, at 50 MW each</div></div>
+        <div><div class="v">7 of 413</div><div class="l">existing data centers we tested could sell their heat today</div></div>
+      </div>
+
       <h2>What we found</h2>
-      <p>Retrofitting today’s data centers mostly doesn’t pay: only 7 of 413 we tested in Washington, Oregon and Texas could sell their heat, all in downtown Seattle. They were built where land and power are cheap, far from heat users.</p>
-      <p>So we flipped the question: where should the <b>next</b> data center go? Across Virginia, Texas and North Carolina, ThermaLite found <b>40 independent sites</b>, about 2 GW of capacity, where a new data center’s heat would have a buyer. That is roughly a third of the 6 GW under construction across the US at the end of 2025. Land isn’t the limit; heat buyers are.</p>
+      <p>Retrofitting today’s data centers rarely pays. Only 7 of the 413 we tested in Washington, Oregon and Texas could sell their heat, all in downtown Seattle. Most were built where land and power are cheap, far from anyone who needs heat.</p>
+      <p>So we asked where the next one should go. We screened six states with favorable energy prices and ranked them by the heat new data centers could sell at their ten best sites that share no buyer.</p>
       <div class="tablewrap"><table>
         <tr><th>State</th><th class="n">Heat reused, MWh/yr</th><th class="n">Homes’ worth</th><th class="n">CO₂ avoided, t/yr</th></tr>
         <tr><td><b>Virginia</b></td><td class="n">780,000</td><td class="n">43,600</td><td class="n">109,000</td></tr>
@@ -321,39 +320,33 @@ ul.plain li::marker { color: var(--rocket); }
         <tr><td>Washington</td><td class="n">298,000</td><td class="n">16,700</td><td class="n">41,000</td></tr>
         <tr><td>Pennsylvania</td><td class="n">176,000</td><td class="n">9,800</td><td class="n">25,000</td></tr>
       </table></div>
-      <p class="note" style="margin-top:8px">Heat a new 50 MW data center could sell at each state’s 10 best sites that share no heat buyer.</p>
-    </div>
-    <div class="card">
+
       <h2>How it works</h2>
-      <ul class="plain">
-        <li><b>Grid.</b> Each state is cut into 2 km squares, about 240,000 across the three states.</li>
-        <li><b>Rule out.</b> Squares more than half flood zone (GLOFAS 100-year), protected land (WDPA) or water and wetland (MODIS).</li>
-        <li><b>Heat reuse.</b> For each square, a 50 MW data center with chilled-water cooling (heat at about 30 °C) is matched to hospitals, greenhouses, indoor pools and large apartment buildings within 3 km. A heat pump model, each building’s month-by-month demand from 10 years of ERA5-Land climate data, and pipe cost at the state’s EIA prices decide who would buy, and how much.</li>
-        <li><b>Other factors.</b> State grid CO₂ (EPA eGRID 2023), water stress (WRI Aqueduct 4.0), cooling degree days (ERA5-Land) and distance to the nearest substation (OpenStreetMap).</li>
-        <li><b>Score.</b> Each factor becomes 0–1 on one fixed scale for every state, and your weights combine them.</li>
+      <ul class="clean">
+        <li>Each state is divided into 2 km squares, about 240,000 across the three states.</li>
+        <li>Squares more than half flood zone (GLOFAS 100-year), protected land (WDPA) or water and wetland (MODIS) are ruled out.</li>
+        <li>For every square, a 50 MW data center with chilled-water cooling (heat at about 30 °C) is matched with hospitals, greenhouses, indoor pools and large apartment buildings within 3 km. A heat pump model, each building’s monthly demand from ten years of ERA5-Land climate data, and pipe cost at the state’s EIA energy prices decide who would buy, and how much.</li>
+        <li>Grid CO₂ (EPA eGRID 2023), water stress (WRI Aqueduct 4.0), cooling degree days (ERA5-Land) and substation distance (OpenStreetMap) complete the score. Every factor uses one fixed 0–1 scale for all states.</li>
       </ul>
-    </div>
-    <div class="card">
-      <h2>Limits</h2>
-      <ul class="plain">
-        <li>A screening tool: it ranks places worth a real engineering study, not parcels ready to buy. Land, zoning and fiber aren’t checked.</li>
+
+      <h2>Limitations</h2>
+      <ul class="clean">
+        <li>A screening tool. It ranks areas worth a real engineering study; land ownership, zoning and fiber aren’t checked.</li>
         <li>Pipe and heat pump costs are placeholder engineering values.</li>
         <li>Most reusable heat goes to large greenhouses mapped in OpenStreetMap. Some unnamed ones, especially on Virginia’s Eastern Shore, may be poultry houses and need checking on aerial imagery.</li>
-        <li>Grid CO₂ is one value per state, not site by site.</li>
+        <li>Grid CO₂ is one value per state.</li>
         <li>Sized for a 50 MW data center. A 500 MW campus makes ten times the heat, more than any single buyer can take.</li>
       </ul>
-    </div>
-    <div class="card">
+
       <h2>Data sources</h2>
-      <ul class="plain">
-        <li>PNNL IM3 Open Source Data Center Atlas (OSTI 2550666) · OpenStreetMap contributors (ODbL)</li>
-        <li>US EIA commercial electricity and gas prices · EPA eGRID 2023</li>
-        <li>ECMWF ERA5-Land · WRI Aqueduct 4.0 · JRC GLOFAS flood hazard · WDPA protected areas · MODIS land cover, via Google Earth Engine</li>
-        <li>Precedents: Ramboll (Odense), Stockholm Data Parks, Fortum and Microsoft (Espoo)</li>
+      <ul class="clean">
+        <li><a href="https://www.osti.gov/biblio/2550666">PNNL IM3 Open Source Data Center Atlas</a>; OpenStreetMap contributors (ODbL)</li>
+        <li><a href="https://www.eia.gov/electricity/monthly/">US EIA commercial electricity</a> and <a href="https://www.eia.gov/dnav/ng/ng_pri_sum_a_EPG0_PCS_DMcf_a.htm">natural gas prices</a>; <a href="https://www.epa.gov/egrid/summary-data">EPA eGRID 2023</a></li>
+        <li>ERA5-Land, WRI Aqueduct 4.0, JRC GLOFAS flood hazard, WDPA protected areas and MODIS land cover, via Google Earth Engine</li>
+        <li>Precedents: <a href="https://www.ramboll.com/en-us/projects/energy/meta-surplus-heat-to-district-heating">Ramboll, Odense</a>; Stockholm Data Parks; Fortum and Microsoft, Espoo</li>
       </ul>
-      <p class="note" style="margin-top:10px">Built by [Team names], Rutgers University Electrical and Computer Engineering, for the AI-Impact-Athon (NSBE Region 1 Fall Regional).</p>
-    </div>
-    <div class="row-actions"><a class="cta" href="#map">Open the map</a><a class="cta alt" href="#tutorial">Read the tutorial</a></div>
+      <p class="note">Built by [Team names], Rutgers University Electrical and Computer Engineering, for the AI-Impact-Athon at the NSBE Region 1 Fall Regional Conference.</p>
+    </article></div>
   </main>
 </div>
 
@@ -366,56 +359,66 @@ ul.plain li::marker { color: var(--rocket); }
     water: { heat: 1, carbon: 1, water: 5, cooling: 2, grid: 2 },
     clean: { heat: 1, carbon: 4, water: 2, cooling: 4, grid: 1 },
   };
+  const PRESET_TEXT = {
+    balanced: '<b>Balanced:</b> all five factors count equally.',
+    heat: '<b>Heat reuse:</b> favors sites next to buildings that would buy the heat.',
+    water: '<b>Protect water:</b> steers away from places where water is already stretched.',
+    clean: '<b>Clean and cool:</b> favors clean power and cool weather that cut cooling energy.',
+    custom: '<b>Custom weights:</b> set with Adjust weights.',
+  };
   const KEYS = ['heat', 'carbon', 'water', 'cooling', 'grid'];
-  const LABELS = { heat: 'Heat reuse', carbon: 'Clean power', water: 'Water', cooling: 'Cool climate', grid: 'Grid access' };
+  const LABELS = { heat: 'Heat reuse', carbon: 'Clean power', water: 'Low water stress', cooling: 'Cool climate', grid: 'Grid access' };
   const HOME_MWH = 17.9, HEAT_FULL = 60000;
-  const COL = { excl: '#2A2F4F', dc: '#EEF2FF', aurora: '#5EEAD4', star: '#FFE08A', ink: '#EEF2FF', ink3: '#8592C4',
-    grid: 'rgba(94,234,212,0.10)', gridText: 'rgba(133,146,196,0.8)', space: '#070B1F', rocket: '#FF8A4C' };
-  const RAMP = ['#1E2156', '#3A2A7A', '#6D2F8E', '#A83C7E', '#E0555E', '#FF8C42', '#FFD166'];
 
   const store = {
     get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
   };
   const saved = store.get('tl-state', '');
-  const S = { st: STATES.some(([s]) => s === saved) ? saved : STATES[0][0], w: store.get('tl-w', { ...PRESETS.balanced }),
-    excl: true, showDC: true, data: {}, sel: -1, score: null, ex: null, view: null, top: [] };
+  const S = { st: STATES.some(([s]) => s === saved) ? saved : 'VA', w: store.get('tl-w', { ...PRESETS.balanced }),
+    excl: true, showDC: true, data: {}, sel: -1, score: null, ex: null, view: null, top: [], col: {}, ramp: [] };
   if (!KEYS.every(k => Number.isFinite(S.w[k]))) S.w = { ...PRESETS.balanced };
 
   const $ = id => document.getElementById(id);
   const cv = $('map'), ctx = cv.getContext('2d'), wrap = $('mapwrap');
   const fmt = n => Math.round(n).toLocaleString('en-US');
   const esc = s => String(s).replace(/[&<>"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]));
-  $('ramp').innerHTML = RAMP.map(c => `<i style="background:${c}"></i>`).join('');
 
-  // ---------------- scoring ----------------
-  function factorScores(d, i) {
-    const c = d.cols, bws = c.bws[i], cdd = c.cdd[i];
+  function readTheme() {
+    const cs = getComputedStyle(document.documentElement), g = v => cs.getPropertyValue(v).trim();
+    S.ramp = [1, 2, 3, 4, 5, 6, 7].map(k => g('--r' + k));
+    S.col = { excl: g('--excl'), ink: g('--ink'), ink3: g('--ink-3'), bg: g('--bg'), surface: g('--surface'), heat: g('--heat'), green: g('--green') };
+    $('ramp').innerHTML = S.ramp.map(c => `<i style="background:${c}"></i>`).join('');
+  }
+
+  // ---------- scoring ----------
+  function factors(d, i) {
+    const c = d.cols, b = c.bws[i], cd = c.cdd[i];
     return {
       heat: Math.sqrt(Math.min(c.heat[i], HEAT_FULL) / HEAT_FULL),
       carbon: Math.max(0, 1 - d.gridCO2 / 1400),
-      water: bws == null ? 0.5 : Math.max(0, 1 - bws / 5),
-      cooling: cdd == null ? 0.5 : Math.max(0, 1 - cdd / 1200),
+      water: b == null ? 0.5 : Math.max(0, 1 - b / 5),
+      cooling: cd == null ? 0.5 : Math.max(0, 1 - cd / 1200),
       grid: Math.max(0, 1 - c.sub[i] / 15),
     };
   }
   function rescore() {
     const d = S.data[S.st]; if (!d) return;
-    const n = d.cols.lat.length, ws = KEYS.reduce((s, k) => s + S.w[k], 0) || 1, c = d.cols;
+    const c = d.cols, n = c.lat.length, ws = KEYS.reduce((s, k) => s + S.w[k], 0) || 1;
     S.score = new Float32Array(n); S.ex = new Uint8Array(n);
     let lo = 1, hi = 0;
     for (let i = 0; i < n; i++) {
-      const f = factorScores(d, i);
+      const f = factors(d, i);
       S.score[i] = KEYS.reduce((s, k) => s + S.w[k] * f[k], 0) / ws;
       S.ex[i] = S.excl && (c.flood[i] > 0.5 || c.prot[i] > 0.5 || c.water[i] > 0.5) ? 1 : 0;
       if (!S.ex[i]) { if (S.score[i] < lo) lo = S.score[i]; if (S.score[i] > hi) hi = S.score[i]; }
     }
     S.lo = lo; S.hi = Math.max(hi, lo + 1e-6);
     $('lg-lo').textContent = lo.toFixed(2); $('lg-hi').textContent = S.hi.toFixed(2);
-    renderTop(); draw(); renderReport();
+    renderTop(); renderReport(); draw();
   }
 
-  // ---------------- map ----------------
+  // ---------- map ----------
   const proj = (lat, lon) => [lon * S.kx, -lat];
   function fit() {
     const d = S.data[S.st]; if (!d) return;
@@ -423,14 +426,12 @@ ul.plain li::marker { color: var(--rocket); }
     let a = Infinity, b = -Infinity, c = Infinity, e = -Infinity;
     for (let i = 0; i < la.length; i++) { if (la[i] < a) a = la[i]; if (la[i] > b) b = la[i]; if (lo[i] < c) c = lo[i]; if (lo[i] > e) e = lo[i]; }
     S.kx = Math.cos(((a + b) / 2) * Math.PI / 180);
-    S.bounds = { a, b, c, e };
-    const [x0, y0] = proj(b, c), [x1, y1] = proj(a, e);
-    const W = cv.clientWidth || 800, H = cv.clientHeight || 500;
-    S.view = { s: Math.min(W / (x1 - x0), H / (y1 - y0)) * 0.9, cx: (x0 + x1) / 2, cy: (y0 + y1) / 2 };
+    const [x0, y0] = proj(b, c), [x1, y1] = proj(a, e), W = cv.clientWidth || 800, H = cv.clientHeight || 500;
+    S.view = { s: Math.min(W / (x1 - x0), H / (y1 - y0)) * 0.88, cx: (x0 + x1) / 2, cy: (y0 + y1) / 2 };
     draw();
   }
-  function toScreen(lat, lon) { const [x, y] = proj(lat, lon), v = S.view; return [(x - v.cx) * v.s + cv.clientWidth / 2, (y - v.cy) * v.s + cv.clientHeight / 2]; }
-  function toWorld(px, py) { const v = S.view, x = (px - cv.clientWidth / 2) / v.s + v.cx, y = (py - cv.clientHeight / 2) / v.s + v.cy; return [-y, x / S.kx]; }
+  const toScreen = (lat, lon) => { const [x, y] = proj(lat, lon), v = S.view; return [(x - v.cx) * v.s + cv.clientWidth / 2, (y - v.cy) * v.s + cv.clientHeight / 2]; };
+  const toWorld = (px, py) => { const v = S.view, x = (px - cv.clientWidth / 2) / v.s + v.cx, y = (py - cv.clientHeight / 2) / v.s + v.cy; return [-y, x / S.kx]; };
   function resize() {
     const dpr = window.devicePixelRatio || 1;
     cv.width = Math.max(1, Math.round(cv.clientWidth * dpr)); cv.height = Math.max(1, Math.round(cv.clientHeight * dpr));
@@ -439,50 +440,40 @@ ul.plain li::marker { color: var(--rocket); }
   }
   function draw() {
     const d = S.data[S.st]; if (!d || !S.view || !S.score) return;
-    const W = cv.clientWidth, H = cv.clientHeight, c = d.cols;
+    const W = cv.clientWidth, H = cv.clientHeight, c = d.cols, C = S.col;
     ctx.clearRect(0, 0, W, H);
-    // graticule (1 degree)
-    const [la0, lo0] = toWorld(0, H), [la1, lo1] = toWorld(W, 0);
-    ctx.strokeStyle = COL.grid; ctx.lineWidth = 1; ctx.fillStyle = COL.gridText; ctx.font = '10px "Space Mono", monospace';
-    for (let lon = Math.ceil(lo0); lon <= lo1; lon++) { const [x] = toScreen(0, lon); ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); ctx.fillText(`${Math.abs(lon)}°W`, x + 3, H - 6); }
-    for (let lat = Math.ceil(la0); lat <= la1; lat++) { const [, y] = toScreen(lat, 0); ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); ctx.fillText(`${lat}°N`, W - 34, y - 3); }
-    // cells
     const cw = d.dlon * S.kx * S.view.s + 0.6, ch = d.dlat * S.view.s + 0.6, span = S.hi - S.lo;
     for (let i = 0; i < c.lat.length; i++) {
       const [x, y] = toScreen(c.lat[i], c.lon[i]);
       if (x < -cw || y < -ch || x > W + cw || y > H + ch) continue;
-      ctx.fillStyle = S.ex[i] ? COL.excl : RAMP[Math.min(6, Math.floor(((S.score[i] - S.lo) / span) * 7))];
+      ctx.fillStyle = S.ex[i] ? C.excl : S.ramp[Math.min(6, Math.floor(((S.score[i] - S.lo) / span) * 7))];
       ctx.fillRect(x - cw / 2, y - ch / 2, cw, ch);
     }
-    // existing data centers
     if (S.showDC) {
-      ctx.fillStyle = COL.dc; ctx.strokeStyle = COL.space; ctx.lineWidth = 1;
-      d.dcs.forEach(([, la, lo]) => { const [x, y] = toScreen(la, lo); ctx.beginPath(); ctx.rect(x - 2.5, y - 2.5, 5, 5); ctx.fill(); ctx.stroke(); });
+      ctx.fillStyle = C.ink3;
+      d.dcs.forEach(([, la, lo]) => { const [x, y] = toScreen(la, lo); ctx.fillRect(x - 2, y - 2, 4, 4); });
     }
-    // cities
-    ctx.font = '600 12px Nunito, sans-serif';
+    ctx.font = '500 11px Inter, -apple-system, sans-serif';
     d.cities.forEach(([n, la, lo]) => {
       const [x, y] = toScreen(la, lo);
-      ctx.fillStyle = COL.ink3; ctx.beginPath(); ctx.arc(x, y, 2, 0, 7); ctx.fill();
-      ctx.lineWidth = 3; ctx.strokeStyle = COL.space; ctx.strokeText(n, x + 6, y + 4); ctx.fillStyle = COL.ink; ctx.fillText(n, x + 6, y + 4);
+      ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(x, y, 2, 0, 7); ctx.fill();
+      ctx.lineWidth = 3; ctx.strokeStyle = C.bg; ctx.strokeText(n, x + 6, y + 4); ctx.fillText(n, x + 6, y + 4);
     });
-    // selection + heat plan
     if (S.sel >= 0) {
-      const [sx, sy] = toScreen(c.lat[S.sel], c.lon[S.sel]), al = d.alloc[S.sel] || [];
-      ctx.strokeStyle = COL.aurora; ctx.lineWidth = 2;
-      al.forEach(([k]) => {
+      const [sx, sy] = toScreen(c.lat[S.sel], c.lon[S.sel]);
+      ctx.strokeStyle = C.heat; ctx.fillStyle = C.heat; ctx.lineWidth = 1.5;
+      (d.alloc[S.sel] || []).forEach(([k]) => {
         const s = d.sinks[k], [x, y] = toScreen(s[2], s[3]);
-        ctx.setLineDash([6, 4]); ctx.beginPath(); ctx.moveTo(sx, sy); ctx.lineTo(x, y); ctx.stroke(); ctx.setLineDash([]);
-        ctx.fillStyle = COL.aurora; ctx.beginPath(); ctx.arc(x, y, 5.5, 0, 7); ctx.fill();
+        ctx.beginPath(); ctx.moveTo(sx, sy); ctx.lineTo(x, y); ctx.stroke();
+        ctx.beginPath(); ctx.arc(x, y, 4.5, 0, 7); ctx.fill();
       });
-      ctx.strokeStyle = COL.ink; ctx.lineWidth = 2.5; ctx.strokeRect(sx - cw / 2 - 3, sy - ch / 2 - 3, cw + 6, ch + 6);
+      ctx.strokeStyle = C.ink; ctx.lineWidth = 2; ctx.strokeRect(sx - cw / 2 - 2, sy - ch / 2 - 2, cw + 4, ch + 4);
     }
-    // top-10 markers
     S.top.forEach((i, r) => {
-      const [x, y] = toScreen(c.lat[i], c.lon[i]), rad = Math.max(9, cw * 0.9);
-      ctx.strokeStyle = COL.star; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(x, y, rad, 0, 7); ctx.stroke();
-      ctx.fillStyle = COL.star; ctx.beginPath(); ctx.arc(x + rad * 0.75, y - rad * 0.75, 8, 0, 7); ctx.fill();
-      ctx.fillStyle = '#1A0E08'; ctx.font = '700 10px "Space Mono", monospace'; ctx.textAlign = 'center'; ctx.fillText(String(r + 1), x + rad * 0.75, y - rad * 0.75 + 3.5); ctx.textAlign = 'start';
+      const [x, y] = toScreen(c.lat[i], c.lon[i]);
+      ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(x, y, 9, 0, 7); ctx.fill();
+      ctx.fillStyle = C.surface; ctx.font = '600 10px Inter, -apple-system, sans-serif'; ctx.textAlign = 'center';
+      ctx.fillText(String(r + 1), x, y + 3.5); ctx.textAlign = 'start';
     });
   }
   function cellAt(px, py) {
@@ -496,19 +487,27 @@ ul.plain li::marker { color: var(--rocket); }
     return best;
   }
 
-  // ---------------- panels ----------------
-  function nearestCity(d, lat, lon) {
+  // ---------- sidebar ----------
+  function nearest(d, lat, lon) {
     let best = '', bd = Infinity;
     d.cities.forEach(([n, la, lo]) => { const km = Math.hypot((la - lat) * 111.32, (lo - lon) * 111.32 * Math.cos(lat * Math.PI / 180)); if (km < bd) { bd = km; best = n; } });
-    return bd < 4 ? best : `${Math.round(bd)} km from ${best}`;
+    return bd < 4 ? `Near ${best}` : `${Math.round(bd)} km from ${best}`;
   }
-  function renderTargets() {
-    $('targets').innerHTML = STATES.map(([s, n]) => `<button data-st="${s}" aria-pressed="${s === S.st}">${n}</button>`).join('');
-  }
-  function renderVerdict() {
+  function renderStates() { $('states').innerHTML = STATES.map(([s, n]) => `<button data-st="${s}" aria-pressed="${s === S.st}">${n}</button>`).join(''); }
+  function renderSummary() {
     const d = S.data[S.st]; if (!d) return;
-    const n = d.cols.lat.length, k = Object.keys(d.alloc).length;
-    $('verdict').innerHTML = `<div class="big">${k} of ${fmt(n)}</div><p>squares in ${d.name} where a new data center’s heat would sell at today’s prices (gas $${d.prices.gas}, electricity $${d.prices.elec} per MWh). Neighbouring squares often share the same buyer.</p>`;
+    const c = d.cols, n = c.lat.length;
+    let build = 0; for (let i = 0; i < n; i++) if (!(c.flood[i] > 0.5 || c.prot[i] > 0.5 || c.water[i] > 0.5)) build++;
+    const sells = Object.keys(d.alloc).length;
+    $('sumTitle').textContent = d.name;
+    $('sumSub').textContent = `Energy prices: gas $${d.prices.gas}, electricity $${d.prices.elec} per MWh. Grid: ${d.gridCO2} lb CO₂ per MWh.`;
+    $('kpis').innerHTML = `<div class="kpi"><div class="v">${fmt(n)}</div><div class="l">candidate squares</div></div>
+      <div class="kpi"><div class="v">${fmt(build)}</div><div class="l">buildable</div></div>
+      <div class="kpi accent"><div class="v">${fmt(sells)}</div><div class="l">could sell their heat</div></div>`;
+  }
+  function renderCaption() {
+    const p = Object.keys(PRESETS).find(k => KEYS.every(x => PRESETS[k][x] === S.w[x])) || 'custom';
+    $('caption').innerHTML = `<span>${PRESET_TEXT[p]}</span><span class="muted">Darker green scores higher. Hover to read a square; click for its report.</span>`;
   }
   function renderTop() {
     const d = S.data[S.st], n = S.score.length, idx = [];
@@ -522,178 +521,185 @@ ul.plain li::marker { color: var(--rocket); }
     S.top = top;
     $('top').innerHTML = top.map((i, r) => {
       const h = d.cols.heat[i];
-      return `<li><button data-i="${i}" aria-current="${i === S.sel}"><span class="rank">${r + 1}</span>
-        <span class="place">${esc(nearestCity(d, d.cols.lat[i], d.cols.lon[i]))}${h ? `<span class="chip">sells ${fmt(h)} MWh</span>` : ''}
-        <small>${d.cols.lat[i].toFixed(3)}°, ${d.cols.lon[i].toFixed(3)}°</small></span>
-        <span class="score">${S.score[i].toFixed(2)}</span></button></li>`;
+      return `<li><button data-i="${i}"><span class="rank">${r + 1}</span><span class="pl"><b>${esc(nearest(d, d.cols.lat[i], d.cols.lon[i]))}</b>
+        <small>${h ? `<span class="heattag">Sells ${fmt(h)} MWh/yr</span>` : 'No heat buyer nearby'}</small></span><span class="sc">${S.score[i].toFixed(2)}</span></button></li>`;
     }).join('');
   }
   function renderReport() {
-    const d = S.data[S.st], i = S.sel, el = $('reportSec');
-    if (!d || i < 0) { el.innerHTML = '<h2>Site report</h2><p class="empty">Click a square on the map, or a place above, to open its report.</p>'; return; }
-    const c = d.cols, f = factorScores(d, i), al = d.alloc[i] || [];
+    const d = S.data[S.st], i = S.sel;
+    $('overview').hidden = i >= 0; $('report').hidden = i < 0;
+    if (!d || i < 0) return;
+    const c = d.cols, f = factors(d, i), al = d.alloc[i] || [];
+    const lvl = b => b < 1 ? 'low' : b < 2 ? 'low to medium' : b < 3 ? 'medium to high' : b < 4 ? 'high' : 'extremely high';
     const raw = {
-      heat: c.heat[i] ? `Could sell ${fmt(c.heat[i])} MWh/yr to ${al.length} building${al.length > 1 ? 's' : ''}` : 'No building within 3 km would buy heat at these prices',
-      carbon: `${d.gridCO2} lb CO₂ per MWh on the ${d.name} grid`,
-      water: c.bws[i] == null ? 'No water stress data here' : `Water stress ${c.bws[i].toFixed(1)} of 5 (${c.bws[i] < 1 ? 'low' : c.bws[i] < 2 ? 'low–medium' : c.bws[i] < 3 ? 'medium–high' : c.bws[i] < 4 ? 'high' : 'extremely high'})`,
-      cooling: c.cdd[i] == null ? 'No climate data here' : `${fmt(c.cdd[i])} cooling degree days a year`,
-      grid: `Nearest substation ${c.sub[i].toFixed(1)} km away`,
+      heat: c.heat[i] ? `${fmt(c.heat[i])} MWh/yr to ${al.length} building${al.length > 1 ? 's' : ''}` : 'No building within 3 km would buy heat at these prices',
+      carbon: `${d.gridCO2} lb CO₂ per MWh (${d.name} grid)`,
+      water: c.bws[i] == null ? 'No data' : `${c.bws[i].toFixed(1)} of 5, ${lvl(c.bws[i])}`,
+      cooling: c.cdd[i] == null ? 'No data' : `${fmt(c.cdd[i])} cooling degree days a year`,
+      grid: `Substation ${c.sub[i].toFixed(1)} km away`,
     };
     const ex = [];
-    if (c.flood[i] > 0) ex.push(`${Math.round(c.flood[i] * 100)}% 100-year flood zone`);
+    if (c.flood[i] > 0) ex.push(`${Math.round(c.flood[i] * 100)}% flood zone`);
     if (c.prot[i] > 0) ex.push(`${Math.round(c.prot[i] * 100)}% protected land`);
     if (c.water[i] > 0) ex.push(`${Math.round(c.water[i] * 100)}% water or wetland`);
     const tot = al.reduce((s, a) => s + a[1], 0), co2 = al.reduce((s, a) => s + a[3], 0);
-    el.innerHTML = `<h2>Site report</h2>
-      <div class="reportcard">
-        <div class="reporthead"><div><b>${esc(nearestCity(d, c.lat[i], c.lon[i]))}</b><div class="coords">${c.lat[i].toFixed(4)}°N, ${Math.abs(c.lon[i]).toFixed(4)}°W · ${d.name}</div></div><div class="big">${S.score[i].toFixed(2)}</div></div>
-        <p class="explain" style="margin:0">Site score out of 1, under your current weights.${S.ex[i] ? ' <span class="warn">Ruled out on the map</span>.' : ''} Each bar below is one factor’s score, with the measurement behind it.</p>
-        <div class="bars">${KEYS.map(k => `<div><div class="bar"><span>${LABELS[k]}</span><span class="track"><span class="fill" style="width:${(f[k] * 100).toFixed(0)}%"></span></span><span class="v">${f[k].toFixed(2)}</span></div><div class="raw">${raw[k]}</div></div>`).join('')}</div>
-        ${ex.length ? `<p class="note">${S.ex[i] ? '<span class="warn">Ruled out:</span> ' : 'Partly covered by: '}${ex.join(', ')}.</p>` : ''}
-        <div>
-          <h2>Heat delivery plan</h2>
-          ${al.length ? `<p class="explain">If a 50 MW data center were built here, these buildings would buy its heat. Teal dashed lines on the map lead to each one.</p>
-            <div class="stats"><div><b>${fmt(tot)}</b><span>MWh of heat a year</span></div><div><b>${fmt(tot / HOME_MWH)}</b><span>homes’ worth of heat</span></div><div><b>${fmt(co2)}</b><span>t CO₂ a year avoided</span></div></div>
-            <div class="tablewrap" style="margin-top:8px"><table><tr><th>Buyer</th><th>Type</th><th class="n">MWh/yr</th><th class="n">Pipe</th></tr>
-            ${al.map(([k, mwh, km]) => `<tr><td>${esc(d.sinks[k][0])}</td><td>${esc(d.sinks[k][1])}</td><td class="n">${fmt(mwh)}</td><td class="n">${km.toFixed(1)} km</td></tr>`).join('')}</table></div>
-            <p class="note" style="margin-top:6px">CO₂ avoided is the gas no longer burned minus the heat pump’s electricity. Homes’ worth uses Odense’s 17.9 MWh per home.</p>`
-          : `<p class="empty">No building within 3 km would buy this site’s heat at ${d.name} prices, so it would be vented: about ${fmt(d.refMW * 0.7 * 8760)} MWh a year. The site may still rank well on water, carbon, climate or grid access.</p>`}
+    const status = S.ex[i] ? '<span class="status out">Ruled out</span>' : al.length ? '<span class="status heat">Heat would sell</span>' : '<span class="status">Buildable</span>';
+    $('report').innerHTML = `
+      <section>
+        <button class="back" id="back">← All places</button>
+        <div class="rhead">
+          <div><h2>${esc(nearest(d, c.lat[i], c.lon[i]))}</h2><div class="coords">${c.lat[i].toFixed(4)}° N, ${Math.abs(c.lon[i]).toFixed(4)}° W · ${esc(d.name)}</div>${status}</div>
+          <div class="bigscore"><div class="v">${S.score[i].toFixed(2)}</div><div class="l">site score</div></div>
         </div>
-      </div>`;
+      </section>
+      <section>
+        <h2>Score breakdown</h2>
+        <p class="sub">Each factor scored 0–1, then weighted by your priority.</p>
+        ${KEYS.map(k => `<div class="factor"><div class="top"><b>${LABELS[k]}</b><span>${f[k].toFixed(2)} · weight ${S.w[k]}</span></div><div class="track"><span class="fill" style="width:${(f[k] * 100).toFixed(0)}%"></span></div><small>${raw[k]}</small></div>`).join('')}
+        ${ex.length ? `<p class="note">${S.ex[i] ? 'Ruled out because the square is ' : 'Partly covered: '}${ex.join(', ')}.</p>` : ''}
+      </section>
+      <section>
+        <h2>Heat delivery plan</h2>
+        ${al.length ? `<p class="sub">If a 50 MW data center were built here, these buildings would buy its heat. Amber lines on the map lead to each one.</p>
+          <div class="kpis"><div class="kpi accent"><div class="v">${fmt(tot)}</div><div class="l">MWh of heat a year</div></div><div class="kpi"><div class="v">${fmt(tot / HOME_MWH)}</div><div class="l">homes’ worth</div></div><div class="kpi"><div class="v">${fmt(co2)}</div><div class="l">t CO₂ avoided a year</div></div></div>
+          <div class="tablewrap" style="margin-top:14px"><table><tr><th>Buyer</th><th>Type</th><th class="n">MWh/yr</th><th class="n">Pipe</th></tr>
+          ${al.map(([k, mwh, km]) => `<tr><td>${esc(d.sinks[k][0])}</td><td>${esc(d.sinks[k][1])}</td><td class="n">${fmt(mwh)}</td><td class="n">${km.toFixed(1)} km</td></tr>`).join('')}</table></div>
+          <p class="note">CO₂ avoided is gas no longer burned minus the heat pump’s electricity. Homes’ worth uses 17.9 MWh per home (Odense).</p>`
+        : `<p class="sub">No building within 3 km would buy this site’s heat at ${esc(d.name)} prices, so about ${fmt(d.refMW * 0.7 * 8760)} MWh a year would be vented. The site can still score well on water, carbon, climate or grid access.</p>`}
+      </section>`;
+    $('back').addEventListener('click', () => select(-1, false));
   }
   function select(i, center) {
     S.sel = i; renderReport();
-    document.querySelectorAll('ol.top button').forEach(b => b.setAttribute('aria-current', String(+b.dataset.i === i)));
     if (center && i >= 0) { const d = S.data[S.st], [x, y] = proj(d.cols.lat[i], d.cols.lon[i]); S.view.cx = x; S.view.cy = y; S.view.s = Math.max(S.view.s, 900 / (d.dlat * 60)); }
-    draw();
+    $('side').scrollTop = 0; draw();
   }
 
-  // ---------------- controls ----------------
-  function syncSliders() {
+  // ---------- controls ----------
+  function syncWeights() {
     KEYS.forEach(k => { $('w-' + k).value = S.w[k]; $('o-' + k).textContent = S.w[k]; });
-    document.querySelectorAll('.plist button').forEach(b => b.setAttribute('aria-pressed', String(KEYS.every(k => PRESETS[b.dataset.p][k] === S.w[k]))));
+    document.querySelectorAll('#presets button').forEach(b => b.setAttribute('aria-pressed', String(KEYS.every(k => PRESETS[b.dataset.p][k] === S.w[k]))));
+    renderCaption();
   }
-  KEYS.forEach(k => $('w-' + k).addEventListener('input', e => { S.w[k] = +e.target.value; store.set('tl-w', S.w); syncSliders(); rescore(); }));
-  document.querySelectorAll('.plist button').forEach(b => b.addEventListener('click', () => { S.w = { ...PRESETS[b.dataset.p] }; store.set('tl-w', S.w); syncSliders(); rescore(); }));
+  KEYS.forEach(k => $('w-' + k).addEventListener('input', e => { S.w[k] = +e.target.value; store.set('tl-w', S.w); syncWeights(); rescore(); }));
+  $('presets').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; S.w = { ...PRESETS[b.dataset.p] }; store.set('tl-w', S.w); syncWeights(); rescore(); });
+  $('states').addEventListener('click', e => { const b = e.target.closest('button'); if (b) switchState(b.dataset.st); });
+  $('weightsBtn').addEventListener('click', () => { const open = $('weights').hidden; $('weights').hidden = !open; $('weightsBtn').setAttribute('aria-expanded', String(open)); requestAnimationFrame(resize); });
   $('c-excl').addEventListener('change', e => { S.excl = e.target.checked; rescore(); });
   $('c-dc').addEventListener('change', e => { S.showDC = e.target.checked; draw(); });
   $('top').addEventListener('click', e => { const b = e.target.closest('button'); if (b) select(+b.dataset.i, true); });
-  $('targets').addEventListener('click', e => { const b = e.target.closest('button'); if (b) switchState(b.dataset.st); });
   $('z-in').addEventListener('click', () => { if (S.view) { S.view.s *= 1.5; draw(); } });
   $('z-out').addEventListener('click', () => { if (S.view) { S.view.s /= 1.5; draw(); } });
   $('z-fit').addEventListener('click', fit);
 
-  let drag = null;
+  let drag = null, raf = 0;
   cv.addEventListener('pointerdown', e => { if (!S.view) return; drag = { x: e.clientX, y: e.clientY, cx: S.view.cx, cy: S.view.cy, moved: false }; try { cv.setPointerCapture(e.pointerId); } catch {} });
   cv.addEventListener('pointermove', e => {
     const r = cv.getBoundingClientRect(), px = e.clientX - r.left, py = e.clientY - r.top;
     if (drag) {
       const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
-      if (Math.abs(dx) + Math.abs(dy) > 4) { drag.moved = true; cv.classList.add('dragging'); }
-      S.view.cx = drag.cx - dx / S.view.s; S.view.cy = drag.cy - dy / S.view.s; draw(); return;
+      if (Math.abs(dx) + Math.abs(dy) > 4) { drag.moved = true; cv.classList.add('dragging'); $('tip').hidden = true; }
+      if (drag.moved) { S.view.cx = drag.cx - dx / S.view.s; S.view.cy = drag.cy - dy / S.view.s; draw(); }
+      return;
     }
-    hud(px, py);
+    if (raf) return;
+    raf = requestAnimationFrame(() => { raf = 0; hover(px, py); });
   });
   cv.addEventListener('pointerup', e => {
     cv.classList.remove('dragging');
-    if (drag && !drag.moved) { const r = cv.getBoundingClientRect(); select(cellAt(e.clientX - r.left, e.clientY - r.top), false); }
+    if (drag && !drag.moved) { const r = cv.getBoundingClientRect(), i = cellAt(e.clientX - r.left, e.clientY - r.top); if (i >= 0) select(i, false); }
     drag = null;
   });
-  cv.addEventListener('pointerleave', () => { $('hud').textContent = 'Move over the map to read a square'; });
+  cv.addEventListener('pointerleave', () => { $('tip').hidden = true; });
   cv.addEventListener('wheel', e => {
     if (!S.view) return; e.preventDefault();
-    const r = cv.getBoundingClientRect(), px = e.clientX - r.left, py = e.clientY - r.top;
-    const [la, lo] = toWorld(px, py), k = e.deltaY < 0 ? 1.25 : 0.8;
-    S.view.s *= k; const [x, y] = proj(la, lo);
+    const r = cv.getBoundingClientRect(), px = e.clientX - r.left, py = e.clientY - r.top, [la, lo] = toWorld(px, py);
+    S.view.s *= e.deltaY < 0 ? 1.25 : 0.8; const [x, y] = proj(la, lo);
     S.view.cx = x - (px - cv.clientWidth / 2) / S.view.s; S.view.cy = y - (py - cv.clientHeight / 2) / S.view.s; draw();
   }, { passive: false });
-  let hudRaf = 0;
-  function hud(px, py) {
-    if (hudRaf) return;
-    hudRaf = requestAnimationFrame(() => {
-      hudRaf = 0;
-      const d = S.data[S.st]; if (!d || !S.view) return;
-      const [lat, lon] = toWorld(px, py), i = cellAt(px, py);
-      $('hud').innerHTML = i < 0 ? `LAT ${lat.toFixed(3)}° LON ${lon.toFixed(3)}° · outside ${esc(d.name)}`
-        : `LAT ${lat.toFixed(3)}° LON ${lon.toFixed(3)}° · score <b>${S.score[i].toFixed(2)}</b>${S.ex[i] ? ' · ruled out' : ''}${d.cols.heat[i] ? ` · sells <b>${fmt(d.cols.heat[i])}</b> MWh` : ''}`;
-    });
+  function hover(px, py) {
+    const d = S.data[S.st], i = cellAt(px, py), tip = $('tip');
+    if (!d || i < 0) { tip.hidden = true; return; }
+    const h = d.cols.heat[i];
+    tip.innerHTML = `<b>Score ${S.score[i].toFixed(2)}</b>${S.ex[i] ? ' · ruled out' : ''}${h ? ` · <span style="color:var(--heat)">sells ${fmt(h)} MWh/yr</span>` : ''}<br>${d.cols.lat[i].toFixed(3)}° N, ${Math.abs(d.cols.lon[i]).toFixed(3)}° W`;
+    tip.hidden = false;
+    const W = cv.clientWidth, tw = tip.offsetWidth || 180;
+    tip.style.left = `${Math.min(px, W - tw - 24)}px`; tip.style.top = `${py}px`;
   }
 
   async function load(st) {
     if (S.data[st]) return S.data[st];
     const r = await fetch(`data-${st.toLowerCase()}.json`);
-    if (!r.ok) throw new Error(`Could not load ${st} (${r.status}). Try again in a moment.`);
+    if (!r.ok) throw new Error(`Couldn’t load ${st} (error ${r.status}). Reload the page to try again.`);
     return (S.data[st] = await r.json());
   }
   async function switchState(st) {
     S.st = st; store.set('tl-state', st); S.sel = -1; S.view = null; S.top = [];
-    renderTargets();
-    $('loading').hidden = false; $('loading').textContent = 'Acquiring signal…';
+    renderStates(); renderReport();
+    $('loading').hidden = false; $('loading').textContent = 'Loading…';
     try {
       await load(st); if (S.st !== st) return;
-      $('loading').hidden = true;
-      fit(); renderVerdict(); rescore();
+      $('loading').hidden = true; fit(); renderSummary(); rescore();
     } catch (err) { $('loading').textContent = err.message; }
   }
 
-  // ---------------- pages ----------------
-  const VIEWS = ['map', 'tutorial', 'about'];
+  // ---------- pages ----------
+  const VIEWS = ['map', 'guide', 'about'];
   function route() {
     const v = VIEWS.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'map';
     VIEWS.forEach(n => { $('view-' + n).hidden = n !== v; $('nav-' + n).setAttribute('aria-current', n === v ? 'page' : 'false'); });
-    if (v !== 'map') endTour();
-    if (v === 'map') requestAnimationFrame(resize);
+    if (v !== 'map') endTour(); else requestAnimationFrame(resize);
   }
   window.addEventListener('hashchange', route);
 
-  // ---------------- guided tour ----------------
+  // ---------- guided tour ----------
   const TOUR = [
-    { el: 'targetsSec', t: 'Choose a mission target', p: 'Pick Virginia, Texas or North Carolina. The orange box below says how many squares in that state could sell their heat at today’s prices.' },
-    { el: 'presetSec', t: 'Pick a mission profile', p: 'A preset sets what matters. Try “Heat reuse first” to find sites next to buildings that would buy the heat.' },
-    { el: 'sliderSec', t: 'Fine-tune the weights', p: 'Each slider runs from 0 (ignore) to 5 (matters most). The map and top 10 update as you drag.' },
-    { el: 'mapwrap', t: 'Read the map', p: 'Every square is a possible site. Yellow is better, deep purple is weaker. Dark grey is ruled out. White dots are data centers that exist today. Move over the map to read a square in the top-left readout.' },
-    { el: 'topSec', t: 'Top 10 places to build', p: 'The best places for a new data center under your weights, at least 6 km apart. A teal tag means its heat would sell. Click one to fly there.' },
-    { el: 'reportSec', t: 'Read the site report', p: 'Each factor’s score and the measurement behind it, then the heat delivery plan: which buildings would buy the heat, how much, and how far the pipe runs.' },
+    { el: 'f-state', t: 'Choose a state', p: 'Virginia, Texas and North Carolina scored highest of the six states we screened.' },
+    { el: 'f-priority', t: 'Set your priority', p: 'Each option weights the five factors differently. Heat reuse looks for sites beside buildings that would buy the heat.' },
+    { el: 'weightsBtn', t: 'Adjust the weights', p: 'Open this to set each factor from 0 (ignore) to 5 (matters most). Results update as you move a slider.' },
+    { el: 'mapwrap', t: 'Read the map', p: 'Every square is a possible site. Darker green scores higher; grey is ruled out. Small dark squares are existing data centers. Hover any square to read it.' },
+    { el: 'topSec', t: 'Top 10 places to build', p: 'The best areas for a new data center under your priority. Click one to open its report.' },
+    { el: 'side', t: 'Read the site report', p: 'The score broken into its five factors, then the heat delivery plan: which buildings would buy the heat, how much, and over how much pipe.' },
   ];
-  let tourI = -1, ring = null, tip = null;
+  let tourI = -1, ringEl = null, cardEl = null;
   function startTour() {
-    if (location.hash !== '#map' && location.hash !== '') { location.hash = 'map'; }
-    route(); hideBanner(); tourI = 0;
-    ring = document.createElement('div'); ring.className = 'tour-ring';
-    tip = document.createElement('div'); tip.className = 'tour-tip'; tip.setAttribute('role', 'dialog'); tip.setAttribute('aria-live', 'polite');
-    document.body.append(ring, tip); showStep();
+    if (location.hash && location.hash !== '#map') location.hash = 'map';
+    route(); tourI = 0;
+    ringEl = document.createElement('div'); ringEl.className = 'tour-ring';
+    cardEl = document.createElement('div'); cardEl.className = 'tour-card'; cardEl.setAttribute('role', 'dialog'); cardEl.setAttribute('aria-label', 'Guided tour');
+    document.body.append(ringEl, cardEl); step();
   }
-  function showStep() {
-    if (tourI < 0 || !tip) return;
-    if (tourI === 4 && S.sel < 0 && S.top.length) select(S.top[0], true);
+  function step() {
+    if (tourI < 0 || !cardEl) return;
+    if (tourI === 5 && S.sel < 0 && S.top.length) select(S.top[0], true);
     const s = TOUR[tourI], el = $(s.el);
     el.scrollIntoView({ block: 'nearest', inline: 'nearest' });
     const r = el.getBoundingClientRect();
-    Object.assign(ring.style, { left: `${r.left - 6}px`, top: `${r.top - 6}px`, width: `${r.width + 12}px`, height: `${r.height + 12}px` });
-    tip.innerHTML = `<div class="kicker">Step ${tourI + 1} of ${TOUR.length}</div><b>${s.t}</b><p>${s.p}</p>
-      <div class="row-actions">${tourI > 0 ? '<button id="tourBack" class="btn-x">Back</button>' : ''}<button id="tourNext" class="btn-go">${tourI === TOUR.length - 1 ? 'Finish' : 'Next'}</button><button id="tourEnd" class="btn-x">Skip</button></div>`;
-    const vw = window.innerWidth, vh = window.innerHeight, tw = tip.offsetWidth || 340, th = tip.offsetHeight || 180;
-    let left = r.right + 16, top = r.top;
-    if (left + tw > vw - 16) left = r.left - tw - 16;
-    if (left < 16) { left = Math.max(16, Math.min(vw - tw - 16, r.left)); top = r.bottom + 16; if (top + th > vh - 16) top = Math.max(16, r.top - th - 16); }
-    tip.style.left = `${left}px`; tip.style.top = `${Math.max(16, Math.min(top, vh - th - 16))}px`;
-    $('tourNext').onclick = () => { if (tourI === TOUR.length - 1) endTour(); else { tourI++; showStep(); } };
+    Object.assign(ringEl.style, { left: `${r.left - 4}px`, top: `${r.top - 4}px`, width: `${r.width + 8}px`, height: `${r.height + 8}px` });
+    cardEl.innerHTML = `<p class="eyebrow">Step ${tourI + 1} of ${TOUR.length}</p><b>${s.t}</b><p>${s.p}</p>
+      <div class="actions"><button class="btn link" id="tourEnd">Skip</button>${tourI > 0 ? '<button class="btn" id="tourBack">Back</button>' : ''}<button class="btn primary" id="tourNext">${tourI === TOUR.length - 1 ? 'Done' : 'Next'}</button></div>`;
+    const vw = window.innerWidth, vh = window.innerHeight, tw = cardEl.offsetWidth || 320, th = cardEl.offsetHeight || 170;
+    let left = r.left, top = r.bottom + 12;
+    if (top + th > vh - 12) { top = r.top + 12; left = r.left + 12; }
+    if (r.width > vw * 0.5 && r.height > vh * 0.5) { top = r.top + 16; left = r.left + 16; }
+    cardEl.style.left = `${Math.max(12, Math.min(left, vw - tw - 12))}px`; cardEl.style.top = `${Math.max(12, Math.min(top, vh - th - 12))}px`;
+    $('tourNext').onclick = () => { if (tourI === TOUR.length - 1) endTour(); else { tourI++; step(); } };
     $('tourEnd').onclick = endTour;
-    if ($('tourBack')) $('tourBack').onclick = () => { tourI--; showStep(); };
+    if ($('tourBack')) $('tourBack').onclick = () => { tourI--; step(); };
     $('tourNext').focus();
   }
-  function endTour() { tourI = -1; if (ring) ring.remove(); if (tip) tip.remove(); ring = tip = null; store.set('tl-toured', true); }
-  window.addEventListener('resize', () => { if (tourI >= 0) showStep(); });
+  function endTour() { tourI = -1; ringEl?.remove(); cardEl?.remove(); ringEl = cardEl = null; }
+  window.addEventListener('resize', () => { if (tourI >= 0) step(); });
   document.addEventListener('keydown', e => { if (tourI >= 0 && e.key === 'Escape') endTour(); });
-  function hideBanner() { $('tourBanner').hidden = true; store.set('tl-toured', true); }
-  $('bannerGo').addEventListener('click', startTour);
-  $('bannerX').addEventListener('click', hideBanner);
-  $('tourFromTutorial').addEventListener('click', () => { location.hash = 'map'; setTimeout(startTour, 60); });
-  $('tourBanner').hidden = !!store.get('tl-toured', false);
+  $('tourBtn').addEventListener('click', startTour);
+  $('guideTour').addEventListener('click', () => { location.hash = 'map'; setTimeout(startTour, 60); });
 
-  // ---------------- boot ----------------
+  // ---------- theme + boot ----------
+  const retheme = () => { readTheme(); draw(); };
+  matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', retheme);
+  new MutationObserver(retheme).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
   if (typeof ResizeObserver !== 'undefined') new ResizeObserver(() => { if (!$('view-map').hidden) resize(); }).observe(wrap);
-  window.ThermaLite = { S, startTour, select, switchState, rescore };  // handle for tests
-  route(); syncSliders(); renderTargets(); switchState(S.st);
+  window.ThermaLite = { S, startTour, select, switchState };
+  readTheme(); route(); renderStates(); syncWeights(); switchState(S.st);
 })();
 </script>
