@@ -62,6 +62,12 @@ class Assumptions:
 
 DEFAULT = Assumptions()
 
+# Heating intensities (osm.SINK_TYPES) are set for a reference climate. With real
+# climate data, the weather-driven share of each building's demand is scaled by
+# site heating degree days / REF_HDD, so a Texas greenhouse needs less heat than a
+# Washington one. 2,600 C-days (base 18 C) ~ central New Jersey, ERA5-Land 2015-2024.  [ENGINEERING]
+REF_HDD = 2600.0
+
 # --- Turning public footprints into energy numbers ---------------------------
 # The IM3 atlas gives building/campus footprint area, not power. IT load is
 # estimated as footprint x power density. Real facilities range widely (older

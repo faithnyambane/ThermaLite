@@ -1,0 +1,22 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC186,T5 Charlotte Campus,35.250565,-81.394558,38.0,chilled_water,,,,Cleveland County,379990.0,campus,yes
+DC216,Unnamed site (Union County),35.179489,-80.570199,60.81,chilled_water,,,,Union County,608141.0,campus,yes
+DC451,Unnamed site (Catawba County),35.58812,-81.262733,56.44,chilled_water,,,,Catawba County,564402.0,building,yes
+DC479,Unnamed site (Caldwell County),35.898288,-81.547256,14.89,chilled_water,,,,Caldwell County,148885.0,building,yes
+DC534,Flexential Charlotte - South,35.135389,-80.936797,3.37,chilled_water,,,Flexential,Mecklenburg County,33741.0,building,yes
+DC549,Segra Data Center,35.724992,-78.662363,4.61,chilled_water,,,,Wake County,46141.0,building,yes
+DC787,Meta,35.314111,-81.822491,24.11,chilled_water,,,Meta,Rutherford County,241126.0,building,yes
+DC788,Meta,35.317311,-81.826623,23.38,chilled_water,,,Meta,Rutherford County,233782.0,building,yes
+DC848,Spectrum Charlotte National Data Center,35.142836,-80.916175,9.36,chilled_water,,,,Mecklenburg County,93604.0,building,yes
+DC933,CyrusOne site,35.935351,-78.880699,26.96,chilled_water,,,CyrusOne,Durham County,269587.0,building,yes
+DC949,Unnamed site (Catawba County),35.587129,-81.260298,20.71,chilled_water,,,,Catawba County,207083.0,building,yes
+DC1026,iGLASS Networks,35.766751,-78.783985,0.81,chilled_water,,,,Wake County,8134.0,building,yes
+DC1082,BB&T Data Center,35.839394,-78.328132,14.3,chilled_water,,,,Wake County,143011.0,building,yes
+DC1101,TierPoint - Charlotte Data Center,35.173196,-80.928121,6.16,chilled_water,,,TierPoint,Mecklenburg County,61578.0,building,yes
+DC1102,SEGRA,35.17997,-80.92642,1.81,chilled_water,,,,Mecklenburg County,18094.0,building,yes
+DC1112,Unnamed site (Caldwell County),35.892629,-81.547397,64.32,chilled_water,,,,Caldwell County,643223.0,building,yes
+DC1131,Unnamed site (Catawba County),35.590392,-81.26457,20.34,chilled_water,,,,Catawba County,203410.0,building,yes
+DC1138,Meta,35.316418,-81.825028,31.98,chilled_water,,,Meta,Rutherford County,319829.0,building,yes
+DC1333,Meta,35.315685,-81.821879,10.06,chilled_water,,,Meta,Rutherford County,100596.0,building,yes
+DC1539,Flexential Charlotte - North,35.329677,-80.765708,6.28,chilled_water,,,Flexential,Mecklenburg County,62809.0,building,yes
+DC1947,CyrusOne site,35.933954,-78.880955,8.36,chilled_water,,,CyrusOne,Durham County,83615.0,building,yes

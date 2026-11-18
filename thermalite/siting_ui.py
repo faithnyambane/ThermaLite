@@ -5,7 +5,8 @@ import csv
 import json
 from pathlib import Path
 
-STATE_NAMES = {"NJ": "New Jersey", "WA": "Washington"}
+STATE_NAMES = {"NJ": "New Jersey", "WA": "Washington", "OR": "Oregon", "TX": "Texas",
+               "VA": "Virginia", "NC": "North Carolina", "PA": "Pennsylvania"}
 
 # Reference labels for the map (city centre coordinates).
 CITIES = {
@@ -18,6 +19,21 @@ CITIES = {
            ("Yakima", 46.6021, -120.5059), ("Tri-Cities", 46.2112, -119.1372), ("Spokane", 47.6588, -117.4260),
            ("Everett", 47.9790, -122.2021), ("Arlington", 48.1987, -122.1251), ("Olympia", 47.0379, -122.9007),
            ("Mount Vernon", 48.4212, -122.3341)],
+    "OR": [("Portland", 45.5152, -122.6784), ("Hillsboro", 45.5229, -122.9898), ("Salem", 44.9429, -123.0351),
+           ("Eugene", 44.0521, -123.0868), ("Bend", 44.0582, -121.3153), ("Prineville", 44.2999, -120.8345),
+           ("The Dalles", 45.5946, -121.1787), ("Medford", 42.3265, -122.8756), ("Boardman", 45.8399, -119.7006)],
+    "TX": [("Dallas", 32.7767, -96.7970), ("Fort Worth", 32.7555, -97.3308), ("Houston", 29.7604, -95.3698),
+           ("San Antonio", 29.4241, -98.4936), ("Austin", 30.2672, -97.7431), ("El Paso", 31.7619, -106.4850),
+           ("Abilene", 32.4487, -99.7331), ("Amarillo", 35.2220, -101.8313), ("Lubbock", 33.5779, -101.8552)],
+    "VA": [("Ashburn", 39.0438, -77.4874), ("Manassas", 38.7509, -77.4753), ("Arlington", 38.8816, -77.0910),
+           ("Richmond", 37.5407, -77.4360), ("Norfolk", 36.8508, -76.2859), ("Charlottesville", 38.0293, -78.4767),
+           ("Roanoke", 37.2710, -79.9414)],
+    "NC": [("Charlotte", 35.2271, -80.8431), ("Raleigh", 35.7796, -78.6382), ("Durham", 35.9940, -78.8986),
+           ("Greensboro", 36.0726, -79.7920), ("Asheville", 35.5951, -82.5515), ("Wilmington", 34.2104, -77.8868),
+           ("Maiden", 35.5757, -81.2118), ("Lenoir", 35.9140, -81.5390)],
+    "PA": [("Philadelphia", 39.9526, -75.1652), ("Pittsburgh", 40.4406, -79.9959), ("Harrisburg", 40.2732, -76.8867),
+           ("Allentown", 40.6023, -75.4714), ("Scranton", 41.4090, -75.6624), ("Erie", 42.1292, -80.0851),
+           ("State College", 40.7934, -77.8600)],
 }
 
 

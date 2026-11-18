@@ -43,9 +43,15 @@ header h1 span { color: var(--accent); }
 .slider output { font: 600 13px var(--display); color: var(--accent); font-variant-numeric: tabular-nums; }
 .slider small { grid-column: 1 / -1; color: var(--muted); font-size: 12px; }
 .slider input { grid-column: 1 / -1; width: 100%; accent-color: var(--accent); }
-.presets { display: flex; flex-wrap: wrap; gap: 6px; }
-.presets button, .zoom button { font: 500 12px var(--text); border: 1px solid var(--line); background: var(--panel); color: var(--fg); padding: 6px 10px; border-radius: 999px; cursor: pointer; }
-.presets button:hover, .zoom button:hover { border-color: var(--accent); }
+.plist { display: flex; flex-direction: column; gap: 6px; }
+.plist button { text-align: left; display: flex; flex-direction: column; gap: 2px; font: 13px var(--text); color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; cursor: pointer; }
+.plist button span { color: var(--muted); font-size: 12px; }
+.plist button:hover, .plist button[aria-pressed="true"] { border-color: var(--accent); }
+.plist button[aria-pressed="true"] b { color: var(--accent); }
+.howto { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; }
+.howto li::marker { color: var(--accent); }
+.zoom button { font: 500 12px var(--text); border: 1px solid var(--line); background: var(--panel); color: var(--fg); padding: 6px 10px; border-radius: 999px; cursor: pointer; }
+.zoom button:hover { border-color: var(--accent); }
 button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .check { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; }
 .check input { accent-color: var(--accent); margin-top: 3px; }
@@ -101,10 +107,7 @@ td.n, th.n { text-align: right; }
       <h1>Therma<span>Lite</span> Siting</h1>
       <div class="sub">Where should the next data center go so its heat gets used and its footprint stays small?</div>
     </div>
-    <div class="tabs" role="group" aria-label="State">
-      <button id="tab-WA" aria-pressed="true">Washington</button>
-      <button id="tab-NJ" aria-pressed="false">New Jersey</button>
-    </div>
+    <div class="tabs" role="group" aria-label="State" id="tabs"></div>
   </header>
 
   <div class="main">
@@ -120,19 +123,46 @@ td.n, th.n { text-align: right; }
       </section>
       <section>
         <h2>Presets</h2>
-        <div class="presets">
-          <button data-p="balanced">Balanced</button>
-          <button data-p="heat">Heat reuse first</button>
-          <button data-p="water">Protect water</button>
-          <button data-p="clean">Clean and cool</button>
+        <div class="plist">
+          <button data-p="balanced"><b>Balanced</b><span>All five factors count the same. A neutral starting point.</span></button>
+          <button data-p="heat"><b>Heat reuse first</b><span>Puts the data center next to buildings that would buy its heat. Use this to find Odense-style sites.</span></button>
+          <button data-p="water"><b>Protect water</b><span>Avoids areas where rivers and aquifers are already stretched, since cooling can use a lot of water.</span></button>
+          <button data-p="clean"><b>Clean and cool</b><span>Favors clean power and cool climates, which cut the data center’s own emissions and cooling energy.</span></button>
         </div>
+      </section>
+      <section>
+        <h2>How to read the map</h2>
+        <ul class="howto">
+          <li><b>Each square</b> is a 2 km patch of land where a new 50 MW data center could go.</li>
+          <li><b>Color follows the legend</b> at the bottom of the map: the left end is this state’s weakest sites, the right end its best. In light mode the best sites are the darkest blue; in dark mode they are the brightest.</li>
+          <li>Colors are relative <b>within each state</b>. To compare states, use the score numbers.</li>
+          <li><b>Grey squares</b> are ruled out: mostly flood zone, protected land or water.</li>
+          <li><b>Orange numbered rings</b> are the top 10 sites, spread at least 6 km apart.</li>
+          <li><b>Small dark squares</b> are data centers that exist today. Compare them with where the dark blue is.</li>
+          <li><b>Click a square</b> to see why it scored that way. If it can sell heat, orange lines show which buildings get it.</li>
+          <li>An orange <b>“MWh heat”</b> tag in the top 10 means that site’s heat would actually pay to reuse at today’s prices.</li>
+        </ul>
       </section>
       <section>
         <h2>Map</h2>
         <label class="check"><input type="checkbox" id="c-excl" checked> <span>Rule out flood zones, protected land and water (over half the cell)</span></label>
         <label class="check" style="margin-top:8px"><input type="checkbox" id="c-dc" checked> <span>Show existing data centers</span></label>
       </section>
-      <p class="note">Each square is a 2 km candidate site for a 50 MW data center with chilled-water cooling. Scores use one fixed scale for both states.</p>
+      <section>
+        <h2>Why these three states</h2>
+        <p class="note" style="margin-bottom:8px">We ran six states where heat pumps beat gas on price. Ranked by the heat that new data centers could reuse at their 10 best sites that don’t share a buyer:</p>
+        <table>
+          <tr><th>State</th><th class="n">MWh/yr</th><th class="n">Homes’ worth</th></tr>
+          <tr><td><b>Virginia</b></td><td class="n">780,000</td><td class="n">43,600</td></tr>
+          <tr><td><b>Texas</b></td><td class="n">640,000</td><td class="n">35,700</td></tr>
+          <tr><td><b>North Carolina</b></td><td class="n">410,000</td><td class="n">22,900</td></tr>
+          <tr><td>Oregon</td><td class="n">353,000</td><td class="n">19,700</td></tr>
+          <tr><td>Washington</td><td class="n">298,000</td><td class="n">16,700</td></tr>
+          <tr><td>Pennsylvania</td><td class="n">176,000</td><td class="n">9,800</td></tr>
+        </table>
+        <p class="note" style="margin-top:8px">Most of the reusable heat goes to large greenhouses mapped in OpenStreetMap. Unnamed ones, especially on Virginia’s Eastern Shore, may be poultry houses and need checking on aerial imagery.</p>
+      </section>
+      <p class="note">Each square is a 2 km candidate site for a 50 MW data center with chilled-water cooling (heat leaves at about 30 °C). Prices are each state’s EIA commercial rates. Scores use one fixed scale for every state.</p>
     </aside>
 
     <div class="mapwrap" id="mapwrap">
@@ -144,7 +174,7 @@ td.n, th.n { text-align: right; }
         <button id="z-fit" aria-label="Fit state">⤢</button>
       </div>
       <div class="legend">
-        <div class="row"><span>Site score</span><span id="lg-lo"></span><div class="ramp" id="ramp"></div><span id="lg-hi"></span></div>
+        <div class="row"><span>Site score</span><span>worse <b id="lg-lo"></b></span><div class="ramp" id="ramp"></div><span><b id="lg-hi"></b> better</span></div>
         <div class="row">
           <span class="key"><i class="sw" style="background:var(--excl)"></i>Ruled out</span>
           <span class="key"><i class="sw" style="background:var(--dc)"></i>Existing data center</span>
@@ -171,6 +201,8 @@ td.n, th.n { text-align: right; }
     water: { heat: 1, carbon: 1, water: 5, cooling: 2, grid: 2 },
     clean: { heat: 1, carbon: 4, water: 2, cooling: 4, grid: 1 },
   };
+  // The three states where a new data center's heat is most worth reusing (see README / ThermaLite doc).
+  const STATES = [['VA', 'Virginia'], ['TX', 'Texas'], ['NC', 'North Carolina']];
   const KEYS = ['heat', 'carbon', 'water', 'cooling', 'grid'];
   const LABELS = { heat: 'Heat reuse', carbon: 'Clean power', water: 'Water', cooling: 'Cool climate', grid: 'Grid access' };
   const HOME_MWH = 17.9;   // Odense: 215,000 MWh for 12,000 homes
@@ -181,7 +213,8 @@ td.n, th.n { text-align: right; }
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
   };
   const S = {
-    st: store.get('tl-state', 'WA'), w: store.get('tl-w', { ...PRESETS.balanced }),
+    st: STATES.some(([s]) => s === store.get('tl-state', '')) ? store.get('tl-state', '') : STATES[0][0],
+    w: store.get('tl-w', { ...PRESETS.balanced }),
     excl: true, showDC: true, data: {}, sel: -1, score: null, ex: null, view: null, ramp: [],
   };
 
@@ -388,13 +421,18 @@ td.n, th.n { text-align: right; }
   }
 
   // ---------- controls ----------
-  function syncSliders() { KEYS.forEach(k => { $('w-' + k).value = S.w[k]; $('o-' + k).textContent = S.w[k]; }); }
-  KEYS.forEach(k => $('w-' + k).addEventListener('input', e => { S.w[k] = +e.target.value; $('o-' + k).textContent = S.w[k]; store.set('tl-w', S.w); rescore(); }));
-  document.querySelectorAll('.presets button').forEach(b => b.addEventListener('click', () => { S.w = { ...PRESETS[b.dataset.p] }; store.set('tl-w', S.w); syncSliders(); rescore(); }));
+  function syncSliders() {
+    KEYS.forEach(k => { $('w-' + k).value = S.w[k]; $('o-' + k).textContent = S.w[k]; });
+    document.querySelectorAll('.plist button').forEach(b => b.setAttribute('aria-pressed',
+      String(KEYS.every(k => PRESETS[b.dataset.p][k] === S.w[k]))));
+  }
+  KEYS.forEach(k => $('w-' + k).addEventListener('input', e => { S.w[k] = +e.target.value; store.set('tl-w', S.w); syncSliders(); rescore(); }));
+  document.querySelectorAll('.plist button').forEach(b => b.addEventListener('click', () => { S.w = { ...PRESETS[b.dataset.p] }; store.set('tl-w', S.w); syncSliders(); rescore(); }));
   $('c-excl').addEventListener('change', e => { S.excl = e.target.checked; rescore(); });
   $('c-dc').addEventListener('change', e => { S.showDC = e.target.checked; draw(); });
   $('top').addEventListener('click', e => { const b = e.target.closest('button'); if (b) select(+b.dataset.i, true); });
-  ['WA', 'NJ'].forEach(st => $('tab-' + st).addEventListener('click', () => switchState(st)));
+  $('tabs').innerHTML = STATES.map(([s, n]) => `<button id="tab-${s}" aria-pressed="false">${n}</button>`).join('');
+  STATES.forEach(([st]) => $('tab-' + st).addEventListener('click', () => switchState(st)));
   $('z-in').onclick = () => { S.view.s *= 1.5; draw(); };
   $('z-out').onclick = () => { S.view.s /= 1.5; draw(); };
   $('z-fit').onclick = fit;
@@ -430,7 +468,7 @@ td.n, th.n { text-align: right; }
   }
   async function switchState(st) {
     S.st = st; store.set('tl-state', st); S.sel = -1; S.view = null;
-    ['WA', 'NJ'].forEach(s => $('tab-' + s).setAttribute('aria-pressed', String(s === st)));
+    STATES.forEach(([s]) => $('tab-' + s).setAttribute('aria-pressed', String(s === st)));
     $('loading').hidden = false; $('loading').textContent = 'Loading sites…';
     try {
       await load(st); $('loading').hidden = true;

@@ -1,0 +1,45 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC374,SES - Hawley Earth Station,41.464654,-75.129393,3.76,chilled_water,,,SES,Pike County,37556.0,building,yes
+DC473,DataBank Pittsburgh PIT2,40.451421,-80.190129,6.0,chilled_water,,,,Allegheny County,60007.0,building,yes
+DC614,Flexential Allentown Data Center,40.635695,-75.457573,4.9,chilled_water,,,Flexential,Lehigh County,48995.0,building,yes
+DC656,Terminal Commerce Building,39.959803,-75.160462,11.97,chilled_water,,,,Philadelphia County,119659.0,building,yes
+DC682,Lumen Norristown,40.127046,-75.408669,3.42,chilled_water,,,Lumen Technologies,Montgomery County,34224.0,building,yes
+DC862,Expedient Pittsburgh South,40.427386,-80.042418,2.74,chilled_water,,,Expedient,Allegheny County,27441.0,building,yes
+DC1041,Allentown-TekPark,40.544174,-75.65437,14.45,chilled_water,,,,Lehigh County,144515.0,building,yes
+DC1335,TierPoint Valley Forge,40.122009,-75.420915,6.24,chilled_water,,,TierPoint,Montgomery County,62375.0,building,yes
+DC1387,Flexential Philadelphia - Collegeville,40.152206,-75.477257,11.09,chilled_water,,,Flexential,Montgomery County,110941.0,building,yes
+DC1565,Nautilus Cryptomine,41.082625,-76.151419,5.71,chilled_water,,,,Luzerne County,57143.0,building,yes
+DC1566,Nautilus Cryptomine,41.083339,-76.151446,5.72,chilled_water,,,,Luzerne County,57220.0,building,yes
+DC1567,Amazon AWS PHL,41.084451,-76.143305,27.21,chilled_water,,,Amazon Web Services,Luzerne County,272145.0,building,yes
+DC1887,Unnamed site (Venango County),41.270938,-79.814126,0.07,chilled_water,,,,Venango County,717.0,building,yes
+DC1888,Unnamed site (Venango County),41.27094,-79.813954,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1889,Unnamed site (Venango County),41.271045,-79.814129,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1890,Unnamed site (Venango County),41.271048,-79.81396,0.07,chilled_water,,,,Venango County,717.0,building,yes
+DC1891,Unnamed site (Venango County),41.271168,-79.813962,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1892,Unnamed site (Venango County),41.271165,-79.814131,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1893,Unnamed site (Venango County),41.271276,-79.814138,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1894,Unnamed site (Venango County),41.271278,-79.813966,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1895,Unnamed site (Venango County),41.271852,-79.813552,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1896,Unnamed site (Venango County),41.271855,-79.813383,0.07,chilled_water,,,,Venango County,717.0,building,yes
+DC1897,Unnamed site (Venango County),41.271741,-79.81338,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1898,Unnamed site (Venango County),41.271737,-79.813551,0.07,chilled_water,,,,Venango County,717.0,building,yes
+DC1899,Unnamed site (Venango County),41.271625,-79.813545,0.07,chilled_water,,,,Venango County,717.0,building,yes
+DC1900,Unnamed site (Venango County),41.271628,-79.813375,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1901,Unnamed site (Venango County),41.271511,-79.813544,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1902,Unnamed site (Venango County),41.271514,-79.813372,0.07,chilled_water,,,,Venango County,717.0,building,yes
+DC1903,Unnamed site (Venango County),41.271401,-79.813368,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1904,Unnamed site (Venango County),41.271398,-79.81354,0.07,chilled_water,,,,Venango County,717.0,building,yes
+DC1905,Unnamed site (Venango County),41.271285,-79.813534,0.07,chilled_water,,,,Venango County,717.0,building,yes
+DC1906,Unnamed site (Venango County),41.271288,-79.813365,0.07,chilled_water,,,,Venango County,717.0,building,yes
+DC1907,Unnamed site (Venango County),41.271172,-79.813532,0.07,chilled_water,,,,Venango County,717.0,building,yes
+DC1908,Unnamed site (Venango County),41.271175,-79.813363,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1909,Unnamed site (Venango County),41.271058,-79.813528,0.07,chilled_water,,,,Venango County,718.0,building,yes
+DC1910,Unnamed site (Venango County),41.271061,-79.813361,0.07,chilled_water,,,,Venango County,717.0,building,yes
+DC1911,Unnamed site (Venango County),41.272005,-79.812837,0.07,chilled_water,,,,Venango County,715.0,building,yes
+DC1912,Unnamed site (Venango County),41.272087,-79.812839,0.07,chilled_water,,,,Venango County,715.0,building,yes
+DC1913,Unnamed site (Venango County),41.272138,-79.812512,0.07,chilled_water,,,,Venango County,715.0,building,yes
+DC1914,Unnamed site (Venango County),41.272172,-79.812346,0.07,chilled_water,,,,Venango County,715.0,building,yes
+DC1915,Unnamed site (Venango County),41.272307,-79.812535,0.07,chilled_water,,,,Venango County,715.0,building,yes
+DC1916,Unnamed site (Venango County),41.272309,-79.812341,0.07,chilled_water,,,,Venango County,715.0,building,yes
+DC1917,Unnamed site (Venango County),41.27238,-79.812845,0.07,chilled_water,,,,Venango County,714.0,building,yes
+DC1918,Unnamed site (Venango County),41.272293,-79.812845,0.07,chilled_water,,,,Venango County,715.0,building,yes

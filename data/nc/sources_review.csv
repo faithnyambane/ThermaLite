@@ -1,0 +1,5 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC118,Google Lenoir Data Center,35.898386,-81.547456,112.31,chilled_water,,,Google,Caldwell County,1123103.0,campus,yes
+DC119,Apple - Maiden Data Center,35.587961,-81.260949,543.11,chilled_water,,,,Catawba County,5431080.0,campus,yes
+DC160,Google Project Cardinal,35.892314,-81.546632,228.41,chilled_water,,,Google,Caldwell County,2284090.0,campus,yes
+DC214,Meta Forest City Data Center,35.315668,-81.823027,484.95,chilled_water,,,"Meta Platforms, Inc",Rutherford County,4849510.0,campus,yes

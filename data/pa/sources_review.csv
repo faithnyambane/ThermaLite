@@ -1,0 +1,2 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC251,Unnamed site (Luzerne County),41.08454,-76.148186,393.77,chilled_water,,,,Luzerne County,3937706.0,campus,yes

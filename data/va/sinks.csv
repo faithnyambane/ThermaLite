@@ -1,0 +1,1408 @@
+id,name,type,lat,lon,annual_heat_mwh,supply_temp_c,profile,footprint_m2,floors,osm_features,demand_estimated
+HO515671251,Salem Veterans Affairs Medical Center,hospital,37.274869,-80.019254,60000,80.0,,157241,4.0,1,yes
+HO45061747,Central State Hospital,hospital,37.208987,-77.451126,60000,80.0,,149241,4.0,1,yes
+HO604006649,Augusta Health,hospital,38.095829,-78.986186,23981,80.0,,31975,3.0,5,yes
+HO46843109,Hunter Holmes McGuire Veterans Administration Medical Center,hospital,37.495502,-77.467213,60000,80.0,,108524,4.0,1,yes
+HO383562784,Hampton Veterans Affairs Medical Center,hospital,37.016326,-76.33345,28581,80.0,,28581,4.0,23,yes
+HO368222774,Sentara Williamsburg Regional Medical Center,hospital,37.33718,-76.740119,17034,80.0,,17034,4.0,4,yes
+HO443703476,Western State Hospital,hospital,38.142276,-79.031119,60000,80.0,,67091,4.0,1,yes
+HO298161573,Riverside Regional Medical Center,hospital,37.063399,-76.481906,60000,80.0,,67075,4.0,1,yes
+HO730430629,Riverside Shore Memorial Hospital,hospital,37.697539,-75.722427,60000,80.0,,62844,4.0,1,yes
+HO323914910,Inova Fair Oaks Hospital,hospital,38.884052,-77.381146,10081,80.0,,10081,4.0,5,yes
+HO538654031,Stafford Hospital,hospital,38.415172,-77.40687,9853,80.0,,9853,4.0,2,yes
+HO412279436,Sentara Princess Anne Hospital,hospital,36.776449,-76.096599,17339,80.0,,17339,4.0,2,yes
+HO516393904,Inova Fairfax Hospital,hospital,38.856936,-77.227686,41198,80.0,,41198,4.0,2,yes
+HO142028799,Alexander T. Augusta Military Medical Center,hospital,38.705693,-77.143063,29973,80.0,,29973,4.0,6,yes
+HO149975007,North Spring Behavioral Healthcare,hospital,39.145263,-77.547368,48094,80.0,,48094,4.0,1,yes
+HO401000361,Chesapeake Regional Medical Center,hospital,36.747206,-76.247414,18977,80.0,,18977,4.0,2,yes
+HO517778184,Sentara RMH Medical Center,hospital,38.404881,-78.856165,20569,80.0,,20569,4.0,2,yes
+HO518479062,Johnston Memorial Hospital,hospital,36.722372,-81.910418,44430,80.0,,44430,4.0,1,yes
+HO517040263,Chippenham Hospital,hospital,37.513569,-77.526307,42455,80.0,,42455,4.0,1,yes
+HO517826763,Sentara Martha Jefferson Hospital,hospital,38.02274,-78.44448,15076,80.0,,15076,4.0,2,yes
+HO518149748,Carilion New River Valley Medical Center,hospital,37.088687,-80.505395,26075,80.0,,26075,4.0,2,yes
+HO516269207,Sentara Northern Virginia Medical Center,hospital,38.637166,-77.286026,28052,80.0,,28052,4.0,2,yes
+HO37889430,Sentara Leigh Hospital,hospital,36.851233,-76.190388,31684,80.0,,31684,4.0,3,yes
+HO44820052,LewisGale Medical Center,hospital,37.263636,-80.029638,35249,80.0,,35249,4.0,1,yes
+HO515361222,Centra Lynchburg General Hospital,hospital,37.416666,-79.172081,35040,80.0,,35040,4.0,1,yes
+HO469583540,Sentara Obici Hospital,hospital,36.772796,-76.580908,16754,80.0,,16754,4.0,2,yes
+HO516489434,Spotsylvania Regional Medical Center,hospital,38.218282,-77.496389,13277,80.0,,13277,4.0,2,yes
+HO45907100,Henrico Doctors' Hospital,hospital,37.603867,-77.541153,23886,80.0,,23886,4.0,2,yes
+HO517817443,University of Virginia Medical Center,hospital,38.032512,-78.49963,18760,80.0,,25013,3.0,4,yes
+HO515739148,Prince William Medical Center,hospital,38.767767,-77.488473,25719,80.0,,25719,4.0,4,yes
+HO516485668,Mary Washington Hospital,hospital,38.311231,-77.482683,34086,80.0,,22724,6.0,3,yes
+HO517076669,Bon Secours - Southside Regional Medical Center,hospital,37.183409,-77.360309,16801,80.0,,16801,4.0,2,yes
+HO69604316,Reston Hospital Center,hospital,38.962088,-77.364758,19242,80.0,,19242,4.0,2,yes
+HO1042197733,Riverside Smithfield Hospital,hospital,36.936223,-76.5881,8767,80.0,,8767,4.0,2,yes
+HO45199200,Saint Mary's Hospital,hospital,37.58373,-77.514273,31643,80.0,,31643,4.0,1,yes
+HO50945901,Bon Secours Mary Immaculate Hospital,hospital,37.144483,-76.511139,31023,80.0,,31023,4.0,1,yes
+HO44966334,Parham Doctors' Hospital,hospital,37.631499,-77.525716,19225,80.0,,19225,4.0,4,yes
+HO518030521,Catawba Hospital,hospital,37.392503,-80.109766,30885,80.0,,30885,4.0,1,yes
+HO48734994,Virginia Beach General Hospital,hospital,36.864881,-76.026752,30780,80.0,,30780,4.0,1,yes
+HO516510811,Riverside Walter Reed Hospital,hospital,37.419124,-76.54101,14515,80.0,,14515,4.0,2,yes
+HO1104937822,Warren Memorial Hospital,hospital,38.920135,-78.153466,8046,80.0,,8046,4.0,2,yes
+HO517046782,Johnston-Willis Hospital,hospital,37.510509,-77.59461,26808,80.0,,26808,4.0,2,yes
+HO236067321,Bon Secours Saint Francis Medical Center,hospital,37.466346,-77.659711,8947,80.0,,8947,4.0,2,yes
+HO516930723,VCU Medical Center,hospital,37.540001,-77.429037,60000,80.0,,43407,10.0,18,yes
+HO702265373,VCU Health Community Memorial Hospital,hospital,36.750552,-78.105146,26138,80.0,,26138,4.0,1,yes
+HO515950443,Inova Loudoun Hospital,hospital,39.075222,-77.477819,13740,80.0,,27481,2.0,4,yes
+HO516261735,Inova Mount Vernon Hospital,hospital,38.73914,-77.076912,14526,80.0,,14526,4.0,2,yes
+HO668194108,The Hughes Center,hospital,36.645037,-79.405262,24503,80.0,,24503,4.0,1,yes
+HO517465462,Sovah Health - Martinsville,hospital,36.699124,-79.866421,23162,80.0,,23162,4.0,1,yes
+HO331242167,Haymarket Medical Center,hospital,38.821059,-77.641564,23883,80.0,,9553,10.0,2,yes
+HO76692183,LewisGale Hospital Montgomery,hospital,37.187462,-80.412001,22791,80.0,,22791,4.0,1,yes
+HO167269304,Inova Loudoun (Cornwall) Medical Campus,hospital,39.119507,-77.569295,22517,80.0,,22517,4.0,1,yes
+HO516253617,Inova Alexandria Hospital,hospital,38.82215,-77.105355,12647,80.0,,12647,4.0,3,yes
+HO515361224,Centra Virginia Baptist Hospital,hospital,37.437409,-79.187474,13993,80.0,,13993,4.0,4,yes
+HO311041319,Stone Springs Hospital Center,hospital,38.94071,-77.542721,18428,80.0,,10530,7.0,2,yes
+HO498458585,Virginia Hospital Center,hospital,38.889651,-77.127795,41051,80.0,,32841,5.0,7,yes
+HO516688678,Southampton Memorial Hospital,hospital,36.692249,-76.93761,11414,80.0,,11414,4.0,3,yes
+HO516491080,Riverside Tappahannock Hospital,hospital,37.900807,-76.87876,21184,80.0,,21184,4.0,1,yes
+HO60616686,LewisGale Hospital Pulaski,hospital,37.069047,-80.757125,10758,80.0,,10758,4.0,3,yes
+HO837679773,Commonwealth Center for Children and Adolescents,hospital,38.131729,-79.03571,19173,80.0,,19173,4.0,1,yes
+HO516459441,Fauquier Hospital,hospital,38.712267,-77.809057,11390,80.0,,11390,4.0,2,yes
+HO516660897,Sentara Independence,hospital,36.867462,-76.131791,10593,80.0,,10593,4.0,2,yes
+HO490448445,Bon Secours Maryview Medical Center,hospital,36.836939,-76.347427,18820,80.0,,18820,4.0,4,yes
+HO516501602,Rappahannock General Hospital,hospital,37.701091,-76.387267,16471,80.0,,16471,4.0,1,yes
+HO604074882,Cumberland Hospital for Children and Adolescents,hospital,37.547088,-76.978319,16219,80.0,,16219,4.0,1,yes
+HO517722471,Shenandoah Memorial Hospital,hospital,38.870111,-78.512618,15745,80.0,,15745,4.0,2,yes
+HO515613354,Carilion Roanoke Community Hospital,hospital,37.26523,-79.93967,7418,80.0,,7418,4.0,2,yes
+HO518641248,Norton Community Hospital,hospital,36.933575,-82.64203,13581,80.0,,13581,4.0,2,yes
+HO45103241,Children's Hospital of Richmond at VCU Brook Road Campus,hospital,37.571426,-77.450703,15355,80.0,,15355,4.0,1,yes
+HO1106556047,Page Memorial Hospital,hospital,38.662853,-78.469253,2678,80.0,,5356,2.0,2,yes
+HO1550726033,Carilion Roanoke Memorial Hospital,hospital,37.251222,-79.941996,15130,80.0,,15130,4.0,1,yes
+HO517749692,Culpeper Medical Center,hospital,38.455285,-78.013461,14943,80.0,,14943,4.0,1,yes
+HO517433167,Southern Virginia Mental Health Institute,hospital,36.55568,-79.410283,5961,80.0,,5961,4.0,2,yes
+HO82881605,Centra Southside Community Hospital,hospital,37.302705,-78.403731,7996,80.0,,7996,4.0,2,yes
+HO517433169,Sovah Health - Danville,hospital,36.577461,-79.404779,14441,80.0,,14441,4.0,1,yes
+HO517484622,Twin County Regional Hospital,hospital,36.671125,-80.923413,6240,80.0,,6240,4.0,3,yes
+HO604007665,Centra Bedford Memorial Hospital,hospital,37.352142,-79.517013,7934,80.0,,7934,4.0,2,yes
+HO1391894522,Kaiser Permanente Caton Hill Medical Center,hospital,38.659082,-77.296925,13659,80.0,,13659,4.0,1,yes
+HO518020218,LewisGale Hospital Alleghany,hospital,37.791755,-79.881378,10685,80.0,,10685,4.0,2,yes
+HO518438913,Clinch Valley Medical Center,hospital,37.095495,-81.820133,7245,80.0,,7245,4.0,3,yes
+HO518157076,Carilion Giles Community Hospital,hospital,37.332996,-80.712501,8533,80.0,,8533,4.0,2,yes
+HO517084933,Southern Virginia Regional Medical Center,hospital,36.701816,-77.537256,12789,80.0,,12789,4.0,1,yes
+HO511418065,Riverside Doctors Hospital Williamsburg,hospital,37.251201,-76.667412,5066,80.0,,5066,4.0,2,yes
+HO517073866,TriCities Hospital,hospital,37.307995,-77.291376,12004,80.0,,12004,4.0,1,yes
+HO515725979,Smyth County Community Hospital,hospital,36.851699,-81.488703,11318,80.0,,11318,4.0,1,yes
+HO1022082686,Bon Secours Health Center at Harbour View,hospital,36.868742,-76.441717,10888,80.0,,10888,4.0,1,yes
+HO801475504,Lee County Community Hospital,hospital,36.748915,-83.050753,10576,80.0,,10576,4.0,1,yes
+HO516393895,Northern Virginia Mental Health Institute,hospital,38.85781,-77.232265,2183,80.0,,8732,1.0,2,yes
+HO407402278,Unnamed hospital (OSM 407402278),hospital,36.862489,-76.303748,48307,80.0,,48307,4.0,2,yes
+HO693515461,Newport News Behavioral Health,hospital,37.204269,-76.583266,9215,80.0,,9215,4.0,1,yes
+HO518440289,Buchanan General Hospital,hospital,37.285003,-82.066377,5633,80.0,,5633,4.0,2,yes
+HO517130637,Sentara Halifax Regional Hospital,hospital,36.712007,-78.914071,6730,80.0,,6730,4.0,2,yes
+HO38028729,Harbor Point Behavioral Health Center,hospital,36.840836,-76.307359,7075,80.0,,7075,4.0,1,yes
+HO693514823,Poplar Springs Hospital,hospital,37.187566,-77.359062,6981,80.0,,6981,4.0,1,yes
+HO518694483,Lonesome Pine Hospital,hospital,36.876989,-82.75453,6667,80.0,,6667,4.0,1,yes
+HO518426210,Carilion Tazewell Community Hospital,hospital,37.12392,-81.489122,6468,80.0,,6468,4.0,1,yes
+HO972133657,Surgery Center - Abingdon on Campus Drive,hospital,36.710479,-81.99344,6303,80.0,,6303,4.0,1,yes
+HO1334632012,Encompass Health Rehabilitation Hospital Of Petersburg,hospital,37.184448,-77.36384,5909,80.0,,5909,4.0,1,yes
+HO1333723663,Encompass Health Rehabilitation Hospital of Virginia,hospital,37.585777,-77.507016,5672,80.0,,5672,4.0,1,yes
+HO516930722,Richmond Community Hospital,hospital,37.54019,-77.406816,6090,80.0,,6090,4.0,2,yes
+HO1181990693,Unnamed hospital (OSM 1181990693),hospital,38.247336,-77.502813,17512,80.0,,17512,4.0,1,yes
+HO344024165,Langley Hospital,hospital,37.074087,-76.357467,14660,80.0,,14660,4.0,1,yes
+HO517065151,Retreat Doctors' Hospital,hospital,37.55364,-77.473014,5836,80.0,,5836,4.0,2,yes
+HO333119866,Unnamed hospital (OSM 333119866),hospital,37.161723,-76.57329,9150,80.0,,9150,4.0,1,yes
+HO781921354,Kenner Army Hospital,hospital,37.238217,-77.347055,8512,80.0,,8512,4.0,1,yes
+HO463791541,Unnamed hospital (OSM 463791541),hospital,37.47533,-75.864152,7816,80.0,,7816,4.0,4,yes
+HO516914826,Ginter Place,hospital,37.579151,-77.45449,5197,80.0,,5197,4.0,1,yes
+GR591819030,Unnamed greenhouse (OSM 591819030),greenhouse,38.298564,-77.974966,148936,50.0,,496454,1.0,1,yes
+GR875182346,Bloomia USA,greenhouse,38.256212,-77.306951,137690,50.0,,458968,1.0,2,yes
+GR1074098778,Unnamed greenhouse (OSM 1074098778),greenhouse,38.043723,-76.750959,116674,50.0,,388913,1.0,1,yes
+GR765846333,Unnamed greenhouse (OSM 765846333),greenhouse,37.528215,-75.898581,84026,50.0,,280086,1.0,1,yes
+GR1072843438,Unnamed greenhouse (OSM 1072843438),greenhouse,37.638305,-75.770577,77398,50.0,,257992,1.0,1,yes
+GR1072843439,Unnamed greenhouse (OSM 1072843439),greenhouse,37.642402,-75.772622,59589,50.0,,198630,1.0,1,yes
+GR890326677,Unnamed greenhouse (OSM 890326677),greenhouse,38.438498,-77.861344,55154,50.0,,183845,1.0,1,yes
+GR1072843440,Unnamed greenhouse (OSM 1072843440),greenhouse,37.635276,-75.776448,54889,50.0,,182962,1.0,1,yes
+GR1086517826,Mobjack Nurseries,greenhouse,37.399894,-76.364093,46813,50.0,,156044,1.0,3,yes
+GR825117285,Whites Nursery,greenhouse,36.740854,-76.353473,43401,50.0,,144670,1.0,4,yes
+GR693073949,Unnamed greenhouse (OSM 693073949),greenhouse,37.507438,-77.706737,34447,50.0,,114823,1.0,1,yes
+GR746283869,Unnamed greenhouse (OSM 746283869),greenhouse,37.643474,-75.685255,32865,50.0,,109549,1.0,1,yes
+GR746283845,Unnamed greenhouse (OSM 746283845),greenhouse,37.647279,-75.687459,30448,50.0,,101495,1.0,1,yes
+GR997530697,Lynchburg Grows,greenhouse,37.391209,-79.167243,14313,50.0,,47711,1.0,6,yes
+GR1115829499,Anderson's,greenhouse,37.063918,-76.467487,11933,50.0,,39778,1.0,3,yes
+GR746035074,Unnamed greenhouse (OSM 746035074),greenhouse,37.715834,-75.686124,9293,50.0,,30977,1.0,1,yes
+GR746503525,Unnamed greenhouse (OSM 746503525),greenhouse,37.7882,-75.626787,8545,50.0,,28485,1.0,1,yes
+GR1115830287,Anderson's,greenhouse,36.747564,-76.006453,7757,50.0,,25856,1.0,1,yes
+GR1047831957,Southern Branch Nursery,greenhouse,36.62921,-76.268618,4676,50.0,,15588,1.0,18,yes
+GR54650019,Greenhouses,greenhouse,37.220136,-80.423659,3017,50.0,,10058,1.0,2,yes
+GR752900702,Unnamed greenhouse (OSM 752900702),greenhouse,37.56375,-75.871606,1325,50.0,,4418,1.0,5,yes
+GR669984041,Unnamed greenhouse (OSM 669984041),greenhouse,36.628448,-76.032661,1024,50.0,,3412,1.0,1,yes
+GR1182402619,Unnamed greenhouse (OSM 1182402619),greenhouse,37.339316,-79.276732,892,50.0,,2973,1.0,1,yes
+GR1571746126,Unnamed greenhouse (OSM 1571746126),greenhouse,37.109391,-80.44246,760,50.0,,2534,1.0,1,yes
+GR578856033,Unnamed greenhouse (OSM 578856033),greenhouse,37.330507,-77.566668,715,50.0,,2385,1.0,3,yes
+GR312355437,Teeuwen Greenhouse,greenhouse,36.709842,-76.311311,649,50.0,,2163,1.0,1,yes
+GR1167855321,Unnamed greenhouse (OSM 1167855321),greenhouse,38.527312,-78.706912,639,50.0,,2131,1.0,1,yes
+GR222239408,Unnamed greenhouse (OSM 222239408),greenhouse,38.783485,-77.559636,1029,50.0,,3428,1.0,2,yes
+GR275860188,Conservatory,greenhouse,37.621446,-77.471954,682,50.0,,2272,1.0,2,yes
+GR1390044410,Unnamed greenhouse (OSM 1390044410),greenhouse,37.510861,-79.710593,316,50.0,,1053,1.0,2,yes
+GR383912136,Unnamed greenhouse (OSM 383912136),greenhouse,36.868394,-76.46921,5987,50.0,,19955,1.0,61,yes
+GR1021412946,Unnamed greenhouse (OSM 1021412946),greenhouse,36.894417,-76.569103,9332,50.0,,31105,1.0,66,yes
+GR1021412982,Unnamed greenhouse (OSM 1021412982),greenhouse,36.895086,-76.565468,4982,50.0,,16607,1.0,38,yes
+GR1092987608,Unnamed greenhouse (OSM 1092987608),greenhouse,38.880151,-77.489926,1096,50.0,,3653,1.0,13,yes
+GR1324356313,Unnamed greenhouse (OSM 1324356313),greenhouse,37.121246,-81.579859,401,50.0,,1336,1.0,5,yes
+GR1021412886,Unnamed greenhouse (OSM 1021412886),greenhouse,36.89859,-76.565896,4484,50.0,,14945,1.0,36,yes
+GR1021412830,Unnamed greenhouse (OSM 1021412830),greenhouse,36.897027,-76.574266,9077,50.0,,30258,1.0,107,yes
+GR383911892,Unnamed greenhouse (OSM 383911892),greenhouse,36.864428,-76.463416,3617,50.0,,12056,1.0,47,yes
+GR1227397907,Unnamed greenhouse (OSM 1227397907),greenhouse,38.690738,-77.590709,332,50.0,,1106,1.0,4,yes
+GR1034657093,Unnamed greenhouse (OSM 1034657093),greenhouse,36.861302,-76.582551,598,50.0,,1994,1.0,9,yes
+GR1021412747,Unnamed greenhouse (OSM 1021412747),greenhouse,36.900058,-76.573537,1566,50.0,,5220,1.0,19,yes
+GR1019668292,Unnamed greenhouse (OSM 1019668292),greenhouse,36.86711,-76.462904,478,50.0,,1595,1.0,6,yes
+GR383911934,Unnamed greenhouse (OSM 383911934),greenhouse,36.870748,-76.466494,628,50.0,,2094,1.0,9,yes
+PO54790533,Blacksburg Aquatic Center,pool,37.243216,-80.411131,998,40.0,,1247,2.0,1,yes
+PO73989607,YMCA,pool,38.821395,-77.054376,857,40.0,,2142,1.0,1,yes
+PO138320637,Christiansburg Aquatic Center,pool,37.137922,-80.41191,1500,40.0,,4744,1.0,1,yes
+PO215659472,Warrenton Aquatic & Recreation Facility,pool,38.717229,-77.818589,1500,40.0,,3800,1.0,1,yes
+PO235633380,Unnamed pool (OSM 235633380),pool,37.408637,-77.680443,693,40.0,,1732,1.0,1,yes
+PO370091394,Aquatic Center,pool,37.266191,-76.634376,486,40.0,,1216,1.0,1,yes
+PO388546884,Hampton Aquatics Center,pool,37.065606,-76.400976,1213,40.0,,3032,1.0,1,yes
+PO432302317,Dahlgren Aquatics Facility,pool,38.327817,-77.0413,996,40.0,,2489,1.0,1,yes
+PO444457376,Springboard Swimming Pool,pool,38.784209,-77.16658,102,40.0,,255,1.0,1,yes
+PO483584508,SwimRVA,pool,37.449518,-77.492439,1500,40.0,,5376,1.0,1,yes
+PO578705921,Vienna Aquatic Club,pool,38.883301,-77.263328,110,40.0,,276,1.0,1,yes
+PO600755009,Unnamed pool (OSM 600755009),pool,38.844487,-77.073746,44,40.0,,109,1.0,1,yes
+PO601690032,Unnamed pool (OSM 601690032),pool,38.8603,-77.115733,31,40.0,,78,1.0,1,yes
+PO601707266,Unnamed pool (OSM 601707266),pool,38.858743,-77.115825,37,40.0,,93,1.0,1,yes
+PO601707275,Unnamed pool (OSM 601707275),pool,38.859102,-77.116686,19,40.0,,47,1.0,1,yes
+PO603493838,Unnamed pool (OSM 603493838),pool,38.853098,-77.105795,60,40.0,,150,1.0,1,yes
+PO604689862,Unnamed pool (OSM 604689862),pool,38.852085,-77.104812,33,40.0,,82,1.0,1,yes
+PO607408591,Unnamed pool (OSM 607408591),pool,38.844147,-77.099299,28,40.0,,71,1.0,1,yes
+PO609525995,Unnamed pool (OSM 609525995),pool,38.841469,-77.105358,28,40.0,,70,1.0,1,yes
+PO610540919,Unnamed pool (OSM 610540919),pool,38.845271,-77.096908,46,40.0,,114,1.0,1,yes
+PO610551688,Unnamed pool (OSM 610551688),pool,38.843702,-77.095056,48,40.0,,119,1.0,1,yes
+PO610792738,Unnamed pool (OSM 610792738),pool,38.841703,-77.097834,41,40.0,,102,1.0,1,yes
+PO612655402,Unnamed pool (OSM 612655402),pool,38.840484,-77.101526,32,40.0,,80,1.0,1,yes
+PO612729647,Unnamed pool (OSM 612729647),pool,38.838697,-77.09547,33,40.0,,83,1.0,1,yes
+PO613048064,Unnamed pool (OSM 613048064),pool,38.837753,-77.100471,33,40.0,,83,1.0,1,yes
+PO613048066,Unnamed pool (OSM 613048066),pool,38.840327,-77.099832,33,40.0,,83,1.0,1,yes
+PO613048068,Unnamed pool (OSM 613048068),pool,38.837972,-77.098014,32,40.0,,80,1.0,1,yes
+PO649213165,Unnamed pool (OSM 649213165),pool,38.808489,-77.041078,26,40.0,,65,1.0,1,yes
+PO658190618,Unnamed pool (OSM 658190618),pool,37.491665,-77.734395,28,40.0,,70,1.0,1,yes
+PO739560545,Unnamed pool (OSM 739560545),pool,38.838595,-77.103726,34,40.0,,84,1.0,1,yes
+PO819966277,Unnamed pool (OSM 819966277),pool,38.650151,-78.689888,275,40.0,,689,1.0,1,yes
+PO871599447,Unnamed pool (OSM 871599447),pool,38.833624,-77.093095,23,40.0,,57,1.0,1,yes
+PO871599448,Unnamed pool (OSM 871599448),pool,38.833517,-77.093124,23,40.0,,57,1.0,1,yes
+PO871769004,Unnamed pool (OSM 871769004),pool,38.832276,-77.090799,60,40.0,,149,1.0,1,yes
+PO871769005,Unnamed pool (OSM 871769005),pool,38.832593,-77.087813,74,40.0,,185,1.0,1,yes
+PO871769011,Unnamed pool (OSM 871769011),pool,38.835136,-77.090202,48,40.0,,119,1.0,1,yes
+PO871769012,Unnamed pool (OSM 871769012),pool,38.836815,-77.087605,50,40.0,,125,1.0,1,yes
+PO871769013,Unnamed pool (OSM 871769013),pool,38.829797,-77.088392,85,40.0,,212,1.0,1,yes
+PO989908859,Unnamed pool (OSM 989908859),pool,37.411725,-79.200486,94,40.0,,235,1.0,1,yes
+PO1020739205,Unnamed pool (OSM 1020739205),pool,36.888464,-82.107154,114,40.0,,284,1.0,1,yes
+PO1057045911,Unnamed pool (OSM 1057045911),pool,38.884116,-77.421491,517,40.0,,1293,1.0,1,yes
+PO1111590336,Arlington Forest Club,pool,38.871552,-77.125381,163,40.0,,408,1.0,1,yes
+PO1124856214,Hampton Virginia Aquaplex,pool,37.03851,-76.386022,1500,40.0,,4550,1.0,1,yes
+PO1128356274,Gator Aquatic Center,pool,37.247978,-79.972964,405,40.0,,1013,1.0,1,yes
+PO1207244252,Randolph Public Pool,pool,37.544069,-77.461937,668,40.0,,1671,1.0,1,yes
+PO1316297148,Big Blue Swim School,pool,38.878654,-77.397483,418,40.0,,1045,1.0,1,yes
+PO1346233721,Kid's First Swim School,pool,38.303453,-77.51055,135,40.0,,337,1.0,1,yes
+PO1435783681,Town of St. Paul Pool,pool,36.907973,-82.310645,469,40.0,,1172,1.0,1,yes
+PO1476328591,Little Fish Swimming,pool,38.235283,-77.400914,127,40.0,,319,1.0,1,yes
+MU28317143,The Market Common,multifamily,38.887517,-77.092096,8679,65.0,,9643,10.0,1,yes
+MU33743511,Kent Square,multifamily,37.227926,-80.412901,763,65.0,,2120,4.0,1,yes
+MU38173749,River School Lofts,multifamily,37.559504,-77.477104,505,65.0,,1869,3.0,1,yes
+MU38771989,Unnamed multifamily (OSM 38771989),multifamily,38.897485,-77.088248,2948,65.0,,3275,10.0,1,yes
+MU38897138,2201 Wilson,multifamily,38.891548,-77.08629,2557,65.0,,2368,12.0,1,yes
+MU39116935,Tellus,multifamily,38.889909,-77.082295,2476,65.0,,1720,16.0,1,yes
+MU39116982,Courtland Park,multifamily,38.88886,-77.089037,2690,65.0,,3736,8.0,1,yes
+MU39117113,Courthouse Plaza Apartments,multifamily,38.889666,-77.086177,7475,65.0,,3955,21.0,1,yes
+MU39119754,Courtland Towers,multifamily,38.887769,-77.08531,7427,65.0,,5158,16.0,1,yes
+MU39120311,River Place West,multifamily,38.892597,-77.070022,2982,65.0,,2761,12.0,1,yes
+MU39185662,Unnamed multifamily (OSM 39185662),multifamily,38.887214,-77.093529,2380,65.0,,3305,8.0,1,yes
+MU39272637,Univsity of Mary Washington Apartments,multifamily,38.298499,-77.471887,454,65.0,,1682,3.0,1,yes
+MU39273161,Unnamed multifamily (OSM 39273161),multifamily,38.30868,-77.479883,511,65.0,,1893,3.0,1,yes
+MU44523035,Instrata at Pentagon City,multifamily,38.861183,-77.061182,7461,65.0,,4876,17.0,1,yes
+MU44523065,1401 Joyce,multifamily,38.861627,-77.062874,2715,65.0,,1885,16.0,1,yes
+MU44523066,The Potomac at Riverhouse Apartments,multifamily,38.861859,-77.064829,5140,65.0,,3569,16.0,1,yes
+MU44523069,The James at Riverhouse Apartmemts,multifamily,38.864889,-77.063935,3589,65.0,,3068,13.0,1,yes
+MU44523079,The Ashley at Riverhouse Apartments,multifamily,38.859908,-77.064528,5159,65.0,,3583,16.0,1,yes
+MU44815253,Unnamed multifamily (OSM 44815253),multifamily,38.863866,-77.065518,3419,65.0,,3799,10.0,1,yes
+MU44815255,Cavendish Condominium Complex - Building 1300,multifamily,38.861695,-77.067063,950,65.0,,1507,7.0,1,yes
+MU44859875,Crystal Plaza,multifamily,38.855255,-77.051238,3559,65.0,,3296,12.0,1,yes
+MU45294792,1800 Oak Apartments,multifamily,38.895908,-77.074537,4703,65.0,,3266,16.0,1,yes
+MU45301090,1500 Arlington Apartments,multifamily,38.890827,-77.074112,1825,65.0,,1843,11.0,1,yes
+MU45303074,Bennett Park Apartments,multifamily,38.893639,-77.07695,2337,65.0,,1623,16.0,1,yes
+MU45579439,The Madison Condominiums,multifamily,38.877687,-77.152954,878,65.0,,1625,6.0,1,yes
+MU45579800,Roosevelt Towers Apartments,multifamily,38.876361,-77.152429,1637,65.0,,3032,6.0,1,yes
+MU46593872,Unnamed multifamily (OSM 46593872),multifamily,38.857729,-77.053608,1923,65.0,,1943,11.0,1,yes
+MU46593874,Cortland Pentagon City,multifamily,38.862128,-77.053462,3146,65.0,,1942,18.0,1,yes
+MU46593882,Lenox Club Apartments,multifamily,38.863251,-77.052439,3566,65.0,,1887,21.0,1,yes
+MU46593883,The Point at Pentagon City,multifamily,38.862777,-77.053439,3180,65.0,,1860,19.0,1,yes
+MU46593884,The Altaire,multifamily,38.864198,-77.053504,6900,65.0,,4259,18.0,1,yes
+MU48821091,The Astoria Condominium,multifamily,38.895835,-77.083625,1713,65.0,,3808,5.0,1,yes
+MU52095042,Unnamed multifamily (OSM 52095042),multifamily,38.880391,-77.106828,1510,65.0,,1864,9.0,1,yes
+MU52481626,Nouvelle,multifamily,38.924492,-77.218959,2208,65.0,,6133,4.0,1,yes
+MU54783354,Unnamed multifamily (OSM 54783354),multifamily,37.224208,-80.442428,724,65.0,,1608,5.0,1,yes
+MU54783922,Unnamed multifamily (OSM 54783922),multifamily,37.224513,-80.441403,724,65.0,,1608,5.0,1,yes
+MU54785872,Arbors Apartments,multifamily,37.182573,-80.411254,683,65.0,,2530,3.0,1,yes
+MU54788999,Clay Court,multifamily,37.227171,-80.411084,583,65.0,,2160,3.0,1,yes
+MU56052139,Crystal Plaza,multifamily,38.854465,-77.051223,3417,65.0,,3164,12.0,1,yes
+MU56052147,Crystal Place Apartments,multifamily,38.857479,-77.048662,2205,65.0,,2227,11.0,1,yes
+MU59399214,Signature Apartments,multifamily,38.959887,-77.35579,1467,65.0,,5433,3.0,1,yes
+MU59620463,Crystal House North,multifamily,38.856532,-77.054403,4606,65.0,,3937,13.0,1,yes
+MU59620464,Crystal House South,multifamily,38.854933,-77.054324,4497,65.0,,3844,13.0,1,yes
+MU62260013,Lexington Square 3830,multifamily,38.88097,-77.1061,833,65.0,,3086,3.0,1,yes
+MU72596027,Aspen,multifamily,38.876,-77.1537,1605,65.0,,2547,7.0,1,yes
+MU72596043,Birch,multifamily,38.875472,-77.154249,1405,65.0,,2230,7.0,1,yes
+MU72596067,Cedar,multifamily,38.876365,-77.154674,1607,65.0,,2551,7.0,1,yes
+MU72596080,Cavalier Club Apartments,multifamily,38.874359,-77.148479,672,65.0,,2488,3.0,1,yes
+MU73989198,Marina Towers,multifamily,38.822509,-77.041515,3606,65.0,,2862,14.0,1,yes
+MU78500058,Unnamed multifamily (OSM 78500058),multifamily,38.965079,-77.32997,502,65.0,,1860,3.0,1,yes
+MU79212043,Carlton House,multifamily,38.955656,-77.354388,3930,65.0,,3639,12.0,1,yes
+MU79569501,Unnamed multifamily (OSM 79569501),multifamily,38.960671,-77.332444,541,65.0,,2005,3.0,1,yes
+MU80038939,Unnamed multifamily (OSM 80038939),multifamily,38.965794,-77.329209,502,65.0,,1858,3.0,1,yes
+MU81028655,Water Park Towers South,multifamily,38.859736,-77.048762,2520,65.0,,2333,12.0,1,yes
+MU81028668,Common at National Landing,multifamily,38.853935,-77.051575,1635,65.0,,1514,12.0,1,yes
+MU81028692,Crystal Square Apartments,multifamily,38.859295,-77.050745,5193,65.0,,3394,17.0,1,yes
+MU81028739,220 Twentieth Street,multifamily,38.855865,-77.050132,3298,65.0,,1832,20.0,1,yes
+MU81125866,River Place South,multifamily,38.892048,-77.068958,3491,65.0,,2771,14.0,1,yes
+MU81125883,River Place East,multifamily,38.892987,-77.068963,3309,65.0,,2828,13.0,1,yes
+MU81125943,River Place North,multifamily,38.893588,-77.069956,3319,65.0,,2837,13.0,1,yes
+MU82004344,The Prime,multifamily,38.890563,-77.081473,2962,65.0,,2743,12.0,1,yes
+MU82005504,Meridian at Courthouse Commons II,multifamily,38.889612,-77.080821,3141,65.0,,3491,10.0,1,yes
+MU87482949,Dogwood,multifamily,38.877272,-77.154559,569,65.0,,2106,3.0,1,yes
+MU91040810,Dorchester Towers,multifamily,38.865596,-77.080125,2427,65.0,,3853,7.0,1,yes
+MU91040813,The Lancaster,multifamily,38.864746,-77.075952,1140,65.0,,1810,7.0,1,yes
+MU91040815,Dominion Plaza Apartments,multifamily,38.862082,-77.080549,2161,65.0,,3002,8.0,1,yes
+MU91040818,The Wellington,multifamily,38.864426,-77.076895,1836,65.0,,3401,6.0,1,yes
+MU91040827,2200 Columbia Pike,multifamily,38.863304,-77.081242,2292,65.0,,2123,12.0,1,yes
+MU91040835,2121 Columbia Pike,multifamily,38.864697,-77.080947,1186,65.0,,1647,8.0,1,yes
+MU91040850,Dominion Towers Apartments,multifamily,38.8623,-77.079064,2449,65.0,,3401,8.0,1,yes
+MU94246722,Unnamed multifamily (OSM 94246722),multifamily,38.651109,-77.318343,677,65.0,,2508,3.0,1,yes
+MU94246731,Unnamed multifamily (OSM 94246731),multifamily,38.651113,-77.320472,640,65.0,,2372,3.0,1,yes
+MU94246733,Unnamed multifamily (OSM 94246733),multifamily,38.650957,-77.319305,625,65.0,,2314,3.0,1,yes
+MU94847651,Brookdale Senior Living,multifamily,38.665497,-77.329092,690,65.0,,2556,3.0,1,yes
+MU112348747,Unnamed multifamily (OSM 112348747),multifamily,37.086712,-76.475957,1098,65.0,,4065,3.0,1,yes
+MU112348754,Unnamed multifamily (OSM 112348754),multifamily,37.087608,-76.476292,522,65.0,,1933,3.0,1,yes
+MU117564261,Wentworth Place,multifamily,38.886513,-77.104793,797,65.0,,1770,5.0,1,yes
+MU117564268,Unnamed multifamily (OSM 117564268),multifamily,38.880927,-77.107049,1390,65.0,,1544,10.0,1,yes
+MU132923504,The Mosby,multifamily,38.848046,-77.310296,1022,65.0,,1893,6.0,1,yes
+MU133585539,Unnamed multifamily (OSM 133585539),multifamily,38.88309,-77.109017,2068,65.0,,2298,10.0,1,yes
+MU140092947,Porto Vecchio Condominiums,multifamily,38.790706,-77.049484,1813,65.0,,6714,3.0,1,yes
+MU143512821,Unnamed multifamily (OSM 143512821),multifamily,38.951086,-77.401761,466,65.0,,1726,3.0,1,yes
+MU143657566,Unnamed multifamily (OSM 143657566),multifamily,38.949447,-77.398907,426,65.0,,1576,3.0,1,yes
+MU144680792,Hyde Park Condominiums,multifamily,38.875757,-77.109437,3827,65.0,,3543,12.0,1,yes
+MU144680793,Thomas Place,multifamily,38.875405,-77.110482,637,65.0,,1769,4.0,1,yes
+MU146432107,Unnamed multifamily (OSM 146432107),multifamily,38.884661,-77.118111,3212,65.0,,2974,12.0,1,yes
+MU148897755,The Westin Arlington,multifamily,38.880699,-77.11427,4056,65.0,,3005,15.0,1,yes
+MU148897758,Unnamed multifamily (OSM 148897758),multifamily,38.880626,-77.11205,4126,65.0,,2183,21.0,1,yes
+MU148897760,The Continental at Ballston,multifamily,38.881292,-77.114388,4196,65.0,,2220,21.0,1,yes
+MU150859941,Parc Rosslyn,multifamily,38.891819,-77.076036,2137,65.0,,1583,15.0,1,yes
+MU150963526,Unnamed multifamily (OSM 150963526),multifamily,38.88358,-77.112438,2082,65.0,,2570,9.0,1,yes
+MU150963530,Unnamed multifamily (OSM 150963530),multifamily,38.880451,-77.10947,3499,65.0,,1767,22.0,1,yes
+MU150963535,Liberty Tower Apartments,multifamily,38.880309,-77.107955,1647,65.0,,1525,12.0,1,yes
+MU150963539,Unnamed multifamily (OSM 150963539),multifamily,38.881393,-77.108534,6581,65.0,,3482,21.0,1,yes
+MU150963542,The Jordan,multifamily,38.879974,-77.115794,835,65.0,,2319,4.0,1,yes
+MU150963545,Library Courts,multifamily,38.884299,-77.1084,1264,65.0,,2340,6.0,1,yes
+MU150963546,1020 Apartments,multifamily,38.883811,-77.108843,1623,65.0,,1803,10.0,1,yes
+MU156796616,Avalon,multifamily,38.888834,-77.085831,5910,65.0,,3456,19.0,1,yes
+MU160819627,Unnamed multifamily (OSM 160819627),multifamily,38.792526,-77.048037,576,65.0,,2132,3.0,1,yes
+MU160819632,Unnamed multifamily (OSM 160819632),multifamily,38.792175,-77.049061,578,65.0,,2139,3.0,1,yes
+MU169295412,The Crossings,multifamily,37.273845,-79.940931,537,65.0,,1988,3.0,1,yes
+MU171973455,IO Piazza,multifamily,38.842142,-77.08604,3417,65.0,,2921,13.0,1,yes
+MU172871827,Unnamed multifamily (OSM 172871827),multifamily,38.86697,-77.269604,442,65.0,,1638,3.0,1,yes
+MU172871828,Unnamed multifamily (OSM 172871828),multifamily,38.86728,-77.270715,445,65.0,,1647,3.0,1,yes
+MU172871833,Unnamed multifamily (OSM 172871833),multifamily,38.868295,-77.270117,455,65.0,,1687,3.0,1,yes
+MU173523878,Apartment Building A,multifamily,39.068161,-77.463768,836,65.0,,2323,4.0,1,yes
+MU176864651,Bell at Courthouse Apartments,multifamily,38.886664,-77.084399,790,65.0,,2928,3.0,1,yes
+MU176864652,The Park at Courthouse,multifamily,38.886196,-77.085226,465,65.0,,1724,3.0,1,yes
+MU180642717,Unnamed multifamily (OSM 180642717),multifamily,38.871955,-77.227929,2978,65.0,,5515,6.0,1,yes
+MU181179634,Unnamed multifamily (OSM 181179634),multifamily,38.872869,-77.22791,3227,65.0,,5976,6.0,1,yes
+MU182624991,Unnamed multifamily (OSM 182624991),multifamily,38.959518,-77.362403,3447,65.0,,9575,4.0,1,yes
+MU182625325,Unnamed multifamily (OSM 182625325),multifamily,38.958123,-77.362318,3442,65.0,,9561,4.0,1,yes
+MU183478536,Unnamed multifamily (OSM 183478536),multifamily,39.079883,-77.472251,3558,65.0,,3294,12.0,1,yes
+MU183479790,Unnamed multifamily (OSM 183479790),multifamily,39.080722,-77.471449,1038,65.0,,2306,5.0,1,yes
+MU183479799,Unnamed multifamily (OSM 183479799),multifamily,39.082803,-77.473587,3937,65.0,,3645,12.0,1,yes
+MU183479802,Unnamed multifamily (OSM 183479802),multifamily,39.082338,-77.472138,1017,65.0,,2260,5.0,1,yes
+MU183483578,Unnamed multifamily (OSM 183483578),multifamily,39.081703,-77.471089,1397,65.0,,3105,5.0,1,yes
+MU183522530,Unnamed multifamily (OSM 183522530),multifamily,38.803411,-77.066053,19327,65.0,,11303,19.0,1,yes
+MU185483993,Shawnee Apartments,multifamily,38.867776,-77.081557,785,65.0,,1744,5.0,1,yes
+MU187664348,The Wellington,multifamily,38.863256,-77.076625,1942,65.0,,3597,6.0,1,yes
+MU187664349,Unnamed multifamily (OSM 187664349),multifamily,38.864377,-77.077863,971,65.0,,1798,6.0,1,yes
+MU187664350,The Wellington,multifamily,38.862122,-77.076695,1914,65.0,,3544,6.0,1,yes
+MU194416587,Unnamed multifamily (OSM 194416587),multifamily,38.882855,-77.114279,1370,65.0,,1522,10.0,1,yes
+MU194416589,Unnamed multifamily (OSM 194416589),multifamily,38.883255,-77.113541,957,65.0,,1519,7.0,1,yes
+MU194416808,Virginia Square Towers - South Building,multifamily,38.882579,-77.102383,1603,65.0,,2545,7.0,1,yes
+MU194416811,Virginia Square Apartments,multifamily,38.882749,-77.103591,2598,65.0,,1519,19.0,1,yes
+MU194416826,Unnamed multifamily (OSM 194416826),multifamily,38.880755,-77.109801,3739,65.0,,1888,22.0,1,yes
+MU203011181,Unnamed multifamily (OSM 203011181),multifamily,38.822606,-77.058648,560,65.0,,2074,3.0,1,yes
+MU203020586,The Broadway of Falls Church,multifamily,38.887283,-77.178189,1910,65.0,,3538,6.0,1,yes
+MU203025754,Birchwood Apartments,multifamily,38.877651,-77.10629,598,65.0,,2216,3.0,1,yes
+MU207084510,Unnamed multifamily (OSM 207084510),multifamily,37.303628,-78.394998,637,65.0,,2361,3.0,1,yes
+MU207124360,Park Towers,multifamily,38.884869,-77.170629,959,65.0,,2130,5.0,1,yes
+MU207266117,The Alcott,multifamily,38.888193,-77.076052,879,65.0,,2443,4.0,1,yes
+MU207370931,Crescent Falls Church,multifamily,38.886421,-77.161604,3472,65.0,,6429,6.0,1,yes
+MU207672131,The Citizen at Shirlington Village,multifamily,38.839545,-77.089508,3195,65.0,,11833,3.0,1,yes
+MU207771797,The Superior Building,multifamily,37.532864,-77.425843,605,65.0,,2240,3.0,1,yes
+MU207771807,Upper Lofts at Canal Walk,multifamily,37.531778,-77.426468,500,65.0,,2779,2.0,1,yes
+MU207771817,The Lofts at River's Fall,multifamily,37.531962,-77.427923,610,65.0,,3390,2.0,1,yes
+MU207815865,Tower 3,multifamily,38.793821,-77.061587,946,65.0,,3504,3.0,1,yes
+MU208057163,Wood Lee Arms,multifamily,38.898051,-77.117392,517,65.0,,1916,3.0,1,yes
+MU208790332,Unnamed multifamily (OSM 208790332),multifamily,38.790148,-77.075587,1183,65.0,,3286,4.0,1,yes
+MU208790440,Unnamed multifamily (OSM 208790440),multifamily,38.790112,-77.074464,1224,65.0,,3400,4.0,1,yes
+MU208790441,Unnamed multifamily (OSM 208790441),multifamily,38.789462,-77.074526,1254,65.0,,3484,4.0,1,yes
+MU208790443,Unnamed multifamily (OSM 208790443),multifamily,38.789527,-77.075679,1316,65.0,,3655,4.0,1,yes
+MU209877618,Unnamed multifamily (OSM 209877618),multifamily,38.895062,-77.085514,450,65.0,,1666,3.0,1,yes
+MU211022417,Unnamed multifamily (OSM 211022417),multifamily,38.869386,-77.108875,2703,65.0,,3754,8.0,1,yes
+MU211188981,Dominion Arms Apartments,multifamily,38.868043,-77.095808,1410,65.0,,2239,7.0,1,yes
+MU211197853,Hunter’s Park,multifamily,38.895787,-77.104975,685,65.0,,1901,4.0,1,yes
+MU211198223,Unnamed multifamily (OSM 211198223),multifamily,38.896146,-77.09454,2395,65.0,,4434,6.0,1,yes
+MU211211922,Unnamed multifamily (OSM 211211922),multifamily,38.896172,-77.08953,1759,65.0,,3257,6.0,1,yes
+MU211212074,Dominion Heights,multifamily,38.896406,-77.104222,831,65.0,,1847,5.0,1,yes
+MU211288211,Shirlington House,multifamily,38.838772,-77.09031,1189,65.0,,4403,3.0,1,yes
+MU211350097,Unnamed multifamily (OSM 211350097),multifamily,38.857641,-77.114439,810,65.0,,1501,6.0,1,yes
+MU211355991,Whitmore,multifamily,38.858329,-77.104989,2269,65.0,,3601,7.0,1,yes
+MU211374286,Horizon East,multifamily,38.898148,-77.113826,2047,65.0,,2275,10.0,1,yes
+MU211385609,Culpepper Garden Senior Center,multifamily,38.870609,-77.111262,1620,65.0,,2251,8.0,1,yes
+MU211529438,Infinity Apartments,multifamily,38.855021,-77.110413,775,65.0,,2871,3.0,1,yes
+MU211532984,The Carlton Condominium,multifamily,38.854888,-77.107324,4861,65.0,,4501,12.0,1,yes
+MU213844516,Unnamed multifamily (OSM 213844516),multifamily,38.876698,-77.112243,976,65.0,,2168,5.0,1,yes
+MU215131875,Lincoln at Old Town,multifamily,38.802759,-77.060413,3900,65.0,,2708,16.0,1,yes
+MU215170825,800 Carlyle,multifamily,38.798843,-77.062149,2383,65.0,,6620,4.0,1,yes
+MU215346242,Meridian Eisenhower,multifamily,38.801467,-77.069349,3101,65.0,,4307,8.0,1,yes
+MU215346243,Carlyle Place Apartments,multifamily,38.801323,-77.067984,3993,65.0,,3697,12.0,1,yes
+MU215346909,Unnamed multifamily (OSM 215346909),multifamily,38.802003,-77.061498,1009,65.0,,3737,3.0,1,yes
+MU215346910,Post Carlyle Square,multifamily,38.801995,-77.060436,2414,65.0,,2235,12.0,1,yes
+MU215346912,Unnamed multifamily (OSM 215346912),multifamily,38.800982,-77.061275,2150,65.0,,4778,5.0,1,yes
+MU215965684,Unnamed multifamily (OSM 215965684),multifamily,38.803139,-77.054811,519,65.0,,1924,3.0,1,yes
+MU215976349,Carlyle Mill,multifamily,38.799124,-77.067049,1957,65.0,,7248,3.0,1,yes
+MU215976351,Carlyle Mill,multifamily,38.798685,-77.065939,1982,65.0,,7340,3.0,1,yes
+MU216571373,Tower 1,multifamily,38.791135,-77.063952,879,65.0,,3257,3.0,1,yes
+MU216571374,Tower 2,multifamily,38.79281,-77.063032,811,65.0,,3003,3.0,1,yes
+MU216699927,Unnamed multifamily (OSM 216699927),multifamily,38.792797,-77.050903,2074,65.0,,4609,5.0,1,yes
+MU216699930,Unnamed multifamily (OSM 216699930),multifamily,38.79219,-77.051202,2233,65.0,,4963,5.0,1,yes
+MU218139354,Barton House Apartments,multifamily,38.885194,-77.088403,1945,65.0,,2401,9.0,1,yes
+MU218551748,WATERFONT OF OLD TOWNE,multifamily,38.813245,-77.040355,557,65.0,,1548,4.0,1,yes
+MU219062563,Meridian at Braddock Station,multifamily,38.815755,-77.05099,2880,65.0,,2000,16.0,1,yes
+MU219155990,Richmond Dairy Apartments,multifamily,37.547619,-77.443598,840,65.0,,2333,4.0,1,yes
+MU219170105,Unnamed multifamily (OSM 219170105),multifamily,38.813104,-77.042322,2226,65.0,,1649,15.0,1,yes
+MU219173533,Towngate North,multifamily,38.822765,-77.042869,709,65.0,,1576,5.0,1,yes
+MU219173544,Mason Hall apartments,multifamily,38.8207,-77.044978,974,65.0,,3607,3.0,1,yes
+MU219329630,Unnamed multifamily (OSM 219329630),multifamily,38.834231,-77.056783,629,65.0,,2329,3.0,1,yes
+MU219329631,Unnamed multifamily (OSM 219329631),multifamily,38.834133,-77.056227,478,65.0,,1772,3.0,1,yes
+MU219329632,Unnamed multifamily (OSM 219329632),multifamily,38.834172,-77.055317,517,65.0,,1913,3.0,1,yes
+MU219329635,Unnamed multifamily (OSM 219329635),multifamily,38.834369,-77.057727,695,65.0,,2576,3.0,1,yes
+MU219477259,Unnamed multifamily (OSM 219477259),multifamily,38.843215,-77.066695,1499,65.0,,2777,6.0,1,yes
+MU219612875,Unnamed multifamily (OSM 219612875),multifamily,38.84441,-77.067655,643,65.0,,2381,3.0,1,yes
+MU219612876,Unnamed multifamily (OSM 219612876),multifamily,38.844436,-77.069023,675,65.0,,2501,3.0,1,yes
+MU219973133,Unnamed multifamily (OSM 219973133),multifamily,38.802391,-77.119791,1895,65.0,,7017,3.0,1,yes
+MU219973629,Unnamed multifamily (OSM 219973629),multifamily,38.800934,-77.122789,953,65.0,,3530,3.0,1,yes
+MU220031874,Unnamed multifamily (OSM 220031874),multifamily,38.809928,-77.130715,503,65.0,,1862,3.0,1,yes
+MU220031875,Unnamed multifamily (OSM 220031875),multifamily,38.810194,-77.12991,478,65.0,,1770,3.0,1,yes
+MU220031876,Unnamed multifamily (OSM 220031876),multifamily,38.810585,-77.129156,445,65.0,,1649,3.0,1,yes
+MU220031878,Unnamed multifamily (OSM 220031878),multifamily,38.811251,-77.129297,471,65.0,,1744,3.0,1,yes
+MU220031879,Unnamed multifamily (OSM 220031879),multifamily,38.813021,-77.129106,458,65.0,,1696,3.0,1,yes
+MU220031883,Unnamed multifamily (OSM 220031883),multifamily,38.811861,-77.127655,488,65.0,,1806,3.0,1,yes
+MU220031884,Unnamed multifamily (OSM 220031884),multifamily,38.81194,-77.128396,480,65.0,,1779,3.0,1,yes
+MU220031885,Unnamed multifamily (OSM 220031885),multifamily,38.81249,-77.128251,518,65.0,,1919,3.0,1,yes
+MU220031886,Unnamed multifamily (OSM 220031886),multifamily,38.812389,-77.128894,419,65.0,,1551,3.0,1,yes
+MU220031887,Unnamed multifamily (OSM 220031887),multifamily,38.812422,-77.13023,500,65.0,,1854,3.0,1,yes
+MU220031888,Unnamed multifamily (OSM 220031888),multifamily,38.811777,-77.130318,470,65.0,,1740,3.0,1,yes
+MU220031889,Unnamed multifamily (OSM 220031889),multifamily,38.811595,-77.130958,476,65.0,,1764,3.0,1,yes
+MU220034381,Unnamed multifamily (OSM 220034381),multifamily,38.811153,-77.128565,457,65.0,,1694,3.0,1,yes
+MU220038948,Unnamed multifamily (OSM 220038948),multifamily,38.810588,-77.13085,499,65.0,,1849,3.0,1,yes
+MU220038949,Unnamed multifamily (OSM 220038949),multifamily,38.810232,-77.131414,494,65.0,,1829,3.0,1,yes
+MU220298042,Unnamed multifamily (OSM 220298042),multifamily,38.811526,-77.123937,435,65.0,,1613,3.0,1,yes
+MU220298043,Unnamed multifamily (OSM 220298043),multifamily,38.811864,-77.123355,474,65.0,,1755,3.0,1,yes
+MU220298044,Unnamed multifamily (OSM 220298044),multifamily,38.812239,-77.124473,449,65.0,,1662,3.0,1,yes
+MU220298045,Unnamed multifamily (OSM 220298045),multifamily,38.811678,-77.124512,470,65.0,,1743,3.0,1,yes
+MU220298046,Unnamed multifamily (OSM 220298046),multifamily,38.811053,-77.124466,769,65.0,,2850,3.0,1,yes
+MU220298047,The Mark Apartments,multifamily,38.811502,-77.125667,1915,65.0,,2365,9.0,1,yes
+MU220416455,Unnamed multifamily (OSM 220416455),multifamily,38.828,-77.196981,2465,65.0,,3043,9.0,1,yes
+MU220551801,Olympus Condominiums,multifamily,38.813761,-77.14037,631,65.0,,2338,3.0,1,yes
+MU220551810,Arrive Alexandria,multifamily,38.812235,-77.139083,474,65.0,,1756,3.0,1,yes
+MU220551818,Unnamed multifamily (OSM 220551818),multifamily,38.811564,-77.137504,616,65.0,,2283,3.0,1,yes
+MU220551819,Cascade at Landmark Apartments,multifamily,38.810301,-77.138156,743,65.0,,2752,3.0,1,yes
+MU220551822,Unnamed multifamily (OSM 220551822),multifamily,38.810483,-77.140632,1044,65.0,,3866,3.0,1,yes
+MU220553405,Unnamed multifamily (OSM 220553405),multifamily,38.811421,-77.136271,1720,65.0,,1911,10.0,1,yes
+MU220554149,The Green House Condominium,multifamily,38.814962,-77.122163,715,65.0,,2650,3.0,1,yes
+MU220688019,Place One Condominium,multifamily,38.817906,-77.127679,3815,65.0,,2494,17.0,1,yes
+MU220688022,Claridge House of Alexandria,multifamily,38.816978,-77.126023,1863,65.0,,1725,12.0,1,yes
+MU221294872,Unnamed multifamily (OSM 221294872),multifamily,38.828535,-77.124344,436,65.0,,1614,3.0,1,yes
+MU221294874,Unnamed multifamily (OSM 221294874),multifamily,38.827722,-77.125771,441,65.0,,1634,3.0,1,yes
+MU221294879,Unnamed multifamily (OSM 221294879),multifamily,38.829798,-77.122689,529,65.0,,1958,3.0,1,yes
+MU221542442,Unnamed multifamily (OSM 221542442),multifamily,38.782543,-77.531166,503,65.0,,1863,3.0,1,yes
+MU221542444,Unnamed multifamily (OSM 221542444),multifamily,38.781896,-77.53077,470,65.0,,1740,3.0,1,yes
+MU221542445,Unnamed multifamily (OSM 221542445),multifamily,38.781241,-77.531674,533,65.0,,1975,3.0,1,yes
+MU221543562,Unnamed multifamily (OSM 221543562),multifamily,38.78056,-77.530592,549,65.0,,2035,3.0,1,yes
+MU221549945,Unnamed multifamily (OSM 221549945),multifamily,38.780751,-77.529532,528,65.0,,1956,3.0,1,yes
+MU221549946,Unnamed multifamily (OSM 221549946),multifamily,38.779935,-77.53147,533,65.0,,1973,3.0,1,yes
+MU221549948,Unnamed multifamily (OSM 221549948),multifamily,38.780671,-77.532347,482,65.0,,1784,3.0,1,yes
+MU221549949,Unnamed multifamily (OSM 221549949),multifamily,38.780733,-77.533161,534,65.0,,1979,3.0,1,yes
+MU222835310,The Marque Apartments,multifamily,38.803861,-77.595377,2368,65.0,,8771,3.0,1,yes
+MU223305537,Skyline Square North,multifamily,38.842839,-77.12069,4672,65.0,,1997,26.0,1,yes
+MU223305606,Unnamed multifamily (OSM 223305606),multifamily,38.844075,-77.109615,907,65.0,,1680,6.0,1,yes
+MU223305610,Unnamed multifamily (OSM 223305610),multifamily,38.845192,-77.113629,814,65.0,,3016,3.0,1,yes
+MU223305613,Unnamed multifamily (OSM 223305613),multifamily,38.845272,-77.112806,777,65.0,,2877,3.0,1,yes
+MU223305617,Unnamed multifamily (OSM 223305617),multifamily,38.846028,-77.112524,951,65.0,,3522,3.0,1,yes
+MU223305622,Unnamed multifamily (OSM 223305622),multifamily,38.846488,-77.113425,1045,65.0,,3871,3.0,1,yes
+MU223311512,Unnamed multifamily (OSM 223311512),multifamily,38.851288,-77.118061,1037,65.0,,1920,6.0,1,yes
+MU223311536,Unnamed multifamily (OSM 223311536),multifamily,38.843687,-77.120962,496,65.0,,1836,3.0,1,yes
+MU223311537,Unnamed multifamily (OSM 223311537),multifamily,38.844314,-77.121267,629,65.0,,1748,4.0,1,yes
+MU223311538,Unnamed multifamily (OSM 223311538),multifamily,38.844677,-77.121236,471,65.0,,1745,3.0,1,yes
+MU223311539,Unnamed multifamily (OSM 223311539),multifamily,38.8435,-77.120595,467,65.0,,1730,3.0,1,yes
+MU224179523,Unnamed multifamily (OSM 224179523),multifamily,38.836783,-77.052403,664,65.0,,1843,4.0,1,yes
+MU225102314,Exchange Place Apartments,multifamily,37.535737,-77.43286,529,65.0,,1960,3.0,1,yes
+MU225274654,White Byrd Building,multifamily,37.534383,-77.437498,595,65.0,,1889,3.5,1,yes
+MU225437548,Arbor Terrace of Herndon Senior Appartments,multifamily,39.011346,-77.373633,860,65.0,,3184,3.0,1,yes
+MU225586245,Old Stone Row,multifamily,37.5321,-77.424664,725,65.0,,2015,4.0,1,yes
+MU227606214,Del Ray Central,multifamily,38.833285,-77.059708,460,65.0,,1702,3.0,1,yes
+MU227606215,Del Ray Central,multifamily,38.83239,-77.059423,738,65.0,,2734,3.0,1,yes
+MU227889749,Rotonda Building I,multifamily,38.928195,-77.232935,3007,65.0,,3341,10.0,1,yes
+MU228915062,Unnamed multifamily (OSM 228915062),multifamily,38.739853,-77.090773,448,65.0,,1661,3.0,1,yes
+MU228915066,Unnamed multifamily (OSM 228915066),multifamily,38.740022,-77.092146,447,65.0,,1655,3.0,1,yes
+MU231958268,Unnamed multifamily (OSM 231958268),multifamily,38.852691,-77.340835,1490,65.0,,5520,3.0,1,yes
+MU232847635,Unnamed multifamily (OSM 232847635),multifamily,38.761579,-77.061296,879,65.0,,3257,3.0,1,yes
+MU233027356,Unnamed multifamily (OSM 233027356),multifamily,38.852543,-77.11844,1300,65.0,,4815,3.0,1,yes
+MU233160875,Unnamed multifamily (OSM 233160875),multifamily,38.857725,-77.116526,765,65.0,,1699,5.0,1,yes
+MU234588246,Quarry Station Apartments,multifamily,38.754498,-77.461833,785,65.0,,2906,3.0,1,yes
+MU236135136,Unnamed multifamily (OSM 236135136),multifamily,37.559355,-77.473874,635,65.0,,2353,3.0,1,yes
+MU236143133,Randolph Place,multifamily,37.543766,-77.460256,639,65.0,,2365,3.0,1,yes
+MU236143167,Unnamed multifamily (OSM 236143167),multifamily,37.54987,-77.473426,617,65.0,,2287,3.0,1,yes
+MU236143168,Unnamed multifamily (OSM 236143168),multifamily,37.549497,-77.473627,886,65.0,,3280,3.0,1,yes
+MU236143174,Unnamed multifamily (OSM 236143174),multifamily,37.549432,-77.472183,630,65.0,,2335,3.0,1,yes
+MU236488141,Residences at John Marshall,multifamily,37.541245,-77.438483,584,65.0,,2162,3.0,1,yes
+MU236804929,The Jefferson,multifamily,38.864025,-77.14745,4323,65.0,,5337,9.0,1,yes
+MU236808104,Lockwood House,multifamily,38.869894,-77.143142,675,65.0,,1875,4.0,1,yes
+MU236941368,Unnamed multifamily (OSM 236941368),multifamily,38.858373,-77.148888,446,65.0,,1653,3.0,1,yes
+MU236942103,Unnamed multifamily (OSM 236942103),multifamily,38.858146,-77.14537,719,65.0,,2661,3.0,1,yes
+MU237317864,Unnamed multifamily (OSM 237317864),multifamily,38.84993,-77.408977,417,65.0,,1543,3.0,1,yes
+MU237318469,Camden Fairfax Apartments,multifamily,38.858995,-77.353999,1820,65.0,,6740,3.0,1,yes
+MU237318535,Unnamed multifamily (OSM 237318535),multifamily,38.859593,-77.349934,409,65.0,,1516,3.0,1,yes
+MU237355399,Halstead at the Metro II,multifamily,38.880439,-77.231179,1871,65.0,,6930,3.0,1,yes
+MU237355402,Halstead at the Metro 1,multifamily,38.880349,-77.22985,2352,65.0,,6533,4.0,1,yes
+MU238144548,Unnamed multifamily (OSM 238144548),multifamily,38.883484,-77.114485,654,65.0,,1818,4.0,1,yes
+MU238275264,Modera Mosaic,multifamily,38.871387,-77.230477,3594,65.0,,6655,6.0,1,yes
+MU239021410,Unnamed multifamily (OSM 239021410),multifamily,38.898766,-77.186229,692,65.0,,1921,4.0,1,yes
+MU239021411,Unnamed multifamily (OSM 239021411),multifamily,38.899112,-77.186614,625,65.0,,1735,4.0,1,yes
+MU239021412,Unnamed multifamily (OSM 239021412),multifamily,38.898557,-77.187016,622,65.0,,1728,4.0,1,yes
+MU239021987,Chesterbrook Assisted Living,multifamily,38.908248,-77.175196,877,65.0,,3247,3.0,1,yes
+MU239141849,Unnamed multifamily (OSM 239141849),multifamily,38.955341,-77.393933,600,65.0,,2221,3.0,1,yes
+MU239141859,Unnamed multifamily (OSM 239141859),multifamily,38.955736,-77.394524,607,65.0,,2249,3.0,1,yes
+MU239141860,Unnamed multifamily (OSM 239141860),multifamily,38.956099,-77.393582,605,65.0,,2242,3.0,1,yes
+MU239141987,Unnamed multifamily (OSM 239141987),multifamily,38.898071,-77.205452,1382,65.0,,2560,6.0,1,yes
+MU239142233,Unnamed multifamily (OSM 239142233),multifamily,38.900579,-77.203985,3418,65.0,,3165,12.0,1,yes
+MU239147352,Regency of McLean,multifamily,38.917277,-77.215527,5221,65.0,,3412,17.0,1,yes
+MU239147353,Encore of McLean,multifamily,38.916638,-77.216379,2998,65.0,,2379,14.0,1,yes
+MU239147357,Unnamed multifamily (OSM 239147357),multifamily,38.918992,-77.208298,413,65.0,,1528,3.0,1,yes
+MU239147358,Unnamed multifamily (OSM 239147358),multifamily,38.918444,-77.20902,499,65.0,,1847,3.0,1,yes
+MU239147359,Unnamed multifamily (OSM 239147359),multifamily,38.919247,-77.209385,480,65.0,,1776,3.0,1,yes
+MU239147360,Unnamed multifamily (OSM 239147360),multifamily,38.91838,-77.209873,485,65.0,,1795,3.0,1,yes
+MU239147361,Unnamed multifamily (OSM 239147361),multifamily,38.917507,-77.209708,478,65.0,,1771,3.0,1,yes
+MU239147363,Unnamed multifamily (OSM 239147363),multifamily,38.917512,-77.208737,500,65.0,,1852,3.0,1,yes
+MU239147364,Unnamed multifamily (OSM 239147364),multifamily,38.917405,-77.207652,427,65.0,,1580,3.0,1,yes
+MU239147365,Unnamed multifamily (OSM 239147365),multifamily,38.917978,-77.207048,405,65.0,,1500,3.0,1,yes
+MU239147367,Unnamed multifamily (OSM 239147367),multifamily,38.918565,-77.206157,436,65.0,,1615,3.0,1,yes
+MU239147368,Unnamed multifamily (OSM 239147368),multifamily,38.91894,-77.207213,423,65.0,,1567,3.0,1,yes
+MU239148617,Unnamed multifamily (OSM 239148617),multifamily,38.926118,-77.202461,697,65.0,,1937,4.0,1,yes
+MU239150255,Unnamed multifamily (OSM 239150255),multifamily,38.914388,-77.213992,482,65.0,,1786,3.0,1,yes
+MU239151482,Unnamed multifamily (OSM 239151482),multifamily,38.927848,-77.209456,591,65.0,,1643,4.0,1,yes
+MU239151483,Unnamed multifamily (OSM 239151483),multifamily,38.92849,-77.209451,541,65.0,,1502,4.0,1,yes
+MU239151484,Unnamed multifamily (OSM 239151484),multifamily,38.928442,-77.210068,607,65.0,,1686,4.0,1,yes
+MU239151485,Unnamed multifamily (OSM 239151485),multifamily,38.929308,-77.209216,594,65.0,,1650,4.0,1,yes
+MU239151486,Unnamed multifamily (OSM 239151486),multifamily,38.929237,-77.209726,573,65.0,,1592,4.0,1,yes
+MU239151487,Unnamed multifamily (OSM 239151487),multifamily,38.929132,-77.210204,672,65.0,,1867,4.0,1,yes
+MU239151488,Unnamed multifamily (OSM 239151488),multifamily,38.928364,-77.210644,979,65.0,,2720,4.0,1,yes
+MU239151489,Unnamed multifamily (OSM 239151489),multifamily,38.927796,-77.210272,544,65.0,,2016,3.0,1,yes
+MU239151490,Unnamed multifamily (OSM 239151490),multifamily,38.927455,-77.211238,542,65.0,,1506,4.0,1,yes
+MU240383325,The Palatine,multifamily,38.888934,-77.082283,4398,65.0,,4072,12.0,1,yes
+MU240453843,Unnamed multifamily (OSM 240453843),multifamily,38.964539,-77.392572,476,65.0,,1764,3.0,1,yes
+MU240453845,Unnamed multifamily (OSM 240453845),multifamily,38.965459,-77.392192,481,65.0,,1781,3.0,1,yes
+MU240454016,Unnamed multifamily (OSM 240454016),multifamily,38.9658,-77.390997,461,65.0,,1708,3.0,1,yes
+MU241880639,Camden Fairfax Apartments,multifamily,38.857529,-77.354617,1872,65.0,,6935,3.0,1,yes
+MU241945902,Unnamed multifamily (OSM 241945902),multifamily,38.853131,-77.363212,700,65.0,,2592,3.0,1,yes
+MU241945904,Unnamed multifamily (OSM 241945904),multifamily,38.853827,-77.364131,1360,65.0,,5035,3.0,1,yes
+MU242075270,Sedona,multifamily,38.893645,-77.07416,2144,65.0,,1833,13.0,1,yes
+MU242075272,Slate,multifamily,38.893514,-77.075074,1768,65.0,,1637,12.0,1,yes
+MU242534150,Lofts 590,multifamily,38.859384,-77.055127,2087,65.0,,5798,4.0,1,yes
+MU244775828,Camden Potomac Yard,multifamily,38.843592,-77.050852,4994,65.0,,4268,13.0,1,yes
+MU247661391,Unnamed multifamily (OSM 247661391),multifamily,38.810857,-77.138944,497,65.0,,1841,3.0,1,yes
+MU247661392,Unnamed multifamily (OSM 247661392),multifamily,38.811368,-77.139043,497,65.0,,1842,3.0,1,yes
+MU248056035,Unnamed multifamily (OSM 248056035),multifamily,37.088133,-76.475293,709,65.0,,2625,3.0,1,yes
+MU248056183,Unnamed multifamily (OSM 248056183),multifamily,37.088508,-76.474438,724,65.0,,2680,3.0,1,yes
+MU248576935,Unnamed multifamily (OSM 248576935),multifamily,38.871285,-77.109571,2516,65.0,,6990,4.0,1,yes
+MU251711371,Unnamed multifamily (OSM 251711371),multifamily,38.762041,-77.154536,1218,65.0,,3382,4.0,1,yes
+MU251711372,Unnamed multifamily (OSM 251711372),multifamily,38.762978,-77.153829,1097,65.0,,3046,4.0,1,yes
+MU252837439,Perry Place Apartments,multifamily,37.52549,-77.444319,607,65.0,,2247,3.0,1,yes
+MU252837440,Link Apartments Manchester,multifamily,37.525923,-77.445719,1536,65.0,,5691,3.0,1,yes
+MU252837445,1200 Semmes,multifamily,37.52467,-77.448252,1051,65.0,,2919,4.0,1,yes
+MU252837446,Old Manchester Lofts,multifamily,37.524909,-77.443647,600,65.0,,2223,3.0,1,yes
+MU252837451,Cedar Broad Apartments,multifamily,37.535739,-77.424084,1535,65.0,,3412,5.0,1,yes
+MU252837453,2001 East Apartments,multifamily,37.533868,-77.422924,804,65.0,,1786,5.0,1,yes
+MU252983271,Hook & Ladder Lofts,multifamily,37.569684,-77.469089,1056,65.0,,3912,3.0,1,yes
+MU252987996,Scott's Edge,multifamily,37.571897,-77.474008,786,65.0,,2910,3.0,1,yes
+MU256731193,West Falls Center Retirement Home at Falcon's Landing,multifamily,39.049182,-77.379178,565,65.0,,2094,3.0,1,yes
+MU257155455,The Brittany,multifamily,38.854046,-77.105872,5117,65.0,,4374,13.0,1,yes
+MU259932099,Modera Mosaic,multifamily,38.870896,-77.230076,2120,65.0,,3927,6.0,1,yes
+MU260395339,Unnamed multifamily (OSM 260395339),multifamily,38.837797,-77.055381,4139,65.0,,11498,4.0,1,yes
+MU260395343,Unnamed multifamily (OSM 260395343),multifamily,38.838094,-77.052921,2642,65.0,,7340,4.0,1,yes
+MU260553087,Carmel Alexandria Apartments,multifamily,38.817449,-77.137391,1480,65.0,,2055,8.0,1,yes
+MU261331390,Unnamed multifamily (OSM 261331390),multifamily,38.553994,-77.328673,579,65.0,,2143,3.0,1,yes
+MU262798333,Unnamed multifamily (OSM 262798333),multifamily,38.28071,-77.531468,728,65.0,,2696,3.0,1,yes
+MU262798334,Unnamed multifamily (OSM 262798334),multifamily,38.279983,-77.531285,858,65.0,,3178,3.0,1,yes
+MU264523636,Berkshire Apartments,multifamily,37.546029,-77.44636,2624,65.0,,2082,14.0,1,yes
+MU265138862,Cookie Factory Lofts,multifamily,37.563243,-77.467753,1367,65.0,,6077,2.5,1,yes
+MU266429383,The Atlantic,multifamily,37.676192,-77.590702,951,65.0,,3522,3.0,1,yes
+MU266955725,Fording Flats,multifamily,37.530564,-77.423033,460,65.0,,1703,3.0,1,yes
+MU266955746,The River Lofts at Tobacco Row Phase II,multifamily,37.529742,-77.424059,643,65.0,,2380,3.0,1,yes
+MU266956492,American Cigar Lofts,multifamily,37.529275,-77.423224,1622,65.0,,3605,5.0,1,yes
+MU268205426,The Mark at Dulles Station,multifamily,38.957448,-77.416541,1003,65.0,,2785,4.0,1,yes
+MU268205427,Unnamed multifamily (OSM 268205427),multifamily,38.957895,-77.416301,997,65.0,,2770,4.0,1,yes
+MU268207115,1200 West Marshall,multifamily,37.553364,-77.451778,2190,65.0,,4867,5.0,1,yes
+MU270472881,Unnamed multifamily (OSM 270472881),multifamily,38.956291,-77.420676,449,65.0,,1663,3.0,1,yes
+MU277373845,Dwell Vienna Metro Apartments,multifamily,38.873993,-77.266016,2868,65.0,,7967,4.0,1,yes
+MU277375320,Unnamed multifamily (OSM 277375320),multifamily,38.874289,-77.267581,454,65.0,,1682,3.0,1,yes
+MU283537593,Unnamed multifamily (OSM 283537593),multifamily,39.080282,-77.473955,3650,65.0,,3379,12.0,1,yes
+MU283537594,Unnamed multifamily (OSM 283537594),multifamily,39.081534,-77.474461,3838,65.0,,3554,12.0,1,yes
+MU296917581,Barclay Square,multifamily,37.278637,-76.682882,462,65.0,,1712,3.0,1,yes
+MU296917583,Barclay Square,multifamily,37.277815,-76.682513,453,65.0,,1679,3.0,1,yes
+MU296920926,The Flats of Williamsburg VA,multifamily,37.266113,-76.681993,284,65.0,,1577,2.0,1,yes
+MU296930396,Blayton Building,multifamily,37.274062,-76.709333,420,65.0,,1554,3.0,1,yes
+MU297841784,District Square Apartments,multifamily,37.547144,-77.442843,460,65.0,,1705,3.0,1,yes
+MU297841791,Unnamed multifamily (OSM 297841791),multifamily,37.55875,-77.471746,978,65.0,,3624,3.0,1,yes
+MU299356129,Hanover Manor,multifamily,37.767513,-77.497232,660,65.0,,2444,3.0,1,yes
+MU300163377,Meadowlark Terrace,multifamily,39.030629,-77.454503,1820,65.0,,5056,4.0,1,yes
+MU300163378,Hummingbird Square,multifamily,39.03045,-77.456574,742,65.0,,2749,3.0,1,yes
+MU300163379,Quail Run,multifamily,39.031074,-77.457046,728,65.0,,2696,3.0,1,yes
+MU300163380,Blue Bird Court,multifamily,39.031237,-77.45584,763,65.0,,2825,3.0,1,yes
+MU300163382,Heron Place,multifamily,39.029757,-77.45602,714,65.0,,2644,3.0,1,yes
+MU300163383,Red Robin View,multifamily,39.031875,-77.456307,756,65.0,,2802,3.0,1,yes
+MU301390309,Unnamed multifamily (OSM 301390309),multifamily,38.994147,-77.485088,678,65.0,,2511,3.0,1,yes
+MU305496260,Unnamed multifamily (OSM 305496260),multifamily,37.084828,-76.487891,869,65.0,,3218,3.0,1,yes
+MU305496320,Unnamed multifamily (OSM 305496320),multifamily,37.083286,-76.48687,872,65.0,,3231,3.0,1,yes
+MU305711439,Unnamed multifamily (OSM 305711439),multifamily,38.863465,-77.368664,406,65.0,,1505,3.0,1,yes
+MU306540390,Unnamed multifamily (OSM 306540390),multifamily,38.948397,-77.422147,493,65.0,,1827,3.0,1,yes
+MU308140398,Fountains At McLean,multifamily,38.931534,-77.228956,1299,65.0,,3610,4.0,1,yes
+MU308140412,Unnamed multifamily (OSM 308140412),multifamily,38.930707,-77.229701,938,65.0,,3475,3.0,1,yes
+MU310084928,Unnamed multifamily (OSM 310084928),multifamily,38.92985,-77.231336,1184,65.0,,4385,3.0,1,yes
+MU310085327,Unnamed multifamily (OSM 310085327),multifamily,38.9284,-77.231083,1204,65.0,,4459,3.0,1,yes
+MU310086691,One Park Crest,multifamily,38.929917,-77.228834,4569,65.0,,2672,19.0,1,yes
+MU310086692,The Lofts at Park Crest,multifamily,38.930166,-77.227832,2545,65.0,,3535,8.0,1,yes
+MU312161299,Unnamed multifamily (OSM 312161299),multifamily,36.862411,-76.419897,462,65.0,,1713,3.0,1,yes
+MU312165367,Kay Willow Apts,multifamily,36.855446,-76.41106,450,65.0,,1666,3.0,1,yes
+MU312166163,Unnamed multifamily (OSM 312166163),multifamily,36.862145,-76.420035,433,65.0,,1604,3.0,1,yes
+MU312166587,Unnamed multifamily (OSM 312166587),multifamily,36.863059,-76.42016,449,65.0,,1661,3.0,1,yes
+MU312251853,Parsons Adult Care,multifamily,36.778312,-76.34224,629,65.0,,2331,3.0,1,yes
+MU312289060,Brent Lox Hall Nursing Home,multifamily,36.777159,-76.337337,1070,65.0,,3962,3.0,1,yes
+MU312289076,Deep Creek Crossing Apts,multifamily,36.778921,-76.335711,557,65.0,,2061,3.0,1,yes
+MU312291908,Unnamed multifamily (OSM 312291908),multifamily,36.783404,-76.33106,458,65.0,,1695,3.0,1,yes
+MU312292168,Unnamed multifamily (OSM 312292168),multifamily,36.782722,-76.330245,454,65.0,,1681,3.0,1,yes
+MU312357388,Unnamed multifamily (OSM 312357388),multifamily,36.721538,-76.287574,1155,65.0,,4277,3.0,1,yes
+MU312438638,Lighthouse Pointe Senior Apartments,multifamily,36.709838,-76.273539,1231,65.0,,4559,3.0,1,yes
+MU312438660,Westbridge Apartments,multifamily,36.712107,-76.255195,415,65.0,,1536,3.0,1,yes
+MU312479001,Century Plaza Apartments,multifamily,36.811109,-76.222938,408,65.0,,1512,3.0,1,yes
+MU312482112,MacDonald Manor Apts,multifamily,36.814595,-76.221845,544,65.0,,2016,3.0,1,yes
+MU312482176,Unnamed multifamily (OSM 312482176),multifamily,36.813515,-76.222618,540,65.0,,2002,3.0,1,yes
+MU312621956,Unnamed multifamily (OSM 312621956),multifamily,36.735954,-76.244428,685,65.0,,2535,3.0,1,yes
+MU312621975,Unnamed multifamily (OSM 312621975),multifamily,36.746862,-76.259266,851,65.0,,3151,3.0,1,yes
+MU312626586,Unnamed multifamily (OSM 312626586),multifamily,36.735535,-76.243524,626,65.0,,2318,3.0,1,yes
+MU312649946,Unnamed multifamily (OSM 312649946),multifamily,36.770818,-76.255143,614,65.0,,1705,4.0,1,yes
+MU312649964,Unnamed multifamily (OSM 312649964),multifamily,36.770745,-76.255834,619,65.0,,1721,4.0,1,yes
+MU312649966,Unnamed multifamily (OSM 312649966),multifamily,36.770695,-76.254374,469,65.0,,1736,3.0,1,yes
+MU312650040,Unnamed multifamily (OSM 312650040),multifamily,36.770151,-76.254033,629,65.0,,1748,4.0,1,yes
+MU312667588,Greenbrier Seniors Housing Facility,multifamily,36.781758,-76.225632,966,65.0,,3579,3.0,1,yes
+MU312669292,Streets of Greenbrier,multifamily,36.78338,-76.228692,1889,65.0,,6995,3.0,1,yes
+MU312669295,Aura Towne Place Apartments,multifamily,36.771774,-76.234082,1372,65.0,,5083,3.0,1,yes
+MU312669297,The Carlton at Greenbrier,multifamily,36.779752,-76.222153,639,65.0,,2367,3.0,1,yes
+MU312669298,The Reserve at Greenbrier,multifamily,36.78344,-76.22642,1816,65.0,,6726,3.0,1,yes
+MU312669412,Unnamed multifamily (OSM 312669412),multifamily,36.778819,-76.222721,434,65.0,,1608,3.0,1,yes
+MU312669775,Unnamed multifamily (OSM 312669775),multifamily,36.779223,-76.222312,535,65.0,,1982,3.0,1,yes
+MU312669823,Unnamed multifamily (OSM 312669823),multifamily,36.770975,-76.236695,581,65.0,,2150,3.0,1,yes
+MU312669849,Unnamed multifamily (OSM 312669849),multifamily,36.784194,-76.228757,656,65.0,,2431,3.0,1,yes
+MU312688950,Autumn Care,multifamily,36.740779,-76.200361,1912,65.0,,7083,3.0,1,yes
+MU312700590,Great Bridge Colonial Apts,multifamily,36.707433,-76.237545,477,65.0,,1768,3.0,1,yes
+MU316051507,Palladium,multifamily,38.932609,-77.177548,1098,65.0,,4066,3.0,1,yes
+MU316124527,Unnamed multifamily (OSM 316124527),multifamily,38.871835,-77.314372,443,65.0,,1640,3.0,1,yes
+MU316160747,The Cosmopolitan at Lorton Station,multifamily,38.71109,-77.214246,2826,65.0,,10466,3.0,1,yes
+MU317439651,The View,multifamily,38.879521,-77.107969,441,65.0,,1634,3.0,1,yes
+MU319050057,Unnamed multifamily (OSM 319050057),multifamily,37.088983,-76.473433,895,65.0,,3314,3.0,1,yes
+MU321384711,8 1/2 Canal,multifamily,37.541802,-77.44623,2243,65.0,,3116,8.0,1,yes
+MU321477599,Unnamed multifamily (OSM 321477599),multifamily,37.125853,-76.513342,667,65.0,,1852,4.0,1,yes
+MU321477601,Unnamed multifamily (OSM 321477601),multifamily,37.126194,-76.512276,658,65.0,,1827,4.0,1,yes
+MU322048389,The Point at Herndon,multifamily,38.949845,-77.402589,2536,65.0,,7044,4.0,1,yes
+MU327117449,Crystal City Lofts,multifamily,38.863533,-77.048475,1766,65.0,,3925,5.0,1,yes
+MU327205890,Ramz Hall,multifamily,37.550354,-77.45044,754,65.0,,1676,5.0,1,yes
+MU328092959,Potomac Place,multifamily,38.635217,-77.277226,923,65.0,,3419,3.0,1,yes
+MU330376600,Hunters Wood Fellowship House,multifamily,38.93715,-77.360943,457,65.0,,1692,3.0,1,yes
+MU333001229,Unnamed multifamily (OSM 333001229),multifamily,37.01386,-76.451704,746,65.0,,2764,3.0,1,yes
+MU333001453,Unnamed multifamily (OSM 333001453),multifamily,37.014408,-76.450658,777,65.0,,2880,3.0,1,yes
+MU333001715,Unnamed multifamily (OSM 333001715),multifamily,37.015739,-76.451701,993,65.0,,3676,3.0,1,yes
+MU333001763,Unnamed multifamily (OSM 333001763),multifamily,37.015208,-76.45265,1089,65.0,,4033,3.0,1,yes
+MU333064760,Checed Warwick,multifamily,37.14594,-76.551027,546,65.0,,2021,3.0,1,yes
+MU333194991,Unnamed multifamily (OSM 333194991),multifamily,36.981318,-76.434281,508,65.0,,1882,3.0,1,yes
+MU334124804,The Todd Lofts on Hermitage,multifamily,37.562228,-77.46071,843,65.0,,1873,5.0,1,yes
+MU335159623,Apartment Building B,multifamily,39.06851,-77.465069,941,65.0,,2092,5.0,1,yes
+MU339577918,Unnamed multifamily (OSM 339577918),multifamily,38.875031,-77.276457,812,65.0,,3009,3.0,1,yes
+MU343762038,Alister Arlington Ridge,multifamily,38.848724,-77.081665,1974,65.0,,2437,9.0,1,yes
+MU350240830,The Avant at Reston Town Center,multifamily,38.957876,-77.361133,6167,65.0,,4568,15.0,1,yes
+MU352413638,The Crossings at Chantilly,multifamily,38.925834,-77.417112,1121,65.0,,6229,2.0,1,yes
+MU356128887,Harrison at Reston Town Center,multifamily,38.960983,-77.353556,1205,65.0,,4464,3.0,1,yes
+MU366743013,Wilton House,multifamily,38.879791,-77.229007,3607,65.0,,2672,15.0,1,yes
+MU366746963,Unnamed multifamily (OSM 366746963),multifamily,38.879414,-77.228459,814,65.0,,3015,3.0,1,yes
+MU366974098,Prosperity Flats,multifamily,38.879627,-77.233994,782,65.0,,2896,3.0,1,yes
+MU367019176,Unnamed multifamily (OSM 367019176),multifamily,38.881313,-77.227106,659,65.0,,2442,3.0,1,yes
+MU367019177,Westbriar Condominium,multifamily,38.881531,-77.226521,824,65.0,,2290,4.0,1,yes
+MU367019179,Unnamed multifamily (OSM 367019179),multifamily,38.882051,-77.225805,720,65.0,,2665,3.0,1,yes
+MU367019191,Unnamed multifamily (OSM 367019191),multifamily,38.880287,-77.22678,566,65.0,,2097,3.0,1,yes
+MU368226261,The Point at Dunn Loring,multifamily,38.881143,-77.229538,1824,65.0,,6756,3.0,1,yes
+MU368379658,Unnamed multifamily (OSM 368379658),multifamily,38.88314,-77.111604,1032,65.0,,1638,7.0,1,yes
+MU368799434,The Madison,multifamily,38.871916,-77.11088,2521,65.0,,7002,4.0,1,yes
+MU370097011,The James on Merrimac,multifamily,37.269819,-76.678846,2305,65.0,,5122,5.0,1,yes
+MU370415856,Unnamed multifamily (OSM 370415856),multifamily,37.251388,-76.730357,554,65.0,,2052,3.0,1,yes
+MU370416114,Unnamed multifamily (OSM 370416114),multifamily,37.250749,-76.731786,436,65.0,,1614,3.0,1,yes
+MU370416115,Unnamed multifamily (OSM 370416115),multifamily,37.250296,-76.731806,427,65.0,,1582,3.0,1,yes
+MU370496053,Foundation Square,multifamily,37.280103,-76.741772,677,65.0,,2509,3.0,1,yes
+MU370617107,Unnamed multifamily (OSM 370617107),multifamily,38.834083,-77.06055,725,65.0,,1611,5.0,1,yes
+MU371544499,Shockoe Valley View Phase I,multifamily,37.53759,-77.421506,1386,65.0,,3080,5.0,1,yes
+MU372648408,Concord,multifamily,38.849538,-77.051196,4237,65.0,,2615,18.0,1,yes
+MU372659339,Harvey Hall Apartments,multifamily,38.854949,-77.118574,1490,65.0,,2366,7.0,1,yes
+MU372659340,Serrano Apartments,multifamily,38.854981,-77.119622,700,65.0,,2593,3.0,1,yes
+MU376433551,Unnamed multifamily (OSM 376433551),multifamily,38.748897,-77.476251,733,65.0,,1629,5.0,1,yes
+MU376434030,Unnamed multifamily (OSM 376434030),multifamily,38.748993,-77.475464,730,65.0,,1621,5.0,1,yes
+MU379353587,Virginia Square Towers,multifamily,38.883013,-77.10149,1153,65.0,,2136,6.0,1,yes
+MU381102246,The Asher,multifamily,38.811889,-77.051689,1773,65.0,,3284,6.0,1,yes
+MU382372700,Unnamed multifamily (OSM 382372700),multifamily,38.028275,-78.482492,676,65.0,,2503,3.0,1,yes
+MU382400407,Unnamed multifamily (OSM 382400407),multifamily,38.03034,-78.492097,436,65.0,,1617,3.0,1,yes
+MU383926834,Unnamed multifamily (OSM 383926834),multifamily,36.859337,-76.445926,1351,65.0,,5002,3.0,1,yes
+MU384021175,Magnolia Gardens,multifamily,36.746539,-76.547483,456,65.0,,1690,3.0,1,yes
+MU384265201,Sunstone Senior Apartments,multifamily,36.815964,-76.430331,1075,65.0,,3980,3.0,1,yes
+MU384352446,Latitude Apartments,multifamily,38.883639,-77.103998,2193,65.0,,2437,10.0,1,yes
+MU385051615,The Victor Stonebridge,multifamily,38.631407,-77.287359,2561,65.0,,9485,3.0,1,yes
+MU385511215,Midway Manor Apartments,multifamily,38.029951,-78.484687,751,65.0,,1669,5.0,1,yes
+MU388354180,Unnamed multifamily (OSM 388354180),multifamily,37.02588,-76.323589,1202,65.0,,4451,3.0,1,yes
+MU388443153,Unnamed multifamily (OSM 388443153),multifamily,37.050236,-76.306169,481,65.0,,1781,3.0,1,yes
+MU388473786,Unnamed multifamily (OSM 388473786),multifamily,37.024567,-76.347264,781,65.0,,2170,4.0,1,yes
+MU388478960,Unnamed multifamily (OSM 388478960),multifamily,37.051276,-76.352443,1502,65.0,,5564,3.0,1,yes
+MU388528668,Unnamed multifamily (OSM 388528668),multifamily,37.033676,-76.414622,437,65.0,,1617,3.0,1,yes
+MU388536760,Unnamed multifamily (OSM 388536760),multifamily,37.060305,-76.366491,414,65.0,,1535,3.0,1,yes
+MU388592465,Unnamed multifamily (OSM 388592465),multifamily,37.034868,-76.418787,806,65.0,,2985,3.0,1,yes
+MU388592469,Unnamed multifamily (OSM 388592469),multifamily,37.03446,-76.419484,899,65.0,,3328,3.0,1,yes
+MU388592564,Unnamed multifamily (OSM 388592564),multifamily,37.03395,-76.420094,709,65.0,,2626,3.0,1,yes
+MU388596639,Unnamed multifamily (OSM 388596639),multifamily,37.04944,-76.388144,1336,65.0,,4948,3.0,1,yes
+MU388596670,Unnamed multifamily (OSM 388596670),multifamily,37.046573,-76.381555,582,65.0,,2154,3.0,1,yes
+MU388596671,Unnamed multifamily (OSM 388596671),multifamily,37.047384,-76.381045,494,65.0,,1831,3.0,1,yes
+MU388596673,Unnamed multifamily (OSM 388596673),multifamily,37.047351,-76.38176,606,65.0,,2246,3.0,1,yes
+MU388596675,Unnamed multifamily (OSM 388596675),multifamily,37.047024,-76.380343,491,65.0,,1817,3.0,1,yes
+MU388596679,Unnamed multifamily (OSM 388596679),multifamily,37.047234,-76.385865,626,65.0,,2320,3.0,1,yes
+MU388596682,Unnamed multifamily (OSM 388596682),multifamily,37.045398,-76.379239,602,65.0,,2231,3.0,1,yes
+MU388596685,Unnamed multifamily (OSM 388596685),multifamily,37.046274,-76.37973,706,65.0,,2614,3.0,1,yes
+MU388596691,Unnamed multifamily (OSM 388596691),multifamily,37.046143,-76.380859,609,65.0,,2256,3.0,1,yes
+MU388596692,Unnamed multifamily (OSM 388596692),multifamily,37.047339,-76.384529,729,65.0,,2699,3.0,1,yes
+MU388596693,Unnamed multifamily (OSM 388596693),multifamily,37.048125,-76.382702,511,65.0,,1893,3.0,1,yes
+MU388598421,Unnamed multifamily (OSM 388598421),multifamily,37.034291,-76.375842,454,65.0,,1681,3.0,1,yes
+MU388598426,Unnamed multifamily (OSM 388598426),multifamily,37.036453,-76.377035,485,65.0,,1795,3.0,1,yes
+MU388598427,Unnamed multifamily (OSM 388598427),multifamily,37.034665,-76.374814,632,65.0,,2341,3.0,1,yes
+MU388598524,Unnamed multifamily (OSM 388598524),multifamily,37.035652,-76.376114,579,65.0,,2144,3.0,1,yes
+MU388598530,Unnamed multifamily (OSM 388598530),multifamily,37.03388,-76.375241,450,65.0,,1665,3.0,1,yes
+MU388600222,B139,multifamily,37.045023,-76.393766,1923,65.0,,7122,3.0,1,yes
+MU388600609,Axis Lofts,multifamily,37.043623,-76.394334,1769,65.0,,6552,3.0,1,yes
+MU392671362,Unnamed multifamily (OSM 392671362),multifamily,39.036007,-77.419005,763,65.0,,2120,4.0,1,yes
+MU392671363,Unnamed multifamily (OSM 392671363),multifamily,39.03524,-77.417497,588,65.0,,2177,3.0,1,yes
+MU392671366,Unnamed multifamily (OSM 392671366),multifamily,39.034443,-77.420383,906,65.0,,2517,4.0,1,yes
+MU392671367,Unnamed multifamily (OSM 392671367),multifamily,39.033593,-77.418883,454,65.0,,1680,3.0,1,yes
+MU392682315,Unnamed multifamily (OSM 392682315),multifamily,39.030352,-77.41756,1542,65.0,,5713,3.0,1,yes
+MU392682316,Unnamed multifamily (OSM 392682316),multifamily,39.030657,-77.416091,433,65.0,,1603,3.0,1,yes
+MU392682317,Unnamed multifamily (OSM 392682317),multifamily,39.03022,-77.415524,498,65.0,,1846,3.0,1,yes
+MU398283639,Gate 5,multifamily,37.533972,-77.435927,872,65.0,,1614,6.0,1,yes
+MU398283641,Main2525,multifamily,37.528505,-77.421253,1064,65.0,,3942,3.0,1,yes
+MU398283647,Hatcher Tobacco Flats,multifamily,37.524466,-77.442075,1609,65.0,,3574,5.0,1,yes
+MU398440546,The Locks at 321,multifamily,37.534487,-77.437964,3380,65.0,,2889,13.0,1,yes
+MU402212927,Unnamed multifamily (OSM 402212927),multifamily,36.902005,-76.1311,976,65.0,,3614,3.0,1,yes
+MU402217712,Unnamed multifamily (OSM 402217712),multifamily,36.908463,-76.098153,649,65.0,,2405,3.0,1,yes
+MU402217858,Unnamed multifamily (OSM 402217858),multifamily,36.912096,-76.110353,558,65.0,,2065,3.0,1,yes
+MU402242873,Unnamed multifamily (OSM 402242873),multifamily,36.846349,-76.142423,697,65.0,,2582,3.0,1,yes
+MU402243954,Unnamed multifamily (OSM 402243954),multifamily,36.846623,-76.138303,652,65.0,,2416,3.0,1,yes
+MU402244090,Unnamed multifamily (OSM 402244090),multifamily,36.847515,-76.138621,700,65.0,,2594,3.0,1,yes
+MU402244098,Unnamed multifamily (OSM 402244098),multifamily,36.846626,-76.139002,660,65.0,,2444,3.0,1,yes
+MU402244134,Unnamed multifamily (OSM 402244134),multifamily,36.84681,-76.139833,413,65.0,,1528,3.0,1,yes
+MU402244235,Unnamed multifamily (OSM 402244235),multifamily,36.847261,-76.139609,499,65.0,,1847,3.0,1,yes
+MU402244237,Unnamed multifamily (OSM 402244237),multifamily,36.847048,-76.140779,501,65.0,,1857,3.0,1,yes
+MU402244269,Unnamed multifamily (OSM 402244269),multifamily,36.845662,-76.141775,667,65.0,,2471,3.0,1,yes
+MU402244288,Unnamed multifamily (OSM 402244288),multifamily,36.846494,-76.14173,657,65.0,,2433,3.0,1,yes
+MU402246139,Unnamed multifamily (OSM 402246139),multifamily,36.859948,-76.13508,427,65.0,,1581,3.0,1,yes
+MU402246152,Unnamed multifamily (OSM 402246152),multifamily,36.860716,-76.135578,433,65.0,,1604,3.0,1,yes
+MU402273218,Unnamed multifamily (OSM 402273218),multifamily,36.837644,-76.087608,804,65.0,,2978,3.0,1,yes
+MU402273221,Unnamed multifamily (OSM 402273221),multifamily,36.837571,-76.088249,959,65.0,,3550,3.0,1,yes
+MU402273290,Unnamed multifamily (OSM 402273290),multifamily,36.836236,-76.086399,985,65.0,,3649,3.0,1,yes
+MU402273294,Unnamed multifamily (OSM 402273294),multifamily,36.835763,-76.087273,1010,65.0,,3742,3.0,1,yes
+MU402273299,Unnamed multifamily (OSM 402273299),multifamily,36.836485,-76.085581,969,65.0,,3591,3.0,1,yes
+MU402285078,Unnamed multifamily (OSM 402285078),multifamily,36.841648,-76.098968,612,65.0,,2268,3.0,1,yes
+MU402285311,Unnamed multifamily (OSM 402285311),multifamily,36.842742,-76.09641,512,65.0,,1898,3.0,1,yes
+MU402285342,Unnamed multifamily (OSM 402285342),multifamily,36.843296,-76.096611,500,65.0,,1852,3.0,1,yes
+MU402285442,Unnamed multifamily (OSM 402285442),multifamily,36.842538,-76.097717,492,65.0,,1824,3.0,1,yes
+MU402285458,Unnamed multifamily (OSM 402285458),multifamily,36.843054,-76.098206,490,65.0,,1815,3.0,1,yes
+MU402285460,Unnamed multifamily (OSM 402285460),multifamily,36.840908,-76.099511,731,65.0,,2708,3.0,1,yes
+MU402296804,Mayflower Seaside Tower,multifamily,36.862386,-75.979531,2399,65.0,,1666,16.0,1,yes
+MU402299436,Unnamed multifamily (OSM 402299436),multifamily,36.905867,-76.084761,507,65.0,,1877,3.0,1,yes
+MU402301485,Unnamed multifamily (OSM 402301485),multifamily,36.910566,-76.084136,428,65.0,,1584,3.0,1,yes
+MU402303275,Unnamed multifamily (OSM 402303275),multifamily,36.913093,-76.070542,753,65.0,,2790,3.0,1,yes
+MU402303983,Unnamed multifamily (OSM 402303983),multifamily,36.910963,-76.075745,646,65.0,,2393,3.0,1,yes
+MU402304038,Westminster-Canterbury on Chesapeake Bay,multifamily,36.911225,-76.079018,3910,65.0,,14483,3.0,1,yes
+MU402372143,Unnamed multifamily (OSM 402372143),multifamily,36.845644,-76.049254,1251,65.0,,4634,3.0,1,yes
+MU402381163,Unnamed multifamily (OSM 402381163),multifamily,36.851935,-76.033669,1978,65.0,,7325,3.0,1,yes
+MU402381307,Unnamed multifamily (OSM 402381307),multifamily,36.852393,-76.035094,946,65.0,,3503,3.0,1,yes
+MU402381358,Unnamed multifamily (OSM 402381358),multifamily,36.852612,-76.036245,965,65.0,,3576,3.0,1,yes
+MU402381362,Unnamed multifamily (OSM 402381362),multifamily,36.853573,-76.036717,1348,65.0,,4994,3.0,1,yes
+MU402381638,Unnamed multifamily (OSM 402381638),multifamily,36.851988,-76.03613,575,65.0,,2130,3.0,1,yes
+MU402381648,Unnamed multifamily (OSM 402381648),multifamily,36.850892,-76.034905,679,65.0,,2516,3.0,1,yes
+MU402381693,Unnamed multifamily (OSM 402381693),multifamily,36.850952,-76.036855,1104,65.0,,4089,3.0,1,yes
+MU402381742,Unnamed multifamily (OSM 402381742),multifamily,36.853066,-76.037743,418,65.0,,1548,3.0,1,yes
+MU402381897,Unnamed multifamily (OSM 402381897),multifamily,36.853851,-76.025671,1499,65.0,,5554,3.0,1,yes
+MU402381907,Unnamed multifamily (OSM 402381907),multifamily,36.85319,-76.039711,494,65.0,,1831,3.0,1,yes
+MU402387501,Unnamed multifamily (OSM 402387501),multifamily,36.853653,-76.0021,408,65.0,,1511,3.0,1,yes
+MU402387781,Unnamed multifamily (OSM 402387781),multifamily,36.852439,-75.99182,446,65.0,,1653,3.0,1,yes
+MU402387869,Unnamed multifamily (OSM 402387869),multifamily,36.85429,-75.992397,578,65.0,,2139,3.0,1,yes
+MU402387886,Unnamed multifamily (OSM 402387886),multifamily,36.85963,-75.990185,595,65.0,,2204,3.0,1,yes
+MU402387887,Unnamed multifamily (OSM 402387887),multifamily,36.858701,-75.99021,892,65.0,,3302,3.0,1,yes
+MU402387888,Unnamed multifamily (OSM 402387888),multifamily,36.859215,-75.989276,894,65.0,,3311,3.0,1,yes
+MU402387919,Unnamed multifamily (OSM 402387919),multifamily,36.855012,-75.987217,645,65.0,,2388,3.0,1,yes
+MU402387949,Unnamed multifamily (OSM 402387949),multifamily,36.855562,-75.986492,502,65.0,,1861,3.0,1,yes
+MU402387968,Unnamed multifamily (OSM 402387968),multifamily,36.85479,-75.986536,654,65.0,,2424,3.0,1,yes
+MU402388000,Unnamed multifamily (OSM 402388000),multifamily,36.854121,-75.987262,653,65.0,,2418,3.0,1,yes
+MU402388065,Unnamed multifamily (OSM 402388065),multifamily,36.853169,-75.989671,453,65.0,,1680,3.0,1,yes
+MU402388111,Unnamed multifamily (OSM 402388111),multifamily,36.84892,-75.993416,586,65.0,,2170,3.0,1,yes
+MU402398437,Unnamed multifamily (OSM 402398437),multifamily,36.837342,-75.984663,467,65.0,,1731,3.0,1,yes
+MU402400794,Oceanside Condos,multifamily,36.833147,-75.970587,2522,65.0,,2336,12.0,1,yes
+MU402407111,Unnamed multifamily (OSM 402407111),multifamily,36.857567,-75.981426,428,65.0,,1585,3.0,1,yes
+MU402431617,Unnamed multifamily (OSM 402431617),multifamily,36.838472,-76.129907,444,65.0,,1645,3.0,1,yes
+MU402431803,Unnamed multifamily (OSM 402431803),multifamily,36.830528,-76.134799,414,65.0,,1535,3.0,1,yes
+MU402436340,Unnamed multifamily (OSM 402436340),multifamily,36.83478,-76.116675,485,65.0,,1795,3.0,1,yes
+MU402436341,Unnamed multifamily (OSM 402436341),multifamily,36.837755,-76.117831,563,65.0,,2086,3.0,1,yes
+MU402436454,Unnamed multifamily (OSM 402436454),multifamily,36.83677,-76.118905,479,65.0,,1775,3.0,1,yes
+MU402436615,Unnamed multifamily (OSM 402436615),multifamily,36.836398,-76.117803,427,65.0,,1581,3.0,1,yes
+MU402436842,Unnamed multifamily (OSM 402436842),multifamily,36.836438,-76.119564,406,65.0,,1502,3.0,1,yes
+MU402438544,Unnamed multifamily (OSM 402438544),multifamily,36.83336,-76.118069,480,65.0,,1777,3.0,1,yes
+MU402438736,Unnamed multifamily (OSM 402438736),multifamily,36.836615,-76.124136,914,65.0,,3387,3.0,1,yes
+MU402554418,Unnamed multifamily (OSM 402554418),multifamily,36.75953,-76.005053,728,65.0,,2698,3.0,1,yes
+MU402554419,Unnamed multifamily (OSM 402554419),multifamily,36.759272,-76.004265,686,65.0,,2540,3.0,1,yes
+MU402554424,Unnamed multifamily (OSM 402554424),multifamily,36.758483,-76.004834,650,65.0,,2409,3.0,1,yes
+MU402554432,Unnamed multifamily (OSM 402554432),multifamily,36.75773,-76.005396,591,65.0,,2190,3.0,1,yes
+MU402554471,Unnamed multifamily (OSM 402554471),multifamily,36.756657,-76.006071,575,65.0,,2130,3.0,1,yes
+MU402564636,Unnamed multifamily (OSM 402564636),multifamily,36.787764,-75.983269,4278,65.0,,15846,3.0,1,yes
+MU402565036,Unnamed multifamily (OSM 402565036),multifamily,36.786543,-75.985095,979,65.0,,3627,3.0,1,yes
+MU402568297,Unnamed multifamily (OSM 402568297),multifamily,36.696432,-75.925472,2587,65.0,,9581,3.0,1,yes
+MU402654255,Unnamed multifamily (OSM 402654255),multifamily,36.771211,-76.190735,451,65.0,,1672,3.0,1,yes
+MU402654290,Unnamed multifamily (OSM 402654290),multifamily,36.770397,-76.191464,491,65.0,,1820,3.0,1,yes
+MU402658611,Unnamed multifamily (OSM 402658611),multifamily,36.809263,-76.215047,2455,65.0,,9093,3.0,1,yes
+MU402658924,Unnamed multifamily (OSM 402658924),multifamily,36.804101,-76.206515,409,65.0,,1516,3.0,1,yes
+MU402662017,Unnamed multifamily (OSM 402662017),multifamily,36.812174,-76.209125,598,65.0,,1660,4.0,1,yes
+MU402662144,900 Acqua,multifamily,36.811381,-76.209032,1040,65.0,,2888,4.0,1,yes
+MU402683593,Unnamed multifamily (OSM 402683593),multifamily,36.799816,-76.18873,411,65.0,,1522,3.0,1,yes
+MU402686497,Unnamed multifamily (OSM 402686497),multifamily,36.784824,-76.161972,891,65.0,,3298,3.0,1,yes
+MU402753129,Unnamed multifamily (OSM 402753129),multifamily,36.804295,-76.09108,875,65.0,,3242,3.0,1,yes
+MU403936170,The Fairmont,multifamily,38.778194,-77.493945,965,65.0,,3575,3.0,1,yes
+MU406968680,Oak Park Apartments,multifamily,36.825091,-76.266774,312,65.0,,1731,2.0,1,yes
+MU407329262,University Apartments,multifamily,36.887439,-76.300585,619,65.0,,1720,4.0,1,yes
+MU407395572,The Mill Lofts,multifamily,36.884601,-76.295668,1066,65.0,,3947,3.0,1,yes
+MU407401708,Hague Towers,multifamily,36.854522,-76.295143,3206,65.0,,1875,19.0,1,yes
+MU407401712,ICON Luxury Apartments,multifamily,36.845433,-76.289531,3707,65.0,,1716,24.0,1,yes
+MU407401915,Unnamed multifamily (OSM 407401915),multifamily,36.850787,-76.295043,860,65.0,,3185,3.0,1,yes
+MU407402139,Unnamed multifamily (OSM 407402139),multifamily,36.863641,-76.293773,414,65.0,,1535,3.0,1,yes
+MU407402286,Pembroke Towers Apartments,multifamily,36.858441,-76.300897,1775,65.0,,1517,13.0,1,yes
+MU407411495,Unnamed multifamily (OSM 407411495),multifamily,36.883356,-76.179784,415,65.0,,1537,3.0,1,yes
+MU407411598,Unnamed multifamily (OSM 407411598),multifamily,36.884261,-76.179985,414,65.0,,1533,3.0,1,yes
+MU407413365,Unnamed multifamily (OSM 407413365),multifamily,36.86053,-76.176997,653,65.0,,2420,3.0,1,yes
+MU407413506,Unnamed multifamily (OSM 407413506),multifamily,36.858723,-76.177211,409,65.0,,1513,3.0,1,yes
+MU407481542,Unnamed multifamily (OSM 407481542),multifamily,36.868348,-76.161506,456,65.0,,1689,3.0,1,yes
+MU407481548,Unnamed multifamily (OSM 407481548),multifamily,36.868836,-76.161509,456,65.0,,1689,3.0,1,yes
+MU408624593,Harbour Heights,multifamily,36.849926,-76.291694,489,65.0,,1812,3.0,1,yes
+MU408624605,Unnamed multifamily (OSM 408624605),multifamily,36.851081,-76.291278,503,65.0,,1864,3.0,1,yes
+MU408624616,Granby Loft Apartments,multifamily,36.852207,-76.290454,896,65.0,,1659,6.0,1,yes
+MU408753402,Belmont at Freemason,multifamily,36.853867,-76.292846,1702,65.0,,2701,7.0,1,yes
+MU410866084,Avalon Mosaic,multifamily,38.869764,-77.230446,3642,65.0,,6745,6.0,1,yes
+MU410866085,Avalon Mosaic,multifamily,38.869232,-77.231298,2863,65.0,,5301,6.0,1,yes
+MU412844615,Chesapeake House (University Village 1),multifamily,36.885133,-76.299815,447,65.0,,1656,3.0,1,yes
+MU412844618,Norfolk House (University Village 4),multifamily,36.88467,-76.299814,442,65.0,,1637,3.0,1,yes
+MU412844619,Poquoson House (University Village 5),multifamily,36.883766,-76.299836,441,65.0,,1632,3.0,1,yes
+MU412844622,Suffolk House (University Village 8),multifamily,36.883195,-76.299791,415,65.0,,1537,3.0,1,yes
+MU412844623,Virginia Beach House (University Village 9),multifamily,36.88235,-76.299757,429,65.0,,1588,3.0,1,yes
+MU414566441,Unnamed multifamily (OSM 414566441),multifamily,36.801927,-76.187081,411,65.0,,1522,3.0,1,yes
+MU414566461,Unnamed multifamily (OSM 414566461),multifamily,36.800831,-76.187388,407,65.0,,1506,3.0,1,yes
+MU423668564,Modera Mosaic #3,multifamily,38.870135,-77.231327,1544,65.0,,2860,6.0,1,yes
+MU424667138,The Wendy,multifamily,38.891749,-77.083418,450,65.0,,1666,3.0,1,yes
+MU425454565,Old Manchester Plaza,multifamily,37.521468,-77.442819,414,65.0,,1533,3.0,1,yes
+MU426141443,Miller Lofts,multifamily,37.523165,-77.437426,599,65.0,,2219,3.0,1,yes
+MU426141444,Miller Lofts,multifamily,37.523045,-77.437801,808,65.0,,2991,3.0,1,yes
+MU426141451,Miller Lofts,multifamily,37.522468,-77.436784,478,65.0,,1770,3.0,1,yes
+MU426141456,Plant 1,multifamily,37.523315,-77.436496,555,65.0,,2054,3.0,1,yes
+MU426141457,Plant 1,multifamily,37.52354,-77.436725,1515,65.0,,5613,3.0,1,yes
+MU426141459,South Bank,multifamily,37.524173,-77.435953,803,65.0,,2973,3.0,1,yes
+MU426141460,South Bank,multifamily,37.523888,-77.436047,477,65.0,,1766,3.0,1,yes
+MU426141486,Stella 360,multifamily,37.523065,-77.43543,505,65.0,,1869,3.0,1,yes
+MU426146849,The Hudson,multifamily,37.521118,-77.438156,2091,65.0,,7745,3.0,1,yes
+MU426146856,Hopper Lofts,multifamily,37.520341,-77.43765,612,65.0,,2267,3.0,1,yes
+MU426146857,Hopper Lofts,multifamily,37.520017,-77.437435,414,65.0,,1533,3.0,1,yes
+MU426146862,New Manchester Flats,multifamily,37.518155,-77.4322,1058,65.0,,3919,3.0,1,yes
+MU426146866,New Manchester Flats,multifamily,37.517844,-77.432651,926,65.0,,3431,3.0,1,yes
+MU437670092,The Aspen,multifamily,38.833936,-77.062331,3316,65.0,,2303,16.0,1,yes
+MU445452178,Aqua on 25th,multifamily,36.852764,-75.978433,2441,65.0,,4521,6.0,1,yes
+MU446107187,Unnamed multifamily (OSM 446107187),multifamily,36.833902,-76.308919,727,65.0,,2694,3.0,1,yes
+MU446107195,Unnamed multifamily (OSM 446107195),multifamily,36.833783,-76.311908,568,65.0,,2104,3.0,1,yes
+MU463492617,Unnamed multifamily (OSM 463492617),multifamily,38.907291,-77.219655,2106,65.0,,7801,3.0,1,yes
+MU466009771,The Preserve at Scott's Addition,multifamily,37.569044,-77.476429,1296,65.0,,3601,4.0,1,yes
+MU466009772,The Preserve at Scott's Addition,multifamily,37.569361,-77.475831,1613,65.0,,5973,3.0,1,yes
+MU468787709,Unnamed multifamily (OSM 468787709),multifamily,38.935502,-77.553922,572,65.0,,1589,4.0,1,yes
+MU468787712,Unnamed multifamily (OSM 468787712),multifamily,38.935595,-77.55453,553,65.0,,1535,4.0,1,yes
+MU474078914,Unnamed multifamily (OSM 474078914),multifamily,38.804613,-77.133098,1604,65.0,,3565,5.0,1,yes
+MU479580310,Unnamed multifamily (OSM 479580310),multifamily,38.808919,-77.120907,494,65.0,,1828,3.0,1,yes
+MU483050125,Haden Tower,multifamily,38.926878,-77.205008,3389,65.0,,2510,15.0,1,yes
+MU483050126,Haden Flats,multifamily,38.926474,-77.204657,2532,65.0,,4688,6.0,1,yes
+MU483195408,Adaire Apartments,multifamily,38.930666,-77.240933,7412,65.0,,2288,36.0,1,yes
+MU483206730,VITA Tysons Corner Center,multifamily,38.919769,-77.220664,739,65.0,,2738,3.0,1,yes
+MU485686665,The Bartlett,multifamily,38.8624,-77.054919,13109,65.0,,6333,23.0,1,yes
+MU490560690,Unnamed multifamily (OSM 490560690),multifamily,38.799419,-77.444423,497,65.0,,1840,3.0,1,yes
+MU490758065,Unnamed multifamily (OSM 490758065),multifamily,38.772062,-77.545296,837,65.0,,3101,3.0,1,yes
+MU490758068,Unnamed multifamily (OSM 490758068),multifamily,38.771262,-77.545828,607,65.0,,2249,3.0,1,yes
+MU490758072,Unnamed multifamily (OSM 490758072),multifamily,38.77267,-77.545838,471,65.0,,1743,3.0,1,yes
+MU490758427,Unnamed multifamily (OSM 490758427),multifamily,38.77354,-77.546152,471,65.0,,1743,3.0,1,yes
+MU491427897,The Point at McLean,multifamily,38.925304,-77.204225,4731,65.0,,3755,14.0,1,yes
+MU493290908,Water Park Towers North,multifamily,38.860785,-77.048764,2627,65.0,,2433,12.0,1,yes
+MU495299042,Unnamed multifamily (OSM 495299042),multifamily,38.95674,-77.417364,2141,65.0,,5948,4.0,1,yes
+MU495299044,Icon at Dulles,multifamily,38.956698,-77.418768,1309,65.0,,2910,5.0,1,yes
+MU495299045,Icon at Dulles,multifamily,38.956155,-77.419159,1550,65.0,,3446,5.0,1,yes
+MU495299442,BLVD Reston Station,multifamily,38.949099,-77.339077,7137,65.0,,3304,24.0,1,yes
+MU495303210,Terraces at Manchester,multifamily,37.526335,-77.445164,869,65.0,,3217,3.0,1,yes
+MU495303212,Shockoe Valley View Phase II,multifamily,37.536969,-77.421431,883,65.0,,1961,5.0,1,yes
+MU496243295,South 16 Apartments,multifamily,37.257401,-79.941146,1100,65.0,,2445,5.0,1,yes
+MU496386337,The Patrick Henry,multifamily,37.268736,-79.941017,1534,65.0,,1704,10.0,1,yes
+MU499567540,Venus at Manchester Apartments,multifamily,37.519209,-77.446059,1047,65.0,,3879,3.0,1,yes
+MU500505863,Unnamed multifamily (OSM 500505863),multifamily,39.028637,-77.417413,481,65.0,,1782,3.0,1,yes
+MU500505864,Unnamed multifamily (OSM 500505864),multifamily,39.028433,-77.416427,427,65.0,,1581,3.0,1,yes
+MU500505865,Unnamed multifamily (OSM 500505865),multifamily,39.02804,-77.415683,701,65.0,,2597,3.0,1,yes
+MU500505866,Unnamed multifamily (OSM 500505866),multifamily,39.028159,-77.417554,477,65.0,,1765,3.0,1,yes
+MU500505867,Unnamed multifamily (OSM 500505867),multifamily,39.027998,-77.416599,426,65.0,,1579,3.0,1,yes
+MU501323355,Unnamed multifamily (OSM 501323355),multifamily,38.855756,-77.352353,690,65.0,,2556,3.0,1,yes
+MU501323359,Unnamed multifamily (OSM 501323359),multifamily,38.85593,-77.353367,876,65.0,,3246,3.0,1,yes
+MU507868193,Unnamed multifamily (OSM 507868193),multifamily,38.970378,-77.337983,499,65.0,,1849,3.0,1,yes
+MU507869740,Unnamed multifamily (OSM 507869740),multifamily,38.971325,-77.338131,499,65.0,,1849,3.0,1,yes
+MU508246800,Cliff's Edge Lofts,multifamily,37.417513,-79.142798,471,65.0,,1746,3.0,1,yes
+MU514638064,Unnamed multifamily (OSM 514638064),multifamily,37.101398,-76.488724,764,65.0,,2831,3.0,1,yes
+MU514638066,Unnamed multifamily (OSM 514638066),multifamily,37.10077,-76.486634,719,65.0,,2664,3.0,1,yes
+MU520443868,English Meadows Blacksburg Campus,multifamily,37.191176,-80.405478,627,65.0,,3483,2.0,1,yes
+MU528465636,Pike 3400,multifamily,38.860588,-77.092656,2714,65.0,,5027,6.0,1,yes
+MU530647099,Ovation at Park Crest,multifamily,38.929228,-77.229272,3215,65.0,,1880,19.0,1,yes
+MU530647105,The Ascent,multifamily,38.927596,-77.238113,4930,65.0,,2107,26.0,1,yes
+MU530732207,Quincy Plaza,multifamily,38.881832,-77.107206,5194,65.0,,2748,21.0,1,yes
+MU530943049,Quimby on 23rd,multifamily,38.852652,-77.051229,6711,65.0,,5326,14.0,1,yes
+MU530945875,Union on Queen,multifamily,38.89158,-77.07688,2084,65.0,,1929,12.0,1,yes
+MU531373892,The Beacon Clarendon,multifamily,38.886429,-77.097671,2447,65.0,,2718,10.0,1,yes
+MU532396667,Kendrick Court Apartments,multifamily,38.948102,-77.41091,960,65.0,,3554,3.0,1,yes
+MU532413777,Unnamed multifamily (OSM 532413777),multifamily,38.950434,-77.400457,432,65.0,,1599,3.0,1,yes
+MU532413793,Monroe Place,multifamily,38.950202,-77.395197,2273,65.0,,6314,4.0,1,yes
+MU532421500,Station on Silver,multifamily,38.958444,-77.419254,4865,65.0,,10811,5.0,1,yes
+MU533932711,Parc Meridian,multifamily,38.800085,-77.068191,8096,65.0,,3598,25.0,1,yes
+MU534092473,Avalon Potomac Yard,multifamily,38.831296,-77.049286,983,65.0,,2185,5.0,1,yes
+MU537853762,Unnamed multifamily (OSM 537853762),multifamily,39.007627,-77.486796,1528,65.0,,4244,4.0,1,yes
+MU537853763,Unnamed multifamily (OSM 537853763),multifamily,39.006818,-77.486048,1617,65.0,,4492,4.0,1,yes
+MU537894730,Unnamed multifamily (OSM 537894730),multifamily,37.549196,-77.474045,773,65.0,,2147,4.0,1,yes
+MU539939923,Unnamed multifamily (OSM 539939923),multifamily,38.936193,-77.554432,557,65.0,,1548,4.0,1,yes
+MU539939924,Unnamed multifamily (OSM 539939924),multifamily,38.936087,-77.553769,565,65.0,,1568,4.0,1,yes
+MU541465216,VY Reston Heights,multifamily,38.948382,-77.356378,4905,65.0,,7785,7.0,1,yes
+MU544363544,Unnamed multifamily (OSM 544363544),multifamily,38.8373,-77.052521,716,65.0,,1592,5.0,1,yes
+MU545276946,Unnamed multifamily (OSM 545276946),multifamily,38.950215,-77.393345,694,65.0,,2570,3.0,1,yes
+MU545276951,Unnamed multifamily (OSM 545276951),multifamily,38.949205,-77.393253,498,65.0,,1845,3.0,1,yes
+MU545276958,Unnamed multifamily (OSM 545276958),multifamily,38.949028,-77.392169,430,65.0,,1592,3.0,1,yes
+MU545276963,Unnamed multifamily (OSM 545276963),multifamily,38.949498,-77.391666,499,65.0,,1846,3.0,1,yes
+MU545276969,Unnamed multifamily (OSM 545276969),multifamily,38.950289,-77.391186,568,65.0,,2104,3.0,1,yes
+MU545276975,Unnamed multifamily (OSM 545276975),multifamily,38.950577,-77.392255,666,65.0,,2467,3.0,1,yes
+MU545358887,Unnamed multifamily (OSM 545358887),multifamily,36.71158,-79.864384,1013,65.0,,3752,3.0,1,yes
+MU545773193,672 Flats,multifamily,38.878561,-77.112231,1662,65.0,,3078,6.0,1,yes
+MU547342376,The Heights at Gateway Park,multifamily,37.281708,-79.930832,879,65.0,,3254,3.0,1,yes
+MU548886642,Cavalier Housing,multifamily,36.972196,-82.58565,810,65.0,,2998,3.0,1,yes
+MU549376135,Unnamed multifamily (OSM 549376135),multifamily,37.248713,-79.944397,775,65.0,,2870,3.0,1,yes
+MU549926817,West Broad,multifamily,38.883427,-77.173827,5817,65.0,,8079,8.0,1,yes
+MU549926818,455 at Tinner Hill,multifamily,38.879932,-77.177361,3659,65.0,,6776,6.0,1,yes
+MU552410330,Overture Virginia Beach Apartments,multifamily,36.907823,-76.088479,935,65.0,,3462,3.0,1,yes
+MU555509205,Unnamed multifamily (OSM 555509205),multifamily,38.805335,-77.132934,1812,65.0,,4027,5.0,1,yes
+MU556481230,Unnamed multifamily (OSM 556481230),multifamily,38.760926,-77.446147,453,65.0,,1677,3.0,1,yes
+MU557075422,Cotton Mill Lofts,multifamily,37.269731,-79.953005,1043,65.0,,2897,4.0,1,yes
+MU558040937,Vista Laurel Apartments Buliding 2,multifamily,38.709989,-77.223843,1013,65.0,,3753,3.0,1,yes
+MU558054279,Vista Laurel Apartments Bulidng 1,multifamily,38.70922,-77.223998,720,65.0,,2667,3.0,1,yes
+MU558054280,Vista Laurel Apartments Building 3,multifamily,38.710643,-77.223285,769,65.0,,2848,3.0,1,yes
+MU563069242,Cogir of West End Alexandria,multifamily,38.806962,-77.128503,692,65.0,,2562,3.0,1,yes
+MU563069309,Unnamed multifamily (OSM 563069309),multifamily,38.805155,-77.131784,712,65.0,,2637,3.0,1,yes
+MU564751809,Unnamed multifamily (OSM 564751809),multifamily,38.88099,-77.086284,1112,65.0,,3089,4.0,1,yes
+MU564751810,2201 Pershing Apartments,multifamily,38.881209,-77.085176,1377,65.0,,3060,5.0,1,yes
+MU564754042,Unnamed multifamily (OSM 564754042),multifamily,38.896451,-77.086031,438,65.0,,1621,3.0,1,yes
+MU564782647,TEN at Clarendon,multifamily,38.884127,-77.095339,759,65.0,,2810,3.0,1,yes
+MU575065547,Unnamed multifamily (OSM 575065547),multifamily,38.874513,-77.269737,460,65.0,,1702,3.0,1,yes
+MU575065548,Unnamed multifamily (OSM 575065548),multifamily,38.875192,-77.269809,479,65.0,,1773,3.0,1,yes
+MU575065549,Unnamed multifamily (OSM 575065549),multifamily,38.875827,-77.269866,441,65.0,,1632,3.0,1,yes
+MU575122300,Unnamed multifamily (OSM 575122300),multifamily,38.87364,-77.26664,616,65.0,,2281,3.0,1,yes
+MU575122302,Unnamed multifamily (OSM 575122302),multifamily,38.873703,-77.26776,420,65.0,,1554,3.0,1,yes
+MU575374622,Lark on Main,multifamily,38.032046,-78.495584,789,65.0,,2921,3.0,1,yes
+MU576873301,Unnamed multifamily (OSM 576873301),multifamily,37.624248,-77.532226,389,65.0,,2160,2.0,1,yes
+MU576873310,Unnamed multifamily (OSM 576873310),multifamily,37.625121,-77.534542,359,65.0,,1996,2.0,1,yes
+MU576878544,Unnamed multifamily (OSM 576878544),multifamily,38.673533,-77.276998,651,65.0,,1808,4.0,1,yes
+MU576878545,Unnamed multifamily (OSM 576878545),multifamily,38.673454,-77.276068,651,65.0,,1807,4.0,1,yes
+MU577925255,Unnamed multifamily (OSM 577925255),multifamily,38.874068,-77.272172,407,65.0,,1506,3.0,1,yes
+MU578655316,Unnamed multifamily (OSM 578655316),multifamily,38.880561,-77.269644,1363,65.0,,5048,3.0,1,yes
+MU580470973,Unnamed multifamily (OSM 580470973),multifamily,38.861428,-77.082873,466,65.0,,2590,2.0,1,yes
+MU580470976,Unnamed multifamily (OSM 580470976),multifamily,38.859647,-77.082382,278,65.0,,1546,2.0,1,yes
+MU580581641,Unnamed multifamily (OSM 580581641),multifamily,38.85938,-77.08347,272,65.0,,1511,2.0,1,yes
+MU580581657,Unnamed multifamily (OSM 580581657),multifamily,38.859104,-77.084586,274,65.0,,1521,2.0,1,yes
+MU580860483,Unnamed multifamily (OSM 580860483),multifamily,38.857252,-77.083047,739,65.0,,2738,3.0,1,yes
+MU580865119,Unnamed multifamily (OSM 580865119),multifamily,38.857049,-77.084088,461,65.0,,1707,3.0,1,yes
+MU580992469,Avalon Columbia Pike,multifamily,38.861845,-77.087444,1205,65.0,,4462,3.0,1,yes
+MU591112443,Unnamed multifamily (OSM 591112443),multifamily,38.963121,-77.534339,412,65.0,,1525,3.0,1,yes
+MU591112444,Unnamed multifamily (OSM 591112444),multifamily,38.962849,-77.533454,417,65.0,,1543,3.0,1,yes
+MU596690176,Maple Grove,multifamily,39.030974,-77.452315,1131,65.0,,4188,3.0,1,yes
+MU596690177,Willow Crossing,multifamily,39.031815,-77.453808,1261,65.0,,4671,3.0,1,yes
+MU596690178,Hickory Glen,multifamily,39.031895,-77.454753,723,65.0,,2677,3.0,1,yes
+MU596690179,Magnolia Place,multifamily,39.032527,-77.454997,910,65.0,,3372,3.0,1,yes
+MU596690182,Great Oak Clubhouse,multifamily,39.032754,-77.453957,287,65.0,,1596,2.0,1,yes
+MU597015533,The Sierra,multifamily,38.857739,-77.119199,1166,65.0,,3238,4.0,1,yes
+MU597976242,The Maxwell,multifamily,38.877685,-77.11139,1476,65.0,,2343,7.0,1,yes
+MU597977785,Lexington Square 3835,multifamily,38.88155,-77.106124,833,65.0,,3086,3.0,1,yes
+MU598212116,City View Lofts,multifamily,37.525148,-77.441219,457,65.0,,1691,3.0,1,yes
+MU598212117,City View Lofts,multifamily,37.525074,-77.440902,476,65.0,,1763,3.0,1,yes
+MU598212119,City View Lofts,multifamily,37.52479,-77.440864,552,65.0,,2045,3.0,1,yes
+MU598212120,City View Lofts,multifamily,37.525466,-77.440386,1182,65.0,,4379,3.0,1,yes
+MU598212122,City View Lofts,multifamily,37.525689,-77.439756,1218,65.0,,4511,3.0,1,yes
+MU598212129,Marshall at City Center,multifamily,37.546752,-77.440933,1308,65.0,,2906,5.0,1,yes
+MU601723667,Arlington Mill Residences,multifamily,38.856906,-77.112517,1237,65.0,,3436,4.0,1,yes
+MU603413720,Unnamed multifamily (OSM 603413720),multifamily,38.855166,-77.111739,644,65.0,,2384,3.0,1,yes
+MU606117595,Clearview Manor Apartments,multifamily,37.269908,-79.88719,480,65.0,,1776,3.0,1,yes
+MU608215186,Hopewell Lofts,multifamily,37.301138,-77.297908,560,65.0,,2075,3.0,1,yes
+MU609501680,Unnamed multifamily (OSM 609501680),multifamily,38.205148,-77.592551,725,65.0,,1612,5.0,1,yes
+MU612117862,Admirals Landing Condominiums,multifamily,36.836353,-76.296284,1543,65.0,,2144,8.0,1,yes
+MU623907533,Unnamed multifamily (OSM 623907533),multifamily,36.907861,-76.087292,625,65.0,,2313,3.0,1,yes
+MU625874503,Unnamed multifamily (OSM 625874503),multifamily,37.571047,-77.468577,1044,65.0,,2900,4.0,1,yes
+MU625874504,Unnamed multifamily (OSM 625874504),multifamily,37.571352,-77.469032,670,65.0,,2482,3.0,1,yes
+MU625886200,J Sol,multifamily,38.882233,-77.108129,3544,65.0,,1790,22.0,1,yes
+MU625886202,Origin,multifamily,38.879459,-77.109468,3739,65.0,,1889,22.0,1,yes
+MU648223161,Unnamed multifamily (OSM 648223161),multifamily,39.076779,-77.484513,583,65.0,,1621,4.0,1,yes
+MU648223169,Unnamed multifamily (OSM 648223169),multifamily,39.074602,-77.48363,590,65.0,,1638,4.0,1,yes
+MU648223185,Unnamed multifamily (OSM 648223185),multifamily,39.07538,-77.483291,577,65.0,,1604,4.0,1,yes
+MU655021221,The Bradley,multifamily,38.814659,-77.051778,1453,65.0,,1614,10.0,1,yes
+MU656624069,Unnamed multifamily (OSM 656624069),multifamily,37.113291,-76.504113,435,65.0,,1612,3.0,1,yes
+MU656624070,Unnamed multifamily (OSM 656624070),multifamily,37.112462,-76.504353,742,65.0,,2747,3.0,1,yes
+MU656624071,Unnamed multifamily (OSM 656624071),multifamily,37.113599,-76.504723,508,65.0,,1882,3.0,1,yes
+MU656624072,Unnamed multifamily (OSM 656624072),multifamily,37.112896,-76.505181,658,65.0,,2436,3.0,1,yes
+MU656752366,Germanna Heights Apartments,multifamily,38.367685,-77.766086,688,65.0,,2547,3.0,1,yes
+MU657512012,Unnamed multifamily (OSM 657512012),multifamily,38.8972,-77.121198,669,65.0,,2480,3.0,1,yes
+MU657907852,Unnamed multifamily (OSM 657907852),multifamily,38.771198,-77.547435,774,65.0,,2866,3.0,1,yes
+MU657907854,Unnamed multifamily (OSM 657907854),multifamily,38.770513,-77.547998,958,65.0,,3548,3.0,1,yes
+MU657908659,Unnamed multifamily (OSM 657908659),multifamily,38.770211,-77.546633,688,65.0,,2548,3.0,1,yes
+MU657909091,Unnamed multifamily (OSM 657909091),multifamily,38.769589,-77.548464,1258,65.0,,4660,3.0,1,yes
+MU658247127,Unnamed multifamily (OSM 658247127),multifamily,39.037131,-77.46965,939,65.0,,3477,3.0,1,yes
+MU658247129,Unnamed multifamily (OSM 658247129),multifamily,39.038328,-77.470396,972,65.0,,3601,3.0,1,yes
+MU659752477,Unnamed multifamily (OSM 659752477),multifamily,38.019306,-78.499223,415,65.0,,1537,3.0,1,yes
+MU659758168,Unnamed multifamily (OSM 659758168),multifamily,39.033387,-77.460844,648,65.0,,1799,4.0,1,yes
+MU659758174,Unnamed multifamily (OSM 659758174),multifamily,39.033857,-77.461609,606,65.0,,1683,4.0,1,yes
+MU659758177,Unnamed multifamily (OSM 659758177),multifamily,39.033392,-77.46017,616,65.0,,1712,4.0,1,yes
+MU672363582,The Lofts,multifamily,37.741166,-79.346058,518,65.0,,1917,3.0,1,yes
+MU673009860,Unnamed multifamily (OSM 673009860),multifamily,37.202448,-80.404924,1055,65.0,,3907,3.0,1,yes
+MU681664146,Unnamed multifamily (OSM 681664146),multifamily,38.960068,-77.36075,1210,65.0,,2241,6.0,1,yes
+MU682993538,Unnamed multifamily (OSM 682993538),multifamily,36.77186,-76.188366,636,65.0,,2357,3.0,1,yes
+MU682993550,Unnamed multifamily (OSM 682993550),multifamily,36.771799,-76.186724,1364,65.0,,5050,3.0,1,yes
+MU686666051,Unnamed multifamily (OSM 686666051),multifamily,38.874651,-77.110824,1031,65.0,,2864,4.0,1,yes
+MU686666052,Unnamed multifamily (OSM 686666052),multifamily,38.875117,-77.111524,525,65.0,,1944,3.0,1,yes
+MU700225920,The Clark,multifamily,38.844709,-77.052153,5041,65.0,,4668,12.0,1,yes
+MU700597384,Unnamed multifamily (OSM 700597384),multifamily,36.835759,-76.332047,482,65.0,,1785,3.0,1,yes
+MU700934359,Millenium at National Landing,multifamily,38.861266,-77.05614,3137,65.0,,1936,18.0,1,yes
+MU700972974,Unnamed multifamily (OSM 700972974),multifamily,36.830008,-76.317199,613,65.0,,2270,3.0,1,yes
+MU700980781,Scottsville School Apartments,multifamily,37.797887,-78.497421,818,65.0,,3030,3.0,1,yes
+MU701437233,Unnamed multifamily (OSM 701437233),multifamily,36.818324,-76.374727,570,65.0,,2111,3.0,1,yes
+MU701437727,Unnamed multifamily (OSM 701437727),multifamily,36.813377,-76.370551,524,65.0,,1940,3.0,1,yes
+MU701438710,Unnamed multifamily (OSM 701438710),multifamily,36.817269,-76.371332,434,65.0,,1606,3.0,1,yes
+MU701441051,Unnamed multifamily (OSM 701441051),multifamily,36.802679,-76.383339,429,65.0,,1590,3.0,1,yes
+MU702946034,Unnamed multifamily (OSM 702946034),multifamily,36.833408,-76.301185,651,65.0,,1810,4.0,1,yes
+MU708690071,Unnamed multifamily (OSM 708690071),multifamily,37.521062,-77.365358,471,65.0,,1744,3.0,1,yes
+MU710381160,Unnamed multifamily (OSM 710381160),multifamily,38.759362,-77.434274,960,65.0,,3556,3.0,1,yes
+MU713046059,Unnamed multifamily (OSM 713046059),multifamily,38.809891,-77.14229,1020,65.0,,3779,3.0,1,yes
+MU714967891,Unnamed multifamily (OSM 714967891),multifamily,38.76218,-77.440326,619,65.0,,2294,3.0,1,yes
+MU714967898,Unnamed multifamily (OSM 714967898),multifamily,38.760515,-77.440138,1002,65.0,,3711,3.0,1,yes
+MU719606563,Unnamed multifamily (OSM 719606563),multifamily,37.505754,-77.535753,548,65.0,,2031,3.0,1,yes
+MU722337106,Apartment Building C,multifamily,39.068471,-77.469227,1524,65.0,,2822,6.0,1,yes
+MU722515290,Unnamed multifamily (OSM 722515290),multifamily,38.902287,-77.259101,624,65.0,,2311,3.0,1,yes
+MU723152061,Unnamed multifamily (OSM 723152061),multifamily,38.827623,-77.124938,441,65.0,,1634,3.0,1,yes
+MU723152062,Unnamed multifamily (OSM 723152062),multifamily,38.827859,-77.124129,444,65.0,,1643,3.0,1,yes
+MU723152063,Unnamed multifamily (OSM 723152063),multifamily,38.828891,-77.123134,461,65.0,,1707,3.0,1,yes
+MU723152064,Unnamed multifamily (OSM 723152064),multifamily,38.828348,-77.123522,453,65.0,,1677,3.0,1,yes
+MU723486189,Unnamed multifamily (OSM 723486189),multifamily,38.830527,-77.122339,528,65.0,,1957,3.0,1,yes
+MU727770896,Unnamed multifamily (OSM 727770896),multifamily,38.274371,-77.536757,666,65.0,,1850,4.0,1,yes
+MU727770897,Unnamed multifamily (OSM 727770897),multifamily,38.273968,-77.535856,977,65.0,,2713,4.0,1,yes
+MU735392199,Unnamed multifamily (OSM 735392199),multifamily,37.513738,-77.414829,1569,65.0,,3487,5.0,1,yes
+MU735392242,River's Edge at Manchester,multifamily,37.526274,-77.441242,2402,65.0,,2669,10.0,1,yes
+MU737275566,Unnamed multifamily (OSM 737275566),multifamily,36.781814,-76.261864,641,65.0,,2374,3.0,1,yes
+MU737275567,Unnamed multifamily (OSM 737275567),multifamily,36.781992,-76.262586,529,65.0,,1961,3.0,1,yes
+MU745223826,Belle Summit Apartments,multifamily,37.524312,-77.452708,592,65.0,,1645,4.0,1,yes
+MU747329992,Cherry Hill Apartments,multifamily,38.897289,-77.104861,1249,65.0,,3470,4.0,1,yes
+MU751477349,Axis at PTC - A-1 North,multifamily,37.044593,-76.395505,981,65.0,,3635,3.0,1,yes
+MU758999779,Unnamed multifamily (OSM 758999779),multifamily,38.833244,-77.199688,877,65.0,,3250,3.0,1,yes
+MU759026044,Unnamed multifamily (OSM 759026044),multifamily,38.216669,-77.50398,419,65.0,,1550,3.0,1,yes
+MU759836814,Unnamed multifamily (OSM 759836814),multifamily,38.216427,-77.502803,550,65.0,,1528,4.0,1,yes
+MU759836817,Unnamed multifamily (OSM 759836817),multifamily,38.216327,-77.501787,546,65.0,,1516,4.0,1,yes
+MU759836818,Unnamed multifamily (OSM 759836818),multifamily,38.216863,-77.501689,410,65.0,,1518,3.0,1,yes
+MU759836819,Unnamed multifamily (OSM 759836819),multifamily,38.216726,-77.501309,415,65.0,,1536,3.0,1,yes
+MU759836820,Unnamed multifamily (OSM 759836820),multifamily,38.216053,-77.500494,409,65.0,,1513,3.0,1,yes
+MU759838033,Unnamed multifamily (OSM 759838033),multifamily,38.216592,-77.500711,411,65.0,,1521,3.0,1,yes
+MU759838034,Unnamed multifamily (OSM 759838034),multifamily,38.21658,-77.500268,411,65.0,,1523,3.0,1,yes
+MU760802028,Monarch Woods,multifamily,37.518592,-77.516561,513,65.0,,1898,3.0,1,yes
+MU760802038,Chesterfield Square,multifamily,37.513551,-77.523125,1363,65.0,,5047,3.0,1,yes
+MU760802310,The Renaissance,multifamily,37.518304,-77.512397,598,65.0,,2214,3.0,1,yes
+MU762669370,Model Tobacco Factory,multifamily,37.505222,-77.447717,962,65.0,,3564,3.0,1,yes
+MU765533255,Unnamed multifamily (OSM 765533255),multifamily,36.873285,-76.418792,840,65.0,,3109,3.0,1,yes
+MU765870351,Lumen at Tysons,multifamily,38.920244,-77.232051,570,65.0,,2112,3.0,1,yes
+MU771655479,Unnamed multifamily (OSM 771655479),multifamily,38.241955,-77.503946,600,65.0,,1668,4.0,1,yes
+MU771655480,Unnamed multifamily (OSM 771655480),multifamily,38.241712,-77.504629,693,65.0,,1925,4.0,1,yes
+MU771655481,Unnamed multifamily (OSM 771655481),multifamily,38.240973,-77.503784,1175,65.0,,3264,4.0,1,yes
+MU778965091,The Brownstone,multifamily,37.227722,-80.411871,865,65.0,,1921,5.0,1,yes
+MU782478722,The Lofts at 301 N. Dunlop,multifamily,37.227299,-77.418888,460,65.0,,1704,3.0,1,yes
+MU794585430,Unnamed multifamily (OSM 794585430),multifamily,39.048966,-77.454712,882,65.0,,1633,6.0,1,yes
+MU800030116,Unnamed multifamily (OSM 800030116),multifamily,39.013766,-77.500255,587,65.0,,1631,4.0,1,yes
+MU800030117,Unnamed multifamily (OSM 800030117),multifamily,39.014778,-77.498067,546,65.0,,1518,4.0,1,yes
+MU800030121,Unnamed multifamily (OSM 800030121),multifamily,39.014133,-77.498569,590,65.0,,1639,4.0,1,yes
+MU801874223,Harbor Vista at Crawford Street,multifamily,36.832358,-76.298224,1580,65.0,,3511,5.0,1,yes
+MU822407101,The Scout Scott's Addition,multifamily,37.564536,-77.467385,1451,65.0,,5375,3.0,1,yes
+MU822839744,The Circ,multifamily,37.55283,-77.45678,890,65.0,,1648,6.0,1,yes
+MU824858724,Modera Fairfax Ridge,multifamily,38.86035,-77.336297,1177,65.0,,4360,3.0,1,yes
+MU827438283,Silver Collection Building 6,multifamily,38.316273,-77.511574,731,65.0,,2031,4.0,1,yes
+MU827438284,Silver Collection Building 5,multifamily,38.315401,-77.511345,827,65.0,,2298,4.0,1,yes
+MU827438285,Silver Collection Building 1,multifamily,38.315616,-77.510395,752,65.0,,2090,4.0,1,yes
+MU827438286,Silver Collection Building 4,multifamily,38.314811,-77.511243,844,65.0,,2345,4.0,1,yes
+MU827438287,Silver Collection Building 2,multifamily,38.314873,-77.51026,839,65.0,,2331,4.0,1,yes
+MU827438288,Silver Collection Clubhouse,multifamily,38.316169,-77.510905,427,65.0,,1582,3.0,1,yes
+MU827438289,Silver Collection Building 3,multifamily,38.314102,-77.510039,717,65.0,,1991,4.0,1,yes
+MU835369055,Vyne,multifamily,39.05358,-77.452888,1830,65.0,,2906,7.0,1,yes
+MU835369056,Vyne,multifamily,39.053288,-77.455272,965,65.0,,2145,5.0,1,yes
+MU835762599,Kings Crest Senior Apartments,multifamily,38.264925,-77.534643,927,65.0,,3434,3.0,1,yes
+MU839344403,Jubilation Building 9,multifamily,38.317408,-77.511753,870,65.0,,2415,4.0,1,yes
+MU839344404,Jubilation Building 8,multifamily,38.317152,-77.510807,1018,65.0,,2829,4.0,1,yes
+MU839344405,Jubilation Building 7,multifamily,38.317012,-77.511861,870,65.0,,2416,4.0,1,yes
+MU842367886,Unnamed multifamily (OSM 842367886),multifamily,38.006873,-78.513608,896,65.0,,2489,4.0,1,yes
+MU844830185,Unnamed multifamily (OSM 844830185),multifamily,38.761024,-77.541607,469,65.0,,1739,3.0,1,yes
+MU849896805,The Bexley,multifamily,38.919148,-77.212181,2351,65.0,,5224,5.0,1,yes
+MU855627715,Unnamed multifamily (OSM 855627715),multifamily,38.875221,-77.169899,416,65.0,,1540,3.0,1,yes
+MU871984679,Unnamed multifamily (OSM 871984679),multifamily,38.731342,-77.472403,632,65.0,,2341,3.0,1,yes
+MU881093446,Unnamed multifamily (OSM 881093446),multifamily,38.013301,-78.522388,431,65.0,,1595,3.0,1,yes
+MU885986229,Unnamed multifamily (OSM 885986229),multifamily,36.804067,-76.089866,821,65.0,,3040,3.0,1,yes
+MU887292547,The Providence Fairfax,multifamily,38.875191,-77.273379,770,65.0,,2852,3.0,1,yes
+MU887292550,Unnamed multifamily (OSM 887292550),multifamily,38.874668,-77.274719,415,65.0,,1539,3.0,1,yes
+MU887292551,Unnamed multifamily (OSM 887292551),multifamily,38.874764,-77.274058,426,65.0,,1579,3.0,1,yes
+MU889850932,Scout,multifamily,38.865792,-77.272165,5380,65.0,,9962,6.0,1,yes
+MU897224753,Unnamed multifamily (OSM 897224753),multifamily,38.199999,-77.605991,610,65.0,,1695,4.0,1,yes
+MU897224754,Unnamed multifamily (OSM 897224754),multifamily,38.200593,-77.604977,406,65.0,,1503,3.0,1,yes
+MU897236009,Keswick Senior Apartments,multifamily,38.19976,-77.60324,653,65.0,,2420,3.0,1,yes
+MU901609346,The Sur,multifamily,38.844814,-77.051097,4153,65.0,,3845,12.0,1,yes
+MU905941808,Trove,multifamily,38.862312,-77.075639,3547,65.0,,5631,7.0,1,yes
+MU905941809,Trove,multifamily,38.862936,-77.075684,1395,65.0,,2214,7.0,1,yes
+MU908554614,Unnamed multifamily (OSM 908554614),multifamily,39.028934,-77.39616,474,65.0,,1757,3.0,1,yes
+MU908554615,Unnamed multifamily (OSM 908554615),multifamily,39.028912,-77.395551,461,65.0,,1708,3.0,1,yes
+MU909455313,Avery Row Apartments,multifamily,38.887624,-77.079511,595,65.0,,2205,3.0,1,yes
+MU930395104,Unnamed multifamily (OSM 930395104),multifamily,39.044703,-77.420141,456,65.0,,1689,3.0,1,yes
+MU930395105,Unnamed multifamily (OSM 930395105),multifamily,39.043429,-77.420532,457,65.0,,1692,3.0,1,yes
+MU930395112,Unnamed multifamily (OSM 930395112),multifamily,39.044615,-77.423585,411,65.0,,1523,3.0,1,yes
+MU930395129,Unnamed multifamily (OSM 930395129),multifamily,39.045956,-77.421079,455,65.0,,1685,3.0,1,yes
+MU930395146,Unnamed multifamily (OSM 930395146),multifamily,39.04396,-77.421378,456,65.0,,1687,3.0,1,yes
+MU931237649,Gables Pointe 14,multifamily,38.889107,-77.079463,2918,65.0,,2702,12.0,1,yes
+MU931534625,Unnamed multifamily (OSM 931534625),multifamily,37.082474,-76.402039,479,65.0,,1774,3.0,1,yes
+MU931534627,Unnamed multifamily (OSM 931534627),multifamily,37.081714,-76.402313,717,65.0,,1990,4.0,1,yes
+MU931534628,Unnamed multifamily (OSM 931534628),multifamily,37.08133,-76.401416,512,65.0,,1896,3.0,1,yes
+MU931534630,Unnamed multifamily (OSM 931534630),multifamily,37.082084,-76.400279,530,65.0,,1964,3.0,1,yes
+MU931543134,Unnamed multifamily (OSM 931543134),multifamily,39.050661,-77.385442,477,65.0,,1766,3.0,1,yes
+MU931543185,Unnamed multifamily (OSM 931543185),multifamily,39.050592,-77.386232,468,65.0,,1732,3.0,1,yes
+MU932596979,Unnamed multifamily (OSM 932596979),multifamily,39.036153,-77.385676,750,65.0,,2082,4.0,1,yes
+MU934857907,Unnamed multifamily (OSM 934857907),multifamily,38.991952,-77.484926,512,65.0,,1898,3.0,1,yes
+MU934857910,Unnamed multifamily (OSM 934857910),multifamily,38.992559,-77.484209,821,65.0,,3042,3.0,1,yes
+MU934857912,Unnamed multifamily (OSM 934857912),multifamily,38.993065,-77.485103,596,65.0,,2208,3.0,1,yes
+MU934857919,Unnamed multifamily (OSM 934857919),multifamily,38.990693,-77.485155,752,65.0,,2785,3.0,1,yes
+MU934867896,Unnamed multifamily (OSM 934867896),multifamily,39.023705,-77.508572,435,65.0,,1611,3.0,1,yes
+MU934867900,Unnamed multifamily (OSM 934867900),multifamily,39.023182,-77.507837,437,65.0,,1619,3.0,1,yes
+MU935523935,Unnamed multifamily (OSM 935523935),multifamily,39.036751,-77.354967,425,65.0,,1576,3.0,1,yes
+MU935523948,Unnamed multifamily (OSM 935523948),multifamily,39.037393,-77.355027,408,65.0,,1513,3.0,1,yes
+MU942405881,Unnamed multifamily (OSM 942405881),multifamily,38.623959,-77.292267,1529,65.0,,5664,3.0,1,yes
+MU951505965,The Blake,multifamily,38.834492,-77.118417,1713,65.0,,2719,7.0,1,yes
+MU951505966,Unnamed multifamily (OSM 951505966),multifamily,38.834393,-77.119334,1288,65.0,,2385,6.0,1,yes
+MU954450743,Unnamed multifamily (OSM 954450743),multifamily,38.996323,-77.420029,410,65.0,,1517,3.0,1,yes
+MU956943671,Unnamed multifamily (OSM 956943671),multifamily,36.859293,-76.461916,1945,65.0,,5403,4.0,1,yes
+MU971417291,Unnamed multifamily (OSM 971417291),multifamily,39.007201,-77.508688,544,65.0,,1511,4.0,1,yes
+MU975019429,Unnamed multifamily (OSM 975019429),multifamily,38.990818,-77.483873,748,65.0,,2771,3.0,1,yes
+MU975554465,Unnamed multifamily (OSM 975554465),multifamily,37.572827,-77.481896,1272,65.0,,3534,4.0,1,yes
+MU975554466,Unnamed multifamily (OSM 975554466),multifamily,37.572241,-77.481442,570,65.0,,1583,4.0,1,yes
+MU975554471,The Nest,multifamily,37.566049,-77.473628,1093,65.0,,2023,6.0,1,yes
+MU978449888,Unnamed multifamily (OSM 978449888),multifamily,37.350257,-79.226392,434,65.0,,1608,3.0,1,yes
+MU978449889,Unnamed multifamily (OSM 978449889),multifamily,37.349654,-79.226024,422,65.0,,1563,3.0,1,yes
+MU978449890,Unnamed multifamily (OSM 978449890),multifamily,37.34904,-79.22555,448,65.0,,1660,3.0,1,yes
+MU978823879,Birch Point,multifamily,39.033798,-77.453951,742,65.0,,2747,3.0,1,yes
+MU978823880,Cherry Blossom,multifamily,39.033221,-77.454411,1104,65.0,,4089,3.0,1,yes
+MU978823881,Belmont Commons,multifamily,39.034278,-77.452052,1130,65.0,,4183,3.0,1,yes
+MU983393787,The Holtrust,multifamily,38.072238,-78.477151,435,65.0,,1611,3.0,1,yes
+MU984392123,Columbia Hills Apartments,multifamily,38.853477,-77.115632,743,65.0,,2751,3.0,1,yes
+MU985562954,Unnamed multifamily (OSM 985562954),multifamily,38.857182,-77.108236,497,65.0,,1841,3.0,1,yes
+MU987676065,Unnamed multifamily (OSM 987676065),multifamily,38.20462,-77.509292,1053,65.0,,2926,4.0,1,yes
+MU987676067,Unnamed multifamily (OSM 987676067),multifamily,38.2053,-77.508901,1175,65.0,,3265,4.0,1,yes
+MU987683238,Unnamed multifamily (OSM 987683238),multifamily,38.212858,-77.503146,827,65.0,,2298,4.0,1,yes
+MU987683240,Unnamed multifamily (OSM 987683240),multifamily,38.213712,-77.503881,863,65.0,,2398,4.0,1,yes
+MU987817117,Unnamed multifamily (OSM 987817117),multifamily,38.963511,-77.519907,721,65.0,,2669,3.0,1,yes
+MU987817219,Unnamed multifamily (OSM 987817219),multifamily,38.963539,-77.519097,723,65.0,,2678,3.0,1,yes
+MU987854652,Unnamed multifamily (OSM 987854652),multifamily,38.853403,-77.32993,1506,65.0,,3346,5.0,1,yes
+MU992008328,Royal Sail Apartments Building B,multifamily,36.863923,-76.455552,1572,65.0,,3494,5.0,1,yes
+MU992008329,Royal Sail Apartments Building A,multifamily,36.863123,-76.45531,812,65.0,,2255,4.0,1,yes
+MU992431595,Russel at Reston Station,multifamily,38.945812,-77.343775,2224,65.0,,4119,6.0,1,yes
+MU992916946,Unnamed multifamily (OSM 992916946),multifamily,39.040867,-77.521859,782,65.0,,2898,3.0,1,yes
+MU993492009,The Rylan,multifamily,38.918967,-77.213687,7020,65.0,,11142,7.0,1,yes
+MU994127983,The Edmund,multifamily,38.949094,-77.358512,5526,65.0,,8772,7.0,1,yes
+MU996172998,Unnamed multifamily (OSM 996172998),multifamily,38.858762,-77.352771,461,65.0,,1706,3.0,1,yes
+MU996173004,Unnamed multifamily (OSM 996173004),multifamily,38.857135,-77.3498,433,65.0,,1604,3.0,1,yes
+MU996989291,Unnamed multifamily (OSM 996989291),multifamily,37.247106,-80.419885,906,65.0,,3357,3.0,1,yes
+MU998315246,Unnamed multifamily (OSM 998315246),multifamily,38.836141,-77.420371,661,65.0,,2449,3.0,1,yes
+MU998590850,The Earl,multifamily,38.887049,-77.097188,2332,65.0,,2591,10.0,1,yes
+MU998590851,The Earl,multifamily,38.887337,-77.097537,845,65.0,,1565,6.0,1,yes
+MU998888556,Victoria Park Apartments,multifamily,38.589167,-77.293125,584,65.0,,2164,3.0,1,yes
+MU998892965,Unnamed multifamily (OSM 998892965),multifamily,38.583595,-77.306215,451,65.0,,1669,3.0,1,yes
+MU999583384,Brightview Fair Oaks,multifamily,38.841536,-77.387085,1318,65.0,,4882,3.0,1,yes
+MU1004202016,Faraday Park East,multifamily,38.946653,-77.332183,1391,65.0,,2209,7.0,1,yes
+MU1010647667,Manassas Station Apartments,multifamily,38.750146,-77.467255,1058,65.0,,3917,3.0,1,yes
+MU1019522959,Kiptopeke Studio Apartments,multifamily,37.182352,-75.969432,874,65.0,,3235,3.0,1,yes
+MU1022053813,Unnamed multifamily (OSM 1022053813),multifamily,36.871872,-76.439274,500,65.0,,1853,3.0,1,yes
+MU1022053814,Unnamed multifamily (OSM 1022053814),multifamily,36.872202,-76.43835,448,65.0,,1661,3.0,1,yes
+MU1022053815,Unnamed multifamily (OSM 1022053815),multifamily,36.871984,-76.437384,416,65.0,,1541,3.0,1,yes
+MU1022053816,Unnamed multifamily (OSM 1022053816),multifamily,36.871524,-76.438429,441,65.0,,1633,3.0,1,yes
+MU1022053817,Unnamed multifamily (OSM 1022053817),multifamily,36.871291,-76.437117,438,65.0,,1622,3.0,1,yes
+MU1022053818,Unnamed multifamily (OSM 1022053818),multifamily,36.870516,-76.437381,438,65.0,,1622,3.0,1,yes
+MU1022053819,Unnamed multifamily (OSM 1022053819),multifamily,36.870232,-76.438258,421,65.0,,1561,3.0,1,yes
+MU1023432437,Unnamed multifamily (OSM 1023432437),multifamily,36.872893,-76.418139,446,65.0,,1653,3.0,1,yes
+MU1023432440,Unnamed multifamily (OSM 1023432440),multifamily,36.871324,-76.419151,686,65.0,,2542,3.0,1,yes
+MU1026524180,Verso Founders Row,multifamily,38.890944,-77.183864,420,65.0,,1557,3.0,1,yes
+MU1028177821,Terwilliger Place,multifamily,38.886628,-77.102241,1449,65.0,,2300,7.0,1,yes
+MU1030246874,Cortland Rosslyn,multifamily,38.894759,-77.076637,3721,65.0,,1879,22.0,1,yes
+MU1032638241,Unnamed multifamily (OSM 1032638241),multifamily,38.836431,-77.113978,978,65.0,,2173,5.0,1,yes
+MU1041521304,McGurk House,multifamily,37.410397,-79.179944,621,65.0,,2301,3.0,1,yes
+MU1046879239,Unnamed multifamily (OSM 1046879239),multifamily,37.357563,-79.23874,452,65.0,,1674,3.0,1,yes
+MU1050398383,Unnamed multifamily (OSM 1050398383),multifamily,36.820888,-76.256012,453,65.0,,1678,3.0,1,yes
+MU1051670331,Unnamed multifamily (OSM 1051670331),multifamily,38.558538,-77.329884,497,65.0,,1840,3.0,1,yes
+MU1053402613,Unnamed multifamily (OSM 1053402613),multifamily,38.953898,-77.405254,3920,65.0,,8711,5.0,1,yes
+MU1056985683,Unnamed multifamily (OSM 1056985683),multifamily,36.845449,-76.159667,581,65.0,,1614,4.0,1,yes
+MU1056985685,Unnamed multifamily (OSM 1056985685),multifamily,36.845222,-76.158444,581,65.0,,1614,4.0,1,yes
+MU1064728795,Unnamed multifamily (OSM 1064728795),multifamily,37.402345,-77.711221,1987,65.0,,7360,3.0,1,yes
+MU1064851144,Unnamed multifamily (OSM 1064851144),multifamily,38.07274,-78.490962,440,65.0,,1629,3.0,1,yes
+MU1064851146,Unnamed multifamily (OSM 1064851146),multifamily,38.07249,-78.491459,405,65.0,,1501,3.0,1,yes
+MU1077776495,Heronview Apartments,multifamily,39.043294,-77.437446,1039,65.0,,2887,4.0,1,yes
+MU1077828778,Lake Anne House,multifamily,38.970382,-77.341918,1856,65.0,,2578,8.0,1,yes
+MU1077964446,Unnamed multifamily (OSM 1077964446),multifamily,38.461871,-77.498377,593,65.0,,2197,3.0,1,yes
+MU1078391655,The Hydro,multifamily,37.525927,-77.433385,1894,65.0,,3007,7.0,1,yes
+MU1078391657,Shiplock Views,multifamily,37.526809,-77.419305,2065,65.0,,2550,9.0,1,yes
+MU1078391659,Capital Square,multifamily,37.566257,-77.471018,607,65.0,,2247,3.0,1,yes
+MU1078391664,Unnamed multifamily (OSM 1078391664),multifamily,37.571068,-77.479791,2176,65.0,,6044,4.0,1,yes
+MU1078391665,Unnamed multifamily (OSM 1078391665),multifamily,37.573409,-77.48156,441,65.0,,1633,3.0,1,yes
+MU1078391667,Unnamed multifamily (OSM 1078391667),multifamily,37.583147,-77.488865,2120,65.0,,4710,5.0,1,yes
+MU1079611198,Unnamed multifamily (OSM 1079611198),multifamily,37.410421,-79.187889,807,65.0,,2989,3.0,1,yes
+MU1081658098,Unnamed multifamily (OSM 1081658098),multifamily,38.854253,-77.329124,846,65.0,,2350,4.0,1,yes
+MU1081658099,Unnamed multifamily (OSM 1081658099),multifamily,38.853152,-77.328996,796,65.0,,2211,4.0,1,yes
+MU1081658102,Unnamed multifamily (OSM 1081658102),multifamily,38.852678,-77.330106,720,65.0,,2001,4.0,1,yes
+MU1082434300,Unnamed multifamily (OSM 1082434300),multifamily,38.854285,-77.314688,1199,65.0,,4439,3.0,1,yes
+MU1082788489,Unnamed multifamily (OSM 1082788489),multifamily,38.895936,-77.271644,736,65.0,,2725,3.0,1,yes
+MU1083067852,Unnamed multifamily (OSM 1083067852),multifamily,38.849858,-77.303736,1265,65.0,,4686,3.0,1,yes
+MU1083067853,The Flats on Universty,multifamily,38.850037,-77.303192,2103,65.0,,7789,3.0,1,yes
+MU1083604799,Freedman Point,multifamily,37.306298,-77.284506,548,65.0,,2029,3.0,1,yes
+MU1084058464,The Milton,multifamily,38.860782,-77.058817,3219,65.0,,3252,11.0,1,yes
+MU1084530279,Unnamed multifamily (OSM 1084530279),multifamily,37.402156,-77.709436,809,65.0,,2998,3.0,1,yes
+MU1085421179,Sage,multifamily,38.863521,-77.053921,3008,65.0,,1857,18.0,1,yes
+MU1086281544,The Acadia at Metropolitan Park,multifamily,38.862217,-77.056282,5250,65.0,,3241,18.0,1,yes
+MU1087332727,Crystal Square,multifamily,38.859286,-77.050827,4519,65.0,,2954,17.0,1,yes
+MU1087755656,The Oaks of Wellington,multifamily,38.735845,-77.478607,1313,65.0,,4861,3.0,1,yes
+MU1088038678,The Pinnacle on 31st Street,multifamily,36.858023,-75.98308,2164,65.0,,8016,3.0,1,yes
+MU1089933745,Unnamed multifamily (OSM 1089933745),multifamily,38.731838,-77.471696,465,65.0,,1724,3.0,1,yes
+MU1094561314,Unnamed multifamily (OSM 1094561314),multifamily,37.750369,-77.137053,428,65.0,,1586,3.0,1,yes
+MU1096999609,Cypress Ridge,multifamily,39.033713,-77.452967,747,65.0,,2766,3.0,1,yes
+MU1100795328,The Grace,multifamily,38.857133,-77.049699,5551,65.0,,2372,26.0,1,yes
+MU1100795329,Reva,multifamily,38.856473,-77.049677,5308,65.0,,2268,26.0,1,yes
+MU1101310822,Altitude at Stone Port,multifamily,38.408487,-78.865655,3199,65.0,,5078,7.0,1,yes
+MU1101399199,Saint James Plaza,multifamily,38.838388,-77.116598,456,65.0,,2531,2.0,1,yes
+MU1101842776,Unnamed multifamily (OSM 1101842776),multifamily,37.516697,-77.690742,1080,65.0,,4001,3.0,1,yes
+MU1101842777,Unnamed multifamily (OSM 1101842777),multifamily,37.516067,-77.689955,726,65.0,,2688,3.0,1,yes
+MU1102458169,Queens Court Apartments,multifamily,38.895648,-77.077979,2487,65.0,,2125,13.0,1,yes
+MU1112114247,Unnamed multifamily (OSM 1112114247),multifamily,38.422423,-78.848581,480,65.0,,1779,3.0,1,yes
+MU1112707826,The Arbors at Western Branch,multifamily,36.826463,-76.421074,2130,65.0,,5916,4.0,1,yes
+MU1114926111,Unnamed multifamily (OSM 1114926111),multifamily,37.280637,-76.722274,597,65.0,,2212,3.0,1,yes
+MU1114926113,Unnamed multifamily (OSM 1114926113),multifamily,37.281204,-76.721125,1049,65.0,,2330,5.0,1,yes
+MU1114926114,Unnamed multifamily (OSM 1114926114),multifamily,37.280084,-76.721076,548,65.0,,2031,3.0,1,yes
+MU1122775145,Alexan Fitzroy,multifamily,38.886361,-77.098512,3599,65.0,,3999,10.0,1,yes
+MU1122914494,Unity Homes at Ballston,multifamily,38.882644,-77.110827,1619,65.0,,2248,8.0,1,yes
+MU1122914495,Urba,multifamily,38.877345,-77.110854,3966,65.0,,5508,8.0,1,yes
+MU1123019975,South 16 Apartments,multifamily,37.25579,-79.941912,1358,65.0,,3018,5.0,1,yes
+MU1124743227,Vista Fairfax Corner,multifamily,38.85724,-77.357791,3608,65.0,,3340,12.0,1,yes
+MU1124792038,Unnamed multifamily (OSM 1124792038),multifamily,37.107859,-76.464033,440,65.0,,1628,3.0,1,yes
+MU1124792039,Unnamed multifamily (OSM 1124792039),multifamily,37.107413,-76.462931,440,65.0,,1628,3.0,1,yes
+MU1124792040,Unnamed multifamily (OSM 1124792040),multifamily,37.106827,-76.462292,440,65.0,,1628,3.0,1,yes
+MU1124792048,Unnamed multifamily (OSM 1124792048),multifamily,37.105182,-76.462058,407,65.0,,1506,3.0,1,yes
+MU1124802723,Unnamed multifamily (OSM 1124802723),multifamily,36.765069,-76.600773,452,65.0,,1676,3.0,1,yes
+MU1124802724,Unnamed multifamily (OSM 1124802724),multifamily,36.765623,-76.601351,453,65.0,,1676,3.0,1,yes
+MU1124802728,Unnamed multifamily (OSM 1124802728),multifamily,36.76355,-76.603284,444,65.0,,1645,3.0,1,yes
+MU1124802729,Unnamed multifamily (OSM 1124802729),multifamily,36.764204,-76.603774,444,65.0,,1645,3.0,1,yes
+MU1124802730,Unnamed multifamily (OSM 1124802730),multifamily,36.764202,-76.604559,444,65.0,,1645,3.0,1,yes
+MU1124802731,Unnamed multifamily (OSM 1124802731),multifamily,36.763422,-76.604975,444,65.0,,1645,3.0,1,yes
+MU1124802757,Unnamed multifamily (OSM 1124802757),multifamily,36.763142,-76.604219,444,65.0,,1645,3.0,1,yes
+MU1124802758,Unnamed multifamily (OSM 1124802758),multifamily,36.763533,-76.604166,444,65.0,,1645,3.0,1,yes
+MU1125973236,Unnamed multifamily (OSM 1125973236),multifamily,37.350529,-77.489936,425,65.0,,1574,3.0,1,yes
+MU1125973250,Unnamed multifamily (OSM 1125973250),multifamily,37.350005,-77.48924,460,65.0,,1703,3.0,1,yes
+MU1125974815,Unnamed multifamily (OSM 1125974815),multifamily,37.349522,-77.488744,446,65.0,,1653,3.0,1,yes
+MU1125980303,Unnamed multifamily (OSM 1125980303),multifamily,37.34964,-77.490066,426,65.0,,1578,3.0,1,yes
+MU1126104752,Unnamed multifamily (OSM 1126104752),multifamily,37.349364,-77.490827,449,65.0,,1664,3.0,1,yes
+MU1126104758,Unnamed multifamily (OSM 1126104758),multifamily,37.348559,-77.490438,451,65.0,,1670,3.0,1,yes
+MU1126104764,Unnamed multifamily (OSM 1126104764),multifamily,37.348244,-77.489721,456,65.0,,1689,3.0,1,yes
+MU1127590195,Unnamed multifamily (OSM 1127590195),multifamily,37.261138,-79.97858,495,65.0,,1833,3.0,1,yes
+MU1131774008,One Canal,multifamily,37.541276,-77.445152,625,65.0,,2314,3.0,1,yes
+MU1131779207,Unnamed multifamily (OSM 1131779207),multifamily,37.557764,-77.446891,1055,65.0,,2345,5.0,1,yes
+MU1131779208,Unnamed multifamily (OSM 1131779208),multifamily,37.558169,-77.448259,1064,65.0,,2364,5.0,1,yes
+MU1131779210,Unnamed multifamily (OSM 1131779210),multifamily,37.561947,-77.446016,722,65.0,,2672,3.0,1,yes
+MU1131779211,Unnamed multifamily (OSM 1131779211),multifamily,37.561276,-77.446969,712,65.0,,2639,3.0,1,yes
+MU1131959666,Unnamed multifamily (OSM 1131959666),multifamily,38.953638,-77.352253,2472,65.0,,1717,16.0,1,yes
+MU1131959667,Unnamed multifamily (OSM 1131959667),multifamily,38.954074,-77.352326,2563,65.0,,1780,16.0,1,yes
+MU1132596938,Unnamed multifamily (OSM 1132596938),multifamily,37.42242,-77.498839,456,65.0,,1689,3.0,1,yes
+MU1140613105,Heming,multifamily,38.924193,-77.20677,1286,65.0,,4764,3.0,1,yes
+MU1146861346,Unnamed multifamily (OSM 1146861346),multifamily,38.957422,-77.412652,5994,65.0,,9514,7.0,1,yes
+MU1146861347,Unnamed multifamily (OSM 1146861347),multifamily,38.958414,-77.415515,4222,65.0,,6701,7.0,1,yes
+MU1147217468,Acclaim,multifamily,38.652637,-77.237305,1101,65.0,,4079,3.0,1,yes
+MU1148347820,2250 Meridian,multifamily,38.799605,-77.068847,8249,65.0,,3525,26.0,1,yes
+MU1149784018,Augusta Nursing and Rehabilitation,multifamily,38.093062,-78.993839,1343,65.0,,4976,3.0,1,yes
+MU1152739673,The Bower,multifamily,37.272128,-79.94132,485,65.0,,1798,3.0,1,yes
+MU1152791042,Unnamed multifamily (OSM 1152791042),multifamily,38.590048,-77.30077,424,65.0,,1570,3.0,1,yes
+MU1156094506,The Point on 38th Apartments,multifamily,36.879385,-76.300879,2090,65.0,,5806,4.0,1,yes
+MU1156454725,Amelia House,multifamily,38.302242,-77.465707,553,65.0,,2049,3.0,1,yes
+MU1158156464,Unnamed multifamily (OSM 1158156464),multifamily,38.873526,-77.370471,1362,65.0,,3027,5.0,1,yes
+MU1158156465,Unnamed multifamily (OSM 1158156465),multifamily,38.874018,-77.370399,1769,65.0,,3930,5.0,1,yes
+MU1158243517,Unnamed multifamily (OSM 1158243517),multifamily,38.584508,-77.304986,412,65.0,,1526,3.0,1,yes
+MU1159068431,Unnamed multifamily (OSM 1159068431),multifamily,38.099242,-78.997474,509,65.0,,1883,3.0,1,yes
+MU1162338112,Unnamed multifamily (OSM 1162338112),multifamily,38.461149,-78.017017,509,65.0,,1886,3.0,1,yes
+MU1162548805,The View at Broadlands,multifamily,39.008703,-77.500346,739,65.0,,2736,3.0,1,yes
+MU1163690847,The Lofts at Meadowcreek,multifamily,38.05331,-78.460832,655,65.0,,2425,3.0,1,yes
+MU1168165614,The Lofts at Front Street,multifamily,36.853852,-76.30128,2869,65.0,,7970,4.0,1,yes
+MU1175961842,Artena,multifamily,38.76693,-77.444644,967,65.0,,1535,7.0,1,yes
+MU1176483485,Unnamed multifamily (OSM 1176483485),multifamily,38.870156,-77.104882,537,65.0,,1988,3.0,1,yes
+MU1177906514,Melrose Towers,multifamily,37.288295,-79.985841,578,65.0,,2142,3.0,1,yes
+MU1181203093,Unnamed multifamily (OSM 1181203093),multifamily,37.180805,-79.619391,487,65.0,,1803,3.0,1,yes
+MU1186541482,Unnamed multifamily (OSM 1186541482),multifamily,38.144183,-79.066661,496,65.0,,1836,3.0,1,yes
+MU1191703389,The Garden Apartments,multifamily,37.597867,-77.463542,1093,65.0,,1519,8.0,1,yes
+MU1197415024,The Commodore,multifamily,38.891129,-77.084398,5636,65.0,,3131,20.0,1,yes
+MU1198861625,Helix Luxury Apartments,multifamily,36.768651,-76.240057,738,65.0,,2732,3.0,1,yes
+MU1198861629,Vista,multifamily,36.769017,-76.239121,1427,65.0,,5284,3.0,1,yes
+MU1204205061,Waterford Station,multifamily,39.031965,-77.45232,1275,65.0,,2833,5.0,1,yes
+MU1204205062,Blue Ridge Clubhouse,multifamily,39.032647,-77.45219,453,65.0,,2517,2.0,1,yes
+MU1204205063,Hamilton Way,multifamily,39.033368,-77.451682,2290,65.0,,5089,5.0,1,yes
+MU1204927175,Unnamed multifamily (OSM 1204927175),multifamily,37.237888,-80.435995,1368,65.0,,5068,3.0,1,yes
+MU1205078369,University Village,multifamily,38.051032,-78.518317,1560,65.0,,5776,3.0,1,yes
+MU1208600307,Dairy Central,multifamily,38.037411,-78.491594,886,65.0,,3281,3.0,1,yes
+MU1209420045,Unnamed multifamily (OSM 1209420045),multifamily,38.831256,-77.095158,722,65.0,,2674,3.0,1,yes
+MU1210420760,Unnamed multifamily (OSM 1210420760),multifamily,38.235719,-78.36441,468,65.0,,1732,3.0,1,yes
+MU1217107381,Calvair Main Apartments,multifamily,39.199398,-78.160552,616,65.0,,2282,3.0,1,yes
+MU1218820177,The Point at Eisenhower Square,multifamily,38.804471,-77.081448,1061,65.0,,3930,3.0,1,yes
+MU1220392663,Unnamed multifamily (OSM 1220392663),multifamily,38.746506,-77.15289,427,65.0,,1582,3.0,1,yes
+MU1220392664,Unnamed multifamily (OSM 1220392664),multifamily,38.7461,-77.15299,431,65.0,,1596,3.0,1,yes
+MU1220392665,Unnamed multifamily (OSM 1220392665),multifamily,38.746538,-77.153665,469,65.0,,1737,3.0,1,yes
+MU1229510212,The Maximilian at Stonefield,multifamily,38.065731,-78.494354,1764,65.0,,6534,3.0,1,yes
+MU1229569127,Chester Village Senior Living Community,multifamily,37.359222,-77.446112,1341,65.0,,4967,3.0,1,yes
+MU1231240325,Unnamed multifamily (OSM 1231240325),multifamily,38.068309,-78.495191,429,65.0,,1587,3.0,1,yes
+MU1231240330,Unnamed multifamily (OSM 1231240330),multifamily,38.070217,-78.495482,432,65.0,,1599,3.0,1,yes
+MU1231240332,Unnamed multifamily (OSM 1231240332),multifamily,38.070887,-78.495979,423,65.0,,1567,3.0,1,yes
+MU1236074977,Eddy on the James,multifamily,37.527088,-77.44434,987,65.0,,3657,3.0,1,yes
+MU1252592934,Unnamed multifamily (OSM 1252592934),multifamily,37.243486,-80.42613,582,65.0,,1618,4.0,1,yes
+MU1263584668,Unnamed multifamily (OSM 1263584668),multifamily,38.77928,-77.078793,2712,65.0,,10044,3.0,1,yes
+MU1269094309,The Signet,multifamily,38.93768,-77.180442,1082,65.0,,4007,3.0,1,yes
+MU1271572761,The Hazel,multifamily,38.846516,-77.051282,2996,65.0,,2378,14.0,1,yes
+MU1271572762,Azure,multifamily,38.845696,-77.051286,1959,65.0,,2177,10.0,1,yes
+MU1282193275,Aventon Huntington,multifamily,38.791321,-77.074568,1909,65.0,,7071,3.0,1,yes
+MU1282842533,The Zoe,multifamily,38.855908,-77.05083,3748,65.0,,2192,19.0,1,yes
+MU1284254216,Unnamed multifamily (OSM 1284254216),multifamily,38.842321,-77.050726,3394,65.0,,3429,11.0,1,yes
+MU1284254217,Unnamed multifamily (OSM 1284254217),multifamily,38.842195,-77.051885,891,65.0,,3301,3.0,1,yes
+MU1289762088,Unnamed multifamily (OSM 1289762088),multifamily,37.089414,-76.471917,492,65.0,,1823,3.0,1,yes
+MU1289762089,Unnamed multifamily (OSM 1289762089),multifamily,37.089265,-76.472341,800,65.0,,2964,3.0,1,yes
+MU1295482393,Unnamed multifamily (OSM 1295482393),multifamily,38.29229,-77.509999,1157,65.0,,4284,3.0,1,yes
+MU1295482394,Unnamed multifamily (OSM 1295482394),multifamily,38.292844,-77.509892,1065,65.0,,3943,3.0,1,yes
+MU1299285748,The Hudson,multifamily,38.036572,-78.458631,449,65.0,,1663,3.0,1,yes
+MU1309190006,Unnamed multifamily (OSM 1309190006),multifamily,37.204092,-80.407843,482,65.0,,1786,3.0,1,yes
+MU1309190007,Unnamed multifamily (OSM 1309190007),multifamily,37.203284,-80.407934,672,65.0,,2489,3.0,1,yes
+MU1309190008,Unnamed multifamily (OSM 1309190008),multifamily,37.20316,-80.406666,503,65.0,,1861,3.0,1,yes
+MU1317229828,Unnamed multifamily (OSM 1317229828),multifamily,38.667086,-77.248311,435,65.0,,1611,3.0,1,yes
+MU1321512706,Unnamed multifamily (OSM 1321512706),multifamily,37.244333,-80.431677,553,65.0,,2049,3.0,1,yes
+MU1328479077,Skymark,multifamily,38.955564,-77.361745,1888,65.0,,6992,3.0,1,yes
+MU1331619420,Unnamed multifamily (OSM 1331619420),multifamily,37.200084,-80.422953,414,65.0,,1534,3.0,1,yes
+MU1331619421,Unnamed multifamily (OSM 1331619421),multifamily,37.199468,-80.422921,461,65.0,,1707,3.0,1,yes
+MU1331619422,Unnamed multifamily (OSM 1331619422),multifamily,37.199037,-80.422105,456,65.0,,1687,3.0,1,yes
+MU1331619423,Unnamed multifamily (OSM 1331619423),multifamily,37.19873,-80.423823,540,65.0,,1999,3.0,1,yes
+MU1333271038,Unnamed multifamily (OSM 1333271038),multifamily,38.835769,-77.315973,1092,65.0,,4044,3.0,1,yes
+MU1333271040,Unnamed multifamily (OSM 1333271040),multifamily,38.835513,-77.314848,833,65.0,,3084,3.0,1,yes
+MU1345287617,Unnamed multifamily (OSM 1345287617),multifamily,37.294519,-76.721071,496,65.0,,1837,3.0,1,yes
+MU1345287618,Unnamed multifamily (OSM 1345287618),multifamily,37.294896,-76.720587,499,65.0,,1847,3.0,1,yes
+MU1347119931,Halifax Lofts,multifamily,36.764626,-78.940404,423,65.0,,1568,3.0,1,yes
+MU1347679891,The Alder,multifamily,38.895647,-77.190619,2305,65.0,,8538,3.0,1,yes
+MU1347872738,Unnamed multifamily (OSM 1347872738),multifamily,37.60223,-77.655231,769,65.0,,2136,4.0,1,yes
+MU1347872739,Unnamed multifamily (OSM 1347872739),multifamily,37.603194,-77.65478,833,65.0,,2314,4.0,1,yes
+MU1347872745,Unnamed multifamily (OSM 1347872745),multifamily,37.602923,-77.655726,1024,65.0,,2845,4.0,1,yes
+MU1348631239,Unnamed multifamily (OSM 1348631239),multifamily,37.379847,-79.231812,442,65.0,,1636,3.0,1,yes
+MU1348631240,Unnamed multifamily (OSM 1348631240),multifamily,37.379267,-79.2308,818,65.0,,3028,3.0,1,yes
+MU1348631241,Unnamed multifamily (OSM 1348631241),multifamily,37.379971,-79.230573,488,65.0,,1809,3.0,1,yes
+MU1348631242,Unnamed multifamily (OSM 1348631242),multifamily,37.380877,-79.230848,463,65.0,,1714,3.0,1,yes
+MU1348631243,Unnamed multifamily (OSM 1348631243),multifamily,37.380252,-79.230167,488,65.0,,1809,3.0,1,yes
+MU1350503816,The Arden,multifamily,38.794221,-77.07204,1205,65.0,,2677,5.0,1,yes
+MU1351434260,Senseny Place,multifamily,39.169658,-78.134876,644,65.0,,1788,4.0,1,yes
+MU1351647298,Residences at North HIll,multifamily,38.760032,-77.083324,672,65.0,,2489,3.0,1,yes
+MU1354005618,Broad & Washington,multifamily,38.881998,-77.169753,5510,65.0,,8746,7.0,1,yes
+MU1367399195,Fusion at Neon,multifamily,36.856076,-76.291396,1179,65.0,,3274,4.0,1,yes
+MU1374547044,Unnamed multifamily (OSM 1374547044),multifamily,37.568166,-77.481077,509,65.0,,1884,3.0,1,yes
+MU1389216526,Altitude Phase II,multifamily,38.409479,-78.867805,940,65.0,,2088,5.0,1,yes
+MU1416304779,Unnamed multifamily (OSM 1416304779),multifamily,37.200363,-80.398503,668,65.0,,2473,3.0,1,yes
+MU1419977037,Innsbrook Square Apartments,multifamily,37.658401,-77.580793,2581,65.0,,9560,3.0,1,yes
+MU1420892389,Unnamed multifamily (OSM 1420892389),multifamily,37.244558,-80.425497,405,65.0,,1500,3.0,1,yes
+MU1424203703,Unnamed multifamily (OSM 1424203703),multifamily,37.312736,-79.242093,428,65.0,,1585,3.0,1,yes
+MU1424203704,Unnamed multifamily (OSM 1424203704),multifamily,37.312869,-79.24109,428,65.0,,1585,3.0,1,yes
+MU1424203705,Unnamed multifamily (OSM 1424203705),multifamily,37.312987,-79.240706,428,65.0,,1585,3.0,1,yes
+MU1424203706,Unnamed multifamily (OSM 1424203706),multifamily,37.313265,-79.239763,428,65.0,,1585,3.0,1,yes
+MU1424203707,Unnamed multifamily (OSM 1424203707),multifamily,37.313477,-79.239056,428,65.0,,1585,3.0,1,yes
+MU1434416124,Liberty Point,multifamily,37.203692,-77.339713,603,65.0,,2234,3.0,1,yes
+MU1441751178,Unnamed multifamily (OSM 1441751178),multifamily,37.467886,-77.680244,647,65.0,,2396,3.0,1,yes
+MU1442212215,Unnamed multifamily (OSM 1442212215),multifamily,38.658954,-77.291353,896,65.0,,3318,3.0,1,yes
+MU1442212216,Unnamed multifamily (OSM 1442212216),multifamily,38.658398,-77.292015,444,65.0,,1645,3.0,1,yes
+MU1442212217,Unnamed multifamily (OSM 1442212217),multifamily,38.659227,-77.292558,437,65.0,,1619,3.0,1,yes
+MU1442212218,Unnamed multifamily (OSM 1442212218),multifamily,38.657632,-77.292047,443,65.0,,1642,3.0,1,yes
+MU1442212219,Unnamed multifamily (OSM 1442212219),multifamily,38.657131,-77.290988,445,65.0,,1648,3.0,1,yes
+MU1442447012,Evelyn,multifamily,37.520953,-77.486216,416,65.0,,1540,3.0,1,yes
+MU1449863699,The James at Springline,multifamily,37.502234,-77.52915,5876,65.0,,10881,6.0,1,yes
+MU1450939264,Unnamed multifamily (OSM 1450939264),multifamily,37.676449,-77.456941,1503,65.0,,4176,4.0,1,yes
+MU1450939265,Unnamed multifamily (OSM 1450939265),multifamily,37.67701,-77.455943,1543,65.0,,4286,4.0,1,yes
+MU1458939248,Unnamed multifamily (OSM 1458939248),multifamily,38.057253,-78.710426,407,65.0,,1507,3.0,1,yes
+MU1458939249,Unnamed multifamily (OSM 1458939249),multifamily,38.056831,-78.710156,641,65.0,,2372,3.0,1,yes
+MU1458939250,Unnamed multifamily (OSM 1458939250),multifamily,38.056222,-78.709746,1045,65.0,,3872,3.0,1,yes
+MU1471827856,Unnamed multifamily (OSM 1471827856),multifamily,38.665352,-77.381099,607,65.0,,2247,3.0,1,yes
+MU1471827857,Unnamed multifamily (OSM 1471827857),multifamily,38.664914,-77.380348,816,65.0,,3024,3.0,1,yes
+MU1471827858,Unnamed multifamily (OSM 1471827858),multifamily,38.664392,-77.380136,637,65.0,,2360,3.0,1,yes
+MU1471991783,Unnamed multifamily (OSM 1471991783),multifamily,37.391749,-79.907169,594,65.0,,2200,3.0,1,yes
+MU1471991784,Unnamed multifamily (OSM 1471991784),multifamily,37.391678,-79.907968,594,65.0,,2199,3.0,1,yes
+MU1471991785,Unnamed multifamily (OSM 1471991785),multifamily,37.392443,-79.907753,594,65.0,,2199,3.0,1,yes
+MU1471991786,Unnamed multifamily (OSM 1471991786),multifamily,37.391605,-79.908708,594,65.0,,2200,3.0,1,yes
+MU1471991787,Unnamed multifamily (OSM 1471991787),multifamily,37.392055,-79.909197,594,65.0,,2199,3.0,1,yes
+MU1474562289,Unnamed multifamily (OSM 1474562289),multifamily,38.648964,-77.30989,623,65.0,,2308,3.0,1,yes
+MU1474562290,Unnamed multifamily (OSM 1474562290),multifamily,38.648622,-77.310299,1176,65.0,,4357,3.0,1,yes
+MU1483868707,Unnamed multifamily (OSM 1483868707),multifamily,37.55019,-77.439134,718,65.0,,2657,3.0,1,yes
+MU1485541146,Unnamed multifamily (OSM 1485541146),multifamily,38.212439,-77.494277,451,65.0,,1669,3.0,1,yes
+MU1485541147,Unnamed multifamily (OSM 1485541147),multifamily,38.212302,-77.495076,451,65.0,,1669,3.0,1,yes
+MU1485541148,Unnamed multifamily (OSM 1485541148),multifamily,38.212421,-77.496203,689,65.0,,2552,3.0,1,yes
+MU1486115277,Unnamed multifamily (OSM 1486115277),multifamily,38.060367,-78.463634,560,65.0,,2074,3.0,1,yes
+MU1486115278,Unnamed multifamily (OSM 1486115278),multifamily,38.05997,-78.464766,478,65.0,,1772,3.0,1,yes
+MU1486115283,Unnamed multifamily (OSM 1486115283),multifamily,38.058825,-78.464407,419,65.0,,1551,3.0,1,yes
+MU1486115284,Unnamed multifamily (OSM 1486115284),multifamily,38.05908,-78.463875,412,65.0,,1526,3.0,1,yes
+MU1486115285,Unnamed multifamily (OSM 1486115285),multifamily,38.059698,-78.462195,429,65.0,,1589,3.0,1,yes
+MU1491686486,Cedar Works,multifamily,37.515946,-77.414434,710,65.0,,2629,3.0,1,yes
+MU1493128080,Aidan Old Town,multifamily,38.812728,-77.049456,1317,65.0,,2927,5.0,1,yes
+MU1493131997,The Lowell,multifamily,38.932836,-77.176551,1442,65.0,,2003,8.0,1,yes
+MU1495946437,Unnamed multifamily (OSM 1495946437),multifamily,38.624259,-77.283842,1313,65.0,,4862,3.0,1,yes
+MU1495946438,Unnamed multifamily (OSM 1495946438),multifamily,38.623102,-77.282457,2466,65.0,,9133,3.0,1,yes
+MU1497576209,Unnamed multifamily (OSM 1497576209),multifamily,38.791132,-77.135954,1192,65.0,,4416,3.0,1,yes
+MU1501191926,Unnamed multifamily (OSM 1501191926),multifamily,38.964928,-77.391773,426,65.0,,1577,3.0,1,yes
+MU1512584765,Unnamed multifamily (OSM 1512584765),multifamily,37.564819,-77.471117,1066,65.0,,3948,3.0,1,yes
+MU1512584766,Unnamed multifamily (OSM 1512584766),multifamily,37.565245,-77.470634,812,65.0,,3007,3.0,1,yes
+MU1512584767,Unnamed multifamily (OSM 1512584767),multifamily,37.564595,-77.471708,630,65.0,,2333,3.0,1,yes
+MU1529538377,Unnamed multifamily (OSM 1529538377),multifamily,37.543449,-77.397455,532,65.0,,1972,3.0,1,yes
+MU1530375535,Unnamed multifamily (OSM 1530375535),multifamily,39.014939,-77.48556,441,65.0,,1632,3.0,1,yes
+MU1534658998,Unnamed multifamily (OSM 1534658998),multifamily,36.86085,-76.196416,495,65.0,,1832,3.0,1,yes
+MU1534658999,Unnamed multifamily (OSM 1534658999),multifamily,36.860554,-76.196465,484,65.0,,1792,3.0,1,yes
+MU1534659000,Unnamed multifamily (OSM 1534659000),multifamily,36.85976,-76.196974,496,65.0,,1837,3.0,1,yes
+MU1534659001,Unnamed multifamily (OSM 1534659001),multifamily,36.859703,-76.196438,494,65.0,,1829,3.0,1,yes
+MU1537320394,The Trillium,multifamily,38.925194,-77.234722,638,65.0,,2363,3.0,1,yes
+MU1539330639,Brightview Senior Living,multifamily,38.859097,-77.309712,1321,65.0,,4892,3.0,1,yes
+MU1539330645,Unnamed multifamily (OSM 1539330645),multifamily,38.861882,-77.304254,2103,65.0,,7788,3.0,1,yes
+MU1544896599,Unnamed multifamily (OSM 1544896599),multifamily,38.956773,-77.395637,968,65.0,,3586,3.0,1,yes
+MU1544896600,Unnamed multifamily (OSM 1544896600),multifamily,38.957354,-77.396919,968,65.0,,3586,3.0,1,yes
+MU1553472253,Unnamed multifamily (OSM 1553472253),multifamily,38.843418,-77.401856,1675,65.0,,6203,3.0,1,yes

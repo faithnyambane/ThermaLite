@@ -35,7 +35,8 @@ REF_IT_MW = 50.0
 SEARCH_KM = 3.0  # straight-line radius for heat users
 
 # EPA eGRID2023 (rev2, June 2025), Table 3 state output emission rates, CO2 lb/MWh.
-GRID_CO2_LB_PER_MWH = {"NJ": 468.3, "WA": 265.1}
+GRID_CO2_LB_PER_MWH = {"NJ": 468.3, "WA": 265.1, "OR": 364.2, "TX": 768.3, "VA": 536.9,
+                       "NC": 624.0, "PA": 645.8}
 EGRID_SOURCE = "EPA eGRID2023 summary tables rev2, Table 3 (state CO2 output emission rate)"
 
 
@@ -74,8 +75,19 @@ def ee_layers(state: str, project: str = "thermalite") -> dict:
     stack = ee.Image.cat([inside, bws, cdd, flood, prot, water]).toFloat().reproject(proj)
     rows = int(math.ceil((n - s) / dlat))
     cols = int(math.ceil((e - w) / dlon))
-    region = ee.Geometry.Rectangle([w, n - rows * dlat, w + cols * dlon, n], proj="EPSG:4326", geodesic=False)
-    arr = stack.sampleRectangle(region=region, defaultValue=-1).getInfo()["properties"]
+    # sampleRectangle returns at most 262,144 pixels: fetch large states in row bands.
+    band_rows = max(1, 200_000 // cols)
+    arr = None
+    for r0 in range(0, rows, band_rows):
+        r1 = min(rows, r0 + band_rows)
+        region = ee.Geometry.Rectangle([w, n - r1 * dlat, w + cols * dlon, n - r0 * dlat],
+                                       proj="EPSG:4326", geodesic=False)
+        part = stack.sampleRectangle(region=region, defaultValue=-1).getInfo()["properties"]
+        if arr is None:
+            arr = part
+        else:
+            for k in arr:
+                arr[k].extend(part[k])
     for band in ("bws", "cdd"):  # land-only datasets: fill coastal gaps from neighbours
         _fill_nearest(arr[band], arr["inside"])
     return {"west": w, "north": n, "dlon": dlon, "dlat": dlat, "bands": arr}

@@ -110,6 +110,16 @@ def fetch_hdd(points: list[tuple[float, float]], project: str = DEFAULT_PROJECT,
 
 
 def apply_climate(sinks: list[Sink], **kwargs) -> list[Sink]:
-    """Return sinks with hdd_shape filled from ERA5-Land."""
+    """Return sinks with hdd_shape filled from ERA5-Land, and annual demand's
+    weather-driven share scaled by local heating degree days / REF_HDD."""
+    from .assumptions import REF_HDD
+    from .seasonal import SPACE_WEIGHT, TYPE_PROFILE
+
     hdd = fetch_hdd([(s.lat, s.lon) for s in sinks], **kwargs)
-    return [replace(s, hdd_shape=tuple(hdd[(s.lat, s.lon)])) for s in sinks]
+    out = []
+    for s in sinks:
+        shape = hdd[(s.lat, s.lon)]
+        w = SPACE_WEIGHT[s.profile or TYPE_PROFILE.get(s.type, "space_and_water")]
+        factor = (1 - w) + w * sum(shape) / REF_HDD
+        out.append(replace(s, hdd_shape=tuple(shape), annual_heat_mwh=s.annual_heat_mwh * factor))
+    return out

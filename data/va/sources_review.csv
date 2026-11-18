@@ -1,0 +1,26 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC138,Equinix CU2,38.455499,-77.978594,129.99,chilled_water,,,Equinix,Culpeper County,1299932.0,campus,yes
+DC139,Amazon Web Services Datacenter Complex,39.026424,-77.451201,108.8,chilled_water,,,Amazon Web Services,Loudoun County,1088049.0,campus,yes
+DC140,Amazon Web Services,39.028856,-77.45898,102.23,chilled_water,,,Amazon Web Services,Loudoun County,1022344.0,campus,yes
+DC158,NTT Ashburn Campus,39.017959,-77.471431,211.61,chilled_water,,,,Loudoun County,2116133.0,campus,yes
+DC159,Microsoft Boydton Data Center,36.684782,-78.376065,1186.25,chilled_water,,,Microsoft,Mecklenburg County,11862490.0,campus,yes
+DC161,Bank of America Data Center,37.495462,-77.238091,221.0,chilled_water,,,,Henrico County,2209960.0,campus,yes
+DC164,Amazon site,38.815716,-77.652615,127.82,chilled_water,,,Amazon,Prince William County,1278242.0,campus,yes
+DC169,Stonewall Creek Business Park,39.05096,-77.539562,129.18,chilled_water,,,Google,Loudoun County,1291753.0,campus,yes
+DC170,Unnamed site (Henrico County),37.482066,-77.236212,464.83,chilled_water,,,,Henrico County,4648293.0,campus,yes
+DC171,QTS Richmond 1 Data Center,37.487276,-77.247981,579.27,chilled_water,,,Quality Technology Services,Henrico County,5792652.0,campus,yes
+DC181,Google Data Center,38.943392,-77.527072,214.31,chilled_water,,,Google,Loudoun County,2143143.0,campus,yes
+DC182,Amazon Fadeley III,38.947737,-77.52201,165.5,chilled_water,,,,Loudoun County,1654964.0,campus,yes
+DC189,Unnamed site (Henrico County),37.478112,-77.227804,249.12,chilled_water,,,,Henrico County,2491187.0,campus,yes
+DC195,PowerHouse CTP-03,37.355529,-77.333942,280.99,chilled_water,,,,Chesterfield County,2809915.0,campus,yes
+DC215,Arcola Tech Park,38.948218,-77.555655,173.55,chilled_water,,,,Loudoun County,1735467.0,campus,yes
+DC228,Digital Loudoun Plaza,39.002154,-77.482837,285.99,chilled_water,,,,Loudoun County,2859895.0,campus,yes
+DC237,QTS Ashburn Lockridge,38.995834,-77.456321,124.45,chilled_water,,,Quality Technology Services,Loudoun County,1244514.0,campus,yes
+DC242,QTS Richmond 2 Data Center,37.48505,-77.243395,438.95,chilled_water,,,Quality Technology Services,Henrico County,4389502.0,campus,yes
+DC243,Unnamed site (Loudoun County),38.957897,-77.49676,152.44,chilled_water,,,,Loudoun County,1524370.0,campus,yes
+DC264,QTS Richmond 3 Data Center,37.479768,-77.252005,489.1,chilled_water,,,Quality Technology Services,Henrico County,4890990.0,campus,yes
+DC271,CloudHQ Ashburn Campus,39.010683,-77.462277,155.32,chilled_water,,,,Loudoun County,1553192.0,campus,yes
+DC281,True North Data Centers,39.043069,-77.53729,458.32,chilled_water,,,True North Data Solutions,Loudoun County,4583218.0,campus,yes
+DC303,Iron Mountain site,37.498537,-77.235349,268.59,chilled_water,,,Iron Mountain,Henrico County,2685934.0,campus,yes
+DC305,White Oak Technology Park 2,37.506148,-77.255054,149.98,chilled_water,,,QTS,Henrico County,1499786.0,campus,yes
+DC356,Microsoft,38.948926,-77.559017,157.53,chilled_water,,,Microsoft,Loudoun County,1575278.0,campus,yes

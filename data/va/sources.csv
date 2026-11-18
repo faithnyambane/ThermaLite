@@ -1,0 +1,391 @@
+id,name,lat,lon,it_load_mw,cooling,source_temp_c,recoverable_fraction,operator,county,sqft,atlas_type,it_load_estimated
+DC141,Unnamed site (Loudoun County),38.986185,-77.442124,70.97,chilled_water,,,,Loudoun County,709715.0,campus,yes
+DC162,Unnamed site (Loudoun County),38.999665,-77.449913,40.23,chilled_water,,,,Loudoun County,402308.0,campus,yes
+DC163,Unnamed site (Prince William County),38.790991,-77.548023,98.9,chilled_water,,,,Prince William County,989045.0,campus,yes
+DC207,Middletown Data Center,39.017603,-78.290956,27.32,chilled_water,,,,Frederick County,273198.0,campus,yes
+DC213,DBT Data - Harrisonburg Center,38.462894,-78.856949,50.58,chilled_water,,,,Harrisonburg city,505755.0,campus,yes
+DC227,Digital Loudoun Plaza,39.004481,-77.48501,68.65,chilled_water,,,,Loudoun County,686547.0,campus,yes
+DC229,Unnamed site (Loudoun County),38.984531,-77.425503,38.41,chilled_water,,,,Loudoun County,384105.0,campus,yes
+DC250,Equinix DC14,38.803418,-77.510279,22.28,chilled_water,,,Equinix,Prince William County,222846.0,campus,yes
+DC270,QTS Ashburn-Shellhorn,38.998724,-77.475132,82.95,chilled_water,,,,Loudoun County,829536.0,campus,yes
+DC304,Meta site,37.476247,-77.239352,83.87,chilled_water,,,Meta,Henrico County,838660.0,campus,yes
+DC306,DC Blox site,37.604579,-77.422623,55.37,chilled_water,,,DC Blox,Henrico County,553686.0,campus,yes
+DC307,PowerHouse CTP-02,37.358153,-77.324193,23.96,chilled_water,,,PowerHouse,Chesterfield County,239580.0,campus,yes
+DC371,Digital Realty VA3,38.9482,-77.327664,1.73,chilled_water,,,Digital Realty,Fairfax County,17330.0,campus,yes
+DC375,VeriSign Incorporated,38.99778,-77.443858,12.85,chilled_water,,,,Loudoun County,128479.0,building,yes
+DC381,Microsoft Data Center 1,38.802384,-77.582651,24.87,chilled_water,,,Microsoft,Prince William County,248706.0,building,yes
+DC408,Unnamed site (Prince William County),38.80516,-77.512823,22.68,chilled_water,,,,Prince William County,226799.0,building,yes
+DC409,Equinix DC14,38.80331,-77.510589,5.29,chilled_water,,,,Prince William County,52906.0,building,yes
+DC410,Amazon IAD-11,38.790497,-77.541111,12.25,chilled_water,,,Amazon Web Services,Prince William County,122474.0,building,yes
+DC411,Amazon IAD-24,38.790347,-77.540006,3.14,chilled_water,,,Amazon Web Services,Prince William County,31388.0,building,yes
+DC412,Amazon IAD-7,38.791205,-77.538269,10.94,chilled_water,,,Amazon Web Services,Prince William County,109423.0,building,yes
+DC414,Digital Realty VA4,38.778285,-77.595448,23.0,chilled_water,,,Digital Realty,Prince William County,230004.0,building,yes
+DC415,Amazon IAD-10,39.02178,-77.432865,11.27,chilled_water,,,Amazon Web Services,Loudoun County,112726.0,building,yes
+DC416,Amazon IAD-32,39.021569,-77.434794,3.57,chilled_water,,,Amazon Web Services,Loudoun County,35700.0,building,yes
+DC418,Centersquare IAD1-B,39.023955,-77.415171,7.91,chilled_water,,,Centersquare,Loudoun County,79070.0,building,yes
+DC419,Centersquare IAD1-A,39.023279,-77.413021,8.99,chilled_water,,,Centersquare,Loudoun County,89881.0,building,yes
+DC420,Centersquare IAD1-C,39.024509,-77.412318,13.54,chilled_water,,,Centersquare,Loudoun County,135383.0,building,yes
+DC432,STACK NVA01A,39.004768,-77.442097,17.93,chilled_water,,,Stack Infrastructure,Loudoun County,179330.0,building,yes
+DC437,Digital Realty VA3,38.948484,-77.327435,7.66,chilled_water,,,Digital Realty,Fairfax County,76593.0,building,yes
+DC438,Evocative IAD1,38.948823,-77.32937,1.93,chilled_water,,,Evocative,Fairfax County,19325.0,building,yes
+DC439,CoreSite VA1,38.95023,-77.36452,13.8,chilled_water,,,CoreSite,Fairfax County,138035.0,building,yes
+DC440,CoreSite VA3,38.948373,-77.372229,24.97,chilled_water,,,CoreSite,Fairfax County,249707.0,building,yes
+DC467,Unnamed site (Fairfax County),38.913707,-77.22592,1.96,chilled_water,,,,Fairfax County,19578.0,building,yes
+DC538,Equinix DC97,38.961537,-77.377549,4.4,chilled_water,,,Equinix,Fairfax County,43991.0,building,yes
+DC539,Amazon IAD-55,38.815593,-77.648325,22.81,chilled_water,,,Amazon Web Services,Prince William County,228140.0,building,yes
+DC542,COPT DC-6,38.7471,-77.531869,12.8,chilled_water,,,,Prince William County,127955.0,building,yes
+DC546,OVH US East Vint Hill,38.747425,-77.674394,8.58,chilled_water,,,,Fauquier County,85783.0,building,yes
+DC550,Equinix DC2,39.016582,-77.459057,15.53,chilled_water,,,Equinix,Loudoun County,155306.0,building,yes
+DC551,H5 Ashburn,39.013677,-77.451731,8.37,chilled_water,,,H5 Data Centers,Loudoun County,83656.0,building,yes
+DC553,Lumen McLean 1,38.920021,-77.211619,4.21,chilled_water,,,Lumen Technologies,Fairfax County,42056.0,building,yes
+DC554,DataBank IAD2,38.919905,-77.213585,2.3,chilled_water,,,DataBank,Fairfax County,22957.0,building,yes
+DC561,Unnamed site (Fairfax County),38.905753,-77.468971,5.1,chilled_water,,,,Fairfax County,50994.0,building,yes
+DC562,Digital Realty IAD30,38.910038,-77.472386,7.23,chilled_water,,,Digital Realty,Fairfax County,72337.0,building,yes
+DC572,Flexential - Richmond,37.64689,-77.438695,3.98,chilled_water,,,Flexential,Henrico County,39778.0,building,yes
+DC573,Amazon IAD-9,38.899696,-77.453497,8.59,chilled_water,,,Amazon Web Services,Fairfax County,85855.0,building,yes
+DC574,Amazon IAD-22,38.898012,-77.455102,3.01,chilled_water,,,Amazon Web Services,Fairfax County,30140.0,building,yes
+DC575,Amazon IAD-1,38.898129,-77.453985,9.39,chilled_water,,,Amazon Web Services,Fairfax County,93882.0,building,yes
+DC576,H5 IAD31,38.909184,-77.472333,4.33,chilled_water,,,,Fairfax County,43330.0,building,yes
+DC577,H5 IAD32,38.909781,-77.473573,3.22,chilled_water,,,,Fairfax County,32222.0,building,yes
+DC578,Unnamed site (Fairfax County),38.908183,-77.475197,1.84,chilled_water,,,,Fairfax County,18400.0,building,yes
+DC579,Unnamed site (Fairfax County),38.750911,-77.196245,5.6,chilled_water,,,,Fairfax County,56049.0,building,yes
+DC580,Menlo Digital MD-DC1,38.92708,-77.42419,4.52,chilled_water,,,,Fairfax County,45228.0,building,yes
+DC584,Centersquare IAD3,38.980873,-77.444244,13.07,chilled_water,,,Centersquare,Loudoun County,130748.0,building,yes
+DC585,Centersquare IAD2-A,38.984372,-77.423892,4.82,chilled_water,,,Centersquare,Loudoun County,48153.0,building,yes
+DC586,CyrusOne NVA4,38.98497,-77.425581,12.77,chilled_water,,,CyrusOne,Loudoun County,127744.0,building,yes
+DC587,Centersquare IAD2-B,38.983792,-77.424112,7.18,chilled_water,,,Centersquare,Loudoun County,71819.0,building,yes
+DC615,Digital Realty ACC4,39.018058,-77.462724,29.42,chilled_water,,,Digital Realty,Loudoun County,294156.0,building,yes
+DC616,Equinix DC1,39.015697,-77.460335,5.98,chilled_water,,,Equinix,Loudoun County,59757.0,building,yes
+DC617,Equinix DC5,39.016095,-77.461149,9.33,chilled_water,,,Equinix,Loudoun County,93264.0,building,yes
+DC618,Equinix DC11,39.014861,-77.458494,13.29,chilled_water,,,Equinix,Loudoun County,132897.0,building,yes
+DC619,Equinix DC3,39.022252,-77.461074,10.1,chilled_water,,,Equinix,Loudoun County,101012.0,building,yes
+DC620,Digital Realty ACC3,39.020261,-77.45953,15.16,chilled_water,,,Digital Realty,Loudoun County,151562.0,building,yes
+DC622,Amazon IAD-76,38.993582,-77.450619,13.81,chilled_water,,,Amazon Web Services,Loudoun County,138071.0,building,yes
+DC623,Amazon IAD-12,38.988784,-77.447815,14.96,chilled_water,,,Amazon Web Services,Loudoun County,149598.0,building,yes
+DC624,Digital Realty ACC5,39.019938,-77.462996,29.89,chilled_water,,,Digital Realty,Loudoun County,298859.0,building,yes
+DC625,Digital Realty ACC6,39.021064,-77.463547,22.62,chilled_water,,,Digital Realty,Loudoun County,226152.0,building,yes
+DC626,Lumen Ashburn,39.022147,-77.457532,4.9,chilled_water,,,Lumen Technologies,Loudoun County,49023.0,building,yes
+DC627,Centersquare IAD4-B,39.022018,-77.453779,9.0,chilled_water,,,Centersquare,Loudoun County,90029.0,building,yes
+DC628,NTT VA1,39.022747,-77.454816,13.85,chilled_water,,,NTT,Loudoun County,138506.0,building,yes
+DC632,Equinix DC13,39.012405,-77.475578,12.56,chilled_water,,,Equinix,Loudoun County,125613.0,building,yes
+DC633,Digital Realty IAD14,39.003336,-77.487093,13.45,chilled_water,,,Digital Realty,Loudoun County,134503.0,building,yes
+DC634,Amazon IAD-6,39.002752,-77.485449,11.67,chilled_water,,,Amazon Web Services,Loudoun County,116698.0,building,yes
+DC635,Digital Realty IAD12,39.001694,-77.483153,18.03,chilled_water,,,Digital Realty,Loudoun County,180269.0,building,yes
+DC636,Digital Realty Devin Shafron Building A,39.002575,-77.4819,13.33,chilled_water,,,Digital Realty,Loudoun County,133309.0,building,yes
+DC637,Digital Realty IAD24,39.004212,-77.484511,11.44,chilled_water,,,Digital Realty,Loudoun County,114428.0,building,yes
+DC638,DataBank IAD1,39.015514,-77.482009,14.47,chilled_water,,,DataBank,Loudoun County,144740.0,building,yes
+DC639,DataBank IAD4,39.015381,-77.483491,8.11,chilled_water,,,DataBank,Loudoun County,81129.0,building,yes
+DC683,Equinix DC7,38.909073,-77.220485,7.97,chilled_water,,,Equinix,Fairfax County,79709.0,building,yes
+DC703,Visa Operations Center East,39.048672,-77.445071,35.0,chilled_water,,,Visa,Loudoun County,349987.0,building,yes
+DC742,Bank of America site,37.494313,-77.237577,19.49,chilled_water,,,Bank of America,Henrico County,194915.0,building,yes
+DC744,CyrusOne NVA1/NVA2/NVA3,39.025955,-77.414518,26.56,chilled_water,,,CyrusOne,Loudoun County,265601.0,building,yes
+DC747,CyrusOne NVA5,39.024299,-77.433954,50.69,chilled_water,,,CyrusOne,Loudoun County,506948.0,building,yes
+DC751,Virginia Information Technologies Agency,37.360435,-77.331582,15.77,chilled_water,,,,Chesterfield County,157731.0,building,yes
+DC765,Equinix DC10,39.020901,-77.451885,15.24,chilled_water,,,Equinix,Loudoun County,152397.0,building,yes
+DC766,Amazon IAD-61,38.915805,-77.491987,15.23,chilled_water,,,Amazon Web Services,Loudoun County,152289.0,building,yes
+DC767,Amazon IAD-51,38.99143,-77.436176,6.41,chilled_water,,,Amazon Web Services,Loudoun County,64127.0,building,yes
+DC768,Amazon IAD-56,38.990381,-77.436941,7.84,chilled_water,,,Amazon Web Services,Loudoun County,78441.0,building,yes
+DC769,Amazon IAD-16,38.99079,-77.448774,7.58,chilled_water,,,Amazon Web Services,Loudoun County,75817.0,building,yes
+DC770,Amazon IAD-15,38.99159,-77.448616,10.35,chilled_water,,,Amazon Web Services,Loudoun County,103452.0,building,yes
+DC771,Amazon IAD-14,38.789808,-77.547937,11.82,chilled_water,,,Amazon Web Services,Prince William County,118192.0,building,yes
+DC772,Amazon IAD-59,38.792122,-77.548086,12.73,chilled_water,,,Amazon Web Services,Prince William County,127281.0,building,yes
+DC773,Amazon IAD-52,38.791186,-77.54804,12.67,chilled_water,,,Amazon Web Services,Prince William County,126699.0,building,yes
+DC794,QTS Ashburn Moran,38.994318,-77.448273,3.57,chilled_water,,,Quality Technology Services,Loudoun County,35740.0,building,yes
+DC795,Centersquare IAD4-A,39.021592,-77.452884,7.77,chilled_water,,,Centersquare,Loudoun County,77749.0,building,yes
+DC796,Amazon IAD-13,39.005093,-77.485411,15.34,chilled_water,,,Amazon Web Services,Loudoun County,153355.0,building,yes
+DC804,Amazon IAD-78,39.026368,-77.44952,14.8,chilled_water,,,Amazon Web Services,Loudoun County,147979.0,building,yes
+DC805,Amazon IAD-79,39.026357,-77.45087,14.87,chilled_water,,,Amazon Web Services,Loudoun County,148678.0,building,yes
+DC813,Amazon IAD-88,38.991973,-77.441036,14.74,chilled_water,,,Amazon Web Services,Loudoun County,147390.0,building,yes
+DC814,Amazon IAD-89,38.990803,-77.442,14.75,chilled_water,,,Amazon Web Services,Loudoun County,147468.0,building,yes
+DC828,Amazon IAD-73,38.777979,-77.559099,14.62,chilled_water,,,Amazon Web Services,Prince William County,146162.0,building,yes
+DC829,Amazon IAD-74,38.777441,-77.557889,14.75,chilled_water,,,Amazon Web Services,Prince William County,147480.0,building,yes
+DC867,Amazon IAD-63,38.916885,-77.493251,14.4,chilled_water,,,Amazon Web Services,Loudoun County,143980.0,building,yes
+DC869,Amazon IAD-62,38.949322,-77.519875,14.99,chilled_water,,,Amazon Web Services,Loudoun County,149941.0,building,yes
+DC877,Digital Fortress: Richmond,37.360263,-77.3271,24.37,chilled_water,,,Digital Fortress,Chesterfield County,243698.0,building,yes
+DC883,Amazon IAD-71,39.02791,-77.4575,12.12,chilled_water,,,Amazon Web Services,Loudoun County,121176.0,building,yes
+DC884,Amazon IAD-50,39.029562,-77.459655,20.21,chilled_water,,,Amazon Web Services,Loudoun County,202082.0,building,yes
+DC885,Amazon IAD-60,39.028774,-77.458246,11.1,chilled_water,,,Amazon Web Services,Loudoun County,110965.0,building,yes
+DC905,Amazon IAD-80,39.027109,-77.452829,15.04,chilled_water,,,Amazon Web Services,Loudoun County,150443.0,building,yes
+DC906,Equinix DC12,39.023058,-77.449661,9.64,chilled_water,,,Equinix,Loudoun County,96380.0,building,yes
+DC916,Digital Realty IAD36,39.001719,-77.479374,11.25,chilled_water,,,Digital Realty,Loudoun County,112516.0,building,yes
+DC917,Digital Realty IAD35,39.000405,-77.480713,20.62,chilled_water,,,Digital Realty,Loudoun County,206225.0,building,yes
+DC918,Digital Realty IAD37,38.999911,-77.478448,14.43,chilled_water,,,Digital Realty,Loudoun County,144298.0,building,yes
+DC919,Digital Realty IAD38,39.001116,-77.477252,11.45,chilled_water,,,Digital Realty,Loudoun County,114543.0,building,yes
+DC927,NTT VA2,39.025009,-77.45764,7.42,chilled_water,,,NTT,Loudoun County,74197.0,building,yes
+DC945,Digital Realty ACC7,39.017617,-77.465595,40.95,chilled_water,,,Digital Realty,Loudoun County,409480.0,building,yes
+DC946,NTT VA3,39.017591,-77.470367,23.19,chilled_water,,,NTT,Loudoun County,231924.0,building,yes
+DC947,Digital Realty ACC9,39.015462,-77.467059,32.93,chilled_water,,,Digital Realty,Loudoun County,329257.0,building,yes
+DC952,Amazon IAD-75,38.779381,-77.541725,14.91,chilled_water,,,Amazon Web Services,Prince William County,149064.0,building,yes
+DC960,Amazon IAD-68,38.948687,-77.520952,18.18,chilled_water,,,Amazon Web Services,Loudoun County,181794.0,building,yes
+DC961,Amazon IAD-81,38.948387,-77.521832,18.49,chilled_water,,,Amazon Web Services,Loudoun County,184907.0,building,yes
+DC962,Google Arcola Building 1,38.943326,-77.524199,21.59,chilled_water,,,Google,Loudoun County,215928.0,building,yes
+DC963,Amazon IAD-120,38.958094,-77.498175,18.83,chilled_water,,,Amazon Web Services,Loudoun County,188334.0,building,yes
+DC964,Amazon IAD-121,38.956953,-77.497901,15.48,chilled_water,,,Amazon Web Services,Loudoun County,154814.0,building,yes
+DC970,Unnamed site (Loudoun County),39.011989,-77.471716,3.48,chilled_water,,,,Loudoun County,34849.0,building,yes
+DC971,Amazon IAD-58,38.986297,-77.441604,13.68,chilled_water,,,Amazon Web Services,Loudoun County,136770.0,building,yes
+DC972,Amazon IAD-57,38.987085,-77.44278,11.65,chilled_water,,,Amazon Web Services,Loudoun County,116533.0,building,yes
+DC973,Amazon IAD-64,38.815132,-77.652919,14.75,chilled_water,,,Amazon Web Services,Prince William County,147547.0,building,yes
+DC978,QTS Ashburn 1 DC1,38.999486,-77.449461,16.41,chilled_water,,,Quality Technology Services,Loudoun County,164144.0,building,yes
+DC979,Digital Realty IAD73,39.006783,-77.46629,13.45,chilled_water,,,Digital Realty,Loudoun County,134518.0,building,yes
+DC980,Digital Realty IAD39,39.007912,-77.467497,54.92,chilled_water,,,Digital Realty,Loudoun County,549223.0,building,yes
+DC981,Digital Realty ACC10,39.013017,-77.465323,28.9,chilled_water,,,Digital Realty,Loudoun County,289043.0,building,yes
+DC982,Sentinel Cloud Plaza,39.000514,-77.43989,22.46,chilled_water,,,GI Partners,Loudoun County,224621.0,building,yes
+DC983,Vantage VA11,39.002617,-77.437398,12.76,chilled_water,,,Vantage Data Centers,Loudoun County,127578.0,building,yes
+DC984,Amazon IAD-90,38.988603,-77.411652,14.77,chilled_water,,,Amazon Web Services,Loudoun County,147749.0,building,yes
+DC985,Amazon IAD-91,38.987847,-77.411119,14.95,chilled_water,,,Amazon Web Services,Loudoun County,149486.0,building,yes
+DC986,Amazon IAD-92,38.986943,-77.410475,14.99,chilled_water,,,Amazon Web Services,Loudoun County,149857.0,building,yes
+DC987,Amazon IAD-144,38.981384,-77.427416,15.04,chilled_water,,,Amazon Web Services,Loudoun County,150384.0,building,yes
+DC988,CyrusOne NVA8,39.021277,-77.412888,15.4,chilled_water,,,CyrusOne,Loudoun County,154011.0,building,yes
+DC989,Amazon IAD-98,39.020225,-77.433886,15.08,chilled_water,,,Amazon Web Services,Loudoun County,150826.0,building,yes
+DC990,Amazon IAD-99,39.019169,-77.43403,15.08,chilled_water,,,Amazon Web Services,Loudoun County,150804.0,building,yes
+DC991,Amazon IAD-114,39.035494,-77.450699,14.8,chilled_water,,,Amazon Web Services,Loudoun County,148005.0,building,yes
+DC992,Amazon IAD-115,39.035986,-77.449581,14.63,chilled_water,,,Amazon Web Services,Loudoun County,146335.0,building,yes
+DC993,Amazon IAD-65,38.917011,-77.494366,15.14,chilled_water,,,Amazon Web Services,Loudoun County,151356.0,building,yes
+DC994,Amazon IAD-150,38.916075,-77.477252,21.36,chilled_water,,,Amazon Web Services,Loudoun County,213595.0,building,yes
+DC999,Sabey Ashburn Building C,39.015395,-77.478291,14.44,chilled_water,,,Sabey Data Centers,Loudoun County,144382.0,building,yes
+DC1000,Google Leesburg Building 1,39.052374,-77.539557,14.06,chilled_water,,,Google,Loudoun County,140634.0,building,yes
+DC1017,Amazon IAD-145,38.982476,-77.424339,10.37,chilled_water,,,Amazon Web Services,Loudoun County,103663.0,building,yes
+DC1018,Amazon IAD-117,39.023353,-77.419099,10.25,chilled_water,,,Amazon Web Services,Loudoun County,102452.0,building,yes
+DC1019,Amazon IAD-116,39.024482,-77.420401,10.26,chilled_water,,,Amazon Web Services,Loudoun County,102629.0,building,yes
+DC1029,Meta Henrico Data Center,37.483954,-77.237284,58.82,chilled_water,,,Meta,Henrico County,588189.0,building,yes
+DC1047,Digital Realty IAD41,39.009261,-77.457594,39.7,chilled_water,,,Digital Realty,Loudoun County,396985.0,building,yes
+DC1048,Amazon IAD-118,39.01839,-77.438575,10.56,chilled_water,,,Amazon Web Services,Loudoun County,105629.0,building,yes
+DC1049,Aligned IAD-01,39.013753,-77.470254,14.01,chilled_water,,,Aligned,Loudoun County,140140.0,building,yes
+DC1050,Equinix DC15,39.0225,-77.450256,7.67,chilled_water,,,Equinix,Loudoun County,76665.0,building,yes
+DC1051,Sabey Ashburn Building B,39.014493,-77.479974,13.34,chilled_water,,,Sabey Data Centers,Loudoun County,133383.0,building,yes
+DC1052,NTT VA5,39.018298,-77.472601,12.4,chilled_water,,,NTT,Loudoun County,124046.0,building,yes
+DC1053,NTT VA4,39.019944,-77.473018,16.03,chilled_water,,,NTT,Loudoun County,160282.0,building,yes
+DC1054,CloudHQ LC1,39.009765,-77.462761,49.92,chilled_water,,,CloudHQ,Loudoun County,499194.0,building,yes
+DC1055,CloudHQ LC2,39.01176,-77.462444,25.12,chilled_water,,,CloudHQ,Loudoun County,251210.0,building,yes
+DC1056,Amazon IAD-146,38.997049,-77.435755,10.31,chilled_water,,,Amazon Web Services,Loudoun County,103076.0,building,yes
+DC1058,Equinix DC21,39.01217,-77.45439,7.9,chilled_water,,,Equinix,Loudoun County,78961.0,building,yes
+DC1073,Amazon IAD-140,38.981455,-77.41755,21.51,chilled_water,,,Amazon Web Services,Loudoun County,215095.0,building,yes
+DC1074,Amazon IAD-141,38.982388,-77.416786,21.68,chilled_water,,,Amazon Web Services,Loudoun County,216850.0,building,yes
+DC1080,Amazon IAD-84,38.816103,-77.652499,15.27,chilled_water,,,Amazon Web Services,Prince William County,152692.0,building,yes
+DC1113,Unnamed site (Loudoun County),39.050342,-77.540007,14.02,chilled_water,,,,Loudoun County,140157.0,building,yes
+DC1124,Amazon IAD-119,39.017145,-77.43915,12.71,chilled_water,,,Amazon Web Services,Loudoun County,127104.0,building,yes
+DC1137,CloudHQ MCC1,38.716933,-77.499679,39.99,chilled_water,,,CloudHQ,Prince William County,399915.0,building,yes
+DC1139,Amazon IAD-129,39.015902,-77.438585,10.57,chilled_water,,,Amazon Web Services,Loudoun County,105735.0,building,yes
+DC1140,Microsoft Leesburg Building 1,39.074787,-77.564129,15.53,chilled_water,,,Microsoft,Loudoun County,155317.0,building,yes
+DC1144,Amazon IAD-125,38.94809,-77.560545,10.44,chilled_water,,,Amazon Web Services,Loudoun County,104431.0,building,yes
+DC1145,Amazon IAD-124,38.949777,-77.560385,10.44,chilled_water,,,Amazon Web Services,Loudoun County,104435.0,building,yes
+DC1150,42310 THUNDERBALL DR,39.043826,-77.539267,7.89,chilled_water,,,True North Data Solutions,Loudoun County,78907.0,building,yes
+DC1165,Amazon IAD-163,39.032305,-77.429702,13.19,chilled_water,,,Amazon Web Services,Loudoun County,131936.0,building,yes
+DC1178,Amazon IAD-175,38.979881,-77.425852,8.65,chilled_water,,,Amazon Web Services,Loudoun County,86503.0,building,yes
+DC1180,Amazon IAD-147,38.995327,-77.435175,10.28,chilled_water,,,Amazon Web Services,Loudoun County,102767.0,building,yes
+DC1200,CyrusOne NVA7,39.026299,-77.433991,6.09,chilled_water,,,CyrusOne,Loudoun County,60930.0,building,yes
+DC1202,Amazon IAD-174,39.02908,-77.427762,13.24,chilled_water,,,Amazon Web Services,Loudoun County,132388.0,building,yes
+DC1203,Amazon IAD-164,39.03069,-77.429165,13.24,chilled_water,,,Amazon Web Services,Loudoun County,132374.0,building,yes
+DC1204,Vantage VA12,39.001651,-77.438149,11.56,chilled_water,,,Vantage Data Centers,Loudoun County,115613.0,building,yes
+DC1205,Microsoft Leesburg Building 2,39.075508,-77.563035,9.76,chilled_water,,,Microsoft,Loudoun County,97581.0,building,yes
+DC1207,Amazon IAD-152,38.916646,-77.479904,15.66,chilled_water,,,Amazon Web Services,Loudoun County,156644.0,building,yes
+DC1208,Amazon IAD-151,38.916218,-77.478867,15.55,chilled_water,,,Amazon Web Services,Loudoun County,155542.0,building,yes
+DC1209,Amazon IAD-83,38.947938,-77.523126,15.62,chilled_water,,,Amazon Web Services,Loudoun County,156166.0,building,yes
+DC1210,AWS,38.946539,-77.522188,1.67,chilled_water,,,Amazon Web Services,Loudoun County,16739.0,building,yes
+DC1211,Amazon IAD-122,38.955691,-77.497072,15.33,chilled_water,,,Amazon Web Services,Loudoun County,153273.0,building,yes
+DC1212,CyrusOne Sterling IX,38.958329,-77.505732,26.89,chilled_water,,,CyrusOne,Loudoun County,268943.0,building,yes
+DC1213,Iron Mountain VA-2,38.777344,-77.545759,15.87,chilled_water,,,Iron Mountain,Prince William County,158664.0,building,yes
+DC1214,Iron Mountain VA-1,38.777543,-77.547446,16.38,chilled_water,,,Iron Mountain,Prince William County,163790.0,building,yes
+DC1215,Amazon IAD-96,38.780151,-77.539884,14.91,chilled_water,,,Amazon Web Services,Prince William County,149064.0,building,yes
+DC1216,Amazon IAD-95,38.778451,-77.539427,21.47,chilled_water,,,Amazon Web Services,Prince William County,214748.0,building,yes
+DC1217,Amazon IAD-85,38.779343,-77.542896,21.47,chilled_water,,,Amazon Web Services,Prince William County,214662.0,building,yes
+DC1218,Amazon IAD-102,38.735957,-77.504918,21.43,chilled_water,,,Amazon Web Services,Prince William County,214338.0,building,yes
+DC1219,Amazon IAD-101,38.735453,-77.505679,21.43,chilled_water,,,Amazon Web Services,Prince William County,214330.0,building,yes
+DC1220,Amazon IAD-100,38.734597,-77.506642,21.46,chilled_water,,,Amazon Web Services,Prince William County,214611.0,building,yes
+DC1221,CloudHQ MCC2,38.722934,-77.499365,35.11,chilled_water,,,CloudHQ,Prince William County,351091.0,building,yes
+DC1224,STACK NVA02A,38.743088,-77.53308,11.25,chilled_water,,,Amazon Web Services,Prince William County,112502.0,building,yes
+DC1225,QTS Ashburn 3 DC1,38.998579,-77.475786,15.68,chilled_water,,,Quality Technology Services,Loudoun County,156810.0,building,yes
+DC1235,Amazon IAD601,38.778866,-77.557195,1.45,chilled_water,,,Amazon Web Services,Prince William County,14469.0,building,yes
+DC1246,Amazon IAD-162,38.99601,-77.471002,13.15,chilled_water,,,Amazon Web Services,Loudoun County,131476.0,building,yes
+DC1247,Amazon IAD-161,38.996415,-77.473519,13.15,chilled_water,,,Amazon Web Services,Loudoun County,131482.0,building,yes
+DC1251,Digital Realty IAD42,39.005617,-77.449186,21.82,chilled_water,,,Digital Realty,Loudoun County,218174.0,building,yes
+DC1254,Meta Henrico Data Center,37.481986,-77.233602,32.79,chilled_water,,,Meta,Henrico County,327920.0,building,yes
+DC1258,Amazon IAD-601,39.015245,-77.437691,1.44,chilled_water,,,Amazon Web Services,Loudoun County,14384.0,building,yes
+DC1263,STACK NVA02B,38.744216,-77.5337,11.17,chilled_water,,,Amazon Web Services,Prince William County,111697.0,building,yes
+DC1264,STACK NVA02D,38.746118,-77.537301,25.8,chilled_water,,,Stack Infrastructure,Prince William County,257960.0,building,yes
+DC1265,Amazon IAD-132,38.743886,-77.530625,14.92,chilled_water,,,Amazon Web Services,Prince William County,149206.0,building,yes
+DC1266,Amazon IAD-133,38.744055,-77.529196,10.41,chilled_water,,,Amazon Web Services,Prince William County,104114.0,building,yes
+DC1294,Unnamed site (Mecklenburg County),36.679946,-78.374215,2.56,chilled_water,,,,Mecklenburg County,25579.0,building,yes
+DC1295,Unnamed site (Mecklenburg County),36.679331,-78.374639,2.97,chilled_water,,,,Mecklenburg County,29657.0,building,yes
+DC1296,Unnamed site (Mecklenburg County),36.677482,-78.374637,26.57,chilled_water,,,,Mecklenburg County,265667.0,building,yes
+DC1297,Unnamed site (Mecklenburg County),36.67747,-78.377004,3.19,chilled_water,,,,Mecklenburg County,31919.0,building,yes
+DC1298,Unnamed site (Mecklenburg County),36.678006,-78.376846,3.19,chilled_water,,,,Mecklenburg County,31927.0,building,yes
+DC1299,Unnamed site (Mecklenburg County),36.678538,-78.376689,3.19,chilled_water,,,,Mecklenburg County,31923.0,building,yes
+DC1300,Unnamed site (Mecklenburg County),36.679178,-78.37649,3.19,chilled_water,,,,Mecklenburg County,31922.0,building,yes
+DC1301,Unnamed site (Mecklenburg County),36.679658,-78.376342,3.19,chilled_water,,,,Mecklenburg County,31915.0,building,yes
+DC1302,Unnamed site (Mecklenburg County),36.682923,-78.376869,14.06,chilled_water,,,,Mecklenburg County,140598.0,building,yes
+DC1303,Unnamed site (Mecklenburg County),36.683001,-78.375752,14.06,chilled_water,,,,Mecklenburg County,140585.0,building,yes
+DC1304,Unnamed site (Mecklenburg County),36.686062,-78.37722,14.06,chilled_water,,,,Mecklenburg County,140580.0,building,yes
+DC1305,Unnamed site (Mecklenburg County),36.686145,-78.376106,14.06,chilled_water,,,,Mecklenburg County,140574.0,building,yes
+DC1306,Unnamed site (Mecklenburg County),36.689498,-78.377594,14.06,chilled_water,,,,Mecklenburg County,140572.0,building,yes
+DC1307,Unnamed site (Mecklenburg County),36.689577,-78.376486,14.06,chilled_water,,,,Mecklenburg County,140563.0,building,yes
+DC1308,Unnamed site (Mecklenburg County),36.692741,-78.376775,17.83,chilled_water,,,,Mecklenburg County,178262.0,building,yes
+DC1309,Unnamed site (Mecklenburg County),36.6929,-78.378112,18.62,chilled_water,,,,Mecklenburg County,186191.0,building,yes
+DC1310,Unnamed site (Mecklenburg County),36.694898,-78.376333,9.54,chilled_water,,,,Mecklenburg County,95432.0,building,yes
+DC1321,Amazon IAD-169,39.016858,-77.452221,9.64,chilled_water,,,Amazon Web Services,Loudoun County,96372.0,building,yes
+DC1322,Amazon IAD-179,39.015772,-77.452925,9.64,chilled_water,,,Amazon Web Services,Loudoun County,96367.0,building,yes
+DC1323,Aligned IAD-02,39.010412,-77.474954,20.82,chilled_water,,,Aligned,Loudoun County,208188.0,building,yes
+DC1324,IAD,39.013072,-77.473067,15.07,chilled_water,,,Aligned,Loudoun County,150659.0,building,yes
+DC1325,QTS Manassas DC5,38.754915,-77.517375,15.35,chilled_water,,,Quality Technology Services,Prince William County,153531.0,building,yes
+DC1332,Amazon IAD-143,38.979813,-77.417347,13.25,chilled_water,,,Amazon Web Services,Loudoun County,132491.0,building,yes
+DC1341,Equinix DC16,39.024235,-77.452287,8.66,chilled_water,,,Equinix,Loudoun County,86562.0,building,yes
+DC1342,Microsoft IAD11,38.948258,-77.555911,24.23,chilled_water,,,Microsoft,Loudoun County,242344.0,building,yes
+DC1349,Microsoft Leesburg Building 3,39.069109,-77.560862,24.26,chilled_water,,,,Loudoun County,242639.0,building,yes
+DC1350,Microsoft Leesburg Building 4,39.069111,-77.559525,24.71,chilled_water,,,,Loudoun County,247061.0,building,yes
+DC1351,Meta Henrico Data Center,37.477746,-77.226151,60.47,chilled_water,,,Meta,Henrico County,604696.0,building,yes
+DC1355,CoreSite VA2,38.951317,-77.363891,4.05,chilled_water,,,CoreSite,Fairfax County,40517.0,building,yes
+DC1356,Amazon IAD-105,38.747586,-77.519456,21.43,chilled_water,,,Amazon Web Services,Prince William County,214270.0,building,yes
+DC1357,Amazon IAD-104,38.748384,-77.520724,21.43,chilled_water,,,Amazon Web Services,Prince William County,214258.0,building,yes
+DC1358,QTS Manassas DC1,38.75285,-77.513079,12.35,chilled_water,,,Quality Technology Services,Prince William County,123471.0,building,yes
+DC1375,Amazon IAD-142,38.979203,-77.419557,12.96,chilled_water,,,Amazon Web Services,Loudoun County,129566.0,building,yes
+DC1379,Google Arcola Building 2,38.941392,-77.528433,28.99,chilled_water,,,Google,Loudoun County,289889.0,building,yes
+DC1381,Amazon IAD-603,38.981538,-77.419283,1.47,chilled_water,,,Amazon Web Services,Loudoun County,14733.0,building,yes
+DC1388,Amazon IAD-86,38.917256,-77.495674,15.01,chilled_water,,,Amazon Web Services,Loudoun County,150112.0,building,yes
+DC1389,Amazon IAD-130,38.760361,-77.519302,10.31,chilled_water,,,Amazon Web Services,Prince William County,103128.0,building,yes
+DC1390,Amazon IAD-131,38.761105,-77.518221,10.47,chilled_water,,,Amazon Web Services,Prince William County,104697.0,building,yes
+DC1392,QTS Ashburn 3 DC2,38.998904,-77.474493,15.25,chilled_water,,,Quality Technology Services,Loudoun County,152471.0,building,yes
+DC1393,QTS Ashburn 2 DC1,38.995532,-77.455334,15.33,chilled_water,,,Quality Technology Services,Loudoun County,153253.0,building,yes
+DC1394,QTS Ashburn 2 DC2,38.995376,-77.456792,13.56,chilled_water,,,Quality Technology Services,Loudoun County,135570.0,building,yes
+DC1395,Amazon IAD-192,38.989825,-77.434722,13.29,chilled_water,,,Amazon Web Services,Loudoun County,132942.0,building,yes
+DC1396,NTT VA6,39.017168,-77.473205,9.13,chilled_water,,,NTT,Loudoun County,91264.0,building,yes
+DC1397,NTT VA9,39.020168,-77.475227,11.12,chilled_water,,,NTT,Loudoun County,111241.0,building,yes
+DC1398,DataBank IAD3,39.017787,-77.4819,14.62,chilled_water,,,DataBank,Loudoun County,146234.0,building,yes
+DC1399,CyrusOne NVA14,39.019765,-77.450053,13.13,chilled_water,,,PowerHouse,Loudoun County,131309.0,building,yes
+DC1400,Cologix ASH1,39.017963,-77.459388,15.81,chilled_water,,,Cologix,Loudoun County,158127.0,building,yes
+DC1421,Amazon IAD-106,38.746919,-77.518401,20.52,chilled_water,,,Amazon Web Services,Prince William County,205206.0,building,yes
+DC1423,AWS,38.949112,-77.523543,1.42,chilled_water,,,Amazon Web Services,Loudoun County,14235.0,building,yes
+DC1428,Amazon IAD-103,38.736915,-77.504208,14.19,chilled_water,,,Amazon Web Services,Prince William County,141914.0,building,yes
+DC1429,CloudHQ MCC3,38.714894,-77.495249,12.29,chilled_water,,,CloudHQ,Prince William County,122891.0,building,yes
+DC1433,Vantage VA13,39.003211,-77.440175,12.29,chilled_water,,,Vantage Data Centers,Loudoun County,122895.0,building,yes
+DC1453,Amazon IAD-134,38.904346,-77.452472,12.09,chilled_water,,,Amazon Web Services,Fairfax County,120946.0,building,yes
+DC1454,Amazon IAD-135,38.904838,-77.454767,11.9,chilled_water,,,Amazon Web Services,Fairfax County,118988.0,building,yes
+DC1455,Amazon IAD-155,38.915904,-77.490552,8.76,chilled_water,,,Amazon Web Services,Loudoun County,87645.0,building,yes
+DC1456,AWS,38.914993,-77.490903,1.39,chilled_water,,,Amazon Web Services,Loudoun County,13879.0,building,yes
+DC1471,Google Mango Farm Building 1,38.77642,-77.58271,28.97,chilled_water,,,Google,Prince William County,289731.0,building,yes
+DC1481,AWS,38.746146,-77.517211,21.27,chilled_water,,,Amazon Web Services,Prince William County,212702.0,building,yes
+DC1482,Amazon IAD-156,38.921036,-77.485769,13.39,chilled_water,,,Amazon Web Services,Loudoun County,133944.0,building,yes
+DC1483,Amazon IAD-606,38.995046,-77.470999,1.39,chilled_water,,,Amazon Web Services,Loudoun County,13873.0,building,yes
+DC1492,Digital Realty IAD53,38.74066,-77.503863,9.6,chilled_water,,,Digital Realty,Manassas city,95952.0,building,yes
+DC1496,Amazon IAD-214,38.986734,-77.435022,11.34,chilled_water,,,Amazon Web Services,Loudoun County,113421.0,building,yes
+DC1497,Aligned IAD-03,38.988686,-77.440507,11.52,chilled_water,,,Aligned,Loudoun County,115189.0,building,yes
+DC1498,Digital Realty IAD55,38.992213,-77.433686,8.53,chilled_water,,,Digital Realty,Loudoun County,85319.0,building,yes
+DC1500,AWS,38.947319,-77.520271,1.36,chilled_water,,,Amazon Web Services,Loudoun County,13569.0,building,yes
+DC1501,Amazon IAD-608,38.983541,-77.417582,1.41,chilled_water,,,Amazon Web Services,Loudoun County,14110.0,building,yes
+DC1502,Amazon IAD-195,38.802694,-77.622383,12.92,chilled_water,,,Amazon Web Services,Prince William County,129225.0,building,yes
+DC1503,STACK NVA02C,38.745173,-77.533122,1.45,chilled_water,,,Amazon Web Services,Prince William County,14507.0,building,yes
+DC1504,AWS,38.814549,-77.654384,1.44,chilled_water,,,Amazon Web Services,Prince William County,14389.0,building,yes
+DC1505,Amazon IAD-94,38.816966,-77.652152,14.93,chilled_water,,,Amazon Web Services,Prince William County,149332.0,building,yes
+DC1516,Iron Mountain VA-3,38.77551,-77.545459,18.12,chilled_water,,,Iron Mountain,Prince William County,181174.0,building,yes
+DC1518,Google Mango Farm,38.774714,-77.585812,28.96,chilled_water,,,Google,Prince William County,289621.0,building,yes
+DC1519,Amazon IAD-196,38.802043,-77.620961,12.7,chilled_water,,,Amazon Web Services,Prince William County,127010.0,building,yes
+DC1520,Amazon IAD-197,38.801067,-77.620734,13.02,chilled_water,,,Amazon Web Services,Prince William County,130170.0,building,yes
+DC1521,Iron Mountain VA-4,38.774575,-77.542378,8.9,chilled_water,,,Iron Mountain,Prince William County,89044.0,building,yes
+DC1522,Iron Mountain VA-5,38.773231,-77.541358,10.66,chilled_water,,,Iron Mountain,Prince William County,106629.0,building,yes
+DC1523,QTS Manassas DC3,38.753431,-77.510975,13.8,chilled_water,,,Quality Technology Services,Prince William County,137971.0,building,yes
+DC1524,STACK NVA05A,38.7588,-77.516491,13.96,chilled_water,,,STACK Infrastructure,Prince William County,139592.0,building,yes
+DC1527,42311 THUNDERBALL DR,39.042629,-77.538207,4.07,chilled_water,,,True North Data Solutions,Loudoun County,40683.0,building,yes
+DC1528,42255 THUNDERBALL DR,39.041476,-77.539235,6.05,chilled_water,,,True North Data Solutions,Loudoun County,60458.0,building,yes
+DC1529,42254 THUNDERBALL DR,39.043569,-77.541102,7.75,chilled_water,,,True North Data Solutions,Loudoun County,77498.0,building,yes
+DC1534,Amazon IAD-127,38.948291,-77.559006,13.02,chilled_water,,,Amazon Web Services,Loudoun County,130181.0,building,yes
+DC1535,Amazon IAD-126,38.950253,-77.558944,13.02,chilled_water,,,Amazon Web Services,Loudoun County,130173.0,building,yes
+DC1536,Iron Mountain VA-6,38.768143,-77.538648,18.19,chilled_water,,,Iron Mountain,Prince William County,181918.0,building,yes
+DC1538,Unnamed site (Mecklenburg County),36.675736,-78.374103,5.22,chilled_water,,,,Mecklenburg County,52209.0,building,yes
+DC1540,Equinix DC6,39.015198,-77.459521,7.05,chilled_water,,,Equinix,Loudoun County,70526.0,building,yes
+DC1541,Equinix DC4,39.016541,-77.461756,10.11,chilled_water,,,Equinix,Loudoun County,101139.0,building,yes
+DC1556,Digital Realty IAD44,38.960874,-77.491957,39.95,chilled_water,,,Digital Realty,Loudoun County,399540.0,building,yes
+DC1560,Yondr Allegro South,38.948947,-77.550037,33.12,chilled_water,,,Yondr,Loudoun County,331194.0,building,yes
+DC1564,Microsoft Leesburg Building 5,39.066015,-77.558569,15.32,chilled_water,,,,Loudoun County,153155.0,building,yes
+DC1571,Amazon IAD-165,38.922494,-77.427819,13.55,chilled_water,,,Amazon Web Services,Fairfax County,135479.0,building,yes
+DC1572,Amazon IAD-166,38.921167,-77.426202,13.04,chilled_water,,,Amazon Web Services,Fairfax County,130413.0,building,yes
+DC1573,Amazon IAD-167,38.922969,-77.426336,13.28,chilled_water,,,Amazon Web Services,Fairfax County,132753.0,building,yes
+DC1577,Amazon IAD-286,39.000414,-77.46112,12.88,chilled_water,,,Amazon Web Services,Loudoun County,128835.0,building,yes
+DC1578,Amazon IAD-285,38.999171,-77.46046,13.06,chilled_water,,,Amazon Web Services,Loudoun County,130571.0,building,yes
+DC1579,Digital Realty IAD43,39.001844,-77.451903,18.94,chilled_water,,,Digital Realty,Loudoun County,189390.0,building,yes
+DC1580,Vantage VA2,38.997758,-77.429933,18.75,chilled_water,,,Vantage Data Centers,Loudoun County,187488.0,building,yes
+DC1595,Unnamed site (Fauquier County),38.737304,-77.826458,5.97,chilled_water,,,,Fauquier County,59703.0,building,yes
+DC1596,Unnamed site (Fauquier County),38.738264,-77.826055,10.71,chilled_water,,,,Fauquier County,107125.0,building,yes
+DC1598,CloudHQ LC4,39.002309,-77.471893,48.38,chilled_water,,,CloudHQ,Loudoun County,483779.0,building,yes
+DC1634,Compass IAD IE,39.044042,-77.537655,16.98,chilled_water,,,Compass Datacenters,Loudoun County,169768.0,building,yes
+DC1670,Amazon IAD-168,38.923361,-77.425008,11.36,chilled_water,,,Amazon Web Services,Fairfax County,113584.0,building,yes
+DC1671,Amazon IAD-500,38.936209,-77.424967,13.18,chilled_water,,,Amazon Web Services,Fairfax County,131768.0,building,yes
+DC1687,CloudHQ LC3,39.011268,-77.460128,23.62,chilled_water,,,CloudHQ,Loudoun County,236182.0,building,yes
+DC1690,Amazon IAD-668,39.055703,-77.547486,14.9,chilled_water,,,Amazon Web Services,Loudoun County,149008.0,building,yes
+DC1691,Amazon IAD-667,39.057555,-77.546725,10.63,chilled_water,,,Amazon Web Services,Loudoun County,106349.0,building,yes
+DC1692,STACK NVA06,39.082195,-77.565331,20.07,chilled_water,,,Stack Infrastructure,Loudoun County,200733.0,building,yes
+DC1695,Microsoft Data Center 2,38.800014,-77.583492,24.71,chilled_water,,,Microsoft,Prince William County,247070.0,building,yes
+DC1698,PowerHouse CTP-02,37.360681,-77.32589,8.54,chilled_water,,,PowerHouse,Chesterfield County,85383.0,building,yes
+DC1712,Amazon IAD-669,39.055194,-77.544445,13.99,chilled_water,,,Amazon Web Services,Loudoun County,139936.0,building,yes
+DC1713,AWS,39.053854,-77.546032,11.68,chilled_water,,,Amazon Web Services,Loudoun County,116829.0,building,yes
+DC1714,Google Leesburg Building 3,39.050749,-77.535003,30.35,chilled_water,,,,Loudoun County,303500.0,building,yes
+DC1720,Google Mango Farm Building 3,38.77962,-77.586405,28.96,chilled_water,,,Google,Prince William County,289592.0,building,yes
+DC1721,QTS Manassas DC2,38.753017,-77.512363,12.81,chilled_water,,,Quality Technology Services,Prince William County,128120.0,building,yes
+DC1749,Unnamed site (Prince William County),38.777473,-77.555852,11.44,chilled_water,,,,Prince William County,114388.0,building,yes
+DC1750,Amazon IAD-230,38.989724,-77.450277,13.6,chilled_water,,,Amazon Web Services,Loudoun County,135959.0,building,yes
+DC1758,Vantage VA15,39.000863,-77.436645,3.23,chilled_water,,,Vantage Data Centers,Loudoun County,32324.0,building,yes
+DC1760,DC6,37.485417,-77.250241,17.27,chilled_water,,,Quality Technology Services,Henrico County,172735.0,building,yes
+DC1761,DC5,37.484711,-77.249019,16.39,chilled_water,,,Quality Technology Services,Henrico County,163856.0,building,yes
+DC1762,DC4,37.484049,-77.247869,17.07,chilled_water,,,Quality Technology Services,Henrico County,170731.0,building,yes
+DC1763,RIC2 DC1,37.488173,-77.240062,25.61,chilled_water,,,,Henrico County,256111.0,building,yes
+DC1764,RIC2 DC2,37.487092,-77.240983,25.37,chilled_water,,,,Henrico County,253708.0,building,yes
+DC1765,RIC2 DC3,37.486065,-77.241891,25.37,chilled_water,,,,Henrico County,253727.0,building,yes
+DC1766,RIC2 DC5,37.484848,-77.242984,25.37,chilled_water,,,,Henrico County,253716.0,building,yes
+DC1767,RIC2 DC6,37.483901,-77.243764,25.37,chilled_water,,,,Henrico County,253749.0,building,yes
+DC1768,RIC3 DC1,37.480504,-77.251622,22.9,chilled_water,,,Quality Technology Services,Henrico County,229025.0,building,yes
+DC1769,RIC3 DC2,37.479727,-77.25221,22.9,chilled_water,,,Quality Technology Services,Henrico County,229044.0,building,yes
+DC1770,RIC3 DC3,37.47851,-77.252996,22.91,chilled_water,,,Quality Technology Services,Henrico County,229071.0,building,yes
+DC1771,RIC3 DC5,37.477015,-77.249693,22.91,chilled_water,,,Quality Technology Services,Henrico County,229062.0,building,yes
+DC1772,RIC3 DC4,37.477918,-77.248977,22.91,chilled_water,,,Quality Technology Services,Henrico County,229063.0,building,yes
+DC1786,Unnamed site (Prince William County),38.76138,-77.539252,9.77,chilled_water,,,,Prince William County,97680.0,building,yes
+DC1796,Iron Mountain VA-7,38.775203,-77.540089,14.99,chilled_water,,,Iron Mountain,Prince William County,149877.0,building,yes
+DC1797,AWS,38.789364,-77.581975,13.52,chilled_water,,,Amazon Web Services,Prince William County,135182.0,building,yes
+DC1798,Amazon Web Services,38.789719,-77.579632,13.4,chilled_water,,,Amazon Web Services,Prince William County,133966.0,building,yes
+DC1799,AWS,38.746774,-77.496945,13.18,chilled_water,,,Amazon Web Services,Manassas city,131829.0,building,yes
+DC1800,AWS,38.747782,-77.494485,12.44,chilled_water,,,Amazon Web Services,Manassas city,124379.0,building,yes
+DC1801,AWS,38.749458,-77.492746,11.04,chilled_water,,,Amazon Web Services,Manassas city,110390.0,building,yes
+DC1806,Digital Realty IAD40,39.006241,-77.46861,10.99,chilled_water,,,Digital Realty,Loudoun County,109854.0,building,yes
+DC1807,Vantage VA14,39.002888,-77.439385,12.2,chilled_water,,,Vantage Data Centers,Loudoun County,121984.0,building,yes
+DC1809,Unnamed site (Fairfax County),38.935262,-77.426658,13.18,chilled_water,,,,Fairfax County,131766.0,building,yes
+DC1810,Unnamed site (Fairfax County),38.937599,-77.425372,13.18,chilled_water,,,,Fairfax County,131760.0,building,yes
+DC1811,Equinix DC22,39.013511,-77.453774,6.2,chilled_water,,,Equinix,Loudoun County,62013.0,building,yes
+DC1861,PowerHouse Pacific Building 1,39.005288,-77.446691,12.54,chilled_water,,,PowerHouse Data Centers,Loudoun County,125382.0,building,yes
+DC1862,PowerHouse Pacific Building 2,39.003241,-77.448588,12.58,chilled_water,,,,Loudoun County,125758.0,building,yes
+DC1868,Amazon DCA-64,38.741982,-77.186173,12.18,chilled_water,,,Amazon Web Services,Fairfax County,121792.0,building,yes
+DC1921,Digital Realty IAD45,38.962646,-77.49057,39.95,chilled_water,,,Digital Realty,Loudoun County,399517.0,building,yes
+DC1922,Digital Realty ACC2,39.021493,-77.459323,8.52,chilled_water,,,Digital Realty,Loudoun County,85215.0,building,yes
+DC1923,Equinix DC17,39.024891,-77.453419,8.78,chilled_water,,,Equinix,Loudoun County,87842.0,building,yes
+DC1924,BlackChamber Tech Park at Brambleton,38.957476,-77.536103,14.92,chilled_water,,,BlackChamber Group,Loudoun County,149231.0,building,yes
+DC1925,Tech Park at Brambleton,38.956726,-77.533555,14.93,chilled_water,,,BlackChamber Group,Loudoun County,149254.0,building,yes
+DC1926,CyrusOne NVA9,38.958802,-77.502443,8.15,chilled_water,,,CyrusOne,Loudoun County,81507.0,building,yes
+DC1927,Sentinel Ashburn - Building 1,38.996118,-77.45977,15.94,chilled_water,,,Sentinel Data Centers,Loudoun County,159384.0,building,yes
+DC1928,EdgeCore AS02,38.995079,-77.446027,8.2,chilled_water,,,EdgeCore,Loudoun County,81974.0,building,yes
+DC1929,Vantage VA16,38.999394,-77.441705,6.4,chilled_water,,,Vantage Data Centers,Loudoun County,64042.0,building,yes
+DC1930,QTS Ashburn 1 DC2,38.99808,-77.449306,6.35,chilled_water,,,Quality Technology Services,Loudoun County,63486.0,building,yes
+DC1931,PowerHouse Pacific Building 3,39.003837,-77.446764,12.58,chilled_water,,,,Loudoun County,125754.0,building,yes
+DC1940,EdgeCore AS01,39.022041,-77.414537,14.19,chilled_water,,,EdgeCore,Loudoun County,141906.0,building,yes
+DC1941,Amazon IAD-128,39.02304,-77.416981,11.09,chilled_water,,,Amazon Web Services,Loudoun County,110873.0,building,yes
+DC1944,NTT VA7,39.015737,-77.471908,13.48,chilled_water,,,NTT,Loudoun County,134813.0,building,yes
+DC1954,Vantage VA3,39.077673,-77.505466,27.24,chilled_water,,,Vantage Data Centers,Loudoun County,272421.0,building,yes
+DC1955,Amazon IAD-180,38.98113,-77.494244,13.37,chilled_water,,,Amazon Web Services,Loudoun County,133711.0,building,yes
+DC1956,Microsoft IAD11,38.94979,-77.554302,12.45,chilled_water,,,Microsoft,Loudoun County,124451.0,building,yes
+DC1957,Microsoft IAD11,38.951065,-77.55555,8.94,chilled_water,,,Microsoft,Loudoun County,89371.0,building,yes
+DC1958,Sabey Ashburn Building A,39.013794,-77.476926,10.55,chilled_water,,,Sabey Data Centers,Loudoun County,105505.0,building,yes
+DC1959,CloudHQ LC5,39.009733,-77.476752,11.22,chilled_water,,,CloudHQ,Loudoun County,112157.0,building,yes
+DC1960,CloudHQ LC11,39.006739,-77.477389,22.94,chilled_water,,,CloudHQ,Loudoun County,229401.0,building,yes
+DC1961,CloudHQ LC14,39.006341,-77.475177,27.89,chilled_water,,,CloudHQ,Loudoun County,278863.0,building,yes
+DC1962,CloudHQ LC12,39.005249,-77.478662,14.14,chilled_water,,,CloudHQ,Loudoun County,141352.0,building,yes
+DC1963,CloudHQ LC8,39.002263,-77.468335,27.89,chilled_water,,,CloudHQ,Loudoun County,278890.0,building,yes
+DC1964,Cologix ASH2,39.019644,-77.45811,8.22,chilled_water,,,Cologix,Loudoun County,82183.0,building,yes
+DC1965,NTT VA8,39.018747,-77.475556,11.99,chilled_water,,,NTT,Loudoun County,119872.0,building,yes
+DC1966,Unnamed site (Fairfax County),38.734479,-77.152896,1.94,chilled_water,,,,Fairfax County,19385.0,building,yes
+DC1967,Unnamed site (Fairfax County),38.735198,-77.152885,3.99,chilled_water,,,,Fairfax County,39933.0,building,yes
+DC1968,NTT VA10,38.800104,-77.610213,46.75,chilled_water,,,NTT,Prince William County,467515.0,building,yes
+DC1969,Digital Realty IAD51,38.737396,-77.50793,40.79,chilled_water,,,Digital Realty,Prince William County,407923.0,building,yes
+DC1970,Unnamed site (Prince William County),38.763249,-77.539273,4.46,chilled_water,,,,Prince William County,44599.0,building,yes
+DC1984,STACK NVA06,39.079909,-77.564843,11.9,chilled_water,,,Stack Infrastructure,Loudoun County,119025.0,building,yes
+DC1987,Amazon IAD-198,38.800069,-77.619816,10.94,chilled_water,,,Amazon Web Services,Prince William County,109380.0,building,yes
+DC1994,Sentinel Ashburn - Building 2,38.995109,-77.461764,16.31,chilled_water,,,Sentinel Data Centers,Loudoun County,163115.0,building,yes
+DC1995,Unnamed site (Loudoun County),38.920621,-77.483409,13.1,chilled_water,,,,Loudoun County,131019.0,building,yes
+DC1996,Unnamed site (Loudoun County),38.921906,-77.483997,12.7,chilled_water,,,,Loudoun County,126977.0,building,yes
+DC1997,Digital Realty IAD50,38.737866,-77.508487,40.79,chilled_water,,,Digital Realty,Prince William County,407916.0,building,yes
+DC2005,STACK NVA05C,38.760564,-77.511854,15.59,chilled_water,,,STACK Infrastructure,Prince William County,155917.0,building,yes
+DC2006,STACK NVA05B,38.761092,-77.514349,18.06,chilled_water,,,STACK Infrastructure,Prince William County,180559.0,building,yes
